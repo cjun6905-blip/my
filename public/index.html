@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IrisGo Proxy</title>
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+  <div id="boot" class="boot">正在加载…</div>
+
+  <!-- 登录 -->
+  <div id="login-view" class="login-wrap hidden">
+    <div class="login-card">
+      <div class="brand">
+        <div class="brand-mark">IG</div>
+        <div>
+          <div class="brand-title">IrisGo Proxy</div>
+          <div class="brand-sub">账号池 · 反向代理 · 自用</div>
+        </div>
+      </div>
+
+      <button id="google-login" class="btn btn-google hidden">
+        <svg width="18" height="18" viewBox="0 0 48 48" aria-hidden="true">
+          <path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.3 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.1 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.3-.4-3.5z"/>
+          <path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.1 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/>
+          <path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-7.9l-6.5 5C9.6 39.6 16.2 44 24 44z"/>
+          <path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.3-2.2 4.2-4.1 5.6l6.2 5.2C36.9 39.2 44 34 44 24c0-1.3-.1-2.3-.4-3.5z"/>
+        </svg>
+        使用 Google 登录
+      </button>
+
+      <div id="google-hint" class="login-hint hidden">管理员尚未配置 Google 登录，请使用下方令牌。</div>
+
+      <div class="login-divider"><span>或</span></div>
+
+      <form id="login-form" class="login-form">
+        <label class="field-label" for="admin-token">管理员令牌</label>
+        <input id="admin-token" class="input" type="password" placeholder="igp_..." autocomplete="current-password" />
+        <button class="btn btn-primary" type="submit">进入面板</button>
+      </form>
+      <div id="login-error" class="login-error"></div>
+      <div class="login-foot">令牌保存在 <code>data/admin-token.txt</code></div>
+    </div>
+  </div>
+
+  <!-- 主界面 -->
+  <div id="app-view" class="app hidden">
+    <aside class="sidebar">
+      <div class="brand small">
+        <div class="brand-mark">IG</div>
+        <div>
+          <div class="brand-title">IrisGo Proxy</div>
+          <div class="brand-sub" id="side-version">v1.0.0</div>
+        </div>
+      </div>
+      <nav id="nav" class="nav">
+        <button class="nav-item active" data-page="overview"><span class="nav-ico">◈</span>概览</button>
+        <button class="nav-item" data-page="accounts"><span class="nav-ico">◎</span>账号池</button>
+        <button class="nav-item" data-page="models"><span class="nav-ico">◇</span>模型</button>
+        <button class="nav-item" data-page="keys"><span class="nav-ico">⌘</span>API Keys</button>
+        <button class="nav-item" data-page="settings"><span class="nav-ico">⚙</span>设置</button>
+        <button class="nav-item hidden" data-page="my"><span class="nav-ico">☺</span>我的 Key</button>
+      </nav>
+      <div class="sidebar-foot">
+        <div id="side-user" class="side-user"></div>
+        <button id="logout" class="btn btn-ghost small">退出登录</button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <h1 id="page-title">概览</h1>
+        <div class="spacer"></div>
+        <span id="top-status" class="top-status"></span>
+      </header>
+
+      <div id="page-overview" class="page">
+        <div class="stats">
+          <div class="stat"><div class="stat-label">账号总数</div><div class="stat-value" id="s-total">–</div><div class="stat-sub" id="s-enabled">–</div></div>
+          <div class="stat"><div class="stat-label">当前可用</div><div class="stat-value" id="s-available">–</div><div class="stat-sub" id="s-cooldown">–</div></div>
+          <div class="stat"><div class="stat-label">累计请求</div><div class="stat-value" id="s-requests">–</div><div class="stat-sub" id="s-errors">–</div></div>
+          <div class="stat"><div class="stat-label">Token 用量</div><div class="stat-value" id="s-tokens">–</div><div class="stat-sub" id="s-keys">–</div></div>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-head"><h2>路由策略</h2></div>
+            <div class="card-body">
+              <div class="row">
+                <select id="routing-strategy" class="select">
+                  <option value="round_robin">轮询（round robin）</option>
+                  <option value="least_used">最少使用（least used）</option>
+                  <option value="random">随机（random）</option>
+                </select>
+                <button id="save-routing" class="btn btn-primary small">保存</button>
+              </div>
+              <p class="muted small">失败会自动切换到下一个账号；401/403 标记为需要重新登录，429/5xx 进入冷却。</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-head"><h2>接入地址</h2></div>
+            <div class="card-body">
+              <div class="copy-row">
+                <code id="base-url">–</code>
+                <button class="btn btn-ghost small" data-copy="#base-url">复制</button>
+              </div>
+              <p class="muted small">OpenAI 兼容：<code>/v1/chat/completions</code>、<code>/v1/responses</code>、<code>/v1/models</code></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-head"><h2>异常账号</h2><span class="muted small" id="err-count"></span></div>
+          <div class="card-body" id="error-list"><div class="empty">暂无异常</div></div>
+        </div>
+      </div>
+
+      <div id="page-accounts" class="page hidden">
+        <div class="toolbar">
+          <button id="add-account" class="btn btn-primary">＋ 添加账号</button>
+          <a class="btn btn-ghost" href="/irisgo-authorize.html" target="_blank" rel="noopener noreferrer">Google 授权添加</a>
+          <button id="import-local" class="btn btn-ghost">从本机 IrisGo 导入</button>
+          <button id="reset-all" class="btn btn-ghost">清除全部冷却</button>
+          <div class="spacer"></div>
+          <span class="muted small" id="accounts-hint"></span>
+        </div>
+        <div class="card">
+          <div class="table-wrap">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>账号</th><th>状态</th><th>出口代理</th><th class="num">请求</th><th class="num">Token</th><th>最近使用</th><th class="right">操作</th>
+                </tr>
+              </thead>
+              <tbody id="accounts-body"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div id="page-models" class="page hidden">
+        <div class="toolbar">
+          <input id="model-search" class="input" style="max-width:280px" placeholder="搜索模型（如 gemini / gpt / claude）" />
+          <label class="check" style="margin:0"><input id="models-auto" type="checkbox" /> 暴露 auto</label>
+          <button id="models-refresh" class="btn btn-ghost">刷新目录</button>
+          <button id="models-show-all" class="btn btn-ghost">全部显示</button>
+          <button id="models-hide-all" class="btn btn-ghost">全部隐藏</button>
+          <div class="spacer"></div>
+          <span class="muted small" id="models-hint"></span>
+        </div>
+        <div class="card">
+          <div class="table-wrap" style="max-height:62vh;overflow:auto">
+            <table class="table">
+              <thead><tr><th style="width:56px">暴露</th><th>模型 ID</th><th>名称</th><th class="num">上下文</th><th class="num">输入 / 输出（每百万 token）</th></tr></thead>
+              <tbody id="models-body"></tbody>
+            </table>
+          </div>
+        </div>
+        <p class="muted small">这里控制 <code>/v1/models</code> 返回什么。客户端可以直接用表中的 ID 作为 <code>model</code> 参数；<code>auto</code> 交给 IrisGo 自动路由。</p>
+      </div>
+
+      <div id="page-keys" class="page hidden">
+        <div class="toolbar">
+          <button id="add-key" class="btn btn-primary">＋ 创建 Key</button>
+          <div class="spacer"></div>
+          <span class="muted small">Key 只在创建时显示一次</span>
+        </div>
+        <div class="card">
+          <div class="table-wrap">
+            <table class="table">
+              <thead><tr><th>名称</th><th>Key</th><th>绑定账号</th><th class="num">RPM</th><th>状态</th><th class="num">请求</th><th class="right">操作</th></tr></thead>
+              <tbody id="keys-body"></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-head"><h2>调用示例</h2></div>
+          <div class="card-body">
+            <pre id="curl-example" class="code"></pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="page-settings" class="page hidden">
+        <div class="card">
+          <div class="card-head"><h2>路由</h2></div>
+          <div class="card-body form-grid">
+            <label class="field"><span>最大重试次数</span><input id="set-retries" class="input" type="number" min="0" max="5" /></label>
+            <label class="field"><span>冷却秒数（429/5xx）</span><input id="set-cooldown" class="input" type="number" min="5" max="3600" /></label>
+            <label class="field"><span>请求超时（毫秒）</span><input id="set-timeout" class="input" type="number" min="10000" max="900000" /></label>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-head"><h2>Google 登录（下游用户）</h2></div>
+          <div class="card-body">
+            <p class="muted small">在 Google Cloud Console 创建 OAuth 客户端（Web 应用），把下面的回调地址填进去，然后粘贴 Client ID / Secret。</p>
+            <div class="copy-row"><code id="redirect-uri">–</code><button class="btn btn-ghost small" data-copy="#redirect-uri">复制</button></div>
+            <div class="form-grid">
+              <label class="field"><span>Client ID</span><input id="set-google-id" class="input" placeholder="xxxx.apps.googleusercontent.com" /></label>
+              <label class="field"><span>Client Secret</span><input id="set-google-secret" class="input" type="password" placeholder="留空则不修改" /></label>
+              <label class="field"><span>允许的邮箱（逗号/空格分隔）</span><input id="set-google-emails" class="input" placeholder="me@gmail.com" /></label>
+              <label class="field"><span>允许的域名</span><input id="set-google-domains" class="input" placeholder="example.com" /></label>
+              <label class="field"><span>访问 Google 的代理（可选）</span><input id="set-google-proxy" class="input" placeholder="http://127.0.0.1:7890" /></label>
+            </div>
+            <label class="check"><input id="set-google-enabled" type="checkbox" /> 启用 Google 登录</label>
+            <label class="check"><input id="set-google-auto" type="checkbox" /> 允许新用户自动开通</label>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-head"><h2>其他</h2></div>
+          <div class="card-body form-grid">
+            <label class="field"><span>IrisGo.exe 路径</span><input id="set-app-path" class="input" /></label>
+          </div>
+          <div class="card-body row">
+            <button id="save-settings" class="btn btn-primary">保存设置</button>
+            <button id="rotate-token" class="btn btn-ghost">重置管理员令牌</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="page-my" class="page hidden">
+        <div class="toolbar">
+          <button id="add-my-key" class="btn btn-primary">＋ 创建我的 Key</button>
+        </div>
+        <div class="card">
+          <div class="table-wrap">
+            <table class="table">
+              <thead><tr><th>名称</th><th>Key</th><th class="num">RPM</th><th>状态</th><th class="num">请求</th><th class="right">操作</th></tr></thead>
+              <tbody id="my-keys-body"></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-head"><h2>调用示例</h2></div>
+          <div class="card-body"><pre id="my-curl" class="code"></pre></div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <div id="modal-root"></div>
+  <div id="toast-root" class="toast-root"></div>
+  <script src="/assets/app.js?v=20261021-oauth"></script>
+</body>
+</html>

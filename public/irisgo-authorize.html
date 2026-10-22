@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="referrer" content="no-referrer" />
+  <title>Google 授权添加账号 · IrisGo Proxy</title>
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+  <main class="login-card" style="width:min(760px,calc(100% - 32px));margin:32px auto">
+    <div class="brand"><div class="brand-mark">IG</div><div>
+      <h1 class="brand-title">Google 授权添加 IrisGo 账号</h1>
+      <div class="brand-sub">官方授权 · 无需安装桌面端 · 复制回调完成导入</div>
+    </div></div>
+    <p><a class="btn btn-ghost" href="/">返回管理面板</a></p>
+    <div id="auth-status" class="hint-box" role="status" aria-live="polite">正在确认管理员登录状态…</div>
+    <p class="muted small">此页仅添加上游账号，不是 Google 登录管理面板。我们不会要求你在此填写 Google 密码。</p>
+    <form id="start-form">
+      <h2>1. 选择新账号的出口</h2>
+      <label class="field"><span>出口代理</span><select id="auth-proxy" class="input" disabled></select></label>
+      <p class="muted small">新账号绑定所选节点；如果登录的账号已在池中，只更新凭据，保留它原来的代理绑定。</p>
+      <button id="auth-start" class="btn btn-primary" type="submit" disabled>生成 Google 授权链接</button>
+    </form>
+    <section id="auth-flow" class="hidden">
+      <h2>2. 在官方页面完成 Google 授权</h2>
+      <p><a id="google-authorize" class="btn btn-primary" target="_blank" rel="noopener noreferrer">打开官方 Google 授权</a></p>
+      <p id="auth-expiry" class="muted small"></p>
+      <div class="hint-box">授权结束后会停在 IrisGo 官方页面。如浏览器询问是否打开 IrisGo，请取消打开应用。
+        复制该页地址栏中的完整 <code>https://irisgo.ai/oauth/google?code=…&amp;state=…</code> 地址。
+        也可右键官方页面的“Open IrisGo”按钮，选择复制链接地址。不要点“Try sign-in again”，也不要刷新授权结果页。</div>
+      <form id="complete-form">
+        <h2>3. 粘贴回调链接并导入</h2>
+        <label class="field"><span>完整授权回调链接</span><textarea id="auth-callback" class="input" rows="4" required maxlength="16384" autocomplete="off" spellcheck="false" placeholder="https://irisgo.ai/oauth/google?code=…&amp;state=… 或 irisgo://oauth/callback?…"></textarea></label>
+        <p class="muted small">链接包含一次性授权码，请勿转发。仅接受本流程的官方回调，有效期 10 分钟；刷新本页后需重新生成。</p>
+        <button id="auth-complete" class="btn btn-primary" type="submit">完成授权并添加账号</button>
+      </form>
+    </section>
+  </main>
+  <script src="/assets/irisgo-authorize.js?v=20261021"></script>
+</body>
+</html>
