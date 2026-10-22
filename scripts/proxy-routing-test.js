@@ -5,6 +5,7 @@ const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
 const net = require('node:net');
+const crypto = require('node:crypto');
 const { fork } = require('node:child_process');
 const { Readable } = require('node:stream');
 const root = path.resolve(__dirname, '..');
@@ -23,8 +24,9 @@ if (process.env.IGP_TEST_CHILD === '1') {
     process.send({ kind: 'refresh', proxy });
     return { token: token(refresh), refreshToken: refresh, info: { exp: 4000000000 } };
   };
-  irisgo.exchangeGoogleCode = async (code, proxy) => {
-    process.send({ kind: 'exchange', proxy });
+  irisgo.exchangeGoogleCode = async (code, proxy, verifier) => {
+    assert.match(verifier, /^[A-Za-z0-9_-]{43}$/);
+    process.send({ kind: 'exchange', proxy, challenge: crypto.createHash('sha256').update(verifier).digest('base64url') });
     if (code === 'bad-secret') throw new Error('PRIVATE_UPSTREAM_SECRET');
     if (code === 'slow-google') await new Promise((r) => setTimeout(r, 50));
     const userId = code === 'existing-google' ? 'user0' : 'google-new';
@@ -136,6 +138,12 @@ async function main() {
       const r = await req('/api/oauth/web/start', { mode: 'cloud', proxySlotId: slot });
       assert.equal(r.status, 200); assert.equal(r.data.mode, 'copy_callback');
       assert(!JSON.stringify(r.data).includes('private'));
+      assert(!/codeVerifier|code_verifier/.test(r.text));
+      const url = new URL(r.data.url);
+      assert.equal(url.pathname, '/auth/google/desktop');
+      assert.match(url.searchParams.get('state'), /^desktop:irisgo:/);
+      assert.equal(url.searchParams.get('code_challenge_method'), 'S256');
+      assert.match(url.searchParams.get('code_challenge'), /^[A-Za-z0-9_-]{43}$/);
       return r.data;
     };
     const callback = (f, code = 'new-google') => 'https://irisgo.ai/oauth/google?' + new URLSearchParams({ code, state: new URL(f.url).searchParams.get('state') });
@@ -143,7 +151,9 @@ async function main() {
     const f = await begin();
     const finish = (f, url) => req('/api/oauth/web/complete', { flowId: f.flowId, callbackUrl: url });
     assert.equal((await finish(f, callback(f).replace('irisgo.ai/', 'attacker.invalid/'))).status, 400);
-    assert.equal((await finish(f, callback(f).replace('web%3A', 'wrong%3A'))).status, 400);
+    assert.equal((await finish(f, callback(f).replace('desktop%3Airisgo%3A', 'web%3A'))).status, 400);
+    const pending = await req('/api/oauth/web/flow/' + f.flowId, undefined, 'GET');
+    assert(!/codeVerifier|code_verifier/.test(pending.text));
     const secondLogin = await req('/api/login', { token: store.data.admin.token });
     const cookieB = secondLogin.headers.get('set-cookie').split(';')[0];
     const cross = await fetch(base + '/api/oauth/web/complete', { method: 'POST', headers: {
@@ -154,13 +164,17 @@ async function main() {
     assert.equal(statusB.status, 404); await statusB.text();
     const countBefore = seen.length;
     assert.equal((await finish(f, callback(f))).data.ok, true);
-    assert.deepEqual(seen.at(-1), { kind: 'exchange', proxy: slots[1].url });
+    assert.deepEqual(seen.at(-1), { kind: 'exchange', proxy: slots[1].url,
+      challenge: new URL(f.url).searchParams.get('code_challenge') });
     assert.equal((await finish(f, callback(f))).data.duplicate, true);
     assert.equal(seen.length, countBefore + 1);
     let cloudRows = (await req('/api/accounts', undefined, 'GET')).data.accounts;
     assert.equal(cloudRows.find((a) => a.userId === 'google-new').proxySlotId, 'slot2');
     const existingFlow = await begin();
-    assert.equal((await finish(existingFlow, callback(existingFlow, 'existing-google'))).data.ok, true);
+    assert.notEqual(new URL(f.url).searchParams.get('state'), new URL(existingFlow.url).searchParams.get('state'));
+    assert.notEqual(new URL(f.url).searchParams.get('code_challenge'), new URL(existingFlow.url).searchParams.get('code_challenge'));
+    assert.equal((await finish(existingFlow, callback(existingFlow, 'existing-google').replace('https://irisgo.ai/oauth/google', 'ai.irisgo://oauth/callback'))).data.ok, true);
+    assert.equal(seen.at(-1).challenge, new URL(existingFlow.url).searchParams.get('code_challenge'));
     cloudRows = (await req('/api/accounts', undefined, 'GET')).data.accounts;
     assert.equal(cloudRows.find((a) => a.userId === 'user0').proxySlotId, 'slot1');
     const badFlow = await begin();
@@ -169,15 +183,17 @@ async function main() {
     const slow = await begin();
     const concurrent = await Promise.all([finish(slow, callback(slow, 'slow-google')), finish(slow, callback(slow, 'slow-google'))]);
     assert.deepEqual(concurrent.map((r) => r.status).sort(), [200, 400]);
-    const expiredFixture = { cloud: true, ownerSid: 'same', nonce: 'nonce', createdAt: 1000 };
-    const sample = 'https://irisgo.ai/oauth/google?code=fixture&state=web:nonce';
+    const expiredFixture = { cloud: true, ownerSid: 'same', state: 'desktop:irisgo:nonce', createdAt: 1000 };
+    const sample = 'https://irisgo.ai/oauth/google?code=fixture&state=desktop:irisgo:nonce';
     assert.equal(callbackForFlow(sample, expiredFixture, 'same', 1001), sample);
     assert.throws(() => callbackForFlow(sample, expiredFixture, 'same', 1000 + TTL_MS), /过期/);
     assert.throws(() => callbackForFlow(sample, expiredFixture, 'other', 1001), /当前登录/);
     for (const value of [sample + '&code=again', sample + '#fragment', sample.replace('https://irisgo.ai', 'https://me@irisgo.ai'), sample.replace('code=fixture', 'error=access_denied')]) {
       assert.throws(() => callbackForFlow(value, expiredFixture, 'same', 1001));
     }
-    assert(callbackForFlow('irisgo://oauth/callback?code=fixture&state=web:nonce', expiredFixture, 'same', 1001));
+    assert(callbackForFlow('ai.irisgo://oauth/callback?code=fixture&state=desktop:irisgo:nonce', expiredFixture, 'same', 1001));
+    assert.throws(() => callbackForFlow(sample.replace('desktop:irisgo:', 'web:'), expiredFixture, 'same', 1001));
+    assert.throws(() => callbackForFlow(sample + '&state=desktop:irisgo:nonce', expiredFixture, 'same', 1001));
     const unauthorized = await fetch(base + '/api/oauth/web/start', { method: 'POST', headers: { Cookie: cookie }, body: '{}' });
     assert.equal(unauthorized.status, 403); await unauthorized.text();
     const maliciousOrigin = await fetch(base + '/api/oauth/web/start', { method: 'POST', headers: { Cookie: cookie, 'X-IGP-Request': '1', Origin: 'https://attacker.invalid' }, body: '{}' });
@@ -204,6 +220,7 @@ async function main() {
     fs.writeFileSync(slotFile, '{broken');
     assert.throws(() => catalog.resolve({ proxySlotId: 'slot1' }), /目录不可用/);
     assert(!fs.readFileSync(path.join(dir, 'proxy.log'), 'utf8').includes('PRIVATE_UPSTREAM_SECRET'));
+    assert(!/codeVerifier|code_verifier/.test(fs.readFileSync(path.join(dir, 'config.json'), 'utf8')));
     console.log('PASS isolated API: auth, account separation, chat/SSE/profile/refresh, persistence, atomic PATCH, fail-closed, manual/direct, credential redaction');
   } finally {
     await stop();
@@ -227,6 +244,32 @@ async function main() {
   }
   clearAgentCache(); assert.deepEqual(hits, [0, 1]);
   console.log('PASS actual HTTP CONNECT transport: two independent proxy listeners');
+  // Intercept the real exchange helper: no external OAuth request or real credentials.
+  const { EventEmitter } = require('node:events');
+  const original = https.request;
+  const verifier = crypto.randomBytes(32).toString('base64url');
+  let sent;
+  try {
+    https.request = (opts, callback) => {
+      const request = new EventEmitter();
+      let body = '';
+      request.setTimeout = () => {};
+      request.write = (chunk) => { body += chunk; };
+      request.end = () => {
+        sent = { path: opts.path, body: JSON.parse(body) };
+        const response = Readable.from([Buffer.from(JSON.stringify({ token: token('pkce-fixture') }))]);
+        response.statusCode = 200; response.headers = {};
+        process.nextTick(() => callback(response));
+      };
+      return request;
+    };
+    const irisgo = require('../lib/irisgo');
+    const session = await irisgo.exchangeGoogleCode('fixture-code', '', verifier);
+    assert.equal(session.info.userId, 'pkce-fixture');
+    assert.deepEqual(sent, { path: '/auth/callback/google', body: { code: 'fixture-code', code_verifier: verifier } });
+    await assert.rejects(irisgo.exchangeGoogleCode('fixture-code', '', 'invalid'), /PKCE/);
+  } finally { https.request = original; }
+  console.log('PASS desktop PKCE: unique S256 challenge, verifier kept server-side, desktop callback, exact state and exchange request body');
 }
 
 if (require.main === module) main().catch((err) => { console.error(err); process.exitCode = 1; });

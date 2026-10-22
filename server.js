@@ -121,9 +121,20 @@ function ensureScheme() {
 function createLoginFlow(options = {}) {
   const nonce = crypto.randomUUID();
   const id = 'flow_' + util.uid(6);
+  const state = (options.cloud ? 'desktop:irisgo:' : 'web:') + nonce;
+  const codeVerifier = options.cloud ? crypto.randomBytes(32).toString('base64url') : '';
+  const url = new URL(options.cloud ? 'https://api.irisgo.ai/auth/google/desktop' : 'https://api.irisgo.ai/auth/google');
+  url.searchParams.set('state', state);
+  if (codeVerifier) {
+    url.searchParams.set('code_challenge', crypto.createHash('sha256').update(codeVerifier).digest('base64url'));
+    url.searchParams.set('code_challenge_method', 'S256');
+    url.searchParams.set('analytics_consent', 'false');
+  }
   loginFlows.set(id, {
     id,
     nonce,
+    state,
+    codeVerifier,
     status: 'pending',
     createdAt: Date.now(),
     accountId: null,
@@ -131,7 +142,7 @@ function createLoginFlow(options = {}) {
     email: '',
     ...options,
   });
-  return { id, nonce, url: `https://api.irisgo.ai/auth/google?state=web:${nonce}` };
+  return { id, nonce, url: url.href };
 }
 
 async function handleDeepLink(rawUrl, ownerSid = '') {
@@ -143,10 +154,9 @@ async function handleDeepLink(rawUrl, ownerSid = '') {
   }
   const code = parsed.searchParams.get('code');
   const state = parsed.searchParams.get('state') || '';
-  const nonce = state.startsWith('web:') ? state.slice(4) : '';
   if (!code) return { ok: false, error: '登录链接里没有授权码' };
 
-  const flow = Array.from(loginFlows.values()).find((f) => f.nonce && f.nonce === nonce);
+  const flow = Array.from(loginFlows.values()).find((f) => f.state && f.state === state);
   if (!flow) return { ok: false, error: '没有匹配的登录流程（可能已过期，请重新发起）' };
   if (flow.cloud && flow.ownerSid !== ownerSid) return { ok: false, error: '请在发起授权的管理会话中完成导入' };
   if (Date.now() - flow.createdAt >= IRISGO_LOGIN_TTL) return { ok: false, error: '授权流程已过期，请重新开始' };
@@ -155,7 +165,7 @@ async function handleDeepLink(rawUrl, ownerSid = '') {
 
   flow.status = 'exchanging';
   try {
-    const session = await irisgo.exchangeGoogleCode(code, proxySlots.resolve(flow.proxyBinding || {}));
+    const session = await irisgo.exchangeGoogleCode(code, proxySlots.resolve(flow.proxyBinding || {}), flow.codeVerifier);
     const profile = session.user || {};
     const email = profile.email || session.info.email || '';
     const userId = profile.id || profile.user_id || session.info.userId || '';
@@ -197,6 +207,8 @@ async function handleDeepLink(rawUrl, ownerSid = '') {
     flow.error = flow.cloud ? '授权兑换失败，请重新开始；授权码可能已使用、已过期，或所选代理不可用' : err.message;
     log.warn('网页登录失败：' + flow.error);
     return { ok: false, error: flow.error };
+  } finally {
+    delete flow.codeVerifier;
   }
 }
 
@@ -1199,6 +1211,7 @@ route('GET', '/api/oauth/web/flow/:id', async (req, res) => {
   if (flow.status === 'pending' && Date.now() - flow.createdAt > 10 * 60 * 1000) {
     flow.status = 'expired';
     flow.error = '登录超时，请重新发起';
+    delete flow.codeVerifier;
   }
   util.json(res, 200, {
     id: flow.id,
@@ -1362,6 +1375,7 @@ setInterval(() => {
     else rateBuckets.delete(id);
   }
   for (const [id, flow] of loginFlows) {
+    if (now - flow.createdAt >= IRISGO_LOGIN_TTL) delete flow.codeVerifier;
     if (now - flow.createdAt > 30 * 60 * 1000) loginFlows.delete(id);
   }
 }, 60_000).unref();

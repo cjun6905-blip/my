@@ -28,7 +28,7 @@ async function boot() {
   el('auth-proxy').value = preferred?.id || '';
   el('auth-proxy').disabled = false;
   el('auth-start').disabled = false;
-  message('管理员已登录。请先选节点，再生成 Google 授权链接。');
+  message('管理员已登录。请先选节点，再生成 App 协议 Google 授权链接（PKCE）。');
 }
 el('start-form').addEventListener('submit', async (event) => {
   event.preventDefault();
@@ -41,7 +41,10 @@ el('start-form').addEventListener('submit', async (event) => {
   try {
     const result = await api('/api/oauth/web/start', { mode: 'cloud', proxySlotId: el('auth-proxy').value, proxy: '' });
     const url = new URL(result.url);
-    if (url.origin !== 'https://api.irisgo.ai' || url.pathname !== '/auth/google') throw new Error('授权链接异常，请联系管理员');
+    if (url.origin !== 'https://api.irisgo.ai' || url.pathname !== '/auth/google/desktop'
+      || !url.searchParams.get('state')?.startsWith('desktop:irisgo:')
+      || url.searchParams.get('code_challenge_method') !== 'S256'
+      || !/^[A-Za-z0-9_-]{43}$/.test(url.searchParams.get('code_challenge') || '')) throw new Error('授权链接异常，请联系管理员');
     flow = result;
     el('google-authorize').href = result.url;
     el('auth-expiry').textContent = '本次授权有效至 ' + new Date(result.expiresAt).toLocaleTimeString();
