@@ -1,0 +1,62 @@
+[
+  {
+    "name": "mkr_smile",
+    "id": "0",
+    "code": "<:mkr_smile:0>"
+  },
+  {
+    "name": "mkr_blush",
+    "id": "0",
+    "code": "<:mkr_blush:0>"
+  },
+  {
+    "name": "mkr_pout",
+    "id": "0",
+    "code": "<:mkr_pout:0>"
+  },
+  {
+    "name": "mkr_smug",
+    "id": "0",
+    "code": "<:mkr_smug:0>"
+  },
+  {
+    "name": "mkr_think",
+    "id": "0",
+    "code": "<:mkr_think:0>"
+  },
+  {
+    "name": "mkr_surprise",
+    "id": "0",
+    "code": "<:mkr_surprise:0>"
+  },
+  {
+    "name": "mkr_welcome",
+    "id": "0",
+    "code": "<:mkr_welcome:0>"
+  },
+  {
+    "name": "mkr_goodnight",
+    "id": "0",
+    "code": "<:mkr_goodnight:0>"
+  },
+  {
+    "name": "mkr_hello",
+    "id": "0",
+    "code": "<:mkr_hello:0>"
+  },
+  {
+    "name": "mkr_aloof",
+    "id": "0",
+    "code": "<:mkr_aloof:0>"
+  },
+  {
+    "name": "mkr_star",
+    "id": "0",
+    "code": "<:mkr_star:0>"
+  },
+  {
+    "name": "mkr_sad",
+    "id": "0",
+    "code": "<:mkr_sad:0>"
+  }
+]

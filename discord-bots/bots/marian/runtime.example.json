@@ -1,0 +1,57 @@
+{
+  "profile": "marian",
+  "base_image": "marian-guidance:final-20261106t043453z",
+  "working_dir": "/app",
+  "entrypoint": null,
+  "command": [
+    "python",
+    "-m",
+    "src.main"
+  ],
+  "user": "10001:10001",
+  "environment": {
+    "BOT_PROFILE": "marian",
+    "BOT_ENV_FILE": "/run/secrets/runtime.env",
+    "FLEET_MODEL_CONCURRENCY": "4",
+    "SPEECH_ENV_FILE": "/run/secrets/speech.env",
+    "GUILD_IDS": "0",
+    "TZ": "Asia/Shanghai",
+    "FLEET_BUDGET_DB": "/app/fleet/budget.db",
+    "FLEET_VISION_CONCURRENCY": "8",
+    "IMAGEGEN_ENV_FILE": "/run/secrets/imagegen.env"
+  },
+  "env_keys": [
+    "BOT_PROFILE",
+    "BOT_ENV_FILE",
+    "FLEET_MODEL_CONCURRENCY",
+    "SPEECH_ENV_FILE",
+    "GUILD_IDS",
+    "TZ",
+    "FLEET_BUDGET_DB",
+    "FLEET_VISION_CONCURRENCY",
+    "IMAGEGEN_ENV_FILE",
+    "PATH",
+    "LANG",
+    "GPG_KEY",
+    "PYTHON_VERSION",
+    "PYTHON_SHA256",
+    "PYTHONDONTWRITEBYTECODE",
+    "PYTHONUNBUFFERED",
+    "PIP_DISABLE_PIP_VERSION_CHECK"
+  ],
+  "memory_bytes": 268435456,
+  "pids_limit": 64,
+  "readonly_root": true,
+  "healthcheck": {
+    "Test": [
+      "CMD",
+      "python",
+      "-c",
+      "import json,time; d=json.load(open('/app/data/health.json')); assert d['ready'] and time.time()-d['at']<45"
+    ],
+    "Interval": 30000000000,
+    "Timeout": 5000000000,
+    "StartPeriod": 60000000000,
+    "Retries": 3
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "tool": "built-in imagegen",
+  "reference": "./local-assets/file_00000000b518820ebaa67df4ea805d92.png",
+  "groups": [
+    {
+      "profile": "elaina",
+      "sheet": "a",
+      "names": [
+        "el_smug",
+        "el_proud",
+        "el_tease",
+        "el_unimpressed"
+      ],
+      "reference": "./local-assets/file_00000000b518820ebaa67df4ea805d92.png",
+      "prompt": "Use case: stylized-concept. Asset type: Discord emoji sheet. Generate exactly FOUR separate polished anime chibi stickers in a clean 2-by-2 grid on GENUINE TRANSPARENT background. Input image is only the character identity reference; do not copy its circular background or original pose. Elaina from Wandering Witch, matching input identity: very long silver-gray hair, violet eyes, side braid tied with a lavender bow, large black witch hat with muted violet patterned ribbon and round gold medallion, black and lavender modest witch robe over white high-neck blouse. Confident, graceful, a little mischievous. Retain her distinctive hat in all cells. Consistent attractive chibi proportions about 2.5 heads tall, bust or waist up, readable faces at 128px, clean line art, softly shaded, elegant restrained colors. Upper left: smug knowing smile and one finger at cheek. Upper right: proudly praising herself, hand elegantly on chest, sparkling confident eyes. Lower left: sly small giggle with hand over mouth. Lower right: unimpressed half-lidded look with arms folded. Keep four entire silhouettes inside their individual quadrants, all hats/hair/hands fully visible, with generous transparent outer margins and broad fully empty central horizontal and vertical gutters. No touching cells, no text, no speech bubbles, no frames, no circular backgrounds, no watermark, no checkerboard drawing. Only four expressions. Transparent alpha everywhere around each separate sticker.",
+      "source": "./local-assets/exec-a06470b6-6e13-4968-945e-36ee6dfcff31.png"
+    },
+    {
+      "profile": "elaina",
+      "sheet": "b",
+      "names": [
+        "el_guilty",
+        "el_pout",
+        "el_coins",
+        "el_tea"
+      ],
+      "reference": "./local-assets/file_00000000b518820ebaa67df4ea805d92.png",
+      "prompt": "Use case: stylized-concept. Asset type: Discord emoji sheet. Generate exactly FOUR separate polished anime chibi stickers in a clean 2-by-2 grid on GENUINE TRANSPARENT background. Input image is only the character identity reference; do not copy its circular background or original pose. Elaina from Wandering Witch, matching input identity: very long silver-gray hair, violet eyes, side braid tied with a lavender bow, large black witch hat with muted violet patterned ribbon and round gold medallion, black and lavender modest witch robe over white high-neck blouse. Confident, graceful, a little mischievous. Retain her distinctive hat in all cells. Consistent attractive chibi proportions about 2.5 heads tall, bust or waist up, readable faces at 128px, clean line art, softly shaded, elegant restrained colors. Upper left: caught making a small mistake, looking aside with a tiny nervous smile. Upper right: puffed cheeks, mildly sulky. Lower left: counting a few gold coins in her palm with delighted eyes. Lower right: enjoying a small teacup held carefully, relaxed smile. Keep four entire silhouettes inside their individual quadrants, all hats/hair/hands fully visible, with generous transparent outer margins and broad fully empty central horizontal and vertical gutters. No touching cells, no text, no speech bubbles, no frames, no circular backgrounds, no watermark, no checkerboard drawing. Only four expressions. Transparent alpha everywhere around each separate sticker.",
+      "source": "./local-assets/exec-9554794f-f1b3-4b81-a80e-db2a90a6b7de.png"
+    },
+    {
+      "profile": "elaina",
+      "sheet": "c",
+      "names": [
+        "el_think",
+        "el_blush",
+        "el_comfort",
+        "el_hello"
+      ],
+      "reference": "./local-assets/file_00000000b518820ebaa67df4ea805d92.png",
+      "prompt": "Use case: stylized-concept. Asset type: Discord emoji sheet. Generate exactly FOUR separate polished anime chibi stickers in a clean 2-by-2 grid on GENUINE TRANSPARENT background. Input image is only the character identity reference; do not copy its circular background or original pose. Elaina from Wandering Witch, matching input identity: very long silver-gray hair, violet eyes, side braid tied with a lavender bow, large black witch hat with muted violet patterned ribbon and round gold medallion, black and lavender modest witch robe over white high-neck blouse. Confident, graceful, a little mischievous. Retain her distinctive hat in all cells. Consistent attractive chibi proportions about 2.5 heads tall, bust or waist up, readable faces at 128px, clean line art, softly shaded, elegant restrained colors. Upper left: thoughtful, chin resting on fingers. Upper right: shy blush after an unexpected sincere compliment, eyes averted. Lower left: gentle reassuring smile with open palm inviting someone to rest. Lower right: graceful friendly wave. Keep four entire silhouettes inside their individual quadrants, all hats/hair/hands fully visible, with generous transparent outer margins and broad fully empty central horizontal and vertical gutters. No touching cells, no text, no speech bubbles, no frames, no circular backgrounds, no watermark, no checkerboard drawing. Only four expressions. Transparent alpha everywhere around each separate sticker.",
+      "source": "./local-assets/exec-65a42c27-a820-4128-858c-20b1ec1e21c8.png"
+    }
+  ]
+}

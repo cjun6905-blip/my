@@ -1,0 +1,62 @@
+[
+  {
+    "name": "nt_hello",
+    "id": "0",
+    "code": "<:nt_hello:0>"
+  },
+  {
+    "name": "nt_smile",
+    "id": "0",
+    "code": "<:nt_smile:0>"
+  },
+  {
+    "name": "nt_think",
+    "id": "0",
+    "code": "<:nt_think:0>"
+  },
+  {
+    "name": "nt_blush",
+    "id": "0",
+    "code": "<:nt_blush:0>"
+  },
+  {
+    "name": "nt_pout",
+    "id": "0",
+    "code": "<:nt_pout:0>"
+  },
+  {
+    "name": "nt_care",
+    "id": "0",
+    "code": "<:nt_care:0>"
+  },
+  {
+    "name": "nt_cheer",
+    "id": "0",
+    "code": "<:nt_cheer:0>"
+  },
+  {
+    "name": "nt_resolve",
+    "id": "0",
+    "code": "<:nt_resolve:0>"
+  },
+  {
+    "name": "nt_ramen",
+    "id": "0",
+    "code": "<:nt_ramen:0>"
+  },
+  {
+    "name": "nt_sleep",
+    "id": "0",
+    "code": "<:nt_sleep:0>"
+  },
+  {
+    "name": "nt_surprise",
+    "id": "0",
+    "code": "<:nt_surprise:0>"
+  },
+  {
+    "name": "nt_calm",
+    "id": "0",
+    "code": "<:nt_calm:0>"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "name": "kz_hello",
+    "id": "0",
+    "code": "<:kz_hello:0>"
+  },
+  {
+    "name": "kz_smile",
+    "id": "0",
+    "code": "<:kz_smile:0>"
+  },
+  {
+    "name": "kz_music",
+    "id": "0",
+    "code": "<:kz_music:0>"
+  },
+  {
+    "name": "kz_blush",
+    "id": "0",
+    "code": "<:kz_blush:0>"
+  },
+  {
+    "name": "kz_pout",
+    "id": "0",
+    "code": "<:kz_pout:0>"
+  },
+  {
+    "name": "kz_think",
+    "id": "0",
+    "code": "<:kz_think:0>"
+  },
+  {
+    "name": "kz_care",
+    "id": "0",
+    "code": "<:kz_care:0>"
+  },
+  {
+    "name": "kz_cheer",
+    "id": "0",
+    "code": "<:kz_cheer:0>"
+  },
+  {
+    "name": "kz_sleep",
+    "id": "0",
+    "code": "<:kz_sleep:0>"
+  },
+  {
+    "name": "kz_surprise",
+    "id": "0",
+    "code": "<:kz_surprise:0>"
+  },
+  {
+    "name": "kz_gift",
+    "id": "0",
+    "code": "<:kz_gift:0>"
+  },
+  {
+    "name": "kz_relax",
+    "id": "0",
+    "code": "<:kz_relax:0>"
+  }
+]

@@ -1,0 +1,517 @@
+{
+  "profile": "classbrain",
+  "python": "3.12.15",
+  "files": [
+    {
+      "path": "src/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/config.py",
+      "runtime_sha256": "6b73159b41527aef1e5c7d87b28ab892ddcc254778afa2e73439408089c00f23",
+      "published_sha256": "7243bcaaeef6c3c4bfd55ff748d811cc0c42ace985d22b2ee77fd3d444443fda",
+      "bytes": 4415,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "src/main.py",
+      "runtime_sha256": "05a504df830506ceef8f296ca693f3c1dbbd492a731844a2522c7152420d8653",
+      "published_sha256": "05a504df830506ceef8f296ca693f3c1dbbd492a731844a2522c7152420d8653",
+      "bytes": 5210,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/cogs/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/cogs/bot_dialogue_cog.py",
+      "runtime_sha256": "543c7a9a5c2c5ec1a255ef1b99019a8d47c33f909b436fbf1fb7a33bf8dd1fa3",
+      "published_sha256": "543c7a9a5c2c5ec1a255ef1b99019a8d47c33f909b436fbf1fb7a33bf8dd1fa3",
+      "bytes": 22510,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/cogs/settings_cog.py",
+      "runtime_sha256": "8fc3a24d2a138250f72066d8ab9e6d87fae3899f4a6d5beb794166849ae7cb0d",
+      "published_sha256": "8fc3a24d2a138250f72066d8ab9e6d87fae3899f4a6d5beb794166849ae7cb0d",
+      "bytes": 5653,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/cogs/social_cog.py",
+      "runtime_sha256": "9919f15eb43eb780abf934145dd35969f4dbe0fb8fd2a11a1c3ff2f7a2ac5832",
+      "published_sha256": "9919f15eb43eb780abf934145dd35969f4dbe0fb8fd2a11a1c3ff2f7a2ac5832",
+      "bytes": 15927,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/cogs/takeover_cog.py",
+      "runtime_sha256": "e62101059d3559d663b557be80cfc17622c5084c1015953c034d467d130751b6",
+      "published_sha256": "e62101059d3559d663b557be80cfc17622c5084c1015953c034d467d130751b6",
+      "bytes": 12655,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/config/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/config/chat_config.py",
+      "runtime_sha256": "ba71d71b211e2c4260ce74e8a4fb6eae716dd505cdd9ff83caa996c99a9cf929",
+      "published_sha256": "ba71d71b211e2c4260ce74e8a4fb6eae716dd505cdd9ff83caa996c99a9cf929",
+      "bytes": 20,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/chat_settings/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/chat_settings/services/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/chat_settings/services/chat_settings_service.py",
+      "runtime_sha256": "b7d93bc795fb85456a7bd21aafdc9ee93b15fab208acbdbf4535020a3cfda99f",
+      "published_sha256": "b7d93bc795fb85456a7bd21aafdc9ee93b15fab208acbdbf4535020a3cfda99f",
+      "bytes": 339,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/bot_dialogue_service.py",
+      "runtime_sha256": "2b762f95df81f6c97e2161f71031a259d6e79b3f3424506890d656c2aaf4be8d",
+      "published_sha256": "2b762f95df81f6c97e2161f71031a259d6e79b3f3424506890d656c2aaf4be8d",
+      "bytes": 6869,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/conversation.py",
+      "runtime_sha256": "9216eadbbb2c6187c7623804142b8f335ffa71fe3865ffa991843d6f9050e355",
+      "published_sha256": "9216eadbbb2c6187c7623804142b8f335ffa71fe3865ffa991843d6f9050e355",
+      "bytes": 9168,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/fleet_budget.py",
+      "runtime_sha256": "cb5e707cebda212a8e7ca753972b548488a3b5301bf534c10b8e8a8a275c1e6f",
+      "published_sha256": "cb5e707cebda212a8e7ca753972b548488a3b5301bf534c10b8e8a8a275c1e6f",
+      "bytes": 6597,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/store.py",
+      "runtime_sha256": "14b3b0701681cd8806327ba19699efad4e260a26dcbc8b113b258249889fc355",
+      "published_sha256": "14b3b0701681cd8806327ba19699efad4e260a26dcbc8b113b258249889fc355",
+      "bytes": 3523,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/takeover_service.py",
+      "runtime_sha256": "58a802e8327542737a882622b7bc381d103f34c9da86d50627f410a670cc4a03",
+      "published_sha256": "58a802e8327542737a882622b7bc381d103f34c9da86d50627f410a670cc4a03",
+      "bytes": 5555,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/vision.py",
+      "runtime_sha256": "d30fecc6ad0df2286f228c2325441e0b7058779ecd8a1f2b2e067d465cc00c6a",
+      "published_sha256": "d30fecc6ad0df2286f228c2325441e0b7058779ecd8a1f2b2e067d465cc00c6a",
+      "bytes": 10453,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/private_inbox.py",
+      "runtime_sha256": "91f040a42f202e7e9c80a1809934a039ab76350e639ddee3b0a28e5e29a5d24a",
+      "published_sha256": "91f040a42f202e7e9c80a1809934a039ab76350e639ddee3b0a28e5e29a5d24a",
+      "bytes": 3009,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/channel_policy.py",
+      "runtime_sha256": "8b54bcb54be0ce913e066d19ec063937cfa7ea80f617c66742015b9d1eb59153",
+      "published_sha256": "81eac87f853fa207f6f59ccd85cf1198ecdba26d40eb3714c613405f5b249c72",
+      "bytes": 1268,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "src/chat/services/ai/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/ai/service.py",
+      "runtime_sha256": "f5839c80d8a4f860504738d773919a1cfaf096987635038e88ad2bda38479663",
+      "published_sha256": "f5839c80d8a4f860504738d773919a1cfaf096987635038e88ad2bda38479663",
+      "bytes": 7445,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/ai/providers/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/ai/providers/base.py",
+      "runtime_sha256": "1080544333bdbd6a73ea72ee83c58f43f703910e712d5884be382663806f3fbb",
+      "published_sha256": "1080544333bdbd6a73ea72ee83c58f43f703910e712d5884be382663806f3fbb",
+      "bytes": 208,
+      "template_changes": []
+    },
+    {
+      "path": "config/bot_dialogue_peers.json",
+      "runtime_sha256": "1eebb796966d9591342e539bb85fe8ccc50a562286b305398d2d54938264d5cd",
+      "published_sha256": "c2c005cffd1132171f779f8c13c3dd768523341ddc1aaf623a41d0431b4cb3ca",
+      "bytes": 137,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/whale_emotes.json",
+      "runtime_sha256": "568bcff3ff109889ae8644459df5db2dd4ba3f89cff664fb5c7dacbb6b4927ae",
+      "published_sha256": "99596b8791110f5a40c244e19b4f841a895c2cfc6c4bda41e5a7562ee714a94b",
+      "bytes": 5158,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/hajimi_emotes.json",
+      "runtime_sha256": "645f9bfb73e0789a3cccd10d878b86918ecba644d87f1749536d8880a5dd7b9e",
+      "published_sha256": "8b5427f65607d902616b81b3748f9d84d68ae775619a43250936d0c78cd1dc63",
+      "bytes": 1195,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/gpt_emotes.json",
+      "runtime_sha256": "aa35a322afc83a13ea4d7d4d7356640ca80abd8acc2532db49520aa4010df869",
+      "published_sha256": "df2f6eff2957afaadd8172ce1cbabb68619e42f11cab46ce608dae42d3e1003e",
+      "bytes": 1203,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/xiaoke_emotes.json",
+      "runtime_sha256": "95060fe9e9ea223ba2ef042d0f6550b49f5e09ebc8dbec31811a5308aeb27594",
+      "published_sha256": "ef3d03c7ea3239032a762af8836fa9fb449fe551351a673cee51e8fe791987e6",
+      "bytes": 1163,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/classbrain_emotes.json",
+      "runtime_sha256": "e7c96a7fca3adf14bfad444131785457be90790d1e208e46d39e6217b42f7938",
+      "published_sha256": "2fa9e63e25891c03581b747432f3afb9baa684d7fa9002467d979f57b5bc6841",
+      "bytes": 2148,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/sakura_emotes.json",
+      "runtime_sha256": "950aba72ccc248c6de78656b9e02930b075e69fdf875055c85b3347ef88803db",
+      "published_sha256": "ccc3ee8f2859dad020bf973c084f6b71e02a9f133a0ee9d69a08362dbb53837c",
+      "bytes": 1161,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/jalter_emotes.json",
+      "runtime_sha256": "38990ed9f10926ad695e8bb43347a5812dc074099c1f5db93efcb26c8abcdcf2",
+      "published_sha256": "82138050ac2aac5bae77c9ecff594ae36a806d95a637c5b65a0453b2f8f9fe12",
+      "bytes": 1161,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/jeanne_emotes.json",
+      "runtime_sha256": "8ae03c62105fde59d8fd7188cfe0e8fa659eb4a18bc84d565538885c55d9a2bc",
+      "published_sha256": "f7c06742febaa20e2e75ead8659d508c7592050049a8f512bf9bab37b01c7c63",
+      "bytes": 1163,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/channel_policy.json",
+      "runtime_sha256": "109f1d3a77a05500efd9c2ce2e1bc7ed0015bad281822fc8d12d117d50640ee9",
+      "published_sha256": "d20cf6ee9a49f6a960b17c5f53eaf70d3ef34c84fa2bb3bcfbe48b79a8baf6eb",
+      "bytes": 53,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/image_generation.json",
+      "runtime_sha256": "45fdede14f088afd9037fb1289d8deeb8bb883adea624a76012edc441188c223",
+      "published_sha256": "0b0c89290f42ed7ab8a155a67846f0bd249fb8dff5945c9d6c41735868ccf0a4",
+      "bytes": 3373,
+      "template_changes": [
+        "private_endpoint_template"
+      ]
+    },
+    {
+      "path": "config/speech_generation.json",
+      "runtime_sha256": "0e8661043ca5a8fa9b2c29cecb85d6a648df8a796c7b7d33492209c565486c73",
+      "published_sha256": "0e8661043ca5a8fa9b2c29cecb85d6a648df8a796c7b7d33492209c565486c73",
+      "bytes": 880,
+      "template_changes": []
+    },
+    {
+      "path": "config/access_policy.json",
+      "runtime_sha256": "4ae4cf2615269f2e292f18271e78069fab96a230bf4ed4e9f749923931608cdc",
+      "published_sha256": "d61e899654d20018f64150c43eaae0261d652e8f4894019b50c2e2ca45841720",
+      "bytes": 220,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/yuzuki_emotes.json",
+      "runtime_sha256": "e3ec99292f76ff05f6fd4bef8ce2b309d1f061531499cb8d3eb33ce7fe7cdf4d",
+      "published_sha256": "c5ea25a1521a4825147e2787605124d52bee09e230429ada6001438df571f07e",
+      "bytes": 3799,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/personas/classbrain.json",
+      "runtime_sha256": "6634f7d960e02c6a18e9ccd0a57f9ce43054854683153eff5598e96b5ae23605",
+      "published_sha256": "311d3e492c1858357b62a13523bbdacf325e1a7ccb8dfb26bb25fb12c1341dd2",
+      "bytes": 6011,
+      "template_changes": [
+        "credential_or_personal_config_template"
+      ]
+    },
+    {
+      "path": "config/private_chat/classbrain.json",
+      "runtime_sha256": "8c5fc9e600c37bcaaa6ac44add6ae0b8e5f93caac2e169152e16b980d3573327",
+      "published_sha256": "c1194138f0d31cd11fc4bc5e5ac2eb7579e328a220ff19fedfacbc83847160c5",
+      "bytes": 162,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "assets/classbrain-emotes/ln_angry.webp",
+      "runtime_sha256": "52507e2ab80c72ed01035ba453b54437dd8ee4b72aa9567de7d9ebce03eef159",
+      "published_sha256": "52507e2ab80c72ed01035ba453b54437dd8ee4b72aa9567de7d9ebce03eef159",
+      "bytes": 16112,
+      "template_changes": []
+    },
+    {
+      "path": "assets/classbrain-emotes/ln_ao_jiao.webp",
+      "runtime_sha256": "115b96fcf60354e6d509786827e83d68386765d92babb8a0f6786b1dcdf8661e",
+      "published_sha256": "115b96fcf60354e6d509786827e83d68386765d92babb8a0f6786b1dcdf8661e",
+      "bytes": 19118,
+      "template_changes": []
+    },
+    {
+      "path": "assets/classbrain-emotes/ln_bao_bao.webp",
+      "runtime_sha256": "377f5c176e4c03258e7f819c9f4b99412423c470eda493d323922a5884f0d322",
+      "published_sha256": "377f5c176e4c03258e7f819c9f4b99412423c470eda493d323922a5884f0d322",
+      "bytes": 20692,
+      "template_changes": []
+    },
+    {
+      "path": "assets/classbrain-emotes/ln_bi_shi.webp",
+      "runtime_sha256": "7e17bf25f47b6963b9c3587cbacfe7f5ad2d103f2213b1012b3dc3035260d852",
+      "published_sha256": "7e17bf25f47b6963b9c3587cbacfe7f5ad2d103f2213b1012b3dc3035260d852",
+      "bytes": 17560,
+      "template_changes": []
+    },
+    {
+      "path": "assets/classbrain-emotes/ln_bi_xin.webp",
+      "runtime_sha256": "db8ca9a00fc04c03c95cd64f9ac2268f6dad326e45e375fbdcb5218edd79de79",
+      "published_sha256": "db8ca9a00fc04c03c95cd64f9ac2268f6dad326e45e375fbdcb5218edd79de79",
+      "bytes": 20964,
+      "template_changes": []
+    },
+    {
+      "path": "assets/classbrain-emotes/ln_chi_gua.webp",
+      "runtime_sha256": "13e83899ab66444ff46933a488b92e62c2ea454b929953456568d5d5d87ac00e",
+      "published_sha256": "13e83899ab66444ff46933a488b92e62c2ea454b929953456568d5d5d87ac00e",
+      "bytes": 23990,
+      "template_changes": []
+    },
+    {
+      "path": "assets/classbrain-emotes/ln_ganga_zan.webp",
+      "runtime_sha256": "e020848337dc2bb3fa5ddb9845edfff4a6a1824fcd8822a898780dd2995162f0",
+      "published_sha256": "e020848337dc2bb3fa5ddb9845edfff4a6a1824fcd8822a898780dd2995162f0",
+      "bytes": 16392,
+      "template_changes": []
+    },
+    {
+      "path": "assets/classbrain-emotes/ln_ghost_face.webp",
+      "runtime_sha256": "69da17ec65cdda22a878e8036573fa4d1164d0fbe0cd9c2d4dea75fe754cbf82",
+      "published_sha256": "69da17ec65cdda22a878e8036573fa4d1164d0fbe0cd9c2d4dea75fe754cbf82",
+      "bytes": 20284,
+      "template_changes": []
+    },
+    {
+      "path": "assets/classbrain-emotes/ln_good.webp",
+      "runtime_sha256": "d4d3aaf67d5ed903f5383f01409ce78c24ff57bbe10d094a5d2b3e1c7a770ea6",
+      "published_sha256": "d4d3aaf67d5ed903f5383f01409ce78c24ff57bbe10d094a5d2b3e1c7a770ea6",
+      "bytes": 20336,
+      "template_changes": []
+    },
+    {
+      "path": "assets/classbrain-emotes/ln_guai_qiao.webp",
+      "runtime_sha256": "2b39a7c0ca25024b19b034431809a5e058b1dc1b5020c23653e7978acab41bd0",
+      "published_sha256": "2b39a7c0ca25024b19b034431809a5e058b1dc1b5020c23653e7978acab41bd0",
+      "bytes": 16310,
+      "template_changes": []
+    },
+    {
+      "path": "assets/classbrain-emotes/ln_hao_qi.webp",
+      "runtime_sha256": "9582c659113d88fea18bbc4d0184e157b3ec11e749505951982c13397975dd93",
+      "published_sha256": "9582c659113d88fea18bbc4d0184e157b3ec11e749505951982c13397975dd93",
+      "bytes": 19266,
+      "template_changes": []
+    },
+    {
+      "path": "assets/classbrain-emotes/ln_jing_ya.webp",
+      "runtime_sha256": "45c8db96aee96d9a6f9ed72d3d2fdf132d3134a1fb2fdd389324f3cd81da49a5",
+      "published_sha256": "45c8db96aee96d9a6f9ed72d3d2fdf132d3134a1fb2fdd389324f3cd81da49a5",
+      "bytes": 22452,
+      "template_changes": []
+    },
+    {
+      "path": "assets/classbrain-emotes/ln_kai_xin_default.webp",
+      "runtime_sha256": "7731dcff1d6d9b16eaa57855f22c7d04725a5644bbddb631395c81564bd62d4f",
+      "published_sha256": "7731dcff1d6d9b16eaa57855f22c7d04725a5644bbddb631395c81564bd62d4f",
+      "bytes": 17424,
+      "template_changes": []
+    },
+    {
+      "path": "assets/classbrain-emotes/ln_ping_jing.webp",
+      "runtime_sha256": "d12a3adb8523f7b1db5f2a1a8cc5aaf8c6e3fc6a5e05a1dbf27c09033e769ea7",
+      "published_sha256": "d12a3adb8523f7b1db5f2a1a8cc5aaf8c6e3fc6a5e05a1dbf27c09033e769ea7",
+      "bytes": 18626,
+      "template_changes": []
+    },
+    {
+      "path": "assets/classbrain-emotes/ln_shang_xin.webp",
+      "runtime_sha256": "b02ef081885a4c9bc0cd9e8b5b664f091d78d09855e7fd8d56b4c3008b791411",
+      "published_sha256": "b02ef081885a4c9bc0cd9e8b5b664f091d78d09855e7fd8d56b4c3008b791411",
+      "bytes": 18978,
+      "template_changes": []
+    },
+    {
+      "path": "assets/classbrain-emotes/ln_shy.webp",
+      "runtime_sha256": "ab4f3b8208c806ba86e0f79766e408ce411ba584be518029414d9090387fca3a",
+      "published_sha256": "ab4f3b8208c806ba86e0f79766e408ce411ba584be518029414d9090387fca3a",
+      "bytes": 18714,
+      "template_changes": []
+    },
+    {
+      "path": "assets/classbrain-emotes/ln_tou_xiao.webp",
+      "runtime_sha256": "d7f2602cb078da93a6c33d79d103b6fb3487960fa35067a5c00fca9060cd03c2",
+      "published_sha256": "d7f2602cb078da93a6c33d79d103b6fb3487960fa35067a5c00fca9060cd03c2",
+      "bytes": 20702,
+      "template_changes": []
+    },
+    {
+      "path": "assets/classbrain-emotes/ln_wei_qu_default.webp",
+      "runtime_sha256": "ccc1ad1bfe90fc60a000d9d59b57c24806db7f77cfc2f21917b73b0ecb2f08cf",
+      "published_sha256": "ccc1ad1bfe90fc60a000d9d59b57c24806db7f77cfc2f21917b73b0ecb2f08cf",
+      "bytes": 18418,
+      "template_changes": []
+    },
+    {
+      "path": "assets/classbrain-emotes/ln_wu_yu.webp",
+      "runtime_sha256": "2b32c1b2b8b4f74d9f4d649e6b7cd2c97314535e6be716cbd3afe3157dd38b8b",
+      "published_sha256": "2b32c1b2b8b4f74d9f4d649e6b7cd2c97314535e6be716cbd3afe3157dd38b8b",
+      "bytes": 18028,
+      "template_changes": []
+    },
+    {
+      "path": "assets/classbrain-emotes/ln_xianhua.webp",
+      "runtime_sha256": "e4a3db59f3af9b4ff732a87b5b10de6dee6c90d72aff2575aa5ffa7ce8eae0a0",
+      "published_sha256": "e4a3db59f3af9b4ff732a87b5b10de6dee6c90d72aff2575aa5ffa7ce8eae0a0",
+      "bytes": 22150,
+      "template_changes": []
+    },
+    {
+      "path": "assets/classbrain-emotes/ln_yi_huo.webp",
+      "runtime_sha256": "d0ba8aaf7b15c1b1a1157aec0f794fe346430a65f18689d4c79ec38aacd5518f",
+      "published_sha256": "d0ba8aaf7b15c1b1a1157aec0f794fe346430a65f18689d4c79ec38aacd5518f",
+      "bytes": 18566,
+      "template_changes": []
+    },
+    {
+      "path": "LICENSE",
+      "runtime_sha256": "ba6d12838cd61c2403880b4dfe655808ca8c53d235e023e7ad36bc2939383a89",
+      "published_sha256": "ba6d12838cd61c2403880b4dfe655808ca8c53d235e023e7ad36bc2939383a89",
+      "bytes": 33480,
+      "template_changes": []
+    },
+    {
+      "path": "requirements.txt",
+      "runtime_sha256": "73a446bd7a1bc1366a9ffe35577a8cfc6b3b8c9a8470ac250d2b6b25cd0f3e28",
+      "published_sha256": "73a446bd7a1bc1366a9ffe35577a8cfc6b3b8c9a8470ac250d2b6b25cd0f3e28",
+      "bytes": 88,
+      "template_changes": []
+    },
+    {
+      "path": "NOTICE",
+      "runtime_sha256": "ce42f8cad0c68acede28067be5b7ec346b914df6b3c32fc01eb4b41711790fd7",
+      "published_sha256": "ce42f8cad0c68acede28067be5b7ec346b914df6b3c32fc01eb4b41711790fd7",
+      "bytes": 1191,
+      "template_changes": []
+    }
+  ],
+  "runtime_configuration": "private identity and credential values replaced with templates; running databases are not included"
+}

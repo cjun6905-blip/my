@@ -1,0 +1,62 @@
+[
+  {
+    "name": "ss_hello",
+    "id": "0",
+    "code": "<:ss_hello:0>"
+  },
+  {
+    "name": "ss_smile",
+    "id": "0",
+    "code": "<:ss_smile:0>"
+  },
+  {
+    "name": "ss_think",
+    "id": "0",
+    "code": "<:ss_think:0>"
+  },
+  {
+    "name": "ss_blush",
+    "id": "0",
+    "code": "<:ss_blush:0>"
+  },
+  {
+    "name": "ss_pout",
+    "id": "0",
+    "code": "<:ss_pout:0>"
+  },
+  {
+    "name": "ss_care",
+    "id": "0",
+    "code": "<:ss_care:0>"
+  },
+  {
+    "name": "ss_approve",
+    "id": "0",
+    "code": "<:ss_approve:0>"
+  },
+  {
+    "name": "ss_resolve",
+    "id": "0",
+    "code": "<:ss_resolve:0>"
+  },
+  {
+    "name": "ss_sleep",
+    "id": "0",
+    "code": "<:ss_sleep:0>"
+  },
+  {
+    "name": "ss_surprise",
+    "id": "0",
+    "code": "<:ss_surprise:0>"
+  },
+  {
+    "name": "ss_gift",
+    "id": "0",
+    "code": "<:ss_gift:0>"
+  },
+  {
+    "name": "ss_calm",
+    "id": "0",
+    "code": "<:ss_calm:0>"
+  }
+]

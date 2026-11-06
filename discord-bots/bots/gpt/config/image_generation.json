@@ -1,0 +1,44 @@
+{
+  "enabled_profiles": [
+    "jalter",
+    "whale",
+    "hajimi",
+    "sakura",
+    "yuzuki",
+    "jeanne"
+  ],
+  "base_url": "https://images.example.invalid/v1",
+  "model": "gpt-6-luna",
+  "cooldown_seconds": 20,
+  "appearance": {
+    "jalter": "贞德〔Alter〕（黑贞德，Fate/Grand Order Avenger），日系二次元角色插画。微乱的银白色短发与刘海，金色眼睛，额头的黑色浮雕金属冠饰、黑色垂坠耳饰，黑色毛领与深色哥特铠甲、黑手套，暗红和紫色点缀；表情自信、有一点高傲与别扭，关心熟悉的人时会柔和。保持参考头像的发色、眼睛、冠饰和服装识别特征，除非用户明确要求更改；是黑贞德而不是金发蓝眼的圣女贞德。",
+    "whale": "大肥鱼，也叫小鲸、鲸鱼娘、DeepSeek娘。蓝发蓝眼的可爱Q版少女形象：深蓝色长卷发，发梢渐变浅蓝，头顶一撮像鲸鱼喷水的弯呆毛，清透蓝色眼睛、白色荷叶边女仆发箍，蓝白女仆裙，白围裙上有蓝鲸图案，领口是蓝色宝石蝴蝶结。贪吃、调皮、爱得意，有一点小呆萌，日系二次元插画。她是拟人鲸鱼娘，不是现实中的鲸鱼动物；保持发色、眼睛、服饰和鲸鱼配饰等识别特征，除非用户明确要求修改。",
+    "hajimi": "哈基咪娘（Gemini娘），银白色长发、蓝紫色渐变眼睛，深蓝与白色服装，彩色四角星发饰与胸前饰品，黑色蝴蝶结和金色星形点缀。可按明确要求换日常服饰，保持银白长发、彩色四角星和蓝紫眼睛，不画成普通猫或其他角色。",
+    "sakura": "春野樱（Sakura Haruno），粉红色短发、绿色眼睛，木叶标志护额，红色忍者上衣与深色手套，用户头像中的温柔而自信气质。按明确场景可换合适便服，保持粉发绿眼和木叶角色身份。",
+    "yuzuki": "月见里结月，17岁的原创校园角色，奶茶棕色长发、深棕色宽发箍、金琥珀色眼睛。默认浅色长袖衬衫、深色领结和深色及膝裙，衣着完整，温柔自然。保持年龄、发色、眼睛与发箍标识。普通日常插画，默认平视中景或半身肖像，可按日常场景更换合适的完整服装。",
+    "jeanne": "贞德（Fate/Grand Order Ruler，白贞），金色长发与额前刘海、紫蓝色眼睛，银色浮雕额冠、银色垂坠流苏耳饰，银色颈甲、链饰与手甲，白色披肩、蓝银骑士衣甲、蓝金点缀。温柔坚定的少女气质，日系二次元角色插画。保持用户头像中的发型轮廓、金发、紫蓝眼及银色冠饰；按明确场景可更换日常衣装。不是银白短发、黑冠金眼的贞德Alter。"
+  },
+  "default_provider": "duck",
+  "providers": {
+    "duck": {
+      "name": "duck",
+      "base_url": "https://images.example.invalid/v1",
+      "model": "gpt-6-luna",
+      "credential_key": "IMAGEGEN_DUCK_API_KEY"
+    },
+    "cpa": {
+      "name": "CPA",
+      "base_url": "https://images.example.invalid/v1",
+      "model": "gpt-image-2.5",
+      "credential_key": "IMAGEGEN_CPA_API_KEY"
+    },
+    "cpa_sunburst": {
+      "name": "CPA Sunburst",
+      "base_url": "https://images.example.invalid/v1",
+      "model": "gpt-image-2.5-sunburst",
+      "credential_key": "IMAGEGEN_CPA_API_KEY"
+    }
+  },
+  "max_concurrency": 2,
+  "burst_limit": 8
+}

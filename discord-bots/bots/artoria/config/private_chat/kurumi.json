@@ -1,0 +1,10 @@
+{
+  "allowed_user_ids": [
+    "0",
+    "0"
+  ],
+  "pending_limit": 16,
+  "daily_message_limit": null,
+  "lifetime_message_limit": null,
+  "grants_admin": false
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "name": "ja_hello",
+    "id": "0",
+    "code": "<:ja_hello:0>",
+    "created": true
+  },
+  {
+    "name": "ja_smug",
+    "id": "0",
+    "code": "<:ja_smug:0>",
+    "created": true
+  },
+  {
+    "name": "ja_blush",
+    "id": "0",
+    "code": "<:ja_blush:0>",
+    "created": true
+  },
+  {
+    "name": "ja_pout",
+    "id": "0",
+    "code": "<:ja_pout:0>",
+    "created": true
+  },
+  {
+    "name": "ja_think",
+    "id": "0",
+    "code": "<:ja_think:0>",
+    "created": true
+  },
+  {
+    "name": "ja_teach",
+    "id": "0",
+    "code": "<:ja_teach:0>",
+    "created": true
+  },
+  {
+    "name": "ja_comfort",
+    "id": "0",
+    "code": "<:ja_comfort:0>",
+    "created": true
+  },
+  {
+    "name": "ja_cheer",
+    "id": "0",
+    "code": "<:ja_cheer:0>",
+    "created": true
+  },
+  {
+    "name": "ja_sigh",
+    "id": "0",
+    "code": "<:ja_sigh:0>",
+    "created": true
+  },
+  {
+    "name": "ja_worry",
+    "id": "0",
+    "code": "<:ja_worry:0>",
+    "created": true
+  },
+  {
+    "name": "ja_hug",
+    "id": "0",
+    "code": "<:ja_hug:0>",
+    "created": true
+  },
+  {
+    "name": "ja_sleep",
+    "id": "0",
+    "code": "<:ja_sleep:0>",
+    "created": true
+  }
+]

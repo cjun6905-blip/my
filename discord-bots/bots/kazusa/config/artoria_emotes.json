@@ -1,0 +1,62 @@
+[
+  {
+    "name": "ar_hello",
+    "id": "0",
+    "code": "<:ar_hello:0>"
+  },
+  {
+    "name": "ar_proud",
+    "id": "0",
+    "code": "<:ar_proud:0>"
+  },
+  {
+    "name": "ar_blush",
+    "id": "0",
+    "code": "<:ar_blush:0>"
+  },
+  {
+    "name": "ar_pout",
+    "id": "0",
+    "code": "<:ar_pout:0>"
+  },
+  {
+    "name": "ar_think",
+    "id": "0",
+    "code": "<:ar_think:0>"
+  },
+  {
+    "name": "ar_explain",
+    "id": "0",
+    "code": "<:ar_explain:0>"
+  },
+  {
+    "name": "ar_food",
+    "id": "0",
+    "code": "<:ar_food:0>"
+  },
+  {
+    "name": "ar_tea",
+    "id": "0",
+    "code": "<:ar_tea:0>"
+  },
+  {
+    "name": "ar_cheer",
+    "id": "0",
+    "code": "<:ar_cheer:0>"
+  },
+  {
+    "name": "ar_worry",
+    "id": "0",
+    "code": "<:ar_worry:0>"
+  },
+  {
+    "name": "ar_hug",
+    "id": "0",
+    "code": "<:ar_hug:0>"
+  },
+  {
+    "name": "ar_sleep",
+    "id": "0",
+    "code": "<:ar_sleep:0>"
+  }
+]

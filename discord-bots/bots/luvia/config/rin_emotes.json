@@ -1,0 +1,62 @@
+[
+  {
+    "name": "rn_smile",
+    "id": "0",
+    "code": "<:rn_smile:0>"
+  },
+  {
+    "name": "rn_blush",
+    "id": "0",
+    "code": "<:rn_blush:0>"
+  },
+  {
+    "name": "rn_pout",
+    "id": "0",
+    "code": "<:rn_pout:0>"
+  },
+  {
+    "name": "rn_smug",
+    "id": "0",
+    "code": "<:rn_smug:0>"
+  },
+  {
+    "name": "rn_think",
+    "id": "0",
+    "code": "<:rn_think:0>"
+  },
+  {
+    "name": "rn_surprise",
+    "id": "0",
+    "code": "<:rn_surprise:0>"
+  },
+  {
+    "name": "rn_welcome",
+    "id": "0",
+    "code": "<:rn_welcome:0>"
+  },
+  {
+    "name": "rn_goodnight",
+    "id": "0",
+    "code": "<:rn_goodnight:0>"
+  },
+  {
+    "name": "rn_hello",
+    "id": "0",
+    "code": "<:rn_hello:0>"
+  },
+  {
+    "name": "rn_bashful",
+    "id": "0",
+    "code": "<:rn_bashful:0>"
+  },
+  {
+    "name": "rn_wink",
+    "id": "0",
+    "code": "<:rn_wink:0>"
+  },
+  {
+    "name": "rn_competitive",
+    "id": "0",
+    "code": "<:rn_competitive:0>"
+  }
+]

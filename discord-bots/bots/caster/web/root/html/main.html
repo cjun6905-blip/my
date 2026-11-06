@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odysseia Bot - Dashboard</title>
+    <!-- 链接到 CSS 文件 -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h2>Odysseia</h2>
+        </div>
+        <div class="sidebar-top-controls">
+            <button id="restart-btn" class="sidebar-btn danger-btn">🔄<span>Restart Bot</span></button>
+            <button id="shutdown-btn" class="sidebar-btn danger-btn">🛑<span>Shutdown Bot</span></button>
+        </div>
+        <div class="sidebar-content">
+            <!-- Timezone functionality will be added here -->
+            <div class="timezone-placeholder">
+                <p>Timezone</p>
+                <select id="timezone-selector" class="sidebar-select">
+                    <!-- Options will be populated by JS -->
+                </select>
+            </div>
+        </div>
+        <div class="sidebar-footer">
+            <button id="wallpaper-btn" class="sidebar-btn">Change Wallpaper</button>
+            <a href="/logout" class="logout-btn">Logout</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="grid-container">
+            <!-- Top-Left: 控制面板 -->
+            <div class="grid-item panel-a">
+                <!-- Content removed as per request -->
+        </div>
+
+        <!-- Top-Right: 主 Bot 日志 -->
+        <div class="grid-item panel-b" id="bot-log-panel">
+            <header>
+                <h2>Bot Application Logs</h2>
+                <div id="bot-status" class="status-indicator status-loading">LOADING...</div>
+            </header>
+            <div class="log-controls">
+                <input type="date" id="log-date-picker">
+                <select id="bot-log-level-filter">
+                    <option value="ALL">ALL</option>
+                    <option value="DEBUG">DEBUG</option>
+                    <option value="INFO">INFO</option>
+                    <option value="WARNING">WARNING</option>
+                    <option value="ERROR">ERROR</option>
+                    <option value="CRITICAL">CRITICAL</option>
+                </select>
+                <input type="text" id="bot-regex-search" placeholder="Filter logs with Regex...">
+            </div>
+            <pre class="log-container" id="bot-log-container">Loading logs...</pre>
+        </div>
+
+        <!-- Bottom-Left: 系统信息 (占位) -->
+        <div class="grid-item panel-c" id="system-info-panel">
+            <header>
+                <h2>System Information</h2>
+            </header>
+            <div class="sys-info-container">
+                <div class="sys-info-section">
+                    <h4>Current Usage</h4>
+                    <p><strong>CPU:</strong> <span id="cpu-usage-text">Loading...</span></p>
+                    <p><strong>RAM:</strong> <span id="ram-usage-text">Loading...</span></p>
+                    <p><strong>Disk:</strong> <span id="disk-usage-text">Loading...</span></p>
+                    <p><strong>Net Sent:</strong> <span id="net-sent-text">Loading...</span></p>
+                    <p><strong>Net Recv:</strong> <span id="net-recv-text">Loading...</span></p>
+                </div>
+                <div class="sys-info-section">
+                    <h4>24-Hour Stats</h4>
+                    <p><strong>CPU Avg:</strong> <span id="cpu-avg-24h">Loading...</span></p>
+                    <p><strong>CPU Peak:</strong> <span id="cpu-peak-24h">Loading...</span></p>
+                    <p><strong>RAM Avg:</strong> <span id="ram-avg-24h">Loading...</span></p>
+                    <p><strong>RAM Peak:</strong> <span id="ram-peak-24h">Loading...</span></p>
+                    <p><small>(<span id="sample-count-24h">0</span> samples)</small></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom-Right: WebUI 日志 -->
+        <div class="grid-item panel-d">
+            <header>
+                <h2>WebUI Server Logs</h2>
+            </header>
+             <div class="log-controls">
+                <select id="webui-log-level-filter">
+                    <option value="ALL">ALL</option>
+                    <option value="DEBUG">DEBUG</option>
+                    <option value="INFO">INFO</option>
+                    <option value="WARNING">WARNING</option>
+                    <option value="ERROR">ERROR</option>
+                    <option value="CRITICAL">CRITICAL</option>
+                </select>
+                <input type="text" id="webui-regex-search" placeholder="Filter logs with Regex...">
+            </div>
+            <pre class="log-container" id="webui-log-container">Loading WebUI logs...</pre>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    // --- DOM Element References ---
+    const botStatusIndicator = document.getElementById('bot-status');
+    const logDatePicker = document.getElementById('log-date-picker');
+    const botLogContainer = document.getElementById('bot-log-container');
+    const botRegexInput = document.getElementById('bot-regex-search');
+    const botLogLevelFilter = document.getElementById('bot-log-level-filter');
+    const webuiLogContainer = document.getElementById('webui-log-container');
+    const webuiLogLevelFilter = document.getElementById('webui-log-level-filter');
+    const webuiRegexInput = document.getElementById('webui-regex-search');
+    const timezoneSelector = document.getElementById('timezone-selector');
+    const wallpaperBtn = document.getElementById('wallpaper-btn');
+    const restartBtn = document.getElementById('restart-btn');
+    const shutdownBtn = document.getElementById('shutdown-btn');
+    
+    // --- State Variables ---
+    let fullBotLogContent = ""; // Cache full log content for filtering
+    let fullWebUILogContent = ""; // Cache full WebUI log content
+    let isBotLogScrolledToBottom = true; // Auto-scroll state for bot logs
+    let isWebUILogScrolledToBottom = true; // Auto-scroll state for WebUI logs
+    let selectedTimezone = localStorage.getItem('selectedTimezone') || Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+    // --- Utility Functions ---
+    const formatDateForPicker = (date) => {
+        const year = date.getFullYear();
+        const month = String(date.getMonth() + 1).padStart(2, '0');
+        const day = String(date.getDate()).padStart(2, '0');
+        return `${year}-${month}-${day}`;
+    };
+    
+    const escapeHtml = (text) => {
+        return text
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#039;");
+    };
+
+    const formatLogTimestamp = (line) => {
+        const timestampRegex = /\[(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z)\]/;
+        const match = line.match(timestampRegex);
+        if (match) {
+            const utcDate = new Date(match[1]);
+            const localTimestamp = utcDate.toLocaleString(undefined, { timeZone: selectedTimezone, hour12: false });
+            return line.replace(match[1], localTimestamp);
+        }
+        return line;
+    };
+
+    // --- Core Functions ---
+    const fetchBotStatus = async () => {
+        try {
+            const response = await fetch('/api/status');
+            const data = await response.json();
+            botStatusIndicator.textContent = data.status;
+            botStatusIndicator.className = 'status-indicator ' + (data.status === 'RUNNING' ? 'status-running' : 'status-down');
+        } catch (error) {
+            botStatusIndicator.textContent = 'ERROR';
+            botStatusIndicator.className = 'status-indicator status-down';
+            console.error("Failed to fetch status:", error);
+        }
+    };
+
+    const sendControlCommand = async (action) => {
+        const endpoint = action === 'restart' ? '/api/bot/restart' : '/api/bot/shutdown';
+        const confirmationMessage = `Are you sure you want to ${action} the bot?`;
+
+        if (confirm(confirmationMessage)) {
+            try {
+                // Immediately update status visually
+                botStatusIndicator.textContent = 'DOWN';
+                botStatusIndicator.className = 'status-indicator status-down';
+
+                const response = await fetch(endpoint, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    console.error(`Failed to ${action}:`, errorData.message);
+                    // Optionally revert status or show an error message to the user
+                    alert(`Error: ${errorData.message}`);
+                    fetchBotStatus(); // Re-fetch to get the actual status
+                }
+            } catch (error) {
+                console.error(`An error occurred during ${action}:`, error);
+                alert(`An unexpected error occurred. See console for details.`);
+                fetchBotStatus(); // Re-fetch to get the actual status
+            }
+        }
+    };
+
+    const fetchBotLogs = async () => {
+        const selectedDate = logDatePicker.value;
+        if (!selectedDate) return;
+
+        try {
+            const response = await fetch(`/api/logs?date=${selectedDate}`);
+            const data = await response.json();
+            if (data.logs !== fullBotLogContent) {
+                fullBotLogContent = data.logs;
+                renderBotLogs();
+            }
+        } catch (error) {
+            botLogContainer.textContent = `Error fetching logs for ${selectedDate}.`;
+            console.error("Failed to fetch logs:", error);
+        }
+    };
+
+    const fetchWebUILogs = async () => {
+        try {
+            const response = await fetch('/api/webui-logs');
+            const data = await response.json();
+            if (data.logs !== fullWebUILogContent) {
+                fullWebUILogContent = data.logs;
+                renderWebUILogs();
+            }
+        } catch (error) {
+            webuiLogContainer.textContent = 'Error fetching WebUI logs.';
+            console.error("Failed to fetch WebUI logs:", error);
+        }
+    };
+
+    const renderBotLogs = () => {
+        const regexStr = botRegexInput.value;
+        const logLevel = botLogLevelFilter.value;
+        let lines = fullBotLogContent.split('\n');
+
+        if (logLevel !== 'ALL') {
+            lines = lines.filter(line => line.includes(`[${logLevel}]`));
+        }
+
+        if (regexStr) {
+            try {
+                const regex = new RegExp(regexStr, 'gi');
+                lines = lines.filter(line => line.match(regex));
+            } catch (e) {
+                botLogContainer.textContent = "Invalid Regex...";
+                return;
+            }
+        }
+
+        const formattedHtml = lines.map(line => {
+            const localizedLine = formatLogTimestamp(line);
+            const escapedLine = escapeHtml(localizedLine);
+            if (escapedLine.includes('[INFO]')) return `<span class="log-info">${escapedLine}</span>`;
+            if (escapedLine.includes('[WARNING]')) return `<span class="log-warning">${escapedLine}</span>`;
+            if (escapedLine.includes('[ERROR]')) return `<span class="log-error">${escapedLine}</span>`;
+            if (escapedLine.includes('[CRITICAL]')) return `<span class="log-critical">${escapedLine}</span>`;
+            if (escapedLine.includes('[DEBUG]')) return `<span class="log-debug">${escapedLine}</span>`;
+            return `<span>${escapedLine}</span>`;
+        }).join('');
+
+        botLogContainer.innerHTML = formattedHtml;
+        
+        // Auto-scroll if user was at the bottom
+        if (isBotLogScrolledToBottom) {
+            botLogContainer.scrollTop = botLogContainer.scrollHeight;
+        }
+    };
+
+    const renderWebUILogs = () => {
+        const regexStr = webuiRegexInput.value;
+        const logLevel = webuiLogLevelFilter.value;
+        let lines = fullWebUILogContent.split('\n');
+
+        if (logLevel !== 'ALL') {
+            lines = lines.filter(line => line.toUpperCase().includes(` ${logLevel} `));
+        }
+
+        if (regexStr) {
+            try {
+                const regex = new RegExp(regexStr, 'gi');
+                lines = lines.filter(line => line.match(regex));
+            } catch (e) {
+                webuiLogContainer.textContent = "Invalid Regex...";
+                return;
+            }
+        }
+
+        const formattedHtml = lines.map(line => {
+            const escapedLine = escapeHtml(line);
+            if (escapedLine.toUpperCase().includes(' INFO ')) return `<span class="log-info">${escapedLine}</span>`;
+            if (escapedLine.toUpperCase().includes(' WARNING ')) return `<span class="log-warning">${escapedLine}</span>`;
+            if (escapedLine.toUpperCase().includes(' ERROR ')) return `<span class="log-error">${escapedLine}</span>`;
+            if (escapedLine.toUpperCase().includes(' CRITICAL ')) return `<span class="log-critical">${escapedLine}</span>`;
+            if (escapedLine.toUpperCase().includes(' DEBUG ')) return `<span class="log-debug">${escapedLine}</span>`;
+            return `<span>${escapedLine}</span>`;
+        }).join('');
+
+        webuiLogContainer.innerHTML = formattedHtml;
+
+        // Auto-scroll if user was at the bottom
+        if (isWebUILogScrolledToBottom) {
+            webuiLogContainer.scrollTop = webuiLogContainer.scrollHeight;
+        }
+    };
+
+    const fetchSystemInfo = async () => {
+        try {
+            const response = await fetch('/api/system-info');
+            const data = await response.json();
+
+            // --- 更新当前使用情况 ---
+            const current = data.current;
+            document.getElementById('cpu-usage-text').textContent = `${current.cpu_usage.toFixed(1)}%`;
+            document.getElementById('ram-usage-text').textContent = `${current.ram_usage_percent.toFixed(1)}% (${current.ram_usage_mb.toFixed(2)} MB / ${current.ram_total_mb.toFixed(2)} MB)`;
+            document.getElementById('disk-usage-text').textContent = `${current.disk_usage.percent}% (${current.disk_usage.used} / ${current.disk_usage.total})`;
+            document.getElementById('net-sent-text').textContent = `${(current.net_io.bytes_sent / 1024 / 1024).toFixed(2)} MB`;
+            document.getElementById('net-recv-text').textContent = `${(current.net_io.bytes_recv / 1024 / 1024).toFixed(2)} MB`;
+
+            // --- 更新24小时统计 ---
+            const stats = data.stats_24h;
+            document.getElementById('cpu-avg-24h').textContent = `${stats.cpu_avg.toFixed(1)}%`;
+            document.getElementById('cpu-peak-24h').textContent = `${stats.cpu_peak.toFixed(1)}%`;
+            document.getElementById('ram-avg-24h').textContent = `${stats.ram_avg_percent.toFixed(1)}% (${stats.ram_avg_mb.toFixed(2)} MB)`;
+            document.getElementById('ram-peak-24h').textContent = `${stats.ram_peak_percent.toFixed(1)}% (${stats.ram_peak_mb.toFixed(2)} MB)`;
+            document.getElementById('sample-count-24h').textContent = stats.sample_count;
+
+        } catch (error) {
+            console.error("Failed to fetch system info:", error);
+            // 将所有相关字段都设置为错误状态
+            const fieldsToUpdate = [
+                'cpu-usage-text', 'ram-usage-text', 'disk-usage-text',
+                'net-sent-text', 'net-recv-text', 'cpu-avg-24h',
+                'cpu-peak-24h', 'ram-avg-24h', 'ram-peak-24h'
+            ];
+            fieldsToUpdate.forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.textContent = 'Error';
+            });
+        }
+    };
+
+    const populateTimezones = () => {
+        const timezones = [];
+        for (let i = -12; i <= 12; i++) {
+            const offset = i >= 0 ? `+${i}` : `${i}`;
+            const tz = `Etc/GMT${i > 0 ? '-' : '+'}${Math.abs(i)}`;
+            timezones.push({value: tz, text: `UTC${offset}`});
+        }
+        
+        timezones.forEach(tz => {
+            const option = document.createElement('option');
+            option.value = tz.value;
+            option.textContent = tz.text;
+            if (tz.value === selectedTimezone) {
+                option.selected = true;
+            }
+            timezoneSelector.appendChild(option);
+        });
+    };
+
+    const setWallpaper = (url) => {
+        if (url) {
+            document.body.style.backgroundImage = `url('${url}')`;
+            localStorage.setItem('wallpaperUrl', url);
+        }
+    };
+
+    const loadWallpaper = () => {
+        const savedUrl = localStorage.getItem('wallpaperUrl');
+        if (savedUrl) {
+            setWallpaper(savedUrl);
+        }
+    };
+ 
+     // --- Initial setup and Event Listeners ---
+     const initializeDashboard = () => {
+        // 0. Load wallpaper
+        loadWallpaper();
+
+         // 1. Populate Timezones
+        populateTimezones();
+
+        // 2. Configure Date Picker
+        const today = new Date();
+        const sevenDaysAgo = new Date();
+        sevenDaysAgo.setDate(today.getDate() - 7);
+
+        logDatePicker.max = formatDateForPicker(today);
+        logDatePicker.min = formatDateForPicker(sevenDaysAgo);
+        logDatePicker.value = logDatePicker.max;
+
+        // 3. Add Event Listeners
+        logDatePicker.addEventListener('change', fetchBotLogs);
+        botRegexInput.addEventListener('keyup', renderBotLogs);
+        botLogLevelFilter.addEventListener('change', renderBotLogs);
+        webuiLogLevelFilter.addEventListener('change', renderWebUILogs);
+        webuiRegexInput.addEventListener('keyup', renderWebUILogs);
+        timezoneSelector.addEventListener('change', (event) => {
+            selectedTimezone = event.target.value;
+            localStorage.setItem('selectedTimezone', selectedTimezone);
+            renderBotLogs();
+        });
+
+        wallpaperBtn.addEventListener('click', () => {
+            const newWallpaperUrl = prompt("Please enter the URL for the new wallpaper:", localStorage.getItem('wallpaperUrl') || '');
+            if (newWallpaperUrl) {
+                setWallpaper(newWallpaperUrl);
+            }
+        });
+
+        restartBtn.addEventListener('click', () => sendControlCommand('restart'));
+        shutdownBtn.addEventListener('click', () => sendControlCommand('shutdown'));
+        
+        // Keep track of user scrolling
+        botLogContainer.addEventListener('scroll', () => {
+            // A small buffer is added to account for fractional pixel values
+            isBotLogScrolledToBottom = botLogContainer.scrollHeight - botLogContainer.clientHeight <= botLogContainer.scrollTop + 1;
+        });
+
+        webuiLogContainer.addEventListener('scroll', () => {
+            isWebUILogScrolledToBottom = webuiLogContainer.scrollHeight - webuiLogContainer.clientHeight <= webuiLogContainer.scrollTop + 1;
+        });
+
+        // 4. Initial Data Fetch and Polling
+        fetchBotStatus();
+        fetchBotLogs();
+        fetchWebUILogs();
+        setInterval(fetchBotStatus, 3000);
+        setInterval(fetchSystemInfo, 2000); // Fetch system info every 2 seconds
+        setInterval(fetchWebUILogs, 5000); // Fetch WebUI logs every 5 seconds
+        setInterval(() => {
+            // Only auto-refresh if viewing today's logs
+            if (logDatePicker.value === formatDateForPicker(new Date())) {
+                fetchBotLogs();
+            }
+        }, 2000);
+        fetchSystemInfo(); // Initial fetch
+    };
+
+    initializeDashboard();
+});
+</script>
+
+</body>
+</html>

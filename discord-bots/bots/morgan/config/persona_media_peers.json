@@ -1,0 +1,7 @@
+{
+  "allowed_guild_ids": [
+    "0"
+  ],
+  "control_channel_id": "0",
+  "trusted_bot_ids": []
+}

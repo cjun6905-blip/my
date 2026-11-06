@@ -1,0 +1,45 @@
+{
+  "tool": "built-in imagegen",
+  "reference": "./local-assets/file_00000000e0388230af1d7e94c5e61cdd.png",
+  "groups": [
+    {
+      "profile": "chiaki",
+      "sheet": "a",
+      "names": [
+        "ch_sleepy",
+        "ch_yawn",
+        "ch_game",
+        "ch_win"
+      ],
+      "reference": "./local-assets/file_00000000e0388230af1d7e94c5e61cdd.png",
+      "prompt": "Use case: stylized-concept. Asset type: Discord emoji sheet. Generate exactly FOUR separate polished anime chibi stickers in a clean 2-by-2 grid on GENUINE TRANSPARENT background. Input image is only the character identity reference; do not copy its circular background or original pose. Chiaki Nanami from Danganronpa, matching input identity: short light brown dusty-pink bob with straight bangs and outward curling tips, muted mauve-pink eyes, small pixel spaceship hair clip on viewer right, oversized dark charcoal hoodie with subtle dusty-pink trim and light collar underneath. Soft sleepy expression, gentle dependable gamer. Modest fully clothed, no animal ears. Consistent attractive chibi proportions about 2.5 heads tall, bust or waist up, readable faces at 128px, clean line art, softly shaded, elegant restrained colors. Upper left: sleepy half-lidded eyes, cuddling a small black-and-white bear plush. Upper right: little yawn with hand covering mouth. Lower left: intensely focused while holding a pink handheld game console. Lower right: a small victorious smile with one modest raised fist and console in the other hand. Keep four entire silhouettes inside their individual quadrants, all hats/hair/hands fully visible, with generous transparent outer margins and broad fully empty central horizontal and vertical gutters. No touching cells, no text, no speech bubbles, no frames, no circular backgrounds, no watermark, no checkerboard drawing. Only four expressions. Transparent alpha everywhere around each separate sticker.",
+      "source": "./local-assets/exec-46f512db-a4c0-446f-842e-ca557635f96e.png"
+    },
+    {
+      "profile": "chiaki",
+      "sheet": "b",
+      "names": [
+        "ch_smug",
+        "ch_pout",
+        "ch_puzzle",
+        "ch_blank"
+      ],
+      "reference": "./local-assets/file_00000000e0388230af1d7e94c5e61cdd.png",
+      "prompt": "Use case: stylized-concept. Asset type: Discord emoji sheet. Generate exactly FOUR separate polished anime chibi stickers in a clean 2-by-2 grid on GENUINE TRANSPARENT background. Input image is only the character identity reference; do not copy its circular background or original pose. Chiaki Nanami from Danganronpa, matching input identity: short light brown dusty-pink bob with straight bangs and outward curling tips, muted mauve-pink eyes, small pixel spaceship hair clip on viewer right, oversized dark charcoal hoodie with subtle dusty-pink trim and light collar underneath. Soft sleepy expression, gentle dependable gamer. Modest fully clothed, no animal ears. Consistent attractive chibi proportions about 2.5 heads tall, bust or waist up, readable faces at 128px, clean line art, softly shaded, elegant restrained colors. Upper left: quietly pleased small smug smile after a clever game move. Upper right: puffing cheeks after losing a round, holding pink handheld console. Lower left: thoughtful puzzled head tilt with fingertip to cheek. Lower right: endearingly blank slow-to-understand expression, round eyes. Keep four entire silhouettes inside their individual quadrants, all hats/hair/hands fully visible, with generous transparent outer margins and broad fully empty central horizontal and vertical gutters. No touching cells, no text, no speech bubbles, no frames, no circular backgrounds, no watermark, no checkerboard drawing. Only four expressions. Transparent alpha everywhere around each separate sticker.",
+      "source": "./local-assets/exec-98c0eb70-8247-464e-8dcc-53e4dbaee502.png"
+    },
+    {
+      "profile": "chiaki",
+      "sheet": "c",
+      "names": [
+        "ch_blush",
+        "ch_comfort",
+        "ch_plush",
+        "ch_goodnight"
+      ],
+      "reference": "./local-assets/file_00000000e0388230af1d7e94c5e61cdd.png",
+      "prompt": "Use case: stylized-concept. Asset type: Discord emoji sheet. Generate exactly FOUR separate polished anime chibi stickers in a clean 2-by-2 grid on GENUINE TRANSPARENT background. Input image is only the character identity reference; do not copy its circular background or original pose. Chiaki Nanami from Danganronpa, matching input identity: short light brown dusty-pink bob with straight bangs and outward curling tips, muted mauve-pink eyes, small pixel spaceship hair clip on viewer right, oversized dark charcoal hoodie with subtle dusty-pink trim and light collar underneath. Soft sleepy expression, gentle dependable gamer. Modest fully clothed, no animal ears. Consistent attractive chibi proportions about 2.5 heads tall, bust or waist up, readable faces at 128px, clean line art, softly shaded, elegant restrained colors. Upper left: faint shy blush and soft smile, hands together. Upper right: calm encouraging smile, open palm as if offering help. Lower left: hugging a small black-and-white bear plush close with contented closed eyes. Lower right: drowsy gentle goodnight wave. Keep four entire silhouettes inside their individual quadrants, all hats/hair/hands fully visible, with generous transparent outer margins and broad fully empty central horizontal and vertical gutters. No touching cells, no text, no speech bubbles, no frames, no circular backgrounds, no watermark, no checkerboard drawing. Only four expressions. Transparent alpha everywhere around each separate sticker.",
+      "source": "./local-assets/exec-0608e112-22fa-494c-82dd-d2b108a6570a.png"
+    }
+  ]
+}

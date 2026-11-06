@@ -1,0 +1,13 @@
+{
+  "tool": "image_gen",
+  "mode": "built-in",
+  "prompt": "Create ONE production sticker sprite sheet, exactly 4 columns by 6 rows (24 square cells), portrait 1024x1536. Every cell contains one distinct complete chibi bust sticker centered, generous 20px transparent gutters, nothing crosses cell boundaries, no text, no cell outlines, no background circles, no cast shadows, genuinely transparent background. Use the two supplied images ONLY as character appearance references; clean expressive anime chibi art with strong readable faces, consistent identity, fully clothed. Top three rows (12 stickers) ONLY Tokisaki Kurumi from reference 1: black long twin tails, red-black ruffled hair ribbons and headdress, red-black gothic dress, HER RIGHT eye red (viewer left), HER LEFT eye GOLD CLOCKFACE (viewer right). Top three rows in reading order expressions: gentle smile; playful teasing with finger near cheek; smug little grin; shy blush; puffed cheeks; thoughtful; surprised; tender concern; wink; holding tea; waving hello; sleepy goodnight. Bottom three rows (12 stickers) ONLY Violet Evergarden from reference 2: blonde braided updo with red ribbon and loose bangs, BLUE eyes, blue jacket over white blouse, emerald green brooch, gloved mechanical hands where visible. Bottom three rows reading order: calm; small warm smile; shy blush; puzzled tilt; thoughtful; surprised; caring; focused; writing a letter; holding tea; waving hello; sleepy goodnight. Preserve all hair, fingers and props inside each square. Friendly everyday expressions, no romance framing or sexual elements. Deliver actual alpha transparency, including empty gutters, not a checkerboard drawing.",
+  "references": [
+    "./local-assets/file_00000000a97c81f8a8a73745055119ce.png",
+    "./local-assets/file_00000000b0f481f5a934db189cd00884.png"
+  ],
+  "source_sheet": "./local-assets/exec-51f51f52-37ca-48d5-b6e8-cdae9eb006b9.png",
+  "layout": "4 columns x 6 rows; Kurumi top three; Violet bottom three",
+  "edits": [],
+  "derivatives": "Sharp: crop cells, trim transparent margins, contain on 512px alpha canvas, WebP full-size and PNG128 emoji"
+}

@@ -1,0 +1,39 @@
+{
+  "tool": "built-in imagegen",
+  "reference": "./local-assets/file_00000000bab4822faf4c707eb20d0765.png",
+  "groups": [
+    {
+      "sheet": "a",
+      "names": [
+        "tk_hello",
+        "tk_tease",
+        "tk_proud",
+        "tk_blush"
+      ],
+      "source": "./local-assets/exec-1554af5b-c738-44db-8b09-ea4b4f0009a7.png",
+      "prompt": "Use case: stylized-concept. Asset type: Discord character emoji sheet, exactly FOUR separate stickers in a clean 2-by-2 grid on genuine transparent background. Input image 1 is the CHARACTER IDENTITY reference, not a layout to copy. Depict Kuchiki Touko / 朽木冬子 from the supplied reference as a charming chibi with a refined, slightly mysterious yet playful personality. Preserve long straight nearly-black hair with layered bangs, pale skin, smoky gray-violet eyes, the slender silver butterfly-shaped hair clip on the viewer's left, dark charcoal modest school-uniform jacket over a crisp white collared shirt and a small black neck ribbon. No cleavage, fully clothed, no extra hair ornaments or animal ears. Clean polished anime chibi sticker rendering, soft muted cool gray and black palette, expressive readable eyes, consistent head shape and character identity in every cell, about 2.5 heads tall, bust or waist up, modest subtle blush. Upper-left: easygoing greeting, one raised hand, relaxed small smile. Upper-right: mischievous teasing, knowing sidelong eyes and a restrained playful grin, one fingertip beside her cheek. Lower-left: pleased with her clever idea, small proud closed-eye smile, hands folded. Lower-right: caught off guard by a sincere compliment, faint blush, eyes looking away, shy small smile. Keep all four whole silhouettes fully inside their individual quadrants with large transparent margins and completely empty center gutters; no hands, hair, shadow, or marks crossing cell boundaries. Four expressions only, no lettering, no speech bubbles, no text, no frame, no circular portrait background, no logo, no watermark. Genuinely transparent pixels around each sticker, not a drawn checkerboard. Square sheet, evenly sized quadrants."
+    },
+    {
+      "sheet": "b",
+      "names": [
+        "tk_think",
+        "tk_paint",
+        "tk_observe",
+        "tk_moon"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: Discord emoji sticker sheet, exactly FOUR distinct chibi bust or waist-up stickers in a regular 2x2 grid on genuine transparent pixels. Image 1 is the original Kuchiki Touko / 朽木冬子 character identity reference. Image 2 is the approved style and character consistency guide; create NEW expressions, do not repeat its poses. Match the same refined cute anime chibi style, proportions and muted charcoal cool gray palette. In every cell retain long straight almost-black hair with layered bangs, smoky gray-violet eyes, pale skin, the thin silver butterfly-shaped clip on the viewer's left, modest dark charcoal uniform jacket over white collared shirt, small black neck ribbon. No extra ornaments or ears, fully clothed. Top-left: thoughtful, chin resting lightly on one hand, curious focused eyes. Top-right: artist sketching, holding a small drawing sketchbook and a pencil, quietly absorbed and pleased, sketchbook shows only a simple leaf outline. Bottom-left: curious observing, leaning forward a little with bright attentive eyes and a subtle knowing smile. Bottom-right: tranquil slightly pensive moon-night mood, a tiny pale crescent floating beside her, head lightly tilted, soft introspective expression, not crying. Keep FOUR entire character silhouettes and their props inside separate quadrants, 12% transparent outer margins per cell and wide completely empty transparent center cross gutters. No strands, pencil, moon or hands crossing cell boundaries. No text, no letters, no speech bubbles, no watermark, no scenery, no full backgrounds, no round avatar frames, no checkerboard drawn into image. Real alpha transparency. Square sheet.",
+      "source": "./local-assets/exec-5b51e87f-df07-42a6-af66-6671e7ff324b.png"
+    },
+    {
+      "sheet": "c",
+      "names": [
+        "tk_pout",
+        "tk_shrug",
+        "tk_comfort",
+        "tk_sleep"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: exactly FOUR Discord chibi character stickers in a clean regular 2x2 grid, genuine transparent background. Image 1 is the original Kuchiki Touko / 朽木冬子 identity reference. Image 2 is the approved chibi rendering and style guide: match its head proportions, polished linework, gentle shading and character identity, but make NEW expressions. Long straight almost-black hair with layered bangs, pale skin, smoky gray-violet eyes, slender silver butterfly-shaped hair clip on the viewer's left, modest charcoal school-uniform jacket over a white collared shirt and small black neck ribbon. No animal ears or new ornaments. Refined, easygoing, curious and lightly mischievous girl, fully clothed and nonsexual. Upper-left: tiny cute pout, eyebrows slightly drawn, folded arms, playful mild displeasure rather than anger. Upper-right: easygoing shrug with palms up, a small amused exasperated smile. Lower-left: quietly reassuring, kind attentive eyes, a gentle smile, one hand extended a little to offer companionship; no extra person or physical embrace. Lower-right: sleepy with half-closed eyes and one hand covering a small yawn, relaxed hair, not lying in bed. Bust or waist up, exactly one character per quadrant. Generous 12 percent transparent margins inside EACH quadrant and wide completely empty transparent center cross gutters; keep all hair, hands, sleeves and any marks clear of the quadrant edges, no overlap, no clipping. No text, speech bubbles, lettering, frames, scenery, full background, watermark, or drawn checkerboard. Real alpha transparency. Muted charcoal black/cool gray palette and delicate subtle blush, square sheet.",
+      "source": "./local-assets/exec-612b0b11-2bc0-4463-8d95-242134c55c6b.png"
+    }
+  ]
+}

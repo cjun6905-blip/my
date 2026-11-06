@@ -1,0 +1,796 @@
+{
+  "profile": "naruto",
+  "python": "3.12.15",
+  "files": [
+    {
+      "path": "src/config.py",
+      "runtime_sha256": "45b140764c084ce29ed75a6aa555ada92f4f58d2dc64f2bab16297d28d599f70",
+      "published_sha256": "56fc2062813b56822b9e5b52f44da134139e7d81c85a016c13499ccc5f5b3d93",
+      "bytes": 4415,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "src/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/main.py",
+      "runtime_sha256": "c30267410ddd310fb44e99ba61e2c27f65920c5338e4962cc67958e1ad4fbae8",
+      "published_sha256": "c30267410ddd310fb44e99ba61e2c27f65920c5338e4962cc67958e1ad4fbae8",
+      "bytes": 5672,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/takeover_service.py",
+      "runtime_sha256": "58a802e8327542737a882622b7bc381d103f34c9da86d50627f410a670cc4a03",
+      "published_sha256": "58a802e8327542737a882622b7bc381d103f34c9da86d50627f410a670cc4a03",
+      "bytes": 5555,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/fleet_budget.py",
+      "runtime_sha256": "cb5e707cebda212a8e7ca753972b548488a3b5301bf534c10b8e8a8a275c1e6f",
+      "published_sha256": "cb5e707cebda212a8e7ca753972b548488a3b5301bf534c10b8e8a8a275c1e6f",
+      "bytes": 6597,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/bot_dialogue_service.py",
+      "runtime_sha256": "2b762f95df81f6c97e2161f71031a259d6e79b3f3424506890d656c2aaf4be8d",
+      "published_sha256": "2b762f95df81f6c97e2161f71031a259d6e79b3f3424506890d656c2aaf4be8d",
+      "bytes": 6869,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/vision.py",
+      "runtime_sha256": "d30fecc6ad0df2286f228c2325441e0b7058779ecd8a1f2b2e067d465cc00c6a",
+      "published_sha256": "d30fecc6ad0df2286f228c2325441e0b7058779ecd8a1f2b2e067d465cc00c6a",
+      "bytes": 10453,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/store.py",
+      "runtime_sha256": "14b3b0701681cd8806327ba19699efad4e260a26dcbc8b113b258249889fc355",
+      "published_sha256": "14b3b0701681cd8806327ba19699efad4e260a26dcbc8b113b258249889fc355",
+      "bytes": 3523,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/conversation.py",
+      "runtime_sha256": "80c750ba34a61898394e1d53d36dbd0a47164cac751a59b9d54c3898e4f8d2e2",
+      "published_sha256": "80c750ba34a61898394e1d53d36dbd0a47164cac751a59b9d54c3898e4f8d2e2",
+      "bytes": 13631,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/speech_decision.py",
+      "runtime_sha256": "695d2b6584a8e286d9f9a913941bc43e787c6cbb7d2beffeefb2176500e1b374",
+      "published_sha256": "695d2b6584a8e286d9f9a913941bc43e787c6cbb7d2beffeefb2176500e1b374",
+      "bytes": 8843,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/speech_replies.py",
+      "runtime_sha256": "21bc198e9d5d31846aabfe3e37d102b0dc1b15e988389282b76b04babf8600e7",
+      "published_sha256": "21bc198e9d5d31846aabfe3e37d102b0dc1b15e988389282b76b04babf8600e7",
+      "bytes": 6627,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/speech_generation.py",
+      "runtime_sha256": "fd7b4f57c59e686bd847a8ff6bcda02917cc96d1fe4f898764d299cf85a92f0a",
+      "published_sha256": "fd7b4f57c59e686bd847a8ff6bcda02917cc96d1fe4f898764d299cf85a92f0a",
+      "bytes": 17422,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/channel_policy.py",
+      "runtime_sha256": "8b54bcb54be0ce913e066d19ec063937cfa7ea80f617c66742015b9d1eb59153",
+      "published_sha256": "81eac87f853fa207f6f59ccd85cf1198ecdba26d40eb3714c613405f5b249c72",
+      "bytes": 1268,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "src/chat/services/temper.py",
+      "runtime_sha256": "20cf2aeac3d80407357a8ff9f7107ed16bdc0f337721405bc9ce4d36416bb65c",
+      "published_sha256": "20cf2aeac3d80407357a8ff9f7107ed16bdc0f337721405bc9ce4d36416bb65c",
+      "bytes": 3848,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/owner_proxy.py",
+      "runtime_sha256": "228c63362f7eda7ed631464b53e56c47cdcc41c8aeaba13937520f3695d5ae0c",
+      "published_sha256": "f88cb5efd20cbb716d78ffb0b174ea37e719ad8db082b5ab03a122b9deb087f0",
+      "bytes": 20664,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "src/chat/services/owner_profiles.py",
+      "runtime_sha256": "047ee00179403a8ec6c6b9d6717c758d70e32a1b52dbf230d263f3cf58944257",
+      "published_sha256": "bd6b8e2142fdff118288a2b6c3ab4dc637c06bcf581a44dd0001b3742f9a0978",
+      "bytes": 385,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "src/chat/services/source_delivery.py",
+      "runtime_sha256": "4276a83b4055ecf1174efc1dcd240ef2ed7207677ab787fd283096a604355f8a",
+      "published_sha256": "b58375ba8674a7d8364c1be50c915029cb6d716d403b89a8dd6af2c889c30579",
+      "bytes": 1731,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "src/chat/services/anger_service.py",
+      "runtime_sha256": "89e1618bb1b9a9b9d45dd1b2f1c71654174ebbfcbf64400c14136e2942454c7d",
+      "published_sha256": "89e1618bb1b9a9b9d45dd1b2f1c71654174ebbfcbf64400c14136e2942454c7d",
+      "bytes": 6304,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/web_research.py",
+      "runtime_sha256": "a27705083b9252a64f2804098bff6805e5a167da907c9f9c3e74eaacdcc6def2",
+      "published_sha256": "a27705083b9252a64f2804098bff6805e5a167da907c9f9c3e74eaacdcc6def2",
+      "bytes": 11652,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/image_decision.py",
+      "runtime_sha256": "015b8d44ad5801ca7b6183712e30b369cd9d91102d569eea485b107d71bbb881",
+      "published_sha256": "015b8d44ad5801ca7b6183712e30b369cd9d91102d569eea485b107d71bbb881",
+      "bytes": 3583,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/owner_controls.py",
+      "runtime_sha256": "f5c7a47d5d1656b1eaddde67ebaae8b1e87e504ef13985a660f499f3d74634b3",
+      "published_sha256": "f5c7a47d5d1656b1eaddde67ebaae8b1e87e504ef13985a660f499f3d74634b3",
+      "bytes": 8078,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/media_replies.py",
+      "runtime_sha256": "cf6971981cf504183b8f32a8e927601e09b481c29694391a42e4baade32d4cc4",
+      "published_sha256": "cf6971981cf504183b8f32a8e927601e09b481c29694391a42e4baade32d4cc4",
+      "bytes": 14660,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/image_status.py",
+      "runtime_sha256": "ef4424e5a031dca20f04b548f12adee7b70376d731796c62982af63629af31a2",
+      "published_sha256": "ef4424e5a031dca20f04b548f12adee7b70376d731796c62982af63629af31a2",
+      "bytes": 4817,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/owner_voice.py",
+      "runtime_sha256": "38723a0b344bc2d8c70e70a640b7409ac5b434d0cd10bacc6fac6b657440778a",
+      "published_sha256": "38723a0b344bc2d8c70e70a640b7409ac5b434d0cd10bacc6fac6b657440778a",
+      "bytes": 3564,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/image_generation.py",
+      "runtime_sha256": "891c5029e403b659e5e7b3c7f40a5361a54a784a5f2d6a284361886cf8ad29cc",
+      "published_sha256": "891c5029e403b659e5e7b3c7f40a5361a54a784a5f2d6a284361886cf8ad29cc",
+      "bytes": 26012,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/owner_expressions.py",
+      "runtime_sha256": "4333451c160f88e7c1271038454f38e68003fece63aec1e25ed6cc3fbd2050c5",
+      "published_sha256": "4333451c160f88e7c1271038454f38e68003fece63aec1e25ed6cc3fbd2050c5",
+      "bytes": 2606,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/ai/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/ai/service.py",
+      "runtime_sha256": "be001c02fcd2e76a91cd0a5a3c9abc0f2cbc14eb5c47d120faf50904a66c3604",
+      "published_sha256": "be001c02fcd2e76a91cd0a5a3c9abc0f2cbc14eb5c47d120faf50904a66c3604",
+      "bytes": 10536,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/ai/providers/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/ai/providers/base.py",
+      "runtime_sha256": "95670838da02d11a0f783fec9eeb9a67ad491cab9a51b84f8dae114462ed518e",
+      "published_sha256": "95670838da02d11a0f783fec9eeb9a67ad491cab9a51b84f8dae114462ed518e",
+      "bytes": 264,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/config/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/config/chat_config.py",
+      "runtime_sha256": "ba71d71b211e2c4260ce74e8a4fb6eae716dd505cdd9ff83caa996c99a9cf929",
+      "published_sha256": "ba71d71b211e2c4260ce74e8a4fb6eae716dd505cdd9ff83caa996c99a9cf929",
+      "bytes": 20,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/cogs/social_cog.py",
+      "runtime_sha256": "114720810fd9ee69ec0ccb15dc4a8d8e9e3cdfdc2e2c3e7059a3cf72ae1562e8",
+      "published_sha256": "114720810fd9ee69ec0ccb15dc4a8d8e9e3cdfdc2e2c3e7059a3cf72ae1562e8",
+      "bytes": 19806,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/cogs/takeover_cog.py",
+      "runtime_sha256": "25645441f1591ee12a03b43ee414ddad43ffbc03b12672289031f27f22bea73d",
+      "published_sha256": "25645441f1591ee12a03b43ee414ddad43ffbc03b12672289031f27f22bea73d",
+      "bytes": 13468,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/cogs/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/cogs/bot_dialogue_cog.py",
+      "runtime_sha256": "867ced1d2ab0749df6265e813c2d85769e9c7176d8cb17f630ec313a7002c492",
+      "published_sha256": "867ced1d2ab0749df6265e813c2d85769e9c7176d8cb17f630ec313a7002c492",
+      "bytes": 23238,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/cogs/settings_cog.py",
+      "runtime_sha256": "4a837063914ee7c5e92961cef2279f3956b32f46d3811365e194a5c6fbe06034",
+      "published_sha256": "4a837063914ee7c5e92961cef2279f3956b32f46d3811365e194a5c6fbe06034",
+      "bytes": 16704,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/cogs/owner_proxy_cog.py",
+      "runtime_sha256": "3b0ea83e57db91ef973c616bdbae35aed49375ccd82595f60736ba7dc950084a",
+      "published_sha256": "3b0ea83e57db91ef973c616bdbae35aed49375ccd82595f60736ba7dc950084a",
+      "bytes": 1527,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/chat_settings/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/chat_settings/services/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/chat_settings/services/chat_settings_service.py",
+      "runtime_sha256": "b7d93bc795fb85456a7bd21aafdc9ee93b15fab208acbdbf4535020a3cfda99f",
+      "published_sha256": "b7d93bc795fb85456a7bd21aafdc9ee93b15fab208acbdbf4535020a3cfda99f",
+      "bytes": 339,
+      "template_changes": []
+    },
+    {
+      "path": "config/violet_emotes.json",
+      "runtime_sha256": "fc4504b91962222b48dec5477076e66713047688394416cebfbdf73b0863e4ce",
+      "published_sha256": "b1105ce5bb43fade0709f6fe2cd5690c1e38e344b910d1bb09b1fedbf5125ba2",
+      "bytes": 949,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/artoria_emotes.json",
+      "runtime_sha256": "383c98fc505d36dd3532c91d0a8edc825f687375aa06d3185016d42187a12b64",
+      "published_sha256": "21625a5ffa305f7c065c81aa2601450e88afb27220a43731089007c81be4ab86",
+      "bytes": 907,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/web_research.json",
+      "runtime_sha256": "1793862ac9795aa2680d53b80837c2db3b1271b4c43c9498748f0ff4674d31df",
+      "published_sha256": "b9e6dd06b4069fc311d95e11603513d96635112f4e5625f01c5cebba799eb8fb",
+      "bytes": 44,
+      "template_changes": []
+    },
+    {
+      "path": "config/elaina_emotes.json",
+      "runtime_sha256": "68f68c5234220843a03c5e9d2cd67c49eadbd906e6ecfc7c9e2b948d3b556207",
+      "published_sha256": "6c84d5baf613fcba36ee4a12a77a4a55fb51117d2f54c54473d3c52835d3521b",
+      "bytes": 925,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/touko_emotes.json",
+      "runtime_sha256": "609acbdc959d36b4b66a8887eb5947f14be78896c61cf3f3bcf0846b5cbc5d24",
+      "published_sha256": "6f57bfb9f4d0768196f3c9f320095373d59bded6edbae3dec97187200d256102",
+      "bytes": 919,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/channel_policy.json",
+      "runtime_sha256": "109f1d3a77a05500efd9c2ce2e1bc7ed0015bad281822fc8d12d117d50640ee9",
+      "published_sha256": "d20cf6ee9a49f6a960b17c5f53eaf70d3ef34c84fa2bb3bcfbe48b79a8baf6eb",
+      "bytes": 53,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/origami_emotes.json",
+      "runtime_sha256": "a7d963ea0e8ba1b3693acf0f1c0980780501c9d03f9921602d86cf84d47eb0b4",
+      "published_sha256": "43fbf3ba33312e0b4c1b256a92012bbc600aa356ba98116965b714b41f4b6d8f",
+      "bytes": 907,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/kotori_emotes.json",
+      "runtime_sha256": "9618f0988e8fe3e37c5985dc1291fbc5659be180c7f371a94c5b7f099a594003",
+      "published_sha256": "3b34cc2ae88d47e8e7707669ae85e20540775ce832f9195f3a68d2845687891e",
+      "bytes": 915,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/yoshino_emotes.json",
+      "runtime_sha256": "49a2112daf9b63268149451772862e3f1a6eedd2aa90163b2ac233d1bbcc6f7d",
+      "published_sha256": "2da41d3c94ebf1c22821c87db6c8ca471bb5b6c18d310974bd96d1b1b6c2f1ec",
+      "bytes": 913,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/image_generation.json",
+      "runtime_sha256": "9729df09dca7d90fb673336e27a4f453e6e89249024469606d77d2470c31b96c",
+      "published_sha256": "7d1e8b1b66c20bc6517e809ea868645abb803111a21e272fe57c50e3170b4790",
+      "bytes": 9045,
+      "template_changes": [
+        "private_endpoint_template"
+      ]
+    },
+    {
+      "path": "config/setsuna_emotes.json",
+      "runtime_sha256": "5349b1720e6dcef458314c7dd00b294bc6b609d564fcccad620e40e46c3d2806",
+      "published_sha256": "4c29651d99f6c3a3870ce8ae4e13111037b56182496554c6d92a780716686ddd",
+      "bytes": 915,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/tohka_emotes.json",
+      "runtime_sha256": "4bf0d0c47555b0b7e8ef7cf45e55800c53cdcda1204d989b79b96bee86eb4b88",
+      "published_sha256": "f301f97b53629dae2c1021fda44c5b1fff6cc477352c836d9b61d0e6e7e4d911",
+      "bytes": 901,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/kazusa_emotes.json",
+      "runtime_sha256": "06841eece089bb192a86da514ccb2d89188e980565f755a59252362fbf0c2356",
+      "published_sha256": "3b49f466bdfbc56111cd6b5175c5c9a7d648d0e7bce5e6f786105cf98f6a14b2",
+      "bytes": 915,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/kurumi_emotes.json",
+      "runtime_sha256": "3e037c1da02a75e0b3f81227717bcfecab5709ea780948700731a3ab60955b24",
+      "published_sha256": "ffbcf38b1dc1db4b8b184cc1a8680e4524ea4c63331260dd02f3ba92a953131a",
+      "bytes": 941,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/chiaki_emotes.json",
+      "runtime_sha256": "773dd059f89fe3be5e6b48b62b23b5464c73887abf35b8689eb2ad4612780b77",
+      "published_sha256": "ec3f435f8d64ac5a47af124cf885f438f6b5edecfb3599a5fa96fc507280fdd9",
+      "bytes": 919,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/sasuke_emotes.json",
+      "runtime_sha256": "29419a1c2c79174525a29c4a473c9a3cc37e7c633e6dc4c039ab9a7760e310f1",
+      "published_sha256": "98c0cb34e8401742ba64adbb55eb2b5e705a9aa26518c92b77e66040a4610258",
+      "bytes": 921,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/bot_dialogue_peers.json",
+      "runtime_sha256": "1eebb796966d9591342e539bb85fe8ccc50a562286b305398d2d54938264d5cd",
+      "published_sha256": "c2c005cffd1132171f779f8c13c3dd768523341ddc1aaf623a41d0431b4cb3ca",
+      "bytes": 137,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/naruto_emotes.json",
+      "runtime_sha256": "a27c194c013a0a5f7d510572527e105c61b15ee2af3f56e2ed760157ef6ff3d4",
+      "published_sha256": "9fb3142ba6b7b60f834eee432eec073b5ae3688db7cf6ac2ed8c7512b132df90",
+      "bytes": 919,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/asuka_emotes.json",
+      "runtime_sha256": "e60e1c52236711ac1effe91ef6673daccffb2c02d714e26d27a2c71f8a2a4e97",
+      "published_sha256": "66bc38163197f0f286f3499a69b690026cbc0f5301a24b8056f430141a523ab5",
+      "bytes": 933,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/rei_emotes.json",
+      "runtime_sha256": "472b0976266ed7de134737181eeb1cec938e8ee2d4c99fa802dd12fd979cfa6e",
+      "published_sha256": "3ffb0b11bb7cd0273d20d8e99798cdcd4fe6a42ff101186677e58d092afe7478",
+      "bytes": 947,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/private_chat/kurumi.json",
+      "runtime_sha256": "8c5fc9e600c37bcaaa6ac44add6ae0b8e5f93caac2e169152e16b980d3573327",
+      "published_sha256": "c1194138f0d31cd11fc4bc5e5ac2eb7579e328a220ff19fedfacbc83847160c5",
+      "bytes": 162,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/personas/naruto.json",
+      "runtime_sha256": "a45cadb791bf4d3baaf18255a1bb128055f1c6f35940a839a22776808d050444",
+      "published_sha256": "af05437b551a2fb9273b1be3c4e45024d50d6e8b68d23685f9642d4f22e1a229",
+      "bytes": 5097,
+      "template_changes": [
+        "credential_or_personal_config_template",
+        "discord_identity_template",
+        "personal_handle_template"
+      ]
+    },
+    {
+      "path": "tests/test_owner_voice.py",
+      "runtime_sha256": "1436bcc9ca0bd29e936649ad0d69bee2cd85038a128167f95ef620e1156b87bd",
+      "published_sha256": "8cd70efbaf919a07e800168d46be681911f1ec91eea057e7ae60012d0af382c2",
+      "bytes": 6265,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "tests/test_owner_profiles.py",
+      "runtime_sha256": "840850ac64c7f86dc2bc79bd07358256e32178c42f8a087f88e1f53d0ec2ca46",
+      "published_sha256": "6d36a64d5a7df21388e6c5727a0a08a9eb6bd03b74d9eb8aa1e09b3cc2d36dad",
+      "bytes": 2602,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "tests/test_sasuke_proxy.py",
+      "runtime_sha256": "5d50c3c62889fe5ed02a5924f0d4d7f73a4b5bef0e1a24c10a47353c5e87850c",
+      "published_sha256": "8e24a35ae0276bdc51562ba1cae270c5f7c487ba96aac61641dc62c3e8945f18",
+      "bytes": 8214,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "tests/test_owner_expressions.py",
+      "runtime_sha256": "40aee66afff573742953236f22a90c6b5ca0161de28ca7b9b1839bb6ea37d459",
+      "published_sha256": "01d956257991e86346429780b6dd68f402fd1e9b1a055ef2777b41a4b586e9a7",
+      "bytes": 4060,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "tests/test_speech_unify.py",
+      "runtime_sha256": "401253eb1d23eb6ff5a23c106b1493f5206fbb9e8c43f92ef014de2c5b5fb9e5",
+      "published_sha256": "2d70c0e1bd19b6ac6551709fed199e6f2e26b0d781121b7a3ff7230714e22038",
+      "bytes": 13433,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "assets/naruto-emotes/avatar-upload.png",
+      "runtime_sha256": "9bd76e20fe4b694b26a363b37c5d026900b71b0be05a39b9e0af316964adfd5c",
+      "published_sha256": "9bd76e20fe4b694b26a363b37c5d026900b71b0be05a39b9e0af316964adfd5c",
+      "bytes": 413483,
+      "template_changes": []
+    },
+    {
+      "path": "assets/naruto-emotes/nt_hello.webp",
+      "runtime_sha256": "d03c078e2cbb8b1b720d16958bf3421ead665307df17508269cf42a9c1e80f1b",
+      "published_sha256": "d03c078e2cbb8b1b720d16958bf3421ead665307df17508269cf42a9c1e80f1b",
+      "bytes": 62340,
+      "template_changes": []
+    },
+    {
+      "path": "assets/naruto-emotes/nt_surprise.png",
+      "runtime_sha256": "763a62309f487954e8feef2365913340f3c80d2fa5f08f9e3921c66aa4bc1bb4",
+      "published_sha256": "763a62309f487954e8feef2365913340f3c80d2fa5f08f9e3921c66aa4bc1bb4",
+      "bytes": 19468,
+      "template_changes": []
+    },
+    {
+      "path": "assets/naruto-emotes/nt_pout.png",
+      "runtime_sha256": "a9f307b64b18d24216c44c80417c12ffedbb255f9a917e70fbcfbc7de964e2d7",
+      "published_sha256": "a9f307b64b18d24216c44c80417c12ffedbb255f9a917e70fbcfbc7de964e2d7",
+      "bytes": 17595,
+      "template_changes": []
+    },
+    {
+      "path": "assets/naruto-emotes/nt_hello.png",
+      "runtime_sha256": "b2040b89745e20052e40dcd2bd3cbde5ad3ee3a98633ed9baa73a86718cd675b",
+      "published_sha256": "b2040b89745e20052e40dcd2bd3cbde5ad3ee3a98633ed9baa73a86718cd675b",
+      "bytes": 18814,
+      "template_changes": []
+    },
+    {
+      "path": "assets/naruto-emotes/nt_think.png",
+      "runtime_sha256": "5d8c78e9d52792249fd18453313ff1ac0e9526a8dfe8accf636f42979080272e",
+      "published_sha256": "5d8c78e9d52792249fd18453313ff1ac0e9526a8dfe8accf636f42979080272e",
+      "bytes": 16117,
+      "template_changes": []
+    },
+    {
+      "path": "assets/naruto-emotes/nt_sleep.webp",
+      "runtime_sha256": "65ed66b70f215b173f32bab472c55d73303292c9af4a5f8452e78a35c0732e08",
+      "published_sha256": "65ed66b70f215b173f32bab472c55d73303292c9af4a5f8452e78a35c0732e08",
+      "bytes": 56408,
+      "template_changes": []
+    },
+    {
+      "path": "assets/naruto-emotes/manifest.json",
+      "runtime_sha256": "ec9fa32abd1456a002f277cce100baa72708adddabc432282bcb6e7d679c539f",
+      "published_sha256": "d8b1a34106143a60cf7c8e187d0ebd095a6233b99dff554d81fdfcde5d8abb87",
+      "bytes": 1581,
+      "template_changes": []
+    },
+    {
+      "path": "assets/naruto-emotes/sheet.png",
+      "runtime_sha256": "4321df94ddf80144493f3e639ed61f71c6344a3d729af50218c505009242a31f",
+      "published_sha256": "4321df94ddf80144493f3e639ed61f71c6344a3d729af50218c505009242a31f",
+      "bytes": 2484846,
+      "template_changes": []
+    },
+    {
+      "path": "assets/naruto-emotes/nt_blush.webp",
+      "runtime_sha256": "96c91e1ac512d50396c7247d54580bb512c8fd6e99b396a6b08d5c42de32875b",
+      "published_sha256": "96c91e1ac512d50396c7247d54580bb512c8fd6e99b396a6b08d5c42de32875b",
+      "bytes": 53074,
+      "template_changes": []
+    },
+    {
+      "path": "assets/naruto-emotes/nt_surprise.webp",
+      "runtime_sha256": "92eb529b902eff21c5879ce13059378045b5565b54f0127a0f38a67cb8607997",
+      "published_sha256": "92eb529b902eff21c5879ce13059378045b5565b54f0127a0f38a67cb8607997",
+      "bytes": 64884,
+      "template_changes": []
+    },
+    {
+      "path": "assets/naruto-emotes/nt_blush.png",
+      "runtime_sha256": "b3a960eba4ffbfa654e8a57203b64c7e446b7555c22c725c6cb15a31a2ac9114",
+      "published_sha256": "b3a960eba4ffbfa654e8a57203b64c7e446b7555c22c725c6cb15a31a2ac9114",
+      "bytes": 16562,
+      "template_changes": []
+    },
+    {
+      "path": "assets/naruto-emotes/nt_care.webp",
+      "runtime_sha256": "e71a24fb657dd4fb09f4bcbe15ab5bca00158e54e5ba302f883df35f243ddd49",
+      "published_sha256": "e71a24fb657dd4fb09f4bcbe15ab5bca00158e54e5ba302f883df35f243ddd49",
+      "bytes": 53910,
+      "template_changes": []
+    },
+    {
+      "path": "assets/naruto-emotes/PROMPTS.json",
+      "runtime_sha256": "a358d6b1d2f956037563a21d897a60b35139dfcbaaafea2dffaa8de4cbe2c0a8",
+      "published_sha256": "20c0eac8ffad86c8d2cc6783d676b7e8f880cb98524bb78fcff411fec5a62c74",
+      "bytes": 1785,
+      "template_changes": [
+        "credential_or_personal_config_template"
+      ]
+    },
+    {
+      "path": "assets/naruto-emotes/provenance.json",
+      "runtime_sha256": "3f51d7f3d28a4bbe9c09160333dbe280bea52c27cac7a493377e393f6063e679",
+      "published_sha256": "2dd5ea7667a2c1e361a006ed8cef8f8eb2d3ada8d0352909effd4462bd438518",
+      "bytes": 214,
+      "template_changes": [
+        "credential_or_personal_config_template"
+      ]
+    },
+    {
+      "path": "assets/naruto-emotes/nt_calm.webp",
+      "runtime_sha256": "2aff7c16fd9848a0c0de2d4646e8622b0a4a1af81a03aead9c6fd27ea0afead4",
+      "published_sha256": "2aff7c16fd9848a0c0de2d4646e8622b0a4a1af81a03aead9c6fd27ea0afead4",
+      "bytes": 60500,
+      "template_changes": []
+    },
+    {
+      "path": "assets/naruto-emotes/nt_ramen.png",
+      "runtime_sha256": "4463856e258e336c4fee9c981b614ba33c16e913dd7d6898a3a4f94034a9d0ef",
+      "published_sha256": "4463856e258e336c4fee9c981b614ba33c16e913dd7d6898a3a4f94034a9d0ef",
+      "bytes": 18493,
+      "template_changes": []
+    },
+    {
+      "path": "assets/naruto-emotes/nt_calm.png",
+      "runtime_sha256": "6b249cd986aa8f5e761840592d0ed43fd6bbe3944656593dff6eecbaccae85cf",
+      "published_sha256": "6b249cd986aa8f5e761840592d0ed43fd6bbe3944656593dff6eecbaccae85cf",
+      "bytes": 17888,
+      "template_changes": []
+    },
+    {
+      "path": "assets/naruto-emotes/nt_think.webp",
+      "runtime_sha256": "2727b19139f420cf372e0dd645744754c4e37e698f4d17379d84f9444c6d1cb0",
+      "published_sha256": "2727b19139f420cf372e0dd645744754c4e37e698f4d17379d84f9444c6d1cb0",
+      "bytes": 51668,
+      "template_changes": []
+    },
+    {
+      "path": "assets/naruto-emotes/nt_smile.png",
+      "runtime_sha256": "1b5ce85787d2cc536f0d3d4e961050b8e7ff279323f90fbd76abefddd2304f02",
+      "published_sha256": "1b5ce85787d2cc536f0d3d4e961050b8e7ff279323f90fbd76abefddd2304f02",
+      "bytes": 16673,
+      "template_changes": []
+    },
+    {
+      "path": "assets/naruto-emotes/nt_pout.webp",
+      "runtime_sha256": "68a09d7ecb999ecca4a5a07705b5623975332b3e10744417d3c0580d9a59f957",
+      "published_sha256": "68a09d7ecb999ecca4a5a07705b5623975332b3e10744417d3c0580d9a59f957",
+      "bytes": 57488,
+      "template_changes": []
+    },
+    {
+      "path": "assets/naruto-emotes/nt_ramen.webp",
+      "runtime_sha256": "b982342b361c813367344ba2374041e478a302dc2d0b630e32cd2025e7e84f69",
+      "published_sha256": "b982342b361c813367344ba2374041e478a302dc2d0b630e32cd2025e7e84f69",
+      "bytes": 60394,
+      "template_changes": []
+    },
+    {
+      "path": "assets/naruto-emotes/nt_smile.webp",
+      "runtime_sha256": "8deaef098940f31012783914033c71016d174fa5dd046207f6411b786869467f",
+      "published_sha256": "8deaef098940f31012783914033c71016d174fa5dd046207f6411b786869467f",
+      "bytes": 54278,
+      "template_changes": []
+    },
+    {
+      "path": "assets/naruto-emotes/nt_sleep.png",
+      "runtime_sha256": "fc2350431aeca19949107778a019d83a52a341fdf7aebbb3b01a9b0961049264",
+      "published_sha256": "fc2350431aeca19949107778a019d83a52a341fdf7aebbb3b01a9b0961049264",
+      "bytes": 18137,
+      "template_changes": []
+    },
+    {
+      "path": "assets/naruto-emotes/nt_cheer.png",
+      "runtime_sha256": "1d7b4adf371a20ba1c78a0ebcd62f757b1fa68f9cdad653f2f182cf2113395c5",
+      "published_sha256": "1d7b4adf371a20ba1c78a0ebcd62f757b1fa68f9cdad653f2f182cf2113395c5",
+      "bytes": 19093,
+      "template_changes": []
+    },
+    {
+      "path": "assets/naruto-emotes/nt_care.png",
+      "runtime_sha256": "cbcf7508044f63d757837068904d5cd53967ddbe5a522162b72b4317b712fd5f",
+      "published_sha256": "cbcf7508044f63d757837068904d5cd53967ddbe5a522162b72b4317b712fd5f",
+      "bytes": 16681,
+      "template_changes": []
+    },
+    {
+      "path": "assets/naruto-emotes/nt_resolve.png",
+      "runtime_sha256": "8dc0ceff8e1f31c7e45584c96ce610fa0c492c33a22a808d2d82f3436e38d4bc",
+      "published_sha256": "8dc0ceff8e1f31c7e45584c96ce610fa0c492c33a22a808d2d82f3436e38d4bc",
+      "bytes": 17174,
+      "template_changes": []
+    },
+    {
+      "path": "assets/naruto-emotes/nt_cheer.webp",
+      "runtime_sha256": "89c7659791cf897dd2d17f4e08aa248e696f1c2a97e3b9069aa419fbfc3fdb1f",
+      "published_sha256": "89c7659791cf897dd2d17f4e08aa248e696f1c2a97e3b9069aa419fbfc3fdb1f",
+      "bytes": 61854,
+      "template_changes": []
+    },
+    {
+      "path": "assets/naruto-emotes/nt_resolve.webp",
+      "runtime_sha256": "1a11868482103e08641be339cae296a25e2996d5671a9a6cc3acc92990ecb7ab",
+      "published_sha256": "1a11868482103e08641be339cae296a25e2996d5671a9a6cc3acc92990ecb7ab",
+      "bytes": 55490,
+      "template_changes": []
+    },
+    {
+      "path": "requirements.txt",
+      "runtime_sha256": "73a446bd7a1bc1366a9ffe35577a8cfc6b3b8c9a8470ac250d2b6b25cd0f3e28",
+      "published_sha256": "73a446bd7a1bc1366a9ffe35577a8cfc6b3b8c9a8470ac250d2b6b25cd0f3e28",
+      "bytes": 88,
+      "template_changes": []
+    },
+    {
+      "path": "NOTICE",
+      "runtime_sha256": "27d65df64f1334b3192476d94caeb91d91e7b7bc3c40a07e96c76a15567dabb6",
+      "published_sha256": "27d65df64f1334b3192476d94caeb91d91e7b7bc3c40a07e96c76a15567dabb6",
+      "bytes": 2160,
+      "template_changes": []
+    },
+    {
+      "path": "LICENSE",
+      "runtime_sha256": "ba6d12838cd61c2403880b4dfe655808ca8c53d235e023e7ad36bc2939383a89",
+      "published_sha256": "ba6d12838cd61c2403880b4dfe655808ca8c53d235e023e7ad36bc2939383a89",
+      "bytes": 33480,
+      "template_changes": []
+    }
+  ],
+  "runtime_configuration": "private identity and credential values replaced with templates; running databases are not included"
+}

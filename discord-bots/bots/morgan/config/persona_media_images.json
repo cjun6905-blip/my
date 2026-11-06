@@ -1,0 +1,58 @@
+{
+  "enabled_profiles": [
+    "morgan"
+  ],
+  "base_url": "https://images.example.invalid/v1",
+  "model": "gpt-6-luna",
+  "cooldown_seconds": 20,
+  "appearance": {
+    "morgan": "摩根（Morgan），银白色长发与侧辫，紫色眼睛，黑色尖棘金属王冠、黑色发带、蓝色菱形耳饰，黑白与深蓝色哥特女王服饰，黑色颈饰。保持当前头像中的银白发、紫眼和黑冠，不混为金发梣。可按明确场景换合适日常服装。"
+  },
+  "default_provider": "duck",
+  "providers": {
+    "duck": {
+      "name": "duck",
+      "base_url": "https://images.example.invalid/v1",
+      "model": "gpt-6-luna",
+      "credential_key": "IMAGEGEN_DUCK_API_KEY"
+    },
+    "cpa": {
+      "name": "CPA",
+      "base_url": "https://images.example.invalid/v1",
+      "model": "gpt-image-2.5",
+      "credential_key": "IMAGEGEN_CPA_API_KEY"
+    },
+    "cpa_sunburst": {
+      "name": "CPA Sunburst",
+      "base_url": "https://images.example.invalid/v1",
+      "model": "gpt-image-2.5-sunburst",
+      "credential_key": "IMAGEGEN_CPA_API_KEY"
+    },
+    "openai_2_6_sunburst": {
+      "name": "OpenAI",
+      "base_url": "https://api.openai.com/v1",
+      "model": "gpt-image-2.6-sunburst",
+      "credential_key": "IMAGEGEN_OPENAI_API_KEY"
+    },
+    "openai_2_6_flare": {
+      "name": "OpenAI",
+      "base_url": "https://api.openai.com/v1",
+      "model": "gpt-image-2.6-flare",
+      "credential_key": "IMAGEGEN_OPENAI_API_KEY"
+    },
+    "openai_2_5_sunburst": {
+      "name": "OpenAI",
+      "base_url": "https://api.openai.com/v1",
+      "model": "gpt-image-2.5-sunburst",
+      "credential_key": "IMAGEGEN_OPENAI_API_KEY"
+    },
+    "openai_2_5_flare": {
+      "name": "OpenAI",
+      "base_url": "https://api.openai.com/v1",
+      "model": "gpt-image-2.5-flare",
+      "credential_key": "IMAGEGEN_OPENAI_API_KEY"
+    }
+  },
+  "max_concurrency": 2,
+  "burst_limit": 8
+}

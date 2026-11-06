@@ -1,0 +1,62 @@
+[
+  {
+    "name": "vlt_calm",
+    "id": "0",
+    "code": "<:vlt_calm:0>"
+  },
+  {
+    "name": "vlt_smile",
+    "id": "0",
+    "code": "<:vlt_smile:0>"
+  },
+  {
+    "name": "vlt_blush",
+    "id": "0",
+    "code": "<:vlt_blush:0>"
+  },
+  {
+    "name": "vlt_puzzle",
+    "id": "0",
+    "code": "<:vlt_puzzle:0>"
+  },
+  {
+    "name": "vlt_think",
+    "id": "0",
+    "code": "<:vlt_think:0>"
+  },
+  {
+    "name": "vlt_surprise",
+    "id": "0",
+    "code": "<:vlt_surprise:0>"
+  },
+  {
+    "name": "vlt_care",
+    "id": "0",
+    "code": "<:vlt_care:0>"
+  },
+  {
+    "name": "vlt_focus",
+    "id": "0",
+    "code": "<:vlt_focus:0>"
+  },
+  {
+    "name": "vlt_letter",
+    "id": "0",
+    "code": "<:vlt_letter:0>"
+  },
+  {
+    "name": "vlt_tea",
+    "id": "0",
+    "code": "<:vlt_tea:0>"
+  },
+  {
+    "name": "vlt_hello",
+    "id": "0",
+    "code": "<:vlt_hello:0>"
+  },
+  {
+    "name": "vlt_goodnight",
+    "id": "0",
+    "code": "<:vlt_goodnight:0>"
+  }
+]

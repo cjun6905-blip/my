@@ -1,0 +1,146 @@
+[
+  {
+    "name": "el_smug",
+    "sheet": "a",
+    "cell": 1,
+    "full": "el_smug.webp",
+    "emoji": "emoji128/el_smug.png",
+    "emoji_bytes": 35362,
+    "grid_cut": {
+      "x": 652,
+      "y": 603
+    }
+  },
+  {
+    "name": "el_proud",
+    "sheet": "a",
+    "cell": 2,
+    "full": "el_proud.webp",
+    "emoji": "emoji128/el_proud.png",
+    "emoji_bytes": 36856,
+    "grid_cut": {
+      "x": 652,
+      "y": 603
+    }
+  },
+  {
+    "name": "el_tease",
+    "sheet": "a",
+    "cell": 3,
+    "full": "el_tease.webp",
+    "emoji": "emoji128/el_tease.png",
+    "emoji_bytes": 35456,
+    "grid_cut": {
+      "x": 652,
+      "y": 603
+    }
+  },
+  {
+    "name": "el_unimpressed",
+    "sheet": "a",
+    "cell": 4,
+    "full": "el_unimpressed.webp",
+    "emoji": "emoji128/el_unimpressed.png",
+    "emoji_bytes": 33925,
+    "grid_cut": {
+      "x": 652,
+      "y": 603
+    }
+  },
+  {
+    "name": "el_guilty",
+    "sheet": "b",
+    "cell": 1,
+    "full": "el_guilty.webp",
+    "emoji": "emoji128/el_guilty.png",
+    "emoji_bytes": 35488,
+    "grid_cut": {
+      "x": 656,
+      "y": 599
+    }
+  },
+  {
+    "name": "el_pout",
+    "sheet": "b",
+    "cell": 2,
+    "full": "el_pout.webp",
+    "emoji": "emoji128/el_pout.png",
+    "emoji_bytes": 35989,
+    "grid_cut": {
+      "x": 656,
+      "y": 599
+    }
+  },
+  {
+    "name": "el_coins",
+    "sheet": "b",
+    "cell": 3,
+    "full": "el_coins.webp",
+    "emoji": "emoji128/el_coins.png",
+    "emoji_bytes": 36202,
+    "grid_cut": {
+      "x": 656,
+      "y": 599
+    }
+  },
+  {
+    "name": "el_tea",
+    "sheet": "b",
+    "cell": 4,
+    "full": "el_tea.webp",
+    "emoji": "emoji128/el_tea.png",
+    "emoji_bytes": 38576,
+    "grid_cut": {
+      "x": 656,
+      "y": 599
+    }
+  },
+  {
+    "name": "el_think",
+    "sheet": "c",
+    "cell": 1,
+    "full": "el_think.webp",
+    "emoji": "emoji128/el_think.png",
+    "emoji_bytes": 30151,
+    "grid_cut": {
+      "x": 701,
+      "y": 561
+    }
+  },
+  {
+    "name": "el_blush",
+    "sheet": "c",
+    "cell": 2,
+    "full": "el_blush.webp",
+    "emoji": "emoji128/el_blush.png",
+    "emoji_bytes": 29766,
+    "grid_cut": {
+      "x": 701,
+      "y": 561
+    }
+  },
+  {
+    "name": "el_comfort",
+    "sheet": "c",
+    "cell": 3,
+    "full": "el_comfort.webp",
+    "emoji": "emoji128/el_comfort.png",
+    "emoji_bytes": 30651,
+    "grid_cut": {
+      "x": 701,
+      "y": 561
+    }
+  },
+  {
+    "name": "el_hello",
+    "sheet": "c",
+    "cell": 4,
+    "full": "el_hello.webp",
+    "emoji": "emoji128/el_hello.png",
+    "emoji_bytes": 33052,
+    "grid_cut": {
+      "x": 701,
+      "y": 561
+    }
+  }
+]

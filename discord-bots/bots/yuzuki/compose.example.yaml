@@ -1,0 +1,56 @@
+{
+  "services": {
+    "bot": {
+      "build": {
+        "context": ".",
+        "dockerfile": "Dockerfile.snapshot",
+        "args": {
+          "BASE_IMAGE": "speech-unify-yuzuki:20261103t101521z"
+        }
+      },
+      "image": "persona-yuzuki:source-snapshot",
+      "restart": "unless-stopped",
+      "init": true,
+      "env_file": [
+        ".env"
+      ],
+      "environment": {
+        "SPEECH_ENV_FILE": "/run/secrets/speech.env",
+        "TZ": "Asia/Shanghai",
+        "BOT_ENV_FILE": "/run/secrets/runtime.env",
+        "BOT_PROFILE": "yuzuki",
+        "FLEET_MODEL_CONCURRENCY": "4",
+        "FLEET_VISION_CONCURRENCY": "8",
+        "FLEET_BUDGET_DB": "/app/fleet/budget.db",
+        "GUILD_IDS": "${GUILD_IDS:-}",
+        "IMAGEGEN_ENV_FILE": "/run/secrets/imagegen.env"
+      },
+      "volumes": [
+        "./.runtime/config:/app/config:ro",
+        "./.runtime/data:/app/data",
+        "../../.runtime/fleet:/app/fleet",
+        "./.env:/run/secrets/runtime.env:ro",
+        "./.imagegen.env:/run/secrets/imagegen.env:ro",
+        "./.imagegen-openai.env:/run/secrets/openai-image.env:ro",
+        "./.speech.env:/run/secrets/speech.env:ro"
+      ],
+      "command": [
+        "python",
+        "-m",
+        "src.main"
+      ],
+      "mem_limit": 268435456,
+      "pids_limit": 64,
+      "read_only": true,
+      "tmpfs": [
+        "/tmp:rw,noexec,nosuid,size=32m"
+      ],
+      "cap_drop": [
+        "ALL"
+      ],
+      "security_opt": [
+        "no-new-privileges:true"
+      ]
+    }
+  }
+}

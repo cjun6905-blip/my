@@ -1,0 +1,10 @@
+{
+  "trusted_bot_ids": [],
+  "allowed_guild_ids": [
+    "0"
+  ],
+  "control_channel_id": "0",
+  "dialogue_operator_ids": [
+    "0"
+  ]
+}

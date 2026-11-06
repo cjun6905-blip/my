@@ -1,0 +1,38 @@
+{
+  "services": {
+    "bot": {
+      "build": {
+        "context": ".",
+        "dockerfile": "Dockerfile.snapshot",
+        "args": {
+          "BASE_IMAGE": "character-guidance-illya:media-20261023t142306z"
+        }
+      },
+      "image": "persona-illya:source-snapshot",
+      "restart": "unless-stopped",
+      "init": true,
+      "env_file": [
+        ".env"
+      ],
+      "environment": {
+        "IMAGEGEN_ENV_FILE": "/run/secrets/imagegen.env"
+      },
+      "volumes": [
+        "./.runtime/config:/app/config:ro",
+        "./.runtime/data:/app/data",
+        "../../.runtime/fleet:/app/fleet",
+        "./.env:/run/secrets/runtime.env:ro",
+        "./.imagegen.env:/run/secrets/imagegen.env:ro",
+        "./.imagegen-openai.env:/run/secrets/openai-image.env:ro",
+        "./.speech.env:/run/secrets/speech.env:ro"
+      ],
+      "command": [
+        "python3",
+        "-u",
+        "-m",
+        "src.main"
+      ],
+      "mem_limit": 805306368
+    }
+  }
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "name": "krm_smile",
+    "label": "微笑",
+    "sheet_row": 0,
+    "sheet_col": 0,
+    "full": "krm_smile.webp",
+    "emoji": "emoji128/krm_smile.png",
+    "emoji_bytes": 38924
+  },
+  {
+    "name": "krm_tease",
+    "label": "调皮",
+    "sheet_row": 0,
+    "sheet_col": 1,
+    "full": "krm_tease.webp",
+    "emoji": "emoji128/krm_tease.png",
+    "emoji_bytes": 40572
+  },
+  {
+    "name": "krm_smug",
+    "label": "得意",
+    "sheet_row": 0,
+    "sheet_col": 2,
+    "full": "krm_smug.webp",
+    "emoji": "emoji128/krm_smug.png",
+    "emoji_bytes": 39454
+  },
+  {
+    "name": "krm_blush",
+    "label": "害羞",
+    "sheet_row": 0,
+    "sheet_col": 3,
+    "full": "krm_blush.webp",
+    "emoji": "emoji128/krm_blush.png",
+    "emoji_bytes": 38551
+  },
+  {
+    "name": "krm_pout",
+    "label": "鼓脸",
+    "sheet_row": 1,
+    "sheet_col": 0,
+    "full": "krm_pout.webp",
+    "emoji": "emoji128/krm_pout.png",
+    "emoji_bytes": 40477
+  },
+  {
+    "name": "krm_think",
+    "label": "思考",
+    "sheet_row": 1,
+    "sheet_col": 1,
+    "full": "krm_think.webp",
+    "emoji": "emoji128/krm_think.png",
+    "emoji_bytes": 40802
+  },
+  {
+    "name": "krm_surprise",
+    "label": "惊讶",
+    "sheet_row": 1,
+    "sheet_col": 2,
+    "full": "krm_surprise.webp",
+    "emoji": "emoji128/krm_surprise.png",
+    "emoji_bytes": 42410
+  },
+  {
+    "name": "krm_care",
+    "label": "关心",
+    "sheet_row": 1,
+    "sheet_col": 3,
+    "full": "krm_care.webp",
+    "emoji": "emoji128/krm_care.png",
+    "emoji_bytes": 39247
+  },
+  {
+    "name": "krm_wink",
+    "label": "眨眼",
+    "sheet_row": 2,
+    "sheet_col": 0,
+    "full": "krm_wink.webp",
+    "emoji": "emoji128/krm_wink.png",
+    "emoji_bytes": 41508
+  },
+  {
+    "name": "krm_tea",
+    "label": "喝茶",
+    "sheet_row": 2,
+    "sheet_col": 1,
+    "full": "krm_tea.webp",
+    "emoji": "emoji128/krm_tea.png",
+    "emoji_bytes": 41777
+  },
+  {
+    "name": "krm_hello",
+    "label": "挥手",
+    "sheet_row": 2,
+    "sheet_col": 2,
+    "full": "krm_hello.webp",
+    "emoji": "emoji128/krm_hello.png",
+    "emoji_bytes": 42101
+  },
+  {
+    "name": "krm_goodnight",
+    "label": "晚安",
+    "sheet_row": 2,
+    "sheet_col": 3,
+    "full": "krm_goodnight.webp",
+    "emoji": "emoji128/krm_goodnight.png",
+    "emoji_bytes": 37472
+  }
+]

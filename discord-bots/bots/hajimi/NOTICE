@@ -1,0 +1,10 @@
+Whale Guidance Lite is an independent lightweight edition derived from Odysseia-Guidance.
+The finite Bot dialogue and administrator manual-control modules are adapted from
+the user's existing Odysseia-Guidance deployment. The parent project is licensed
+under AGPL-3.0; this edition retains that license and attribution.
+MaiBot's selective group participation and short conversational style informed
+the design. No MaiBot runtime code or dependencies are bundled.
+The whale persona is an original community-inspired interpretation; it is not an
+official DeepSeek identity. The thirty-six emotes were generated using built-in
+imagegen with a character reference supplied by the user. The original reference
+artwork is not bundled. Generation specifications accompany the emote assets.

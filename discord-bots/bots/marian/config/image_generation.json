@@ -1,0 +1,58 @@
+{
+  "enabled_profiles": [
+    "marian"
+  ],
+  "base_url": "https://images.example.invalid/v1",
+  "model": "gpt-6-luna",
+  "cooldown_seconds": 20,
+  "appearance": {
+    "marian": "玛丽安（Marian / マリアン，《胜利女神：NIKKE》），以用户提供的头像为固定参考：深灰蓝偏紫的长发与柔顺刘海、清澈蓝色眼睛，白色带蓝边的兜帽/头纱，侧边小巧的金色十字形金属发饰，黑色颈带、白蓝配色的未来感服装。温柔而可靠，成熟自然的女性形象，非幼儿化Q版；保持发色、蓝眼、头纱与饰件识别特征。按用户明确场景可换合适的完整日常服饰。默认非性化、平视半身或中景的精致二次元插画。"
+  },
+  "default_provider": "cpa_sunburst",
+  "providers": {
+    "duck": {
+      "name": "duck",
+      "base_url": "https://images.example.invalid/v1",
+      "model": "gpt-6-luna",
+      "credential_key": "IMAGEGEN_DUCK_API_KEY"
+    },
+    "cpa": {
+      "name": "CPA",
+      "base_url": "https://images.example.invalid/v1",
+      "model": "gpt-image-2.5",
+      "credential_key": "IMAGEGEN_CPA_API_KEY"
+    },
+    "cpa_sunburst": {
+      "name": "CPA Sunburst",
+      "base_url": "https://images.example.invalid/v1",
+      "model": "gpt-image-2.5-sunburst",
+      "credential_key": "IMAGEGEN_CPA_API_KEY"
+    },
+    "openai_2_6_sunburst": {
+      "name": "OpenAI",
+      "base_url": "https://api.openai.com/v1",
+      "model": "gpt-image-2.6-sunburst",
+      "credential_key": "IMAGEGEN_OPENAI_API_KEY"
+    },
+    "openai_2_6_flare": {
+      "name": "OpenAI",
+      "base_url": "https://api.openai.com/v1",
+      "model": "gpt-image-2.6-flare",
+      "credential_key": "IMAGEGEN_OPENAI_API_KEY"
+    },
+    "openai_2_5_sunburst": {
+      "name": "OpenAI",
+      "base_url": "https://api.openai.com/v1",
+      "model": "gpt-image-2.5-sunburst",
+      "credential_key": "IMAGEGEN_OPENAI_API_KEY"
+    },
+    "openai_2_5_flare": {
+      "name": "OpenAI",
+      "base_url": "https://api.openai.com/v1",
+      "model": "gpt-image-2.5-flare",
+      "credential_key": "IMAGEGEN_OPENAI_API_KEY"
+    }
+  },
+  "max_concurrency": 2,
+  "burst_limit": 8
+}

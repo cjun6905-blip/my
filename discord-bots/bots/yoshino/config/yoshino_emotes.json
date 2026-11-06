@@ -1,0 +1,62 @@
+[
+  {
+    "name": "ys_hello",
+    "id": "0",
+    "code": "<:ys_hello:0>"
+  },
+  {
+    "name": "ys_smile",
+    "id": "0",
+    "code": "<:ys_smile:0>"
+  },
+  {
+    "name": "ys_think",
+    "id": "0",
+    "code": "<:ys_think:0>"
+  },
+  {
+    "name": "ys_blush",
+    "id": "0",
+    "code": "<:ys_blush:0>"
+  },
+  {
+    "name": "ys_worry",
+    "id": "0",
+    "code": "<:ys_worry:0>"
+  },
+  {
+    "name": "ys_tea",
+    "id": "0",
+    "code": "<:ys_tea:0>"
+  },
+  {
+    "name": "ys_cheer",
+    "id": "0",
+    "code": "<:ys_cheer:0>"
+  },
+  {
+    "name": "ys_pout",
+    "id": "0",
+    "code": "<:ys_pout:0>"
+  },
+  {
+    "name": "ys_hug",
+    "id": "0",
+    "code": "<:ys_hug:0>"
+  },
+  {
+    "name": "ys_sleep",
+    "id": "0",
+    "code": "<:ys_sleep:0>"
+  },
+  {
+    "name": "ys_surprise",
+    "id": "0",
+    "code": "<:ys_surprise:0>"
+  },
+  {
+    "name": "ys_thanks",
+    "id": "0",
+    "code": "<:ys_thanks:0>"
+  }
+]

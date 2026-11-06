@@ -1,0 +1,62 @@
+[
+  {
+    "name": "lv_smile",
+    "id": "0",
+    "code": "<:lv_smile:0>"
+  },
+  {
+    "name": "lv_blush",
+    "id": "0",
+    "code": "<:lv_blush:0>"
+  },
+  {
+    "name": "lv_pout",
+    "id": "0",
+    "code": "<:lv_pout:0>"
+  },
+  {
+    "name": "lv_smug",
+    "id": "0",
+    "code": "<:lv_smug:0>"
+  },
+  {
+    "name": "lv_think",
+    "id": "0",
+    "code": "<:lv_think:0>"
+  },
+  {
+    "name": "lv_surprise",
+    "id": "0",
+    "code": "<:lv_surprise:0>"
+  },
+  {
+    "name": "lv_welcome",
+    "id": "0",
+    "code": "<:lv_welcome:0>"
+  },
+  {
+    "name": "lv_goodnight",
+    "id": "0",
+    "code": "<:lv_goodnight:0>"
+  },
+  {
+    "name": "lv_hello",
+    "id": "0",
+    "code": "<:lv_hello:0>"
+  },
+  {
+    "name": "lv_bashful",
+    "id": "0",
+    "code": "<:lv_bashful:0>"
+  },
+  {
+    "name": "lv_wink",
+    "id": "0",
+    "code": "<:lv_wink:0>"
+  },
+  {
+    "name": "lv_competitive",
+    "id": "0",
+    "code": "<:lv_competitive:0>"
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "name": "asu_smug",
+    "label": "得意",
+    "sheet_row": 0,
+    "sheet_col": 0,
+    "full": "asu_smug.webp",
+    "emoji": "emoji128/asu_smug.png",
+    "emoji_bytes": 36791
+  },
+  {
+    "name": "asu_brow",
+    "label": "挑眉",
+    "sheet_row": 0,
+    "sheet_col": 1,
+    "full": "asu_brow.webp",
+    "emoji": "emoji128/asu_brow.png",
+    "emoji_bytes": 36247
+  },
+  {
+    "name": "asu_angry",
+    "label": "小生气",
+    "sheet_row": 0,
+    "sheet_col": 2,
+    "full": "asu_angry.webp",
+    "emoji": "emoji128/asu_angry.png",
+    "emoji_bytes": 36645
+  },
+  {
+    "name": "asu_pout",
+    "label": "鼓脸",
+    "sheet_row": 0,
+    "sheet_col": 3,
+    "full": "asu_pout.webp",
+    "emoji": "emoji128/asu_pout.png",
+    "emoji_bytes": 35796
+  },
+  {
+    "name": "asu_blush",
+    "label": "害羞",
+    "sheet_row": 1,
+    "sheet_col": 0,
+    "full": "asu_blush.webp",
+    "emoji": "emoji128/asu_blush.png",
+    "emoji_bytes": 37294
+  },
+  {
+    "name": "asu_tsun",
+    "label": "嘴硬",
+    "sheet_row": 1,
+    "sheet_col": 1,
+    "full": "asu_tsun.webp",
+    "emoji": "emoji128/asu_tsun.png",
+    "emoji_bytes": 37751
+  },
+  {
+    "name": "asu_think",
+    "label": "思考",
+    "sheet_row": 1,
+    "sheet_col": 2,
+    "full": "asu_think.webp",
+    "emoji": "emoji128/asu_think.png",
+    "emoji_bytes": 37966
+  },
+  {
+    "name": "asu_surprise",
+    "label": "惊讶",
+    "sheet_row": 1,
+    "sheet_col": 3,
+    "full": "asu_surprise.webp",
+    "emoji": "emoji128/asu_surprise.png",
+    "emoji_bytes": 38527
+  },
+  {
+    "name": "asu_cheer",
+    "label": "加油",
+    "sheet_row": 2,
+    "sheet_col": 0,
+    "full": "asu_cheer.webp",
+    "emoji": "emoji128/asu_cheer.png",
+    "emoji_bytes": 39827
+  },
+  {
+    "name": "asu_care",
+    "label": "关心",
+    "sheet_row": 2,
+    "sheet_col": 1,
+    "full": "asu_care.webp",
+    "emoji": "emoji128/asu_care.png",
+    "emoji_bytes": 39241
+  },
+  {
+    "name": "asu_sigh",
+    "label": "无语",
+    "sheet_row": 2,
+    "sheet_col": 2,
+    "full": "asu_sigh.webp",
+    "emoji": "emoji128/asu_sigh.png",
+    "emoji_bytes": 35797
+  },
+  {
+    "name": "asu_hello",
+    "label": "挥手",
+    "sheet_row": 2,
+    "sheet_col": 3,
+    "full": "asu_hello.webp",
+    "emoji": "emoji128/asu_hello.png",
+    "emoji_bytes": 38843
+  }
+]

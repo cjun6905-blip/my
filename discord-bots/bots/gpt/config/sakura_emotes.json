@@ -1,0 +1,74 @@
+[
+  {
+    "name": "sk_hello",
+    "id": "0",
+    "code": "<:sk_hello:0>",
+    "created": true
+  },
+  {
+    "name": "sk_smug",
+    "id": "0",
+    "code": "<:sk_smug:0>",
+    "created": true
+  },
+  {
+    "name": "sk_blush",
+    "id": "0",
+    "code": "<:sk_blush:0>",
+    "created": true
+  },
+  {
+    "name": "sk_pout",
+    "id": "0",
+    "code": "<:sk_pout:0>",
+    "created": true
+  },
+  {
+    "name": "sk_think",
+    "id": "0",
+    "code": "<:sk_think:0>",
+    "created": true
+  },
+  {
+    "name": "sk_teach",
+    "id": "0",
+    "code": "<:sk_teach:0>",
+    "created": true
+  },
+  {
+    "name": "sk_comfort",
+    "id": "0",
+    "code": "<:sk_comfort:0>",
+    "created": true
+  },
+  {
+    "name": "sk_cheer",
+    "id": "0",
+    "code": "<:sk_cheer:0>",
+    "created": true
+  },
+  {
+    "name": "sk_sigh",
+    "id": "0",
+    "code": "<:sk_sigh:0>",
+    "created": true
+  },
+  {
+    "name": "sk_worry",
+    "id": "0",
+    "code": "<:sk_worry:0>",
+    "created": true
+  },
+  {
+    "name": "sk_hug",
+    "id": "0",
+    "code": "<:sk_hug:0>",
+    "created": true
+  },
+  {
+    "name": "sk_sleep",
+    "id": "0",
+    "code": "<:sk_sleep:0>",
+    "created": true
+  }
+]

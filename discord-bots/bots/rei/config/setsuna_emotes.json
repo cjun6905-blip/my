@@ -1,0 +1,62 @@
+[
+  {
+    "name": "st_hello",
+    "id": "0",
+    "code": "<:st_hello:0>"
+  },
+  {
+    "name": "st_smile",
+    "id": "0",
+    "code": "<:st_smile:0>"
+  },
+  {
+    "name": "st_music",
+    "id": "0",
+    "code": "<:st_music:0>"
+  },
+  {
+    "name": "st_blush",
+    "id": "0",
+    "code": "<:st_blush:0>"
+  },
+  {
+    "name": "st_pout",
+    "id": "0",
+    "code": "<:st_pout:0>"
+  },
+  {
+    "name": "st_think",
+    "id": "0",
+    "code": "<:st_think:0>"
+  },
+  {
+    "name": "st_care",
+    "id": "0",
+    "code": "<:st_care:0>"
+  },
+  {
+    "name": "st_cheer",
+    "id": "0",
+    "code": "<:st_cheer:0>"
+  },
+  {
+    "name": "st_sleep",
+    "id": "0",
+    "code": "<:st_sleep:0>"
+  },
+  {
+    "name": "st_surprise",
+    "id": "0",
+    "code": "<:st_surprise:0>"
+  },
+  {
+    "name": "st_gift",
+    "id": "0",
+    "code": "<:st_gift:0>"
+  },
+  {
+    "name": "st_relax",
+    "id": "0",
+    "code": "<:st_relax:0>"
+  }
+]

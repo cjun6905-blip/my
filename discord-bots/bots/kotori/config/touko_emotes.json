@@ -1,0 +1,62 @@
+[
+  {
+    "name": "tk_hello",
+    "id": "0",
+    "code": "<:tk_hello:0>"
+  },
+  {
+    "name": "tk_tease",
+    "id": "0",
+    "code": "<:tk_tease:0>"
+  },
+  {
+    "name": "tk_proud",
+    "id": "0",
+    "code": "<:tk_proud:0>"
+  },
+  {
+    "name": "tk_blush",
+    "id": "0",
+    "code": "<:tk_blush:0>"
+  },
+  {
+    "name": "tk_think",
+    "id": "0",
+    "code": "<:tk_think:0>"
+  },
+  {
+    "name": "tk_paint",
+    "id": "0",
+    "code": "<:tk_paint:0>"
+  },
+  {
+    "name": "tk_observe",
+    "id": "0",
+    "code": "<:tk_observe:0>"
+  },
+  {
+    "name": "tk_moon",
+    "id": "0",
+    "code": "<:tk_moon:0>"
+  },
+  {
+    "name": "tk_pout",
+    "id": "0",
+    "code": "<:tk_pout:0>"
+  },
+  {
+    "name": "tk_shrug",
+    "id": "0",
+    "code": "<:tk_shrug:0>"
+  },
+  {
+    "name": "tk_comfort",
+    "id": "0",
+    "code": "<:tk_comfort:0>"
+  },
+  {
+    "name": "tk_sleep",
+    "id": "0",
+    "code": "<:tk_sleep:0>"
+  }
+]

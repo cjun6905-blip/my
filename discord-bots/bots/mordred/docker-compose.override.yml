@@ -1,0 +1,63 @@
+services:
+  bot_app:
+    image: emsign-fixed/odysseia_niang_chaldea_web:20261022t043610z
+    mem_limit: 768m
+
+  db:
+    image: emsign-fixed/odysseia_niang_db:20261022t043610z
+    mem_limit: 640m
+
+  searxng:
+    image: emsign-fixed/odysseia_niang_searxng:20261022t043610z
+    mem_limit: 256m
+
+  blackjack_web:
+    image: emsign-fixed/odysseia_niang_chaldea_web:20261022t043610z
+    mem_limit: 256m
+    ports:
+      - "127.0.0.1:18000:8000"
+
+  guidance_web:
+    image: emsign-fixed/odysseia_niang_chaldea_web:20261022t043610z
+    mem_limit: 256m
+    ports:
+      - "127.0.0.1:18001:8001"
+
+  lobby_web:
+    image: emsign-fixed/odysseia_niang_chaldea_web:20261022t043610z
+    mem_limit: 256m
+    ports:
+      - "127.0.0.1:18002:8002"
+
+  diary_web:
+    image: emsign-fixed/odysseia_niang_chaldea_web:20261022t043610z
+    mem_limit: 256m
+    ports:
+      - "127.0.0.1:18003:8003"
+
+  admin_web:
+    image: emsign-fixed/odysseia_niang_chaldea_web:20261022t043610z
+    mem_limit: 256m
+    ports:
+      - "127.0.0.1:18004:8004"
+
+  chaldea_web:
+    image: emsign-fixed/odysseia_niang_chaldea_web:20261022t043610z
+    container_name: ${INSTANCE_NAME:-odysseia}_chaldea_web
+    restart: unless-stopped
+    mem_limit: 128m
+    env_file:
+      - .env
+    environment:
+      - RUNNING_IN_DOCKER=true
+    ports:
+      - "127.0.0.1:18005:8005"
+    volumes:
+      - .:/app
+      - ./data:/app/data
+    networks:
+      - bot_network
+    command: uvicorn src.chat.features.chaldea.web.app:app --host 0.0.0.0 --port 8005
+    depends_on:
+      db:
+        condition: service_healthy

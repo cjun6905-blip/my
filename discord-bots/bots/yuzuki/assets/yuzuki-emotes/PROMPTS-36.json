@@ -1,0 +1,196 @@
+{
+  "mode": "built-in image_gen",
+  "groups": [
+    [
+      [
+        "laugh",
+        "开怀笑",
+        "eyes closed laughing, hand near mouth"
+      ],
+      [
+        "tease",
+        "捂嘴偷笑",
+        "mischievous secret giggle behind one hand"
+      ],
+      [
+        "wink",
+        "俏皮眨眼",
+        "one eye winking with playful smile"
+      ],
+      [
+        "skeptic",
+        "半信半疑",
+        "one eyebrow raised, doubtful tilted head"
+      ],
+      [
+        "deadpan",
+        "无奈吐槽",
+        "half-lidded eyes and small flat unimpressed mouth"
+      ],
+      [
+        "sulk",
+        "小别扭",
+        "crossed arms, a little stubborn pout"
+      ],
+      [
+        "fluster",
+        "慌乱害羞",
+        "flustered blush, hands raised beside cheeks"
+      ],
+      [
+        "peek",
+        "探头",
+        "curious peek around an imaginary edge, no physical wall"
+      ],
+      [
+        "oops",
+        "小失误",
+        "startled awkward smile with tiny sweat drop"
+      ],
+      [
+        "sorry",
+        "认真道歉",
+        "gently bowed head with apologetic hands together"
+      ],
+      [
+        "relief",
+        "松口气",
+        "relaxed relieved face, hand to chest"
+      ],
+      [
+        "grateful",
+        "感谢",
+        "warm grateful smile with palms together"
+      ]
+    ],
+    [
+      [
+        "cheer",
+        "握拳打气",
+        "two small encouraging fists, bright determined eyes"
+      ],
+      [
+        "proudwork",
+        "烘焙成功",
+        "proudly holding a tray of two small cookies"
+      ],
+      [
+        "mixing",
+        "搅拌面糊",
+        "focused whisking a small baking bowl"
+      ],
+      [
+        "taste",
+        "试吃",
+        "tasting a tiny cookie with a pleased thoughtful expression"
+      ],
+      [
+        "tea",
+        "递茶",
+        "offering one small teacup with both hands"
+      ],
+      [
+        "book",
+        "看书",
+        "reading a small open book"
+      ],
+      [
+        "shell",
+        "分享贝壳",
+        "showing a tiny seashell in palm"
+      ],
+      [
+        "rain",
+        "听雨",
+        "listening with a gentle smile, three tiny floating blue raindrop motifs"
+      ],
+      [
+        "seabreeze",
+        "海风",
+        "hair softly swept by breeze, holding headband"
+      ],
+      [
+        "music",
+        "听音乐",
+        "wearing small headphones, quietly enjoying music"
+      ],
+      [
+        "game",
+        "玩掌机",
+        "holding a small handheld game console with focused happy face"
+      ],
+      [
+        "idea",
+        "想到啦",
+        "raised index finger and delighted spark of an idea"
+      ]
+    ],
+    [
+      [
+        "goodmorning",
+        "早安",
+        "small morning stretch, lively gentle smile"
+      ],
+      [
+        "welcome",
+        "欢迎回来",
+        "open hands with warm welcoming smile"
+      ],
+      [
+        "bye",
+        "挥手告别",
+        "gentle wave goodbye, softly wistful smile"
+      ],
+      [
+        "wait",
+        "等一下",
+        "one open palm raised, earnest wait-a-moment expression"
+      ],
+      [
+        "agree",
+        "认真点头",
+        "nodding yes with small confident smile"
+      ],
+      [
+        "nope",
+        "轻轻摇头",
+        "politely shaking head no with small crossed forearms"
+      ],
+      [
+        "confused",
+        "疑惑",
+        "head tilted, puzzled wide eyes"
+      ],
+      [
+        "sleepy",
+        "困倦",
+        "yawning with one hand over mouth, drowsy eyes"
+      ],
+      [
+        "dizzy",
+        "迷糊",
+        "small spiral eyes, comically dizzy, hands to temples"
+      ],
+      [
+        "sad",
+        "小委屈",
+        "slight watery eyes, restrained pout, no distress scene"
+      ],
+      [
+        "angry",
+        "小生气",
+        "puffed cheeks, small annoyed brow, hands on hips"
+      ],
+      [
+        "comfort",
+        "递手帕",
+        "kind concerned smile, offering a folded handkerchief"
+      ]
+    ]
+  ],
+  "prompts": [
+    "Use case: illustration-story. Asset type: production transparent Discord chibi expression sticker sheet. Use the first reference solely as the appearance reference of Yuzuki and the second reference for the established chibi drawing style. Exactly 12 independent bust stickers arranged in exactly 4 columns and 3 rows, 1536x1024 landscape. Each sticker fully contained within its own equal grid cell, separated by generous EMPTY transparent gutters at least 20 pixels. No objects or hair touching another cell. Preserve milk-tea brown long wavy hair, wide dark brown headband, golden amber eyes, light long-sleeved blouse and dark neck ribbon; 17-year-old original cooking-club student, fully clothed ordinary everyday expressions. Cute soft detailed anime chibi with clear readable faces, consistent identity and scale, clean contours. True transparent alpha background, no colored backdrop, no frames, no lettering, no labels, no logos, no unnecessary speech bubbles. Each head-and-shoulders must fit with margins so fingers, hair and props do not get cropped. Row-major ordered expressions: 1. eyes closed laughing, hand near mouth; 2. mischievous secret giggle behind one hand; 3. one eye winking with playful smile; 4. one eyebrow raised, doubtful tilted head; 5. half-lidded eyes and small flat unimpressed mouth; 6. crossed arms, a little stubborn pout; 7. flustered blush, hands raised beside cheeks; 8. curious peek around an imaginary edge, no physical wall; 9. startled awkward smile with tiny sweat drop; 10. gently bowed head with apologetic hands together; 11. relaxed relieved face, hand to chest; 12. warm grateful smile with palms together. This is sheet 1 of a matching set.",
+    "Use case: illustration-story. Asset type: production transparent Discord chibi expression sticker sheet. Use the first reference solely as the appearance reference of Yuzuki and the second reference for the established chibi drawing style. Exactly 12 independent bust stickers arranged in exactly 4 columns and 3 rows, 1536x1024 landscape. Each sticker fully contained within its own equal grid cell, separated by generous EMPTY transparent gutters at least 20 pixels. No objects or hair touching another cell. Preserve milk-tea brown long wavy hair, wide dark brown headband, golden amber eyes, light long-sleeved blouse and dark neck ribbon; 17-year-old original cooking-club student, fully clothed ordinary everyday expressions. Cute soft detailed anime chibi with clear readable faces, consistent identity and scale, clean contours. True transparent alpha background, no colored backdrop, no frames, no lettering, no labels, no logos, no unnecessary speech bubbles. Each head-and-shoulders must fit with margins so fingers, hair and props do not get cropped. Row-major ordered expressions: 1. two small encouraging fists, bright determined eyes; 2. proudly holding a tray of two small cookies; 3. focused whisking a small baking bowl; 4. tasting a tiny cookie with a pleased thoughtful expression; 5. offering one small teacup with both hands; 6. reading a small open book; 7. showing a tiny seashell in palm; 8. listening with a gentle smile, three tiny floating blue raindrop motifs; 9. hair softly swept by breeze, holding headband; 10. wearing small headphones, quietly enjoying music; 11. holding a small handheld game console with focused happy face; 12. raised index finger and delighted spark of an idea. This is sheet 2 of a matching set.",
+    "Use case: illustration-story. Asset type: production transparent Discord chibi expression sticker sheet. Use the first reference solely as the appearance reference of Yuzuki and the second reference for the established chibi drawing style. Exactly 12 independent bust stickers arranged in exactly 4 columns and 3 rows, 1536x1024 landscape. Each sticker fully contained within its own equal grid cell, separated by generous EMPTY transparent gutters at least 20 pixels. No objects or hair touching another cell. Preserve milk-tea brown long wavy hair, wide dark brown headband, golden amber eyes, light long-sleeved blouse and dark neck ribbon; 17-year-old original cooking-club student, fully clothed ordinary everyday expressions. Cute soft detailed anime chibi with clear readable faces, consistent identity and scale, clean contours. True transparent alpha background, no colored backdrop, no frames, no lettering, no labels, no logos, no unnecessary speech bubbles. Each head-and-shoulders must fit with margins so fingers, hair and props do not get cropped. Row-major ordered expressions: 1. small morning stretch, lively gentle smile; 2. open hands with warm welcoming smile; 3. gentle wave goodbye, softly wistful smile; 4. one open palm raised, earnest wait-a-moment expression; 5. nodding yes with small confident smile; 6. politely shaking head no with small crossed forearms; 7. head tilted, puzzled wide eyes; 8. yawning with one hand over mouth, drowsy eyes; 9. small spiral eyes, comically dizzy, hands to temples; 10. slight watery eyes, restrained pout, no distress scene; 11. puffed cheeks, small annoyed brow, hands on hips; 12. kind concerned smile, offering a folded handkerchief. This is sheet 3 of a matching set."
+  ]
+}

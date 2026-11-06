@@ -1,0 +1,146 @@
+[
+  {
+    "name": "ch_sleepy",
+    "sheet": "a",
+    "cell": 1,
+    "full": "ch_sleepy.webp",
+    "emoji": "emoji128/ch_sleepy.png",
+    "emoji_bytes": 30395,
+    "grid_cut": {
+      "x": 654,
+      "y": 607
+    }
+  },
+  {
+    "name": "ch_yawn",
+    "sheet": "a",
+    "cell": 2,
+    "full": "ch_yawn.webp",
+    "emoji": "emoji128/ch_yawn.png",
+    "emoji_bytes": 29637,
+    "grid_cut": {
+      "x": 654,
+      "y": 607
+    }
+  },
+  {
+    "name": "ch_game",
+    "sheet": "a",
+    "cell": 3,
+    "full": "ch_game.webp",
+    "emoji": "emoji128/ch_game.png",
+    "emoji_bytes": 30156,
+    "grid_cut": {
+      "x": 654,
+      "y": 607
+    }
+  },
+  {
+    "name": "ch_win",
+    "sheet": "a",
+    "cell": 4,
+    "full": "ch_win.webp",
+    "emoji": "emoji128/ch_win.png",
+    "emoji_bytes": 29481,
+    "grid_cut": {
+      "x": 654,
+      "y": 607
+    }
+  },
+  {
+    "name": "ch_smug",
+    "sheet": "b",
+    "cell": 1,
+    "full": "ch_smug.webp",
+    "emoji": "emoji128/ch_smug.png",
+    "emoji_bytes": 29604,
+    "grid_cut": {
+      "x": 670,
+      "y": 598
+    }
+  },
+  {
+    "name": "ch_pout",
+    "sheet": "b",
+    "cell": 2,
+    "full": "ch_pout.webp",
+    "emoji": "emoji128/ch_pout.png",
+    "emoji_bytes": 29619,
+    "grid_cut": {
+      "x": 670,
+      "y": 598
+    }
+  },
+  {
+    "name": "ch_puzzle",
+    "sheet": "b",
+    "cell": 3,
+    "full": "ch_puzzle.webp",
+    "emoji": "emoji128/ch_puzzle.png",
+    "emoji_bytes": 31787,
+    "grid_cut": {
+      "x": 670,
+      "y": 598
+    }
+  },
+  {
+    "name": "ch_blank",
+    "sheet": "b",
+    "cell": 4,
+    "full": "ch_blank.webp",
+    "emoji": "emoji128/ch_blank.png",
+    "emoji_bytes": 27632,
+    "grid_cut": {
+      "x": 670,
+      "y": 598
+    }
+  },
+  {
+    "name": "ch_blush",
+    "sheet": "c",
+    "cell": 1,
+    "full": "ch_blush.webp",
+    "emoji": "emoji128/ch_blush.png",
+    "emoji_bytes": 27874,
+    "grid_cut": {
+      "x": 656,
+      "y": 598
+    }
+  },
+  {
+    "name": "ch_comfort",
+    "sheet": "c",
+    "cell": 2,
+    "full": "ch_comfort.webp",
+    "emoji": "emoji128/ch_comfort.png",
+    "emoji_bytes": 31151,
+    "grid_cut": {
+      "x": 656,
+      "y": 598
+    }
+  },
+  {
+    "name": "ch_plush",
+    "sheet": "c",
+    "cell": 3,
+    "full": "ch_plush.webp",
+    "emoji": "emoji128/ch_plush.png",
+    "emoji_bytes": 28414,
+    "grid_cut": {
+      "x": 656,
+      "y": 598
+    }
+  },
+  {
+    "name": "ch_goodnight",
+    "sheet": "c",
+    "cell": 4,
+    "full": "ch_goodnight.webp",
+    "emoji": "emoji128/ch_goodnight.png",
+    "emoji_bytes": 31570,
+    "grid_cut": {
+      "x": 656,
+      "y": 598
+    }
+  }
+]

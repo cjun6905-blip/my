@@ -1,0 +1,62 @@
+[
+  {
+    "name": "ch_sleepy",
+    "id": "0",
+    "code": "<:ch_sleepy:0>"
+  },
+  {
+    "name": "ch_yawn",
+    "id": "0",
+    "code": "<:ch_yawn:0>"
+  },
+  {
+    "name": "ch_game",
+    "id": "0",
+    "code": "<:ch_game:0>"
+  },
+  {
+    "name": "ch_win",
+    "id": "0",
+    "code": "<:ch_win:0>"
+  },
+  {
+    "name": "ch_smug",
+    "id": "0",
+    "code": "<:ch_smug:0>"
+  },
+  {
+    "name": "ch_pout",
+    "id": "0",
+    "code": "<:ch_pout:0>"
+  },
+  {
+    "name": "ch_puzzle",
+    "id": "0",
+    "code": "<:ch_puzzle:0>"
+  },
+  {
+    "name": "ch_blank",
+    "id": "0",
+    "code": "<:ch_blank:0>"
+  },
+  {
+    "name": "ch_blush",
+    "id": "0",
+    "code": "<:ch_blush:0>"
+  },
+  {
+    "name": "ch_comfort",
+    "id": "0",
+    "code": "<:ch_comfort:0>"
+  },
+  {
+    "name": "ch_plush",
+    "id": "0",
+    "code": "<:ch_plush:0>"
+  },
+  {
+    "name": "ch_goodnight",
+    "id": "0",
+    "code": "<:ch_goodnight:0>"
+  }
+]

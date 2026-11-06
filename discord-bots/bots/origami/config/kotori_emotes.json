@@ -1,0 +1,62 @@
+[
+  {
+    "name": "kt_hello",
+    "id": "0",
+    "code": "<:kt_hello:0>"
+  },
+  {
+    "name": "kt_smile",
+    "id": "0",
+    "code": "<:kt_smile:0>"
+  },
+  {
+    "name": "kt_think",
+    "id": "0",
+    "code": "<:kt_think:0>"
+  },
+  {
+    "name": "kt_blush",
+    "id": "0",
+    "code": "<:kt_blush:0>"
+  },
+  {
+    "name": "kt_pout",
+    "id": "0",
+    "code": "<:kt_pout:0>"
+  },
+  {
+    "name": "kt_plan",
+    "id": "0",
+    "code": "<:kt_plan:0>"
+  },
+  {
+    "name": "kt_candy",
+    "id": "0",
+    "code": "<:kt_candy:0>"
+  },
+  {
+    "name": "kt_worry",
+    "id": "0",
+    "code": "<:kt_worry:0>"
+  },
+  {
+    "name": "kt_cheer",
+    "id": "0",
+    "code": "<:kt_cheer:0>"
+  },
+  {
+    "name": "kt_sleep",
+    "id": "0",
+    "code": "<:kt_sleep:0>"
+  },
+  {
+    "name": "kt_surprise",
+    "id": "0",
+    "code": "<:kt_surprise:0>"
+  },
+  {
+    "name": "kt_gift",
+    "id": "0",
+    "code": "<:kt_gift:0>"
+  }
+]

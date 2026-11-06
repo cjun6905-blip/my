@@ -1,0 +1,62 @@
+[
+  {
+    "name": "krm_smile",
+    "id": "0",
+    "code": "<:krm_smile:0>"
+  },
+  {
+    "name": "krm_tease",
+    "id": "0",
+    "code": "<:krm_tease:0>"
+  },
+  {
+    "name": "krm_smug",
+    "id": "0",
+    "code": "<:krm_smug:0>"
+  },
+  {
+    "name": "krm_blush",
+    "id": "0",
+    "code": "<:krm_blush:0>"
+  },
+  {
+    "name": "krm_pout",
+    "id": "0",
+    "code": "<:krm_pout:0>"
+  },
+  {
+    "name": "krm_think",
+    "id": "0",
+    "code": "<:krm_think:0>"
+  },
+  {
+    "name": "krm_surprise",
+    "id": "0",
+    "code": "<:krm_surprise:0>"
+  },
+  {
+    "name": "krm_care",
+    "id": "0",
+    "code": "<:krm_care:0>"
+  },
+  {
+    "name": "krm_wink",
+    "id": "0",
+    "code": "<:krm_wink:0>"
+  },
+  {
+    "name": "krm_tea",
+    "id": "0",
+    "code": "<:krm_tea:0>"
+  },
+  {
+    "name": "krm_hello",
+    "id": "0",
+    "code": "<:krm_hello:0>"
+  },
+  {
+    "name": "krm_goodnight",
+    "id": "0",
+    "code": "<:krm_goodnight:0>"
+  }
+]

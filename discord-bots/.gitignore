@@ -1,0 +1,13 @@
+**/.runtime/
+**/.env
+**/.*.env
+**/*.pem
+**/*.key
+**/*.p12
+**/*.pfx
+**/*.db
+**/*.sqlite*
+**/*.log
+**/__pycache__/
+**/.venv/
+**/node_modules/

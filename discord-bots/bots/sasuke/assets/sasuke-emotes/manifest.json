@@ -1,0 +1,74 @@
+[
+  {
+    "name": "ss_hello",
+    "label": "含蓄挥手、招呼",
+    "image": "ss_hello.webp",
+    "emoji": "emoji128/ss_hello.png"
+  },
+  {
+    "name": "ss_smile",
+    "label": "轻轻微笑、认可",
+    "image": "ss_smile.webp",
+    "emoji": "emoji128/ss_smile.png"
+  },
+  {
+    "name": "ss_think",
+    "label": "思考、认真",
+    "image": "ss_think.webp",
+    "emoji": "emoji128/ss_think.png"
+  },
+  {
+    "name": "ss_blush",
+    "label": "害羞、移开目光",
+    "image": "ss_blush.webp",
+    "emoji": "emoji128/ss_blush.png"
+  },
+  {
+    "name": "ss_pout",
+    "label": "生气、抱臂、小别扭",
+    "image": "ss_pout.webp",
+    "emoji": "emoji128/ss_pout.png"
+  },
+  {
+    "name": "ss_care",
+    "label": "递茶、关心、安慰",
+    "image": "ss_care.webp",
+    "emoji": "emoji128/ss_care.png"
+  },
+  {
+    "name": "ss_approve",
+    "label": "拇指、认可、鼓励",
+    "image": "ss_approve.webp",
+    "emoji": "emoji128/ss_approve.png"
+  },
+  {
+    "name": "ss_resolve",
+    "label": "坚定、守护同伴",
+    "image": "ss_resolve.webp",
+    "emoji": "emoji128/ss_resolve.png"
+  },
+  {
+    "name": "ss_sleep",
+    "label": "困倦、休息、晚安",
+    "image": "ss_sleep.webp",
+    "emoji": "emoji128/ss_sleep.png"
+  },
+  {
+    "name": "ss_surprise",
+    "label": "惊讶、意外",
+    "image": "ss_surprise.webp",
+    "emoji": "emoji128/ss_surprise.png"
+  },
+  {
+    "name": "ss_gift",
+    "label": "送礼物、感谢",
+    "image": "ss_gift.webp",
+    "emoji": "emoji128/ss_gift.png"
+  },
+  {
+    "name": "ss_calm",
+    "label": "樱花、平静、陪伴",
+    "image": "ss_calm.webp",
+    "emoji": "emoji128/ss_calm.png"
+  }
+]

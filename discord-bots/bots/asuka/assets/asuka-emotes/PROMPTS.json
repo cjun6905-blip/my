@@ -1,0 +1,8 @@
+{
+  "tool": "imagegen",
+  "reference": "./local-assets/avatar-original.png",
+  "source_sheet": "./local-assets/exec-e3525b41-decb-4b4e-ba81-cab47eae838d.png",
+  "layout": "4 columns x6 rows; Asuka top3; Rei bottom3",
+  "generation_prompt": "See work/eva-deploy/EMOTE-PROMPTS.json",
+  "background_edit": "Remove colored background and provide true alpha, preserve 24 cells"
+}

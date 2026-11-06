@@ -1,0 +1,146 @@
+[
+  {
+    "name": "tk_hello",
+    "sheet": "a",
+    "cell": 1,
+    "full": "tk_hello.webp",
+    "emoji": "emoji128/tk_hello.png",
+    "emoji_bytes": 29301,
+    "grid_cut": {
+      "x": 630,
+      "y": 627
+    }
+  },
+  {
+    "name": "tk_tease",
+    "sheet": "a",
+    "cell": 2,
+    "full": "tk_tease.webp",
+    "emoji": "emoji128/tk_tease.png",
+    "emoji_bytes": 28716,
+    "grid_cut": {
+      "x": 630,
+      "y": 627
+    }
+  },
+  {
+    "name": "tk_proud",
+    "sheet": "a",
+    "cell": 3,
+    "full": "tk_proud.webp",
+    "emoji": "emoji128/tk_proud.png",
+    "emoji_bytes": 28487,
+    "grid_cut": {
+      "x": 630,
+      "y": 627
+    }
+  },
+  {
+    "name": "tk_blush",
+    "sheet": "a",
+    "cell": 4,
+    "full": "tk_blush.webp",
+    "emoji": "emoji128/tk_blush.png",
+    "emoji_bytes": 27545,
+    "grid_cut": {
+      "x": 630,
+      "y": 627
+    }
+  },
+  {
+    "name": "tk_think",
+    "sheet": "b",
+    "cell": 1,
+    "full": "tk_think.webp",
+    "emoji": "emoji128/tk_think.png",
+    "emoji_bytes": 28903,
+    "grid_cut": {
+      "x": 627,
+      "y": 627
+    }
+  },
+  {
+    "name": "tk_paint",
+    "sheet": "b",
+    "cell": 2,
+    "full": "tk_paint.webp",
+    "emoji": "emoji128/tk_paint.png",
+    "emoji_bytes": 31100,
+    "grid_cut": {
+      "x": 627,
+      "y": 627
+    }
+  },
+  {
+    "name": "tk_observe",
+    "sheet": "b",
+    "cell": 3,
+    "full": "tk_observe.webp",
+    "emoji": "emoji128/tk_observe.png",
+    "emoji_bytes": 28761,
+    "grid_cut": {
+      "x": 627,
+      "y": 627
+    }
+  },
+  {
+    "name": "tk_moon",
+    "sheet": "b",
+    "cell": 4,
+    "full": "tk_moon.webp",
+    "emoji": "emoji128/tk_moon.png",
+    "emoji_bytes": 28656,
+    "grid_cut": {
+      "x": 627,
+      "y": 627
+    }
+  },
+  {
+    "name": "tk_pout",
+    "sheet": "c",
+    "cell": 1,
+    "full": "tk_pout.webp",
+    "emoji": "emoji128/tk_pout.png",
+    "emoji_bytes": 30936,
+    "grid_cut": {
+      "x": 638,
+      "y": 627
+    }
+  },
+  {
+    "name": "tk_shrug",
+    "sheet": "c",
+    "cell": 2,
+    "full": "tk_shrug.webp",
+    "emoji": "emoji128/tk_shrug.png",
+    "emoji_bytes": 31280,
+    "grid_cut": {
+      "x": 638,
+      "y": 627
+    }
+  },
+  {
+    "name": "tk_comfort",
+    "sheet": "c",
+    "cell": 3,
+    "full": "tk_comfort.webp",
+    "emoji": "emoji128/tk_comfort.png",
+    "emoji_bytes": 28156,
+    "grid_cut": {
+      "x": 638,
+      "y": 627
+    }
+  },
+  {
+    "name": "tk_sleep",
+    "sheet": "c",
+    "cell": 4,
+    "full": "tk_sleep.webp",
+    "emoji": "emoji128/tk_sleep.png",
+    "emoji_bytes": 28552,
+    "grid_cut": {
+      "x": 638,
+      "y": 627
+    }
+  }
+]

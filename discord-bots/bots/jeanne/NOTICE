@@ -1,0 +1,22 @@
+Whale Guidance Lite is an independent lightweight edition derived from Odysseia-Guidance.
+The finite Bot dialogue and administrator manual-control modules are adapted from
+the user's existing Odysseia-Guidance deployment. The parent project is licensed
+under AGPL-3.0; this edition retains that license and attribution.
+MaiBot's selective group participation and short conversational style informed
+the design. No MaiBot runtime code or dependencies are bundled.
+The whale persona is an original community-inspired interpretation; it is not an
+official DeepSeek identity. The thirty-six emotes were generated using built-in
+imagegen with a character reference supplied by the user. The original reference
+artwork is not bundled. Generation specifications accompany the emote assets.
+
+Classbrain persona and the twenty-one default emotes and avatar come from
+Echoer009/Odysseia-Guidance (AGPL-3.0), commit a5b44fd14d14c5739da7dd6f955ce6f6d1dab163.
+The default SYSTEM_PROMPT is adapted only for truthful lightweight capabilities
+and this edition's validated emoji output protocol. Original prompt, source
+manifest, artwork URLs and license accompany assets/classbrain-emotes/.
+
+Sakura profile is unofficial Haruno Sakura fan roleplay. Avatar supplied by the user; twelve chibi emotes generated using built-in imagegen from that reference. Prompt provenance accompanies assets/sakura-emotes/PROMPTS.json.
+
+Jalter profile is unofficial Jeanne Alter fan roleplay. Avatar supplied by the user; twelve chibi emotes generated using built-in imagegen from that reference. Prompt provenance accompanies assets/jalter-emotes/PROMPTS.json.
+
+Jeanne profile is unofficial Jeanne Ruler fan roleplay. Avatar supplied by the user; twelve chibi emotes generated using built-in imagegen from that reference. Prompt provenance accompanies assets/jeanne-emotes/PROMPTS.json.

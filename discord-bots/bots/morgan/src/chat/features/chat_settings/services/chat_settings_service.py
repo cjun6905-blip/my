@@ -1,0 +1,880 @@
+import logging
+
+import discord
+from typing import Optional, Dict, Any, List, TYPE_CHECKING
+from datetime import datetime, timedelta, timezone
+from src.chat.utils.database import chat_db_manager
+from src.chat.services.event_service import event_service
+from src.chat.features.odysseia_coin.service.coin_service import coin_service
+
+if TYPE_CHECKING:
+    from src.chat.services.ai.config.models import ModelConfig
+
+log = logging.getLogger(__name__)
+
+
+class ChatSettingsService:
+    """封装聊天设置相关的所有业务逻辑。"""
+
+    def __init__(self):
+        self.db_manager = chat_db_manager
+
+    async def set_entity_settings(
+        self,
+        guild_id: int,
+        entity_id: int,
+        entity_type: str,
+        is_chat_enabled: Optional[bool],
+        cooldown_seconds: Optional[int],
+        cooldown_duration: Optional[int],
+        cooldown_limit: Optional[int],
+    ):
+        """设置频道或分类的聊天配置，支持所有CD模式。"""
+        await self.db_manager.update_channel_config(
+            guild_id=guild_id,
+            entity_id=entity_id,
+            entity_type=entity_type,
+            is_chat_enabled=is_chat_enabled,
+            cooldown_seconds=cooldown_seconds,
+            cooldown_duration=cooldown_duration,
+            cooldown_limit=cooldown_limit,
+        )
+
+    async def get_guild_settings(self, guild_id: int) -> Dict[str, Any]:
+        """获取一个服务器的完整聊天设置，包括全局和所有特定频道的配置。"""
+        global_config_row = await self.db_manager.get_global_chat_config(guild_id)
+        channel_configs_rows = await self.db_manager.get_all_channel_configs_for_guild(
+            guild_id
+        )
+        warm_up_channels = await self.db_manager.get_warm_up_channels(guild_id)
+
+        # api_fallback_enabled 从全局设置读取
+        api_fallback_value = await self.db_manager.get_global_setting(
+            "api_fallback_enabled"
+        )
+        api_fallback_enabled = (
+            api_fallback_value.lower() in ("true", "1", "yes", "on")
+            if api_fallback_value is not None
+            else True
+        )
+
+        feeding_image_value = await self.db_manager.get_global_setting(
+            "feeding_image_enabled"
+        )
+        feeding_image_enabled = (
+            feeding_image_value.lower() in ("true", "1", "yes", "on")
+            if feeding_image_value is not None
+            else True
+        )
+
+        feeding_command_value = await self.db_manager.get_global_setting(
+            "feeding_command_enabled"
+        )
+        feeding_command_enabled = (
+            feeding_command_value.lower() in ("true", "1", "yes", "on")
+            if feeding_command_value is not None
+            else True
+        )
+
+        chat_enabled_value = await self.db_manager.get_global_setting("chat_enabled")
+        chat_enabled = (
+            chat_enabled_value.lower() in ("true", "1", "yes", "on")
+            if chat_enabled_value is not None
+            else True
+        )
+
+        two_stage_value = await self.db_manager.get_global_setting(
+            "two_stage_enabled"
+        )
+        two_stage_enabled = (
+            two_stage_value.lower() in ("true", "1", "yes", "on")
+            if two_stage_value is not None
+            else False
+        )
+
+        # 回复延迟（秒），键不存在时默认 30
+        reply_delay_value = await self.db_manager.get_global_setting(
+            "reply_delay_seconds"
+        )
+        try:
+            reply_delay_seconds = (
+                max(0, int(reply_delay_value)) if reply_delay_value is not None else 30
+            )
+        except (ValueError, TypeError):
+            reply_delay_seconds = 30
+
+        settings = {
+            "global": {
+                "chat_enabled": chat_enabled,
+                "warm_up_enabled": global_config_row["warm_up_enabled"]
+                if global_config_row
+                else True,
+                "api_fallback_enabled": api_fallback_enabled,
+                "feeding_image_enabled": feeding_image_enabled,
+                "feeding_command_enabled": feeding_command_enabled,
+                "reply_delay_seconds": reply_delay_seconds,
+                "two_stage_enabled": two_stage_enabled,
+            },
+            "channels": {
+                config["entity_id"]: {
+                    "entity_type": config["entity_type"],
+                    "is_chat_enabled": config["is_chat_enabled"],
+                    "cooldown_seconds": config["cooldown_seconds"],
+                    "cooldown_duration": config["cooldown_duration"],
+                    "cooldown_limit": config["cooldown_limit"],
+                }
+                for config in channel_configs_rows
+            },
+            "warm_up_channels": warm_up_channels,
+        }
+        return settings
+
+    async def is_chat_globally_enabled(self, guild_id: int) -> bool:
+        """检查聊天功能是否全局开启（所有服务器共享）。"""
+        value = await self.db_manager.get_global_setting("chat_enabled")
+        if value is not None:
+            return value.lower() in ("true", "1", "yes", "on")
+        return True
+
+    async def is_warm_up_enabled(self, guild_id: int) -> bool:
+        """检查暖贴功能是否开启。"""
+        config = await self.db_manager.get_global_chat_config(guild_id)
+        return config["warm_up_enabled"] if config else True
+
+    async def is_api_fallback_enabled(self, guild_id: int) -> bool:
+        """检查API fallback功能是否开启（全局设置）。"""
+        value = await self.db_manager.get_global_setting("api_fallback_enabled")
+        if value is not None:
+            return value.lower() in ("true", "1", "yes", "on")
+        return True  # 默认开启
+
+    async def get_effective_channel_config(
+        self, channel: discord.abc.GuildChannel
+    ) -> Dict[str, Any]:
+        """
+        获取频道的最终生效配置。
+        优先级: 帖子主人设置 > 频道特定设置 > 分类设置 > 全局默认
+        """
+        guild_id = channel.guild.id
+        channel_id = channel.id
+
+        # 修正：对于帖子（Thread），应从其父频道获取分类ID
+        if isinstance(channel, discord.Thread):
+            channel_category_id = channel.parent.category_id if channel.parent else None
+        else:
+            channel_category_id = (
+                channel.category_id if hasattr(channel, "category_id") else None
+            )
+
+        # 默认配置
+        effective_config = {
+            "is_chat_enabled": True,
+            "cooldown_seconds": 0,
+            "cooldown_duration": None,
+            "cooldown_limit": None,
+        }
+
+        # 1. 获取分类配置
+        category_config = None
+        if channel_category_id:
+            category_config = await self.db_manager.get_channel_config(
+                guild_id, channel_category_id
+            )
+
+        if category_config:
+            if category_config["is_chat_enabled"] is not None:
+                effective_config["is_chat_enabled"] = category_config["is_chat_enabled"]
+            if category_config["cooldown_seconds"] is not None:
+                effective_config["cooldown_seconds"] = category_config[
+                    "cooldown_seconds"
+                ]
+            if category_config["cooldown_duration"] is not None:
+                effective_config["cooldown_duration"] = category_config[
+                    "cooldown_duration"
+                ]
+            if category_config["cooldown_limit"] is not None:
+                effective_config["cooldown_limit"] = category_config["cooldown_limit"]
+
+        # 2. 获取频道特定配置，并覆盖分类配置
+        channel_config = await self.db_manager.get_channel_config(guild_id, channel_id)
+        if channel_config:
+            if channel_config["is_chat_enabled"] is not None:
+                effective_config["is_chat_enabled"] = channel_config["is_chat_enabled"]
+            if channel_config["cooldown_seconds"] is not None:
+                effective_config["cooldown_seconds"] = channel_config[
+                    "cooldown_seconds"
+                ]
+            if channel_config["cooldown_duration"] is not None:
+                effective_config["cooldown_duration"] = channel_config[
+                    "cooldown_duration"
+                ]
+            if channel_config["cooldown_limit"] is not None:
+                effective_config["cooldown_limit"] = channel_config["cooldown_limit"]
+
+        # 3. 如果是帖子，获取并应用帖子主人的个人设置 (最高优先级)
+        if isinstance(channel, discord.Thread) and channel.owner_id:
+            owner_id = channel.owner_id
+            owner_config = await coin_service.get_thread_cooldown_settings(owner_id)
+
+            if owner_config:
+                has_personal_fixed_cd = (
+                    owner_config["thread_cooldown_seconds"] is not None
+                )
+                has_personal_freq_cd = (
+                    owner_config["thread_cooldown_duration"] is not None
+                    and owner_config["thread_cooldown_limit"] is not None
+                )
+
+                if has_personal_fixed_cd:
+                    effective_config["cooldown_seconds"] = owner_config[
+                        "thread_cooldown_seconds"
+                    ]
+                    effective_config["cooldown_duration"] = None
+                    effective_config["cooldown_limit"] = None
+                elif has_personal_freq_cd:
+                    effective_config["cooldown_seconds"] = 0
+                    effective_config["cooldown_duration"] = owner_config[
+                        "thread_cooldown_duration"
+                    ]
+                    effective_config["cooldown_limit"] = owner_config[
+                        "thread_cooldown_limit"
+                    ]
+
+        return effective_config
+
+    async def is_user_on_cooldown(
+        self, user_id: int, channel_id: int, config: Dict[str, Any]
+    ) -> bool:
+        """
+        根据提供的配置，智能检查用户是否处于冷却状态。
+        优先使用频率限制模式，否则回退到固定时长模式。
+        """
+        duration = config.get("cooldown_duration")
+        limit = config.get("cooldown_limit")
+        cooldown_seconds = config.get("cooldown_seconds")
+
+        # --- 模式1: 频率限制 ---
+        if duration is not None and limit is not None and duration > 0 and limit > 0:
+            timestamps = await self.db_manager.get_user_timestamps_in_window(
+                user_id, channel_id, duration
+            )
+            return len(timestamps) >= limit
+
+        # --- 模式2: 固定时长 ---
+        if cooldown_seconds is not None and cooldown_seconds > 0:
+            last_message_row = await self.db_manager.get_user_cooldown(
+                user_id, channel_id
+            )
+            if not last_message_row or not last_message_row["last_message_timestamp"]:
+                return False
+
+            last_message_time = datetime.fromisoformat(
+                last_message_row["last_message_timestamp"]
+            ).replace(tzinfo=timezone.utc)
+            if datetime.now(timezone.utc) < last_message_time + timedelta(
+                seconds=cooldown_seconds
+            ):
+                return True
+
+        return False
+
+    async def update_user_cooldown(
+        self, user_id: int, channel_id: int, config: Dict[str, Any]
+    ):
+        """
+        根据当前生效的CD模式，更新用户的冷却记录。
+        """
+        duration = config.get("cooldown_duration")
+        limit = config.get("cooldown_limit")
+
+        # 如果是频率限制模式，则添加时间戳
+        if duration is not None and limit is not None and duration > 0 and limit > 0:
+            await self.db_manager.add_user_timestamp(user_id, channel_id)
+
+        # 总是更新固定CD的时间戳，以备模式切换或用于其他目的
+        await self.db_manager.update_user_cooldown(user_id, channel_id)
+
+    async def get_warm_up_channels(self, guild_id: int) -> List[int]:
+        """获取服务器的所有暖贴频道ID。"""
+        return await self.db_manager.get_warm_up_channels(guild_id)
+
+    async def add_warm_up_channel(self, guild_id: int, channel_id: int):
+        """添加一个暖贴频道。"""
+        await self.db_manager.add_warm_up_channel(guild_id, channel_id)
+
+    async def remove_warm_up_channel(self, guild_id: int, channel_id: int):
+        """移除一个暖贴频道。"""
+        await self.db_manager.remove_warm_up_channel(guild_id, channel_id)
+
+    async def is_warm_up_channel(self, guild_id: int, channel_id: int) -> bool:
+        """检查一个频道是否是暖贴频道。"""
+        return await self.db_manager.is_warm_up_channel(guild_id, channel_id)
+
+    # --- Event Faction Settings ---
+
+    def get_event_factions(self) -> Optional[List[Dict[str, Any]]]:
+        """获取当前活动的所有派系。"""
+        return event_service.get_event_factions()
+
+    def set_winning_faction(self, faction_id: Optional[str]):
+        """设置当前活动的获胜派系。"""
+        if faction_id is not None:
+            event_service.set_winning_faction(faction_id)
+
+    def get_winning_faction(self) -> Optional[str]:
+        """获取当前活动的获胜派系。"""
+        return event_service.get_winning_faction()
+
+    # --- AI Model Settings ---
+
+    def get_available_ai_models(self) -> List[str]:
+        """获取所有可用的AI模型（从 AIService 动态获取）。"""
+        from src.chat.services.ai import ai_service
+
+        return ai_service.get_available_models()
+
+    def get_models_by_provider(self) -> Dict[str, Dict[str, Any]]:
+        """
+        获取按 Provider 分组的模型配置。
+
+        Returns:
+            {"provider_name": {"model_name": ModelConfig, ...}, ...}
+        """
+        from src.chat.services.ai.config.models import get_model_configs
+
+        model_configs = get_model_configs()
+        grouped: Dict[str, Dict[str, Any]] = {}
+
+        for model_name, config in model_configs.items():
+            provider = config.provider or "unknown"
+            if provider not in grouped:
+                grouped[provider] = {}
+            grouped[provider][model_name] = config
+
+        return grouped
+
+    async def get_current_ai_model(self) -> str:
+        """获取当前设置的全局AI模型。"""
+        from src.chat.services.ai import ai_service
+
+        model = await self.db_manager.get_global_setting("ai_model")
+        if model:
+            return model
+        # 默认返回第一个可用模型
+        available_models = ai_service.get_available_models()
+        return available_models[0] if available_models else "gemini-2.5-flash"
+
+    async def get_current_ai_model_with_provider(
+        self,
+    ) -> tuple[Optional[str], Optional[str]]:
+        """
+        获取当前设置的 AI 模型及其 Provider。
+
+        Returns:
+            (provider_name, model_name) 元组
+        """
+        full_model_id = await self.db_manager.get_global_setting("ai_model")
+
+        if not full_model_id:
+            # 返回默认模型
+            from src.chat.services.ai.config.models import get_model_configs
+
+            model_configs = get_model_configs()
+            if model_configs:
+                first_model = next(iter(model_configs.items()))
+                return first_model[1].provider, first_model[0]
+            return None, None
+
+        # 解析格式: "provider:model" 或旧格式 "model"
+        if ":" in full_model_id:
+            parts = full_model_id.split(":", 1)
+            return parts[0], parts[1]
+
+        # 旧格式兼容：从配置查找 provider
+        from src.chat.services.ai.config.models import get_model_configs
+
+        model_configs = get_model_configs()
+
+        if full_model_id in model_configs:
+            return model_configs[full_model_id].provider, full_model_id
+
+        return None, full_model_id
+
+    async def set_ai_model(self, model: str) -> None:
+        """设置全局AI模型。"""
+        await self.db_manager.set_global_setting("ai_model", model)
+
+    async def set_ai_model_with_provider(
+        self, provider_name: str, model_name: str
+    ) -> None:
+        """
+        设置全局 AI 模型（带 Provider）。
+
+        存储格式: "provider_name:model_name"
+        """
+        full_model_id = f"{provider_name}:{model_name}"
+        await self.db_manager.set_global_setting("ai_model", full_model_id)
+
+    # --- 两阶段回复管线设置 ---
+    # Stage 1（工具路由模型）负责判断并调用工具；Stage 2（写作模型）负责最终回复。
+    # 所有设置均为全局（存于 global_settings 键值表），未配置时回退到当前 ai_model。
+
+    async def is_two_stage_enabled(self) -> bool:
+        """两阶段回复管线是否启用（全局设置）。默认关闭。"""
+        value = await self.db_manager.get_global_setting("two_stage_enabled")
+        if value is not None:
+            return value.lower() in ("true", "1", "yes", "on")
+        return False
+
+    async def set_two_stage_enabled(self, enabled: bool) -> None:
+        """启用/关闭两阶段回复管线。"""
+        await self.db_manager.set_global_setting(
+            "two_stage_enabled", "true" if enabled else "false"
+        )
+
+    async def get_tool_model(self) -> str:
+        """获取 Stage 1 工具模型。未配置时回退到当前 ai_model。"""
+        model = await self.db_manager.get_global_setting("tool_model")
+        if model:
+            return model
+        return await self.get_current_ai_model()
+
+    async def set_tool_model(self, model: Optional[str]) -> None:
+        """设置 Stage 1 工具模型。传入 None/空串则清除。"""
+        await self.db_manager.set_global_setting("tool_model", model or "")
+
+    async def get_writer_model(self) -> str:
+        """获取 Stage 2 写作模型。未配置时回退到当前 ai_model。"""
+        model = await self.db_manager.get_global_setting("writer_model")
+        if model:
+            return model
+        return await self.get_current_ai_model()
+
+    async def set_writer_model(self, model: Optional[str]) -> None:
+        """设置 Stage 2 写作模型。传入 None/空串则清除。"""
+        await self.db_manager.set_global_setting("writer_model", model or "")
+
+    # --- Embedding Model Settings ---
+
+    def get_available_embedding_models(self) -> List[Dict[str, str]]:
+        """获取所有可用的 Embedding 模型及其配置。"""
+        return [
+            {
+                "id": "bge",
+                "name": "BGE-M3",
+                "model_name": "bge-m3",
+                "description": "通用多语言嵌入模型，需要指令前缀",
+            },
+            {
+                "id": "qwen",
+                "name": "Qwen3-Embedding-0.6B",
+                "model_name": "qwen3-embedding-0.6b",
+                "description": "阿里通义千问嵌入模型，无需指令前缀",
+            },
+        ]
+
+    async def get_current_embedding_model(self) -> str:
+        """获取当前设置的 Embedding 模型 ID。"""
+        model = await self.db_manager.get_global_setting("embedding_model")
+        return model if model else "qwen"  # 默认使用 Qwen3-Embedding
+
+    async def set_embedding_model(self, model_id: str) -> None:
+        """设置 Embedding 模型。"""
+        available_ids = [m["id"] for m in self.get_available_embedding_models()]
+        if model_id not in available_ids:
+            raise ValueError(f"无效的 Embedding 模型 ID: {model_id}")
+        await self.db_manager.set_global_setting("embedding_model", model_id)
+
+    async def get_embedding_config(self) -> Dict[str, Any]:
+        """获取当前 Embedding 模型的完整配置。"""
+        current_model_id = await self.get_current_embedding_model()
+        models = self.get_available_embedding_models()
+        for model in models:
+            if model["id"] == current_model_id:
+                return model
+        return models[0]  # 默认返回第一个
+
+    # --- Embedding Model Disable Settings ---
+
+    async def get_disabled_embedding_models(self) -> List[str]:
+        """
+        获取被禁用的 Embedding 模型 ID 列表。
+        禁用的模型不会在写入时生成向量（但已有的向量仍可被搜索）。
+        """
+        disabled_str = await self.db_manager.get_global_setting(
+            "disabled_embedding_models"
+        )
+        if not disabled_str:
+            return []
+        # 存储格式为逗号分隔的模型 ID，如 "bge,qwen"
+        return [m.strip() for m in disabled_str.split(",") if m.strip()]
+
+    async def set_disabled_embedding_models(self, model_ids: List[str]) -> None:
+        """
+        设置被禁用的 Embedding 模型列表。
+
+        Args:
+            model_ids: 要禁用的模型 ID 列表（如 ["bge"] 或 ["qwen"]）
+        """
+        available_ids = [m["id"] for m in self.get_available_embedding_models()]
+        for model_id in model_ids:
+            if model_id not in available_ids:
+                raise ValueError(f"无效的 Embedding 模型 ID: {model_id}")
+
+        # 不能禁用所有模型
+        if set(model_ids) == set(available_ids):
+            raise ValueError("不能禁用所有 Embedding 模型，至少需要保留一个")
+
+        disabled_str = ",".join(model_ids) if model_ids else ""
+        await self.db_manager.set_global_setting(
+            "disabled_embedding_models", disabled_str
+        )
+
+    async def is_embedding_model_disabled(self, model_id: str) -> bool:
+        """检查指定的 Embedding 模型是否被禁用。"""
+        disabled_models = await self.get_disabled_embedding_models()
+        return model_id in disabled_models
+
+    async def toggle_embedding_model_disabled(self, model_id: str) -> bool:
+        """
+        切换 Embedding 模型的禁用状态。
+
+        Returns:
+            bool: 切换后的状态（True 表示已禁用）
+        """
+        available_ids = [m["id"] for m in self.get_available_embedding_models()]
+        if model_id not in available_ids:
+            raise ValueError(f"无效的 Embedding 模型 ID: {model_id}")
+
+        disabled_models = await self.get_disabled_embedding_models()
+
+        if model_id in disabled_models:
+            # 取消禁用
+            disabled_models.remove(model_id)
+            await self.set_disabled_embedding_models(disabled_models)
+            return False
+        else:
+            # 添加禁用
+            disabled_models.append(model_id)
+            await self.set_disabled_embedding_models(disabled_models)
+            return True
+
+    # --- AI Model Usage ---
+
+    async def increment_model_usage(
+        self, model_name: str, provider_name: str = "unknown"
+    ) -> None:
+        """
+        记录一次模型使用。
+
+        Args:
+            model_name: 模型名称
+            provider_name: Provider 名称（如 gemini_official, deepseek 等）
+        """
+        if model_name:
+            await self.db_manager.increment_model_usage(model_name, provider_name)
+
+    async def get_model_usage_counts(self) -> Dict[str, int]:
+        """获取所有模型的使用计数。"""
+        rows = await self.db_manager.get_model_usage_counts()
+        return {row["model_name"]: row["usage_count"] for row in rows}
+
+    async def get_model_usage_counts_with_provider(self) -> List[Dict[str, Any]]:
+        """
+        获取所有模型的使用计数（包含 Provider 信息）。
+
+        Returns:
+            [{"model_name": "...", "usage_count": 100, "provider_name": "..."}, ...]
+        """
+        rows = await self.db_manager.get_model_usage_counts()
+        return [
+            {
+                "model_name": row["model_name"],
+                "usage_count": row["usage_count"],
+                "provider_name": row["provider_name"] or "unknown",
+            }
+            for row in rows
+        ]
+
+    async def get_provider_usage_stats(self) -> Dict[str, Dict[str, int]]:
+        """
+        获取按 Provider 分组的使用统计。
+
+        Returns:
+            {"gemini_official": {"total": 100, "today": 10}, ...}
+        """
+        return await self.db_manager.get_provider_usage_stats()
+
+    async def get_available_models_with_provider(self) -> List[Dict[str, Any]]:
+        """
+        获取所有可用模型及其 Provider 信息。
+
+        优先从数据库读取有使用记录的模型，然后合并模型配置中的模型。
+
+        Returns:
+            [{"model_name": "...", "display_name": "...", "provider": "...", ...}, ...]
+        """
+        from src.chat.services.ai.config.models import get_model_configs
+
+        # 从模型配置获取
+        model_configs = get_model_configs()
+
+        # 从数据库获取所有有记录的模型
+        db_models = await self.db_manager.get_model_usage_counts()
+
+        result = []
+        seen_models = set()
+
+        # 1. 先添加数据库中有记录的模型
+        for row in db_models:
+            model_name = row["model_name"]
+            if model_name in seen_models:
+                continue
+            seen_models.add(model_name)
+
+            # 尝试从配置获取详细信息
+            config = model_configs.get(model_name)
+            result.append(
+                {
+                    "model_name": model_name,
+                    "display_name": config.display_name if config else model_name,
+                    "provider": row["provider_name"] or "unknown",
+                    "supports_vision": config.supports_vision if config else False,
+                    "supports_tools": config.supports_tools if config else True,
+                    "description": config.description if config else "",
+                }
+            )
+
+        # 2. 添加配置中有但数据库没有的模型
+        for model_name, config in model_configs.items():
+            if model_name not in seen_models:
+                result.append(
+                    {
+                        "model_name": model_name,
+                        "display_name": config.display_name if config else model_name,
+                        "provider": config.provider if config else "unknown",
+                        "supports_vision": config.supports_vision if config else False,
+                        "supports_tools": config.supports_tools if config else True,
+                        "description": config.description if config else "",
+                    }
+                )
+
+        return result
+
+    # --- Feeding Command Settings ---
+
+    async def get_feeding_command_enabled(self) -> bool:
+        """获取 /投喂 命令的全局开关。键不存在时默认开启。"""
+        value = await self.db_manager.get_global_setting("feeding_command_enabled")
+        if value is None:
+            return True
+        return value.lower() in ("true", "1", "yes", "on")
+
+    async def set_feeding_command_enabled(self, enabled: bool) -> None:
+        """设置 /投喂 命令的全局开关。"""
+        await self.db_manager.set_global_setting(
+            "feeding_command_enabled", str(bool(enabled))
+        )
+
+    # --- Reply Delay Settings ---
+
+    async def get_reply_delay(self) -> int:
+        """获取全局回复延迟（秒）。键不存在时默认 30。"""
+        value = await self.db_manager.get_global_setting("reply_delay_seconds")
+        if value is None:
+            return 30
+        try:
+            return max(0, int(value))
+        except (ValueError, TypeError):
+            return 30
+
+    async def set_reply_delay(self, seconds: int) -> None:
+        """设置全局回复延迟（秒）。"""
+        await self.db_manager.set_global_setting(
+            "reply_delay_seconds", str(int(seconds))
+        )
+
+    # --- Model Parameters Settings ---
+
+    async def get_model_params(self, model_name: str) -> Dict[str, Any]:
+        """
+        获取指定模型的参数配置。
+
+        Args:
+            model_name: 模型名称
+
+        Returns:
+            Dict[str, Any]: 模型参数配置字典
+        """
+        from src.chat.services.ai.config.models import (
+            get_model_config,
+            get_generation_config,
+            get_prompt_config,
+        )
+
+        config = get_model_config(model_name)
+        if config is None:
+            return {}
+
+        # 合并生成参数和提示词配置
+        gen_config = get_generation_config(model_name)
+        prompt_config = get_prompt_config(model_name)
+
+        result = {
+            "provider": config.provider,
+            **gen_config.to_dict(),
+            **prompt_config.to_dict(),
+        }
+        return result
+
+    async def set_model_params(
+        self,
+        model_name: str,
+        temperature: Optional[float] = None,
+        top_p: Optional[float] = None,
+        top_k: Optional[int] = None,
+        max_output_tokens: Optional[int] = None,
+        presence_penalty: Optional[float] = None,
+        frequency_penalty: Optional[float] = None,
+        thinking_budget_tokens: Optional[int] = None,
+        system_prompt: Optional[str] = None,
+        jailbreak_user_prompt: Optional[str] = None,
+        jailbreak_model_response: Optional[str] = None,
+        jailbreak_final_instruction: Optional[str] = None,
+        provider: Optional[str] = None,
+        use_cache_optimized_build: Optional[bool] = None,
+    ) -> None:
+        """
+        设置指定模型的参数配置（写入数据库）。
+
+        Args:
+            model_name: 模型名称
+            temperature: 温度参数 (0.0-2.0)
+            top_p: Top-p 采样参数 (0.0-1.0)
+            top_k: Top-k 采样参数 (仅 Gemini/Anthropic)
+            max_output_tokens: 最大输出 token 数
+            presence_penalty: 存在惩罚 (-2.0 to 2.0) (仅 DeepSeek/OpenAI)
+            frequency_penalty: 频率惩罚 (-2.0 to 2.0) (仅 DeepSeek/OpenAI)
+            thinking_budget_tokens: 思考链 token 预算 (仅 Gemini, -1 表示动态)
+            system_prompt: 自定义系统提示词 (None 表示使用默认)
+            jailbreak_user_prompt: 自定义越狱用户提示词 (None 表示使用默认)
+            jailbreak_model_response: 自定义越狱模型响应 (None 表示使用默认)
+            jailbreak_final_instruction: 自定义最终指令 (None 表示使用默认)
+            provider: 模型提供商 (deepseek/gemini/openai/anthropic/default) - 已废弃，从配置读取
+            use_cache_optimized_build: 是否使用缓存优化的 prompt 构建顺序
+        """
+        from src.database.database import AsyncSessionLocal
+        from src.database.services.ai_config_service import ai_config_service
+        from src.chat.services.ai.config.models import (
+            get_model_config,
+            reload_model_configs_async,
+        )
+
+        db_model = await ai_config_service.get_model_by_name(
+            AsyncSessionLocal(), model_name
+        )
+        if db_model is None:
+            log.warning(f"模型 {model_name} 不存在于数据库中，无法更新参数")
+            return
+
+        current_config = get_model_config(model_name)
+        current_gen = current_config.generation_config if current_config else None
+
+        gen_updates = {}
+        if temperature is not None:
+            gen_updates["temperature"] = temperature
+        elif current_gen:
+            gen_updates["temperature"] = current_gen.temperature
+        if top_p is not None:
+            gen_updates["top_p"] = top_p
+        elif current_gen:
+            gen_updates["top_p"] = current_gen.top_p
+        if top_k is not None:
+            gen_updates["top_k"] = top_k
+        elif current_gen and current_gen.top_k is not None:
+            gen_updates["top_k"] = current_gen.top_k
+        if max_output_tokens is not None:
+            gen_updates["max_output_tokens"] = max_output_tokens
+        elif current_gen:
+            gen_updates["max_output_tokens"] = current_gen.max_output_tokens
+        if presence_penalty is not None:
+            gen_updates["presence_penalty"] = presence_penalty
+        elif current_gen and current_gen.presence_penalty is not None:
+            gen_updates["presence_penalty"] = current_gen.presence_penalty
+        if frequency_penalty is not None:
+            gen_updates["frequency_penalty"] = frequency_penalty
+        elif current_gen and current_gen.frequency_penalty is not None:
+            gen_updates["frequency_penalty"] = current_gen.frequency_penalty
+        if thinking_budget_tokens is not None:
+            gen_updates["thinking_budget_tokens"] = thinking_budget_tokens
+        elif current_gen and current_gen.thinking_budget_tokens is not None:
+            gen_updates["thinking_budget_tokens"] = current_gen.thinking_budget_tokens
+
+        prompt_updates = {}
+        current_prompt = current_config.prompt_config if current_config else None
+        if system_prompt is not None:
+            prompt_updates["system_prompt"] = system_prompt
+        if jailbreak_user_prompt is not None:
+            prompt_updates["jailbreak_user_prompt"] = jailbreak_user_prompt
+        if jailbreak_model_response is not None:
+            prompt_updates["jailbreak_model_response"] = jailbreak_model_response
+        if jailbreak_final_instruction is not None:
+            prompt_updates["jailbreak_final_instruction"] = jailbreak_final_instruction
+        if use_cache_optimized_build is not None:
+            prompt_updates["use_cache_optimized_build"] = use_cache_optimized_build
+
+        update_kwargs = {}
+        if gen_updates:
+            update_kwargs["generation_config"] = gen_updates
+        if prompt_updates:
+            update_kwargs["prompt_config"] = prompt_updates
+
+        if update_kwargs:
+            await ai_config_service.update_model(
+                AsyncSessionLocal(), db_model.id, **update_kwargs
+            )
+            await reload_model_configs_async()
+
+    async def get_all_model_params(self) -> Dict[str, "ModelConfig"]:
+        """
+        获取所有模型的参数配置。
+
+        Returns:
+            Dict[str, ModelConfig]: 模型名称到配置的映射
+        """
+        from src.chat.services.ai.config.models import get_model_configs
+
+        return get_model_configs()
+
+    async def reset_model_params(self, model_name: str) -> bool:
+        """
+        重置指定模型的参数为默认值（清空数据库中的自定义参数）。
+
+        Args:
+            model_name: 模型名称
+
+        Returns:
+            bool: 是否成功重置
+        """
+        from src.database.database import AsyncSessionLocal
+        from src.database.services.ai_config_service import ai_config_service
+        from src.chat.services.ai.config.models import reload_model_configs_async
+
+        db_model = await ai_config_service.get_model_by_name(
+            AsyncSessionLocal(), model_name
+        )
+        if db_model is None:
+            return False
+
+        await ai_config_service.update_model(
+            AsyncSessionLocal(),
+            db_model.id,
+            generation_config=None,
+            prompt_config=None,
+        )
+        await reload_model_configs_async()
+        return True
+
+
+# 单例实例
+chat_settings_service = ChatSettingsService()

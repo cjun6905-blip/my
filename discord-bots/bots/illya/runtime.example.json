@@ -1,0 +1,52 @@
+{
+  "profile": "illya",
+  "base_image": "character-guidance-illya:media-20261023t142306z",
+  "working_dir": "/app",
+  "entrypoint": null,
+  "command": [
+    "python3",
+    "-u",
+    "-m",
+    "src.main"
+  ],
+  "user": "0",
+  "environment": {
+    "IMAGEGEN_ENV_FILE": "/run/secrets/imagegen.env"
+  },
+  "env_keys": [
+    "POSTGRES_DB",
+    "RUNNING_IN_DOCKER",
+    "OPENAI_COMPATIBLE_MODEL",
+    "DEVELOPER_USER_IDS",
+    "GOOGLE_API_KEYS_LIST",
+    "GUILD_ID",
+    "LOG_AI_FULL_CONTEXT",
+    "IMAGEGEN_ENV_FILE",
+    "OPENAI_COMPATIBLE_API_KEY",
+    "TABLETOP_BOT_CONFIG",
+    "DISCORD_TOKEN",
+    "VITE_DISCORD_CLIENT_ID",
+    "VECTOR_MODE",
+    "POSTGRES_PASSWORD",
+    "DISCORD_CLIENT_SECRET",
+    "GUILD_ALLOWLIST",
+    "OPENAI_COMPATIBLE_URL",
+    "POSTGRES_USER",
+    "DB_HOST",
+    "CHAT_ENABLED",
+    "PYTHONDONTWRITEBYTECODE",
+    "ADMIN_SESSION_SECRET",
+    "PATH",
+    "LANG",
+    "GPG_KEY",
+    "PYTHON_VERSION",
+    "PYTHON_PIP_VERSION",
+    "PYTHON_SETUPTOOLS_VERSION",
+    "PYTHON_GET_PIP_URL",
+    "PYTHON_GET_PIP_SHA256"
+  ],
+  "memory_bytes": 805306368,
+  "pids_limit": null,
+  "readonly_root": false,
+  "healthcheck": null
+}

@@ -1,0 +1,14 @@
+{
+  "yuzuki": {
+    "owner_ids": [
+      "0"
+    ],
+    "dm_user_ids": [
+      "0",
+      "0"
+    ],
+    "dm_message_quota": null,
+    "dm_pending_per_conversation": 16,
+    "admin_status": "owner_ephemeral_query"
+  }
+}

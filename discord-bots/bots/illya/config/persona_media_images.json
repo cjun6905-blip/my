@@ -1,0 +1,58 @@
+{
+  "enabled_profiles": [
+    "illya"
+  ],
+  "base_url": "https://images.example.invalid/v1",
+  "model": "gpt-6-luna",
+  "cooldown_seconds": 20,
+  "appearance": {
+    "illya": "伊莉雅丝菲尔（Illyasviel），银白色长发、红色眼睛，紫色冬装外套、白色毛绒滚边，淡紫白色毛绒帽和白色围巾，紫色蝴蝶结。保持当前头像的银白长发和红眼。按要求可换日常服饰。"
+  },
+  "default_provider": "duck",
+  "providers": {
+    "duck": {
+      "name": "duck",
+      "base_url": "https://images.example.invalid/v1",
+      "model": "gpt-6-luna",
+      "credential_key": "IMAGEGEN_DUCK_API_KEY"
+    },
+    "cpa": {
+      "name": "CPA",
+      "base_url": "https://images.example.invalid/v1",
+      "model": "gpt-image-2.5",
+      "credential_key": "IMAGEGEN_CPA_API_KEY"
+    },
+    "cpa_sunburst": {
+      "name": "CPA Sunburst",
+      "base_url": "https://images.example.invalid/v1",
+      "model": "gpt-image-2.5-sunburst",
+      "credential_key": "IMAGEGEN_CPA_API_KEY"
+    },
+    "openai_2_6_sunburst": {
+      "name": "OpenAI",
+      "base_url": "https://api.openai.com/v1",
+      "model": "gpt-image-2.6-sunburst",
+      "credential_key": "IMAGEGEN_OPENAI_API_KEY"
+    },
+    "openai_2_6_flare": {
+      "name": "OpenAI",
+      "base_url": "https://api.openai.com/v1",
+      "model": "gpt-image-2.6-flare",
+      "credential_key": "IMAGEGEN_OPENAI_API_KEY"
+    },
+    "openai_2_5_sunburst": {
+      "name": "OpenAI",
+      "base_url": "https://api.openai.com/v1",
+      "model": "gpt-image-2.5-sunburst",
+      "credential_key": "IMAGEGEN_OPENAI_API_KEY"
+    },
+    "openai_2_5_flare": {
+      "name": "OpenAI",
+      "base_url": "https://api.openai.com/v1",
+      "model": "gpt-image-2.5-flare",
+      "credential_key": "IMAGEGEN_OPENAI_API_KEY"
+    }
+  },
+  "max_concurrency": 2,
+  "burst_limit": 8
+}

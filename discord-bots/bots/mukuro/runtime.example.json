@@ -1,0 +1,57 @@
+{
+  "profile": "mukuro",
+  "base_image": "character-guidance-mukuro-affection:20261104t151549z",
+  "working_dir": "/app",
+  "entrypoint": null,
+  "command": [
+    "python",
+    "-m",
+    "src.main"
+  ],
+  "user": "10001:10001",
+  "environment": {
+    "SPEECH_ENV_FILE": "/run/secrets/speech.env",
+    "FLEET_MODEL_CONCURRENCY": "2",
+    "FLEET_BUDGET_DB": "/app/fleet/budget.db",
+    "BOT_ENV_FILE": "/run/secrets/runtime.env",
+    "TZ": "Asia/Shanghai",
+    "IMAGEGEN_ENV_FILE": "/run/secrets/imagegen.env",
+    "FLEET_VISION_CONCURRENCY": "2",
+    "BOT_PROFILE": "mukuro",
+    "GUILD_IDS": "0"
+  },
+  "env_keys": [
+    "SPEECH_ENV_FILE",
+    "FLEET_MODEL_CONCURRENCY",
+    "FLEET_BUDGET_DB",
+    "BOT_ENV_FILE",
+    "TZ",
+    "IMAGEGEN_ENV_FILE",
+    "FLEET_VISION_CONCURRENCY",
+    "BOT_PROFILE",
+    "GUILD_IDS",
+    "PATH",
+    "LANG",
+    "GPG_KEY",
+    "PYTHON_VERSION",
+    "PYTHON_SHA256",
+    "PYTHONDONTWRITEBYTECODE",
+    "PYTHONUNBUFFERED",
+    "PIP_DISABLE_PIP_VERSION_CHECK"
+  ],
+  "memory_bytes": 268435456,
+  "pids_limit": 64,
+  "readonly_root": true,
+  "healthcheck": {
+    "Test": [
+      "CMD",
+      "python",
+      "-c",
+      "import json,time; d=json.load(open('/app/data/health.json')); assert d['ready'] and time.time()-d['at']<45"
+    ],
+    "Interval": 30000000000,
+    "Timeout": 5000000000,
+    "StartPeriod": 60000000000,
+    "Retries": 3
+  }
+}

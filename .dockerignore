@@ -6,3 +6,6 @@
 !lib/**
 !public/
 !public/**
+
+# Source archive is independent of the website image.
+discord-bots/

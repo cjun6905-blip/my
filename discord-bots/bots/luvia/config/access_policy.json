@@ -1,0 +1,31 @@
+{
+  "mukuro": {
+    "owner_ids": [
+      "0",
+      "0"
+    ],
+    "dm_user_ids": [
+      "0",
+      "0"
+    ],
+    "dm_message_quota": null,
+    "dm_pending_per_conversation": 16,
+    "admin_status": "owner_ephemeral_query"
+  },
+  "rin": {
+    "owner_ids": [
+      "0"
+    ],
+    "dm_user_ids": [],
+    "dm_message_quota": null,
+    "admin_status": "owner_ephemeral_query"
+  },
+  "luvia": {
+    "owner_ids": [
+      "0"
+    ],
+    "dm_user_ids": [],
+    "dm_message_quota": null,
+    "admin_status": "owner_ephemeral_query"
+  }
+}

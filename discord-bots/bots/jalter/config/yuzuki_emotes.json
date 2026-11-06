@@ -1,0 +1,242 @@
+[
+  {
+    "name": "yzk_smile",
+    "id": "0",
+    "code": "<:yzk_smile:0>"
+  },
+  {
+    "name": "yzk_blush",
+    "id": "0",
+    "code": "<:yzk_blush:0>"
+  },
+  {
+    "name": "yzk_pout",
+    "id": "0",
+    "code": "<:yzk_pout:0>"
+  },
+  {
+    "name": "yzk_smug",
+    "id": "0",
+    "code": "<:yzk_smug:0>"
+  },
+  {
+    "name": "yzk_think",
+    "id": "0",
+    "code": "<:yzk_think:0>"
+  },
+  {
+    "name": "yzk_surprise",
+    "id": "0",
+    "code": "<:yzk_surprise:0>"
+  },
+  {
+    "name": "yzk_focus",
+    "id": "0",
+    "code": "<:yzk_focus:0>"
+  },
+  {
+    "name": "yzk_care",
+    "id": "0",
+    "code": "<:yzk_care:0>"
+  },
+  {
+    "name": "yzk_dessert",
+    "id": "0",
+    "code": "<:yzk_dessert:0>"
+  },
+  {
+    "name": "yzk_umbrella",
+    "id": "0",
+    "code": "<:yzk_umbrella:0>"
+  },
+  {
+    "name": "yzk_hello",
+    "id": "0",
+    "code": "<:yzk_hello:0>"
+  },
+  {
+    "name": "yzk_goodnight",
+    "id": "0",
+    "code": "<:yzk_goodnight:0>"
+  },
+  {
+    "name": "yzk_laugh",
+    "id": "0",
+    "code": "<:yzk_laugh:0>"
+  },
+  {
+    "name": "yzk_tease",
+    "id": "0",
+    "code": "<:yzk_tease:0>"
+  },
+  {
+    "name": "yzk_wink",
+    "id": "0",
+    "code": "<:yzk_wink:0>"
+  },
+  {
+    "name": "yzk_skeptic",
+    "id": "0",
+    "code": "<:yzk_skeptic:0>"
+  },
+  {
+    "name": "yzk_deadpan",
+    "id": "0",
+    "code": "<:yzk_deadpan:0>"
+  },
+  {
+    "name": "yzk_sulk",
+    "id": "0",
+    "code": "<:yzk_sulk:0>"
+  },
+  {
+    "name": "yzk_fluster",
+    "id": "0",
+    "code": "<:yzk_fluster:0>"
+  },
+  {
+    "name": "yzk_peek",
+    "id": "0",
+    "code": "<:yzk_peek:0>"
+  },
+  {
+    "name": "yzk_oops",
+    "id": "0",
+    "code": "<:yzk_oops:0>"
+  },
+  {
+    "name": "yzk_sorry",
+    "id": "0",
+    "code": "<:yzk_sorry:0>"
+  },
+  {
+    "name": "yzk_relief",
+    "id": "0",
+    "code": "<:yzk_relief:0>"
+  },
+  {
+    "name": "yzk_grateful",
+    "id": "0",
+    "code": "<:yzk_grateful:0>"
+  },
+  {
+    "name": "yzk_cheer",
+    "id": "0",
+    "code": "<:yzk_cheer:0>"
+  },
+  {
+    "name": "yzk_proudwork",
+    "id": "0",
+    "code": "<:yzk_proudwork:0>"
+  },
+  {
+    "name": "yzk_mixing",
+    "id": "0",
+    "code": "<:yzk_mixing:0>"
+  },
+  {
+    "name": "yzk_taste",
+    "id": "0",
+    "code": "<:yzk_taste:0>"
+  },
+  {
+    "name": "yzk_tea",
+    "id": "0",
+    "code": "<:yzk_tea:0>"
+  },
+  {
+    "name": "yzk_book",
+    "id": "0",
+    "code": "<:yzk_book:0>"
+  },
+  {
+    "name": "yzk_shell",
+    "id": "0",
+    "code": "<:yzk_shell:0>"
+  },
+  {
+    "name": "yzk_rain",
+    "id": "0",
+    "code": "<:yzk_rain:0>"
+  },
+  {
+    "name": "yzk_seabreeze",
+    "id": "0",
+    "code": "<:yzk_seabreeze:0>"
+  },
+  {
+    "name": "yzk_music",
+    "id": "0",
+    "code": "<:yzk_music:0>"
+  },
+  {
+    "name": "yzk_game",
+    "id": "0",
+    "code": "<:yzk_game:0>"
+  },
+  {
+    "name": "yzk_idea",
+    "id": "0",
+    "code": "<:yzk_idea:0>"
+  },
+  {
+    "name": "yzk_goodmorning",
+    "id": "0",
+    "code": "<:yzk_goodmorning:0>"
+  },
+  {
+    "name": "yzk_welcome",
+    "id": "0",
+    "code": "<:yzk_welcome:0>"
+  },
+  {
+    "name": "yzk_bye",
+    "id": "0",
+    "code": "<:yzk_bye:0>"
+  },
+  {
+    "name": "yzk_wait",
+    "id": "0",
+    "code": "<:yzk_wait:0>"
+  },
+  {
+    "name": "yzk_agree",
+    "id": "0",
+    "code": "<:yzk_agree:0>"
+  },
+  {
+    "name": "yzk_nope",
+    "id": "0",
+    "code": "<:yzk_nope:0>"
+  },
+  {
+    "name": "yzk_confused",
+    "id": "0",
+    "code": "<:yzk_confused:0>"
+  },
+  {
+    "name": "yzk_sleepy",
+    "id": "0",
+    "code": "<:yzk_sleepy:0>"
+  },
+  {
+    "name": "yzk_dizzy",
+    "id": "0",
+    "code": "<:yzk_dizzy:0>"
+  },
+  {
+    "name": "yzk_sad",
+    "id": "0",
+    "code": "<:yzk_sad:0>"
+  },
+  {
+    "name": "yzk_angry",
+    "id": "0",
+    "code": "<:yzk_angry:0>"
+  },
+  {
+    "name": "yzk_comfort",
+    "id": "0",
+    "code": "<:yzk_comfort:0>"
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "name": "rei_calm",
+    "label": "平静",
+    "sheet_row": 3,
+    "sheet_col": 0,
+    "full": "rei_calm.webp",
+    "emoji": "emoji128/rei_calm.png",
+    "emoji_bytes": 32275
+  },
+  {
+    "name": "rei_smile",
+    "label": "浅笑",
+    "sheet_row": 3,
+    "sheet_col": 1,
+    "full": "rei_smile.webp",
+    "emoji": "emoji128/rei_smile.png",
+    "emoji_bytes": 33773
+  },
+  {
+    "name": "rei_puzzle",
+    "label": "疑惑",
+    "sheet_row": 3,
+    "sheet_col": 2,
+    "full": "rei_puzzle.webp",
+    "emoji": "emoji128/rei_puzzle.png",
+    "emoji_bytes": 34562
+  },
+  {
+    "name": "rei_think",
+    "label": "思考",
+    "sheet_row": 3,
+    "sheet_col": 3,
+    "full": "rei_think.webp",
+    "emoji": "emoji128/rei_think.png",
+    "emoji_bytes": 32233
+  },
+  {
+    "name": "rei_blush",
+    "label": "轻微害羞",
+    "sheet_row": 4,
+    "sheet_col": 0,
+    "full": "rei_blush.webp",
+    "emoji": "emoji128/rei_blush.png",
+    "emoji_bytes": 32408
+  },
+  {
+    "name": "rei_surprise",
+    "label": "惊讶",
+    "sheet_row": 4,
+    "sheet_col": 1,
+    "full": "rei_surprise.webp",
+    "emoji": "emoji128/rei_surprise.png",
+    "emoji_bytes": 34466
+  },
+  {
+    "name": "rei_focus",
+    "label": "认真",
+    "sheet_row": 4,
+    "sheet_col": 2,
+    "full": "rei_focus.webp",
+    "emoji": "emoji128/rei_focus.png",
+    "emoji_bytes": 32721
+  },
+  {
+    "name": "rei_care",
+    "label": "关心",
+    "sheet_row": 4,
+    "sheet_col": 3,
+    "full": "rei_care.webp",
+    "emoji": "emoji128/rei_care.png",
+    "emoji_bytes": 32915
+  },
+  {
+    "name": "rei_relax",
+    "label": "安心",
+    "sheet_row": 5,
+    "sheet_col": 0,
+    "full": "rei_relax.webp",
+    "emoji": "emoji128/rei_relax.png",
+    "emoji_bytes": 34026
+  },
+  {
+    "name": "rei_hello",
+    "label": "挥手",
+    "sheet_row": 5,
+    "sheet_col": 1,
+    "full": "rei_hello.webp",
+    "emoji": "emoji128/rei_hello.png",
+    "emoji_bytes": 33271
+  },
+  {
+    "name": "rei_tea",
+    "label": "喝茶",
+    "sheet_row": 5,
+    "sheet_col": 2,
+    "full": "rei_tea.webp",
+    "emoji": "emoji128/rei_tea.png",
+    "emoji_bytes": 34060
+  },
+  {
+    "name": "rei_goodnight",
+    "label": "晚安",
+    "sheet_row": 5,
+    "sheet_col": 3,
+    "full": "rei_goodnight.webp",
+    "emoji": "emoji128/rei_goodnight.png",
+    "emoji_bytes": 34272
+  }
+]

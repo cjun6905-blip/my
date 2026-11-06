@@ -1,0 +1,58 @@
+{
+  "enabled_profiles": [
+    "aesc"
+  ],
+  "base_url": "https://images.example.invalid/v1",
+  "model": "gpt-6-luna",
+  "cooldown_seconds": 20,
+  "appearance": {
+    "aesc": "雨之魔女梣（Aesc），金色长发，蓝绿色眼睛，细框圆眼镜，白色宽檐魔女帽配深蓝内衬和金属冠形装饰，白蓝色礼服，胸前红色宝石，法杖。保持头像中的金发蓝绿眼与眼镜，不混为银发摩根。日常可按明确要求换服装。"
+  },
+  "default_provider": "duck",
+  "providers": {
+    "duck": {
+      "name": "duck",
+      "base_url": "https://images.example.invalid/v1",
+      "model": "gpt-6-luna",
+      "credential_key": "IMAGEGEN_DUCK_API_KEY"
+    },
+    "cpa": {
+      "name": "CPA",
+      "base_url": "https://images.example.invalid/v1",
+      "model": "gpt-image-2.5",
+      "credential_key": "IMAGEGEN_CPA_API_KEY"
+    },
+    "cpa_sunburst": {
+      "name": "CPA Sunburst",
+      "base_url": "https://images.example.invalid/v1",
+      "model": "gpt-image-2.5-sunburst",
+      "credential_key": "IMAGEGEN_CPA_API_KEY"
+    },
+    "openai_2_6_sunburst": {
+      "name": "OpenAI",
+      "base_url": "https://api.openai.com/v1",
+      "model": "gpt-image-2.6-sunburst",
+      "credential_key": "IMAGEGEN_OPENAI_API_KEY"
+    },
+    "openai_2_6_flare": {
+      "name": "OpenAI",
+      "base_url": "https://api.openai.com/v1",
+      "model": "gpt-image-2.6-flare",
+      "credential_key": "IMAGEGEN_OPENAI_API_KEY"
+    },
+    "openai_2_5_sunburst": {
+      "name": "OpenAI",
+      "base_url": "https://api.openai.com/v1",
+      "model": "gpt-image-2.5-sunburst",
+      "credential_key": "IMAGEGEN_OPENAI_API_KEY"
+    },
+    "openai_2_5_flare": {
+      "name": "OpenAI",
+      "base_url": "https://api.openai.com/v1",
+      "model": "gpt-image-2.5-flare",
+      "credential_key": "IMAGEGEN_OPENAI_API_KEY"
+    }
+  },
+  "max_concurrency": 2,
+  "burst_limit": 8
+}

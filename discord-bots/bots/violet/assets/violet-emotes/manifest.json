@@ -1,0 +1,110 @@
+[
+  {
+    "name": "vlt_calm",
+    "label": "平静",
+    "sheet_row": 3,
+    "sheet_col": 0,
+    "full": "vlt_calm.webp",
+    "emoji": "emoji128/vlt_calm.png",
+    "emoji_bytes": 32807
+  },
+  {
+    "name": "vlt_smile",
+    "label": "浅笑",
+    "sheet_row": 3,
+    "sheet_col": 1,
+    "full": "vlt_smile.webp",
+    "emoji": "emoji128/vlt_smile.png",
+    "emoji_bytes": 34380
+  },
+  {
+    "name": "vlt_blush",
+    "label": "害羞",
+    "sheet_row": 3,
+    "sheet_col": 2,
+    "full": "vlt_blush.webp",
+    "emoji": "emoji128/vlt_blush.png",
+    "emoji_bytes": 34505
+  },
+  {
+    "name": "vlt_puzzle",
+    "label": "疑惑",
+    "sheet_row": 3,
+    "sheet_col": 3,
+    "full": "vlt_puzzle.webp",
+    "emoji": "emoji128/vlt_puzzle.png",
+    "emoji_bytes": 32998
+  },
+  {
+    "name": "vlt_think",
+    "label": "思考",
+    "sheet_row": 4,
+    "sheet_col": 0,
+    "full": "vlt_think.webp",
+    "emoji": "emoji128/vlt_think.png",
+    "emoji_bytes": 34035
+  },
+  {
+    "name": "vlt_surprise",
+    "label": "惊讶",
+    "sheet_row": 4,
+    "sheet_col": 1,
+    "full": "vlt_surprise.webp",
+    "emoji": "emoji128/vlt_surprise.png",
+    "emoji_bytes": 34108
+  },
+  {
+    "name": "vlt_care",
+    "label": "关心",
+    "sheet_row": 4,
+    "sheet_col": 2,
+    "full": "vlt_care.webp",
+    "emoji": "emoji128/vlt_care.png",
+    "emoji_bytes": 33318
+  },
+  {
+    "name": "vlt_focus",
+    "label": "认真",
+    "sheet_row": 4,
+    "sheet_col": 3,
+    "full": "vlt_focus.webp",
+    "emoji": "emoji128/vlt_focus.png",
+    "emoji_bytes": 33432
+  },
+  {
+    "name": "vlt_letter",
+    "label": "写信",
+    "sheet_row": 5,
+    "sheet_col": 0,
+    "full": "vlt_letter.webp",
+    "emoji": "emoji128/vlt_letter.png",
+    "emoji_bytes": 34601
+  },
+  {
+    "name": "vlt_tea",
+    "label": "喝茶",
+    "sheet_row": 5,
+    "sheet_col": 1,
+    "full": "vlt_tea.webp",
+    "emoji": "emoji128/vlt_tea.png",
+    "emoji_bytes": 32945
+  },
+  {
+    "name": "vlt_hello",
+    "label": "挥手",
+    "sheet_row": 5,
+    "sheet_col": 2,
+    "full": "vlt_hello.webp",
+    "emoji": "emoji128/vlt_hello.png",
+    "emoji_bytes": 34303
+  },
+  {
+    "name": "vlt_goodnight",
+    "label": "晚安",
+    "sheet_row": 5,
+    "sheet_col": 3,
+    "full": "vlt_goodnight.webp",
+    "emoji": "emoji128/vlt_goodnight.png",
+    "emoji_bytes": 33581
+  }
+]

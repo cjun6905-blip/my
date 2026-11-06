@@ -1,0 +1,3465 @@
+{
+  "profile": "illya",
+  "python": "3.11.5",
+  "files": [
+    {
+      "path": "src/config.py",
+      "runtime_sha256": "161281d6d8efcdf9f95954bbed0ab9a5abba022c8329fdb6961bf224c4760df5",
+      "published_sha256": "161281d6d8efcdf9f95954bbed0ab9a5abba022c8329fdb6961bf224c4760df5",
+      "bytes": 3794,
+      "template_changes": []
+    },
+    {
+      "path": "src/__init__.py",
+      "runtime_sha256": "d1bed7343d681acf2c78a3bc5ecba3e9dc8b222a48494145d8ca601b628cd40e",
+      "published_sha256": "d1bed7343d681acf2c78a3bc5ecba3e9dc8b222a48494145d8ca601b628cd40e",
+      "bytes": 55,
+      "template_changes": []
+    },
+    {
+      "path": "src/main.py",
+      "runtime_sha256": "836353818a54ba18b4dea2a2ced19d05ffbb0be15b8405030ee1a7339e772a14",
+      "published_sha256": "836353818a54ba18b4dea2a2ced19d05ffbb0be15b8405030ee1a7339e772a14",
+      "bytes": 21959,
+      "template_changes": []
+    },
+    {
+      "path": "src/admin/index.html",
+      "runtime_sha256": "e4b11c3f4af9c0223654e9b824815a029c9fe19ecfa57285dc98cc26c2258721",
+      "published_sha256": "e4b11c3f4af9c0223654e9b824815a029c9fe19ecfa57285dc98cc26c2258721",
+      "bytes": 398,
+      "template_changes": []
+    },
+    {
+      "path": "src/admin/app.py",
+      "runtime_sha256": "cb5f497a769bdd68f5ae55d9b4e112a4a99112048aab7a7d43ddeb91c9606b9b",
+      "published_sha256": "cb5f497a769bdd68f5ae55d9b4e112a4a99112048aab7a7d43ddeb91c9606b9b",
+      "bytes": 5789,
+      "template_changes": []
+    },
+    {
+      "path": "src/admin/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/admin/package-lock.json",
+      "runtime_sha256": "2f459522dd8b54f5ec82eea55720e13faf5f8516088332a821a9ca685664bd4e",
+      "published_sha256": "2f459522dd8b54f5ec82eea55720e13faf5f8516088332a821a9ca685664bd4e",
+      "bytes": 60762,
+      "template_changes": []
+    },
+    {
+      "path": "src/admin/package.json",
+      "runtime_sha256": "f08827f24a33cccad37c7d8d6dc77ddc4cb1257bde1e1b3a82353193aecd457b",
+      "published_sha256": "f08827f24a33cccad37c7d8d6dc77ddc4cb1257bde1e1b3a82353193aecd457b",
+      "bytes": 496,
+      "template_changes": []
+    },
+    {
+      "path": "src/admin/auth.py",
+      "runtime_sha256": "a1d6a0413b030eb245b44f36df988dd6c0628f584ade4f450e4bac2e49982be0",
+      "published_sha256": "a1d6a0413b030eb245b44f36df988dd6c0628f584ade4f450e4bac2e49982be0",
+      "bytes": 7599,
+      "template_changes": []
+    },
+    {
+      "path": "src/admin/vite.config.ts",
+      "runtime_sha256": "d0b0adfddc8977ec72cfa8815012dad158b24753a1398902056b7e8e83b7aef7",
+      "published_sha256": "d0b0adfddc8977ec72cfa8815012dad158b24753a1398902056b7e8e83b7aef7",
+      "bytes": 825,
+      "template_changes": []
+    },
+    {
+      "path": "src/admin/tsconfig.json",
+      "runtime_sha256": "63c71446337ed3e0992129469829cf2c54114219abdfdd41dd4924b3d2968902",
+      "published_sha256": "68b1c0b1080ff20027b0d6164f57c191f20a6eecc6504564d13ac5c868f13e7a",
+      "bytes": 701,
+      "template_changes": []
+    },
+    {
+      "path": "src/admin/services/__init__.py",
+      "runtime_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "published_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "bytes": 47,
+      "template_changes": []
+    },
+    {
+      "path": "src/admin/services/audit_log_service.py",
+      "runtime_sha256": "95c68c1f083fbc62be5e2f70857b67fe678a9e625907cf2f91f463a31122421a",
+      "published_sha256": "95c68c1f083fbc62be5e2f70857b67fe678a9e625907cf2f91f463a31122421a",
+      "bytes": 2630,
+      "template_changes": []
+    },
+    {
+      "path": "src/admin/legal/terms-of-service.html",
+      "runtime_sha256": "34b50a2956f4450351bc79865a4a0272f1f9f47fb943be4a4e6ff08fac468cd1",
+      "published_sha256": "34b50a2956f4450351bc79865a4a0272f1f9f47fb943be4a4e6ff08fac468cd1",
+      "bytes": 4453,
+      "template_changes": []
+    },
+    {
+      "path": "src/admin/legal/privacy-policy.html",
+      "runtime_sha256": "31471b5063a8049f9e6c29c36ce7676263bea0cd78ccb7ffb7ebb2d3a87bbbcc",
+      "published_sha256": "31471b5063a8049f9e6c29c36ce7676263bea0cd78ccb7ffb7ebb2d3a87bbbcc",
+      "bytes": 5983,
+      "template_changes": []
+    },
+    {
+      "path": "src/admin/legal/gacha/terms-of-service.html",
+      "runtime_sha256": "89357f043cdf618adf75795935b7cb4c4ca98db4ba16e9958db2525cdc05056d",
+      "published_sha256": "89357f043cdf618adf75795935b7cb4c4ca98db4ba16e9958db2525cdc05056d",
+      "bytes": 2942,
+      "template_changes": []
+    },
+    {
+      "path": "src/admin/legal/gacha/privacy-policy.html",
+      "runtime_sha256": "54c9b8e7d32c479ee28bda6cc1d46e87ed090980e32076c50ba56d20fe4a1fb7",
+      "published_sha256": "54c9b8e7d32c479ee28bda6cc1d46e87ed090980e32076c50ba56d20fe4a1fb7",
+      "bytes": 3402,
+      "template_changes": []
+    },
+    {
+      "path": "src/admin/legal/follow/terms-of-service.html",
+      "runtime_sha256": "a96cc09e0350251ed6af256d8cc447df87e5e8c874a0bc0281cd1b1db2ff9585",
+      "published_sha256": "a96cc09e0350251ed6af256d8cc447df87e5e8c874a0bc0281cd1b1db2ff9585",
+      "bytes": 3009,
+      "template_changes": []
+    },
+    {
+      "path": "src/admin/legal/follow/privacy-policy.html",
+      "runtime_sha256": "dd2fd47969467223ea5e65293666d061084d0a64cc4c95aa963b6606d43a5d6c",
+      "published_sha256": "dd2fd47969467223ea5e65293666d061084d0a64cc4c95aa963b6606d43a5d6c",
+      "bytes": 3469,
+      "template_changes": []
+    },
+    {
+      "path": "src/admin/api/stats.py",
+      "runtime_sha256": "730982c61f5825a024db15e4a66c8fa556978d766f5f278a158f4bc02099a65f",
+      "published_sha256": "730982c61f5825a024db15e4a66c8fa556978d766f5f278a158f4bc02099a65f",
+      "bytes": 2797,
+      "template_changes": []
+    },
+    {
+      "path": "src/admin/api/providers_models.py",
+      "runtime_sha256": "4d8b2af637317c853be0d825056e1ad72723e1a5102120786e86deb5a12bf6f4",
+      "published_sha256": "4d8b2af637317c853be0d825056e1ad72723e1a5102120786e86deb5a12bf6f4",
+      "bytes": 12280,
+      "template_changes": []
+    },
+    {
+      "path": "src/admin/api/events.py",
+      "runtime_sha256": "7316e2d132c599d4651c3832fa479f8604d6b21ff3d6f43c0197dd5d09575e38",
+      "published_sha256": "7316e2d132c599d4651c3832fa479f8604d6b21ff3d6f43c0197dd5d09575e38",
+      "bytes": 6700,
+      "template_changes": []
+    },
+    {
+      "path": "src/admin/api/config_api.py",
+      "runtime_sha256": "bba2eb7b080e15add344f6b3a1fa0fae2d54bfd4da8320c72a566857931f470c",
+      "published_sha256": "bba2eb7b080e15add344f6b3a1fa0fae2d54bfd4da8320c72a566857931f470c",
+      "bytes": 8905,
+      "template_changes": []
+    },
+    {
+      "path": "src/admin/api/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/admin/api/settings.py",
+      "runtime_sha256": "eaa52740c647360c9c0ba50e01ee584cda00bd9aebcba05d057cc156780129e4",
+      "published_sha256": "eaa52740c647360c9c0ba50e01ee584cda00bd9aebcba05d057cc156780129e4",
+      "bytes": 10904,
+      "template_changes": []
+    },
+    {
+      "path": "src/admin/api/economy.py",
+      "runtime_sha256": "babaeed3a37445e6a6755e97fe00db7a19e10f33317c6d65e306e21f32ba78f6",
+      "published_sha256": "babaeed3a37445e6a6755e97fe00db7a19e10f33317c6d65e306e21f32ba78f6",
+      "bytes": 2571,
+      "template_changes": []
+    },
+    {
+      "path": "src/admin/api/audit.py",
+      "runtime_sha256": "bec6d6fac3d76ccccddbd0305f250a2e2ba65b5f2174d8a6417d84bf2cb9b3cf",
+      "published_sha256": "bec6d6fac3d76ccccddbd0305f250a2e2ba65b5f2174d8a6417d84bf2cb9b3cf",
+      "bytes": 548,
+      "template_changes": []
+    },
+    {
+      "path": "src/admin/api/data.py",
+      "runtime_sha256": "682513931a0f3f551e964aed86ce73201affb7481649be392746082fc540b540",
+      "published_sha256": "682513931a0f3f551e964aed86ce73201affb7481649be392746082fc540b540",
+      "bytes": 29156,
+      "template_changes": []
+    },
+    {
+      "path": "src/admin/api/misc.py",
+      "runtime_sha256": "720a80b33e684943a9e9eccaba0c51b2eba594605fe01009ef442a9aabb64a59",
+      "published_sha256": "720a80b33e684943a9e9eccaba0c51b2eba594605fe01009ef442a9aabb64a59",
+      "bytes": 3705,
+      "template_changes": []
+    },
+    {
+      "path": "src/admin/api/moderation.py",
+      "runtime_sha256": "e74e21fe7ad17700b6cdaaba229ff2868da96c42fba837de20f991bdaa805fbf",
+      "published_sha256": "e74e21fe7ad17700b6cdaaba229ff2868da96c42fba837de20f991bdaa805fbf",
+      "bytes": 6117,
+      "template_changes": []
+    },
+    {
+      "path": "src/admin/api/ab.py",
+      "runtime_sha256": "a422a970407be0d66a0f660481b4c5b5eaeb27e103d2431274129f0b13333958",
+      "published_sha256": "a422a970407be0d66a0f660481b4c5b5eaeb27e103d2431274129f0b13333958",
+      "bytes": 5269,
+      "template_changes": []
+    },
+    {
+      "path": "src/guidance/index.html",
+      "runtime_sha256": "b413c30ac4ae328b8eb48ef5d8c79789bbe6b673d4829dd691ad0503aec4a813",
+      "published_sha256": "b413c30ac4ae328b8eb48ef5d8c79789bbe6b673d4829dd691ad0503aec4a813",
+      "bytes": 580,
+      "template_changes": []
+    },
+    {
+      "path": "src/guidance/app.py",
+      "runtime_sha256": "b86c900973645e7989d4ca8e97b60993aab88651787b0378b805295a00c84e1f",
+      "published_sha256": "40a52d1daed48419e8bcb4e55e999fa126e1ba4005b18937e24ae1eb1f983bb1",
+      "bytes": 6126,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "src/guidance/package-lock.json",
+      "runtime_sha256": "680d30f6342290b00cf0d6387564feaeb2104f49bb15b0984598cc9a34a138d6",
+      "published_sha256": "680d30f6342290b00cf0d6387564feaeb2104f49bb15b0984598cc9a34a138d6",
+      "bytes": 54735,
+      "template_changes": []
+    },
+    {
+      "path": "src/guidance/package.json",
+      "runtime_sha256": "c00cbb495cac8ad2a89260483df6bd189cb8a460cec675fc76ba131fc88b6d01",
+      "published_sha256": "c00cbb495cac8ad2a89260483df6bd189cb8a460cec675fc76ba131fc88b6d01",
+      "bytes": 454,
+      "template_changes": []
+    },
+    {
+      "path": "src/guidance/vite.config.ts",
+      "runtime_sha256": "b65e212e0138adc4364ba4e6705ea24d9d3ce4d503a27723bb352918febf076c",
+      "published_sha256": "b65e212e0138adc4364ba4e6705ea24d9d3ce4d503a27723bb352918febf076c",
+      "bytes": 516,
+      "template_changes": []
+    },
+    {
+      "path": "src/guidance/tsconfig.json",
+      "runtime_sha256": "63c71446337ed3e0992129469829cf2c54114219abdfdd41dd4924b3d2968902",
+      "published_sha256": "68b1c0b1080ff20027b0d6164f57c191f20a6eecc6504564d13ac5c868f13e7a",
+      "bytes": 701,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/event_service.py",
+      "runtime_sha256": "53144e3a205ddafc528c5bf4258cb263eefd3eb5dbf251d40bf537907e7189c1",
+      "published_sha256": "53144e3a205ddafc528c5bf4258cb263eefd3eb5dbf251d40bf537907e7189c1",
+      "bytes": 14960,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/takeover_service.py",
+      "runtime_sha256": "38516fafc38a7e3e75954a518e38337753f56fd69a739c1c30ea291eac6699ca",
+      "published_sha256": "38516fafc38a7e3e75954a518e38337753f56fd69a739c1c30ea291eac6699ca",
+      "bytes": 5523,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/context_service_test.py",
+      "runtime_sha256": "a65b389d5b2883196eed9a635a6df1dbe6e58697baf17f555ee87f5379e0e755",
+      "published_sha256": "a65b389d5b2883196eed9a635a6df1dbe6e58697baf17f555ee87f5379e0e755",
+      "bytes": 12720,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/embedding_factory.py",
+      "runtime_sha256": "3f494592f02e4e4c1d962da09e975a2a3ec9333c354ff30709ef036e2077ef75",
+      "published_sha256": "3f494592f02e4e4c1d962da09e975a2a3ec9333c354ff30709ef036e2077ef75",
+      "bytes": 7803,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/review_service.py",
+      "runtime_sha256": "6416c68ab85a6f29ced8c981377a277894afe7b54ab82a3512ff74112dd7a1f9",
+      "published_sha256": "6416c68ab85a6f29ced8c981377a277894afe7b54ab82a3512ff74112dd7a1f9",
+      "bytes": 39686,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/regex_service.py",
+      "runtime_sha256": "d1216223eb39e850b198f94523bb390438c303c2620ccc34d06196c6d1c30bd9",
+      "published_sha256": "d1216223eb39e850b198f94523bb390438c303c2620ccc34d06196c6d1c30bd9",
+      "bytes": 4187,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/gpt_image_service.py",
+      "runtime_sha256": "88be166346f622999048b5a96fcc9462743df35a9aef53b3e58214283398bd89",
+      "published_sha256": "88be166346f622999048b5a96fcc9462743df35a9aef53b3e58214283398bd89",
+      "bytes": 8495,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/persona_preference_service.py",
+      "runtime_sha256": "0811bf4b81a01c9e7ac419e92f893f68075330acd14b8d46de80901335c93d19",
+      "published_sha256": "0811bf4b81a01c9e7ac419e92f893f68075330acd14b8d46de80901335c93d19",
+      "bytes": 2549,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/ollama_vision_service.py",
+      "runtime_sha256": "ea481c9654cb9abda97c90d93e54880421c518a363dc0ce2464582c655f92870",
+      "published_sha256": "ea481c9654cb9abda97c90d93e54880421c518a363dc0ce2464582c655f92870",
+      "bytes": 9133,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/faction_service.py",
+      "runtime_sha256": "6f9cb102365dc145c5984bff0bd169008e4d0780f64ab1fee2c19480a2d1677a",
+      "published_sha256": "6f9cb102365dc145c5984bff0bd169008e4d0780f64ab1fee2c19480a2d1677a",
+      "bytes": 3928,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/config_override_service.py",
+      "runtime_sha256": "5bfb2455dfe1496e4cafd665f10e57c25d8a7d77ab0dcfa5efda78eb41b7be95",
+      "published_sha256": "5bfb2455dfe1496e4cafd665f10e57c25d8a7d77ab0dcfa5efda78eb41b7be95",
+      "bytes": 3623,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/anger_service.py",
+      "runtime_sha256": "8be65e390d8790fe2d681648aacc7d9458efa02c94c50acc3e12d070d3a319d8",
+      "published_sha256": "8be65e390d8790fe2d681648aacc7d9458efa02c94c50acc3e12d070d3a319d8",
+      "bytes": 6042,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/message_processor.py",
+      "runtime_sha256": "ce80c2c1952a22796c77bcb4b19d55c718f9ccac44eb40634eb57c5f9dc7a497",
+      "published_sha256": "ce80c2c1952a22796c77bcb4b19d55c718f9ccac44eb40634eb57c5f9dc7a497",
+      "bytes": 29624,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/key_rotation_service.py",
+      "runtime_sha256": "d593654aa6c750a9c93332f4667883c2cc573cc19d82edc853123febc74330cd",
+      "published_sha256": "d593654aa6c750a9c93332f4667883c2cc573cc19d82edc853123febc74330cd",
+      "bytes": 10623,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/bot_dialogue_service.py",
+      "runtime_sha256": "22813692aec97dd26b323e87690891c9d185ff453fbf9d0babb24faa6059794c",
+      "published_sha256": "22813692aec97dd26b323e87690891c9d185ff453fbf9d0babb24faa6059794c",
+      "bytes": 6243,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/ollama_embedding_service.py",
+      "runtime_sha256": "eb05eb5a42fe4c834261aaafd7ec1003dcdc8c7932c69ac8c00228821695e403",
+      "published_sha256": "eb05eb5a42fe4c834261aaafd7ec1003dcdc8c7932c69ac8c00228821695e403",
+      "bytes": 8507,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/prompt_service.py",
+      "runtime_sha256": "3b663f8ead82cd0c6fd66bc5fe3b5803fb17ffd6389522c83a900bbeb40ff6a0",
+      "published_sha256": "3b663f8ead82cd0c6fd66bc5fe3b5803fb17ffd6389522c83a900bbeb40ff6a0",
+      "bytes": 86149,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/submission_service.py",
+      "runtime_sha256": "9be9e832480013da2354506b27c88ce2dfebb9cb628e2ea93a4846c3d191bb29",
+      "published_sha256": "9be9e832480013da2354506b27c88ce2dfebb9cb628e2ea93a4846c3d191bb29",
+      "bytes": 13845,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/config_registry.py",
+      "runtime_sha256": "4350b3aa57500cc34f7dafcdc3c2f10c4fe28cac8bc54872b1329785e07c507c",
+      "published_sha256": "4350b3aa57500cc34f7dafcdc3c2f10c4fe28cac8bc54872b1329785e07c507c",
+      "bytes": 8256,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/chat_service.py",
+      "runtime_sha256": "6c053d52708aa248e359e088412616104761269f57f738155e47a2168b01d42b",
+      "published_sha256": "6c053d52708aa248e359e088412616104761269f57f738155e47a2168b01d42b",
+      "bytes": 26763,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/warning_service.py",
+      "runtime_sha256": "7b1067149e4a92a87818b597af73aecca6aed006f36b67e78be6d574efb8d2d5",
+      "published_sha256": "7b1067149e4a92a87818b597af73aecca6aed006f36b67e78be6d574efb8d2d5",
+      "bytes": 3180,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/ai/_genai_compat.py",
+      "runtime_sha256": "fffdd37d90edb81cdad4ad813ad1c16bd5a5aae00463f844dae6c57a81334b23",
+      "published_sha256": "fffdd37d90edb81cdad4ad813ad1c16bd5a5aae00463f844dae6c57a81334b23",
+      "bytes": 3062,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/ai/__init__.py",
+      "runtime_sha256": "d07b61adde57f2354dcca25c19b64f422e51990f1a1606384ea3a8c698b0ea6b",
+      "published_sha256": "d07b61adde57f2354dcca25c19b64f422e51990f1a1606384ea3a8c698b0ea6b",
+      "bytes": 1392,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/ai/budget.py",
+      "runtime_sha256": "b5828a2b50f2b896bb1de3565944d64df7ccc90ec0f5d0a09050a846707fa332",
+      "published_sha256": "b5828a2b50f2b896bb1de3565944d64df7ccc90ec0f5d0a09050a846707fa332",
+      "bytes": 1190,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/ai/service.py",
+      "runtime_sha256": "82520f7c222fda8177a71600453999b651bbfdaf8d57685484e11a3e6d4a6537",
+      "published_sha256": "82520f7c222fda8177a71600453999b651bbfdaf8d57685484e11a3e6d4a6537",
+      "bytes": 49013,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/ai/providers/openai_provider.py",
+      "runtime_sha256": "d93eaa3b38b5fe67633bf004fb9e8351297d42b6a1bcc14feed2c04a70c62897",
+      "published_sha256": "d93eaa3b38b5fe67633bf004fb9e8351297d42b6a1bcc14feed2c04a70c62897",
+      "bytes": 30049,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/ai/providers/__init__.py",
+      "runtime_sha256": "32badc6c5a6a95b7c90bcd43f6277d7853a41e8eb813124e60fe4918195e8cc8",
+      "published_sha256": "32badc6c5a6a95b7c90bcd43f6277d7853a41e8eb813124e60fe4918195e8cc8",
+      "bytes": 1010,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/ai/providers/base.py",
+      "runtime_sha256": "cb7e2d52049e847ebe8e635c02c76a792cee6bf70c7f9cee2893a54fbdc9d65f",
+      "published_sha256": "cb7e2d52049e847ebe8e635c02c76a792cee6bf70c7f9cee2893a54fbdc9d65f",
+      "bytes": 8801,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/ai/providers/deepseek_provider.py",
+      "runtime_sha256": "97803b82bfdf523f38b17cbbedfe0c08cb1291902ae2f61fd16a863ea0f8dc48",
+      "published_sha256": "97803b82bfdf523f38b17cbbedfe0c08cb1291902ae2f61fd16a863ea0f8dc48",
+      "bytes": 25644,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/ai/providers/provider_format.py",
+      "runtime_sha256": "2af7bb92c0032ab0a478938d05bb84dc960496b98bb688441324b01a73197e71",
+      "published_sha256": "2af7bb92c0032ab0a478938d05bb84dc960496b98bb688441324b01a73197e71",
+      "bytes": 5807,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/ai/providers/gemini_provider.py",
+      "runtime_sha256": "53e85d1ee8eab73bcb1d6f5f6ded113811540d1c4f47d7492f6c458da3881999",
+      "published_sha256": "53e85d1ee8eab73bcb1d6f5f6ded113811540d1c4f47d7492f6c458da3881999",
+      "bytes": 38366,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/ai/config/__init__.py",
+      "runtime_sha256": "d02b3e37a033f6dd66a0859b0adf95d797ee1e28c2ea797064aae5c3e922337c",
+      "published_sha256": "d02b3e37a033f6dd66a0859b0adf95d797ee1e28c2ea797064aae5c3e922337c",
+      "bytes": 822,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/ai/config/providers.py",
+      "runtime_sha256": "9bdab88f5deb33b77dfec68bfc2577f980bbecabdd6f6dd14748a3f7b953eefc",
+      "published_sha256": "9bdab88f5deb33b77dfec68bfc2577f980bbecabdd6f6dd14748a3f7b953eefc",
+      "bytes": 9515,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/ai/config/models.py",
+      "runtime_sha256": "309c00cb9d0e7db38610de101fc788e41185d9b7072ada8b6113ba75cc47a083",
+      "published_sha256": "309c00cb9d0e7db38610de101fc788e41185d9b7072ada8b6113ba75cc47a083",
+      "bytes": 15565,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/ai/utils/__init__.py",
+      "runtime_sha256": "01269ef42b513d949573826e70fd7527a22433ea276c90374304422f62891de9",
+      "published_sha256": "01269ef42b513d949573826e70fd7527a22433ea276c90374304422f62891de9",
+      "bytes": 126,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/ai/utils/tool_converter.py",
+      "runtime_sha256": "0bee6aaa9408168e534f1bbcbf7040cadc0b1e82c95ce0f7ef7d6ad4f8a43f93",
+      "published_sha256": "0bee6aaa9408168e534f1bbcbf7040cadc0b1e82c95ce0f7ef7d6ad4f8a43f93",
+      "bytes": 14988,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/persona_media/channel_policy.py",
+      "runtime_sha256": "8b54bcb54be0ce913e066d19ec063937cfa7ea80f617c66742015b9d1eb59153",
+      "published_sha256": "81eac87f853fa207f6f59ccd85cf1198ecdba26d40eb3714c613405f5b249c72",
+      "bytes": 1268,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "src/chat/services/persona_media/config.py",
+      "runtime_sha256": "74b66c2c6aee33080243d881281a652d924606db9213f3e0c88b528e35c9dad8",
+      "published_sha256": "74b66c2c6aee33080243d881281a652d924606db9213f3e0c88b528e35c9dad8",
+      "bytes": 834,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/persona_media/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/persona_media/fleet_budget.py",
+      "runtime_sha256": "76cd77af8fa219c156fdc19c5fc9ac6b35ffddaec8166dfd221f30e654226de6",
+      "published_sha256": "76cd77af8fa219c156fdc19c5fc9ac6b35ffddaec8166dfd221f30e654226de6",
+      "bytes": 6638,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/persona_media/image_decision.py",
+      "runtime_sha256": "785c89f79239a4cc0a2f6fc4f8a5c8377c57176fd9a37dd54c0025b05a29c98c",
+      "published_sha256": "785c89f79239a4cc0a2f6fc4f8a5c8377c57176fd9a37dd54c0025b05a29c98c",
+      "bytes": 3566,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/persona_media/cog.py",
+      "runtime_sha256": "c0fd70ddbb7019fa78eca5fcaab4b9ff0c65d516f1986df26c83112040cc4c50",
+      "published_sha256": "b61e4084b69d1e68bb16361880ed4152e445b79e1eb6e4655e2bcbf8a406d46d",
+      "bytes": 5762,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "src/chat/services/persona_media/ai.py",
+      "runtime_sha256": "cc1a79430bedaf14bfc3ceb2e59a3d4d1e2781f81ffc33a713fbe6880fb52654",
+      "published_sha256": "cc1a79430bedaf14bfc3ceb2e59a3d4d1e2781f81ffc33a713fbe6880fb52654",
+      "bytes": 503,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/persona_media/vision.py",
+      "runtime_sha256": "c7345a18b00078ea0ef2d9bb5275db21942ab290a2da58bcab90a7a3854e81df",
+      "published_sha256": "c7345a18b00078ea0ef2d9bb5275db21942ab290a2da58bcab90a7a3854e81df",
+      "bytes": 1199,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/persona_media/store.py",
+      "runtime_sha256": "e8f4d090d2acab02849b73dfb115063ebd01afd10b3592da594033cbac3720e5",
+      "published_sha256": "e8f4d090d2acab02849b73dfb115063ebd01afd10b3592da594033cbac3720e5",
+      "bytes": 3528,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/persona_media/media_replies.py",
+      "runtime_sha256": "99cdc3a1ca5b0a66e99eb0b89530cd688ccfd78b207ac462847bd1eff9061593",
+      "published_sha256": "99cdc3a1ca5b0a66e99eb0b89530cd688ccfd78b207ac462847bd1eff9061593",
+      "bytes": 13724,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/persona_media/image_status.py",
+      "runtime_sha256": "3bd580a32f561fed7e5874eb3f1917000bb5f808cdc818a40106f496a8a13e73",
+      "published_sha256": "3bd580a32f561fed7e5874eb3f1917000bb5f808cdc818a40106f496a8a13e73",
+      "bytes": 4778,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/persona_media/image_generation.py",
+      "runtime_sha256": "6fb4d319dc1474c2792cefad1ee4213eba3f6ff147b3cdfc64f181edbe7a9c14",
+      "published_sha256": "6fb4d319dc1474c2792cefad1ee4213eba3f6ff147b3cdfc64f181edbe7a9c14",
+      "bytes": 25961,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/persona_media/conversation.py",
+      "runtime_sha256": "97642a615fe1acbf07d9aacff4c3635d8c1ce2578816d65ac0a097eeeee52e94",
+      "published_sha256": "97642a615fe1acbf07d9aacff4c3635d8c1ce2578816d65ac0a097eeeee52e94",
+      "bytes": 11575,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/config/__init__.py",
+      "runtime_sha256": "f20602d6d5aa1cecd610cedcda03dabb1e35440ec8a11679956293cd290ea2fd",
+      "published_sha256": "f20602d6d5aa1cecd610cedcda03dabb1e35440ec8a11679956293cd290ea2fd",
+      "bytes": 51,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/config/shop_config.py",
+      "runtime_sha256": "7732ece30f7156fe8187c3a174abfd3ef437fe2b3c3c4ecb465d91db1c89974b",
+      "published_sha256": "e9b1271b29b021e0f7cf17fd5c7f0d95e39c944bee3ee2511c3b200652674621",
+      "bytes": 20909,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "src/chat/config/emoji_config.py",
+      "runtime_sha256": "25bd4644130512478544e919dff8a86cbd1e31333b2e02b3620f23fbbe19341c",
+      "published_sha256": "d9b95c9bbf203a17a8f62dbe5b0af0734126e7e231ee6c50aa8541bfa4cc7003",
+      "bytes": 1189,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "src/chat/config/chat_config.py",
+      "runtime_sha256": "8a0f1cb033d0bf61570d661cc159bc0d41a9e30cf0c6671294b1d42b432426a0",
+      "published_sha256": "4c60be833c0c96451be7b77c362efe5e7338bb8929c74f1152f56687c4d62054",
+      "bytes": 30704,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "src/chat/config/thread_prompts.py",
+      "runtime_sha256": "74c80c1faca49f9257e0b8108bae0f1c2336882e0d8b46a15b7b563ec76a00f4",
+      "published_sha256": "74c80c1faca49f9257e0b8108bae0f1c2336882e0d8b46a15b7b563ec76a00f4",
+      "bytes": 245,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/config/prompts.py",
+      "runtime_sha256": "01a091d27827c6fb8aff894b8923e2988637ad9cf95991dd74bb2d31afde5db1",
+      "published_sha256": "01a091d27827c6fb8aff894b8923e2988637ad9cf95991dd74bb2d31afde5db1",
+      "bytes": 3859,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/events/christmas_2025/factions.json",
+      "runtime_sha256": "11f8af5b44fd9a8222fbe8aae48a063f26c3b6d1e5715e1a6592e421ac473ba3",
+      "published_sha256": "7f6dd69898f7f2eacf4213ca73f644ed6283552c09af888927976e6f08b4262c",
+      "bytes": 774,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/events/christmas_2025/prompts.json",
+      "runtime_sha256": "84ad35fd842a0cc959281ade75227f12e83b7e2e7d45b0c965cae90a437dd6d1",
+      "published_sha256": "a12103a9b32dd18a20354f153b3d69f556f4ad56e888d11392b49918d7066550",
+      "bytes": 201,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/events/christmas_2025/factions/christmas_eve.xml",
+      "runtime_sha256": "57566637a4121d14a2dcb31444842e661e35d4b6c94edb42da9782abe78e4c53",
+      "published_sha256": "57566637a4121d14a2dcb31444842e661e35d4b6c94edb42da9782abe78e4c53",
+      "bytes": 3424,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/events/christmas_2025/factions/christmas_day.xml",
+      "runtime_sha256": "e1374884c52e6745456edb0ccd9de000ad9cf2d14d40198afab4cd7d4a3f1279",
+      "published_sha256": "e1374884c52e6745456edb0ccd9de000ad9cf2d14d40198afab4cd7d4a3f1279",
+      "bytes": 3465,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/events/christmas_2025/factions/before_christmas.xml",
+      "runtime_sha256": "9a3f3e4182e6dd766184ba26080600a0a1d2fe4915ecad6276dbd5a809b709e0",
+      "published_sha256": "9a3f3e4182e6dd766184ba26080600a0a1d2fe4915ecad6276dbd5a809b709e0",
+      "bytes": 3377,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/events/spring_festival_2026/factions.json",
+      "runtime_sha256": "bd00cd391306cbfc4bfacb900ab59806b2644b09dc3dbb6f2eded7a83e7c62f9",
+      "published_sha256": "6e2e7f334b255bc5c78c082879430ad0ac678da15e476532a5d5926f02325ef3",
+      "bytes": 976,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "src/chat/events/spring_festival_2026/prompts.json",
+      "runtime_sha256": "7567e3c08f52ed3b548018bd69c70850723eedd9f8638b3d8191e36ddf98edfd",
+      "published_sha256": "002e30f70541ee9e762cd8086b7dcba99f4047b5fa63db02b04b2693f0eccbf4",
+      "bytes": 247,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/events/spring_festival_2026/factions/spring_festival_generic_day.xml",
+      "runtime_sha256": "42687a4b512ffecfe956a3fd91d31c1394b4c91e3a9d841a7a3840b63786081d",
+      "published_sha256": "42687a4b512ffecfe956a3fd91d31c1394b4c91e3a9d841a7a3840b63786081d",
+      "bytes": 3338,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/events/spring_festival_2026/factions/spring_festival_eve.xml",
+      "runtime_sha256": "5265747e06365e77f076ed32d156c9680371364839a685ae40fffbb1914465f0",
+      "published_sha256": "5265747e06365e77f076ed32d156c9680371364839a685ae40fffbb1914465f0",
+      "bytes": 3443,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/events/spring_festival_2026/factions/spring_festival_day.xml",
+      "runtime_sha256": "ea81e687c3c7f54602b846d46d239c6c91bb836f8460a38639343784e431837a",
+      "published_sha256": "ea81e687c3c7f54602b846d46d239c6c91bb836f8460a38639343784e431837a",
+      "bytes": 3425,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/events/halloween_2025/factions.json",
+      "runtime_sha256": "ad1b498236d31dea21acedc642046e4a5d634bc2294fdb4e7af60af74e00fcc9",
+      "published_sha256": "f27a6fa9731b2c59dab5824817b38dbf69dc4fb017e7a1f3ee2249cfa7aa969d",
+      "bytes": 3401,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "src/chat/events/halloween_2025/manifest.json",
+      "runtime_sha256": "dedbeb61e3a2e247b90ed37de3ddbfc76fad80b73f788e8afa8217db04d9bde7",
+      "published_sha256": "aecd8681bfefef2561021ded245bff7928e7221a297fc0fd512879f9b6a617f3",
+      "bytes": 769,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "src/chat/events/halloween_2025/items.json",
+      "runtime_sha256": "ae0623970b186b9308b31e0894407eff6436721dbe49d946f718660b460da29f",
+      "published_sha256": "bc097e43ea0eaebc14ae5a4fb603fa6a3e99061345957d49c3141678db9d5632",
+      "bytes": 8311,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/events/halloween_2025/prompts.json",
+      "runtime_sha256": "96cae67d1ce34af5a5913ffe90018eca70b8b0dc2d14035d4fcdaa9563c6d604",
+      "published_sha256": "57cde530820c5fa9510c5663c05137e938f77724d404971e7a984043bed66d6f",
+      "bytes": 270,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/events/halloween_2025/world_book.md",
+      "runtime_sha256": "40f6cde34a1fbd9f7e25018de268ee7613404a5c53eaa58c69478b5ca119125d",
+      "published_sha256": "40f6cde34a1fbd9f7e25018de268ee7613404a5c53eaa58c69478b5ca119125d",
+      "bytes": 2625,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/events/halloween_2025/tags/church/core_identity.txt",
+      "runtime_sha256": "0e128d4470bb8d88ae5eef353e374a2fa5ccb7e1bd21027fc2b468d4c6381e2c",
+      "published_sha256": "0e128d4470bb8d88ae5eef353e374a2fa5ccb7e1bd21027fc2b468d4c6381e2c",
+      "bytes": 760,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/events/halloween_2025/tags/vampire/core_identity.txt",
+      "runtime_sha256": "e016fefa926e13e91679aac7b8b7c5d3d750a1f7c2540bee907b1a07bf22fc12",
+      "published_sha256": "e016fefa926e13e91679aac7b8b7c5d3d750a1f7c2540bee907b1a07bf22fc12",
+      "bytes": 832,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/events/halloween_2025/factions/jiangshi.xml",
+      "runtime_sha256": "5904ce2689787e63d5fb538c67fbdb607a25b9e26af14b59d50b605066273fd7",
+      "published_sha256": "5904ce2689787e63d5fb538c67fbdb607a25b9e26af14b59d50b605066273fd7",
+      "bytes": 2942,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/events/halloween_2025/factions/werewolf.xml",
+      "runtime_sha256": "4c322a0eaf6c8404c8493f0a5ddc19e07d4687b7a95c6e2213165ef9f636cb7a",
+      "published_sha256": "4c322a0eaf6c8404c8493f0a5ddc19e07d4687b7a95c6e2213165ef9f636cb7a",
+      "bytes": 1839,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/events/halloween_2025/factions/church.xml",
+      "runtime_sha256": "cc8e4181935afdb38a151444d1a139459022eb38ba6af443631605341cf026cf",
+      "published_sha256": "cc8e4181935afdb38a151444d1a139459022eb38ba6af443631605341cf026cf",
+      "bytes": 3815,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/events/halloween_2025/factions/vampire.xml",
+      "runtime_sha256": "79e44ade223508482cdb70640f7d22d0a330b649c6b1ef0be7e89b43f9020e78",
+      "published_sha256": "79e44ade223508482cdb70640f7d22d0a330b649c6b1ef0be7e89b43f9020e78",
+      "bytes": 2040,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/events/halloween_2025/factions/ghost.xml",
+      "runtime_sha256": "19b1d9c28cedf52a11d58d3a2fdd43ac80cd983c1888cf0b03f2ca56b0839420",
+      "published_sha256": "19b1d9c28cedf52a11d58d3a2fdd43ac80cd983c1888cf0b03f2ca56b0839420",
+      "bytes": 2157,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/events/halloween_2025/factions/witch.xml",
+      "runtime_sha256": "0ed1b6cec42d456d97e35e112f90a802a6cf88f1d38c894bad7d9665d6ee44f1",
+      "published_sha256": "0ed1b6cec42d456d97e35e112f90a802a6cf88f1d38c894bad7d9665d6ee44f1",
+      "bytes": 2908,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/assets/logo.png",
+      "runtime_sha256": "ed8ba0d62d51c43540f7e529bd3ea741214709c1704af7169bd762356ad695e3",
+      "published_sha256": "ed8ba0d62d51c43540f7e529bd3ea741214709c1704af7169bd762356ad695e3",
+      "bytes": 1923701,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/assets/font.TTF",
+      "runtime_sha256": "31ca753ed023c3151810c9746e260a404ec7f1d32220b938022c055b7397dd54",
+      "published_sha256": "31ca753ed023c3151810c9746e260a404ec7f1d32220b938022c055b7397dd54",
+      "bytes": 9031556,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/cogs/persona_media_cog.py",
+      "runtime_sha256": "6bb3b1aec45288757d5913942b9cd5ff98b1c6561217c82ee43b0b5ed6f09b9e",
+      "published_sha256": "6bb3b1aec45288757d5913942b9cd5ff98b1c6561217c82ee43b0b5ed6f09b9e",
+      "bytes": 130,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/cogs/event_cog.py",
+      "runtime_sha256": "5db68305269df897311b704cd850c38f95609683b4f10f631fe313abd46c2564",
+      "published_sha256": "5db68305269df897311b704cd850c38f95609683b4f10f631fe313abd46c2564",
+      "bytes": 1815,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/cogs/thread_event_handler_cog.py",
+      "runtime_sha256": "88ec8b853ce3f56945adf427a04cbab8e1392bde7382df21d7241b6c42d00657",
+      "published_sha256": "88ec8b853ce3f56945adf427a04cbab8e1392bde7382df21d7241b6c42d00657",
+      "bytes": 6751,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/cogs/blacklist_admin_cog.py",
+      "runtime_sha256": "9253dc03228cd8f33422485b36a6e5c55e8463a0b553339dfd403f83e0b71631",
+      "published_sha256": "9253dc03228cd8f33422485b36a6e5c55e8463a0b553339dfd403f83e0b71631",
+      "bytes": 12233,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/cogs/takeover_cog.py",
+      "runtime_sha256": "eda15261e36600b6af88301493c83b8cdcf71560dc58e472d74feebe3e021b52",
+      "published_sha256": "eda15261e36600b6af88301493c83b8cdcf71560dc58e472d74feebe3e021b52",
+      "bytes": 12541,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/cogs/__init__.py",
+      "runtime_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "published_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "bytes": 47,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/cogs/bot_dialogue_cog.py",
+      "runtime_sha256": "1543d503ee3eaab77b6500d978fb9a9840c751e99d9f600a8dc4335236f01d66",
+      "published_sha256": "1543d503ee3eaab77b6500d978fb9a9840c751e99d9f600a8dc4335236f01d66",
+      "bytes": 20461,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/cogs/world_book_cog.py",
+      "runtime_sha256": "e5c0c5169437e20ab99d74832b50d22c66017fd3e86dfc5db91d225442b8c9c8",
+      "published_sha256": "e5c0c5169437e20ab99d74832b50d22c66017fd3e86dfc5db91d225442b8c9c8",
+      "bytes": 1840,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/cogs/db_cleanup_cog.py",
+      "runtime_sha256": "5cb6760ff6bcf81d54aef7c98d820d023b4392169bc7c93048cc81df99a9fa98",
+      "published_sha256": "5cb6760ff6bcf81d54aef7c98d820d023b4392169bc7c93048cc81df99a9fa98",
+      "bytes": 1514,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/cogs/ai_chat_cog.py",
+      "runtime_sha256": "37a42830ce06a14fa92f8754cddaa91ce3abaed71474bc65f77eb06f2b6b1855",
+      "published_sha256": "37a42830ce06a14fa92f8754cddaa91ce3abaed71474bc65f77eb06f2b6b1855",
+      "bytes": 16501,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/utils/__init__.py",
+      "runtime_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "published_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "bytes": 47,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/utils/time_utils.py",
+      "runtime_sha256": "ffb16f0676426233854ac87dba61040a4dec5362b4bdace0e464799eec6cb3d3",
+      "published_sha256": "ffb16f0676426233854ac87dba61040a4dec5362b4bdace0e464799eec6cb3d3",
+      "bytes": 1256,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/utils/command_sync.py",
+      "runtime_sha256": "7192c36bade910120ff6256dca8021432565f21f776bc97ddef727bc7a9f098e",
+      "published_sha256": "7192c36bade910120ff6256dca8021432565f21f776bc97ddef727bc7a9f098e",
+      "bytes": 3636,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/utils/prompt_utils.py",
+      "runtime_sha256": "4c50f7469aa0737c1b63ecb807c04a2f1db1438d9480735f123b381e780aad91",
+      "published_sha256": "4c50f7469aa0737c1b63ecb807c04a2f1db1438d9480735f123b381e780aad91",
+      "bytes": 3950,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/utils/image_utils.py",
+      "runtime_sha256": "ed5befd47d92d6aecde517847ca97d6d9e7fc036d2f06e7afc966497546f4a91",
+      "published_sha256": "ed5befd47d92d6aecde517847ca97d6d9e7fc036d2f06e7afc966497546f4a91",
+      "bytes": 5302,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/utils/document_builder.py",
+      "runtime_sha256": "f7922da2aaa1a0ae39c43950ea2cf17b843103dfa20ffb6a0346e81f551c643d",
+      "published_sha256": "f7922da2aaa1a0ae39c43950ea2cf17b843103dfa20ffb6a0346e81f551c643d",
+      "bytes": 1940,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/utils/database.py",
+      "runtime_sha256": "fc119feb0b1f7fb6af4e39955bd16fb1199d4bc2520b56c39f3fa51fdcae362e",
+      "published_sha256": "fc119feb0b1f7fb6af4e39955bd16fb1199d4bc2520b56c39f3fa51fdcae362e",
+      "bytes": 53978,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/utils/message_utils.py",
+      "runtime_sha256": "b1fb538812059eb6d40addfefa6d4daa6bbc5d829c92a2359f4ea1eb7e0d6548",
+      "published_sha256": "b1fb538812059eb6d40addfefa6d4daa6bbc5d829c92a2359f4ea1eb7e0d6548",
+      "bytes": 2050,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/__init__.py",
+      "runtime_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "published_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "bytes": 47,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/world_book/__init__.py",
+      "runtime_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "published_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "bytes": 47,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/world_book/services/__init__.py",
+      "runtime_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "published_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "bytes": 47,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/world_book/services/incremental_rag_service.py",
+      "runtime_sha256": "507ed62b867271b8083dcbb3a5e454fbb78fdca448f0f19038732329ec8d7ea2",
+      "published_sha256": "507ed62b867271b8083dcbb3a5e454fbb78fdca448f0f19038732329ec8d7ea2",
+      "bytes": 34158,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/world_book/services/knowledge_search_service.py",
+      "runtime_sha256": "a31db73e165af51f84883addccb814f135248f7d72e3388ccc63641aee3792ff",
+      "published_sha256": "a31db73e165af51f84883addccb814f135248f7d72e3388ccc63641aee3792ff",
+      "bytes": 8645,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/world_book/services/world_book_service.py",
+      "runtime_sha256": "9800dc207c42588131a6836c72326952bc506e1d2f985760d0785c8071a13585",
+      "published_sha256": "9800dc207c42588131a6836c72326952bc506e1d2f985760d0785c8071a13585",
+      "bytes": 11571,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/world_book/ui/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/world_book/ui/contribution_modal.py",
+      "runtime_sha256": "a058800464a3ae2d3207c03e9c980866acbe04d7392922f10ea621592b6ff12d",
+      "published_sha256": "a058800464a3ae2d3207c03e9c980866acbe04d7392922f10ea621592b6ff12d",
+      "bytes": 6295,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/world_book/data/__init__.py",
+      "runtime_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "published_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "bytes": 47,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/world_book/data/knowledge.yml",
+      "runtime_sha256": "8913e6c79b497f2d02bc5c28bb9f3ae3a5b2f2123a2448e6449877da2b933ed8",
+      "published_sha256": "06a116f78a246fd2ed77ab39c8c03648897c5aaa99ce6c4ca6d3f346cd96d38e",
+      "bytes": 10933,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "src/chat/features/world_book/schemas/tutorial_metadata.py",
+      "runtime_sha256": "6830eb59cf6f103541de299277d8a2acef2d898409226521a271ba3880150da2",
+      "published_sha256": "6830eb59cf6f103541de299277d8a2acef2d898409226521a271ba3880150da2",
+      "bytes": 2511,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/world_book/database/world_book_db_manager.py",
+      "runtime_sha256": "701f63c663d09d33d9803967dbbd121ef7c3efa32885cf77714512041e3fb1c4",
+      "published_sha256": "701f63c663d09d33d9803967dbbd121ef7c3efa32885cf77714512041e3fb1c4",
+      "bytes": 3663,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/guidance/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/guidance/cogs/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/guidance/cogs/guidance_cog.py",
+      "runtime_sha256": "71b37c41d336676bb68e9d2116117c51647c8cb87765ba7ce394f797a6aecefd",
+      "published_sha256": "8e86df44da61737cc9d1a1d93eb88921c58ce2ede4dd3fb342615b71c995d8ad",
+      "bytes": 10539,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "src/chat/features/work_game/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/work_game/services/sell_body_service.py",
+      "runtime_sha256": "24cb8aaa7292e5855ed8f4aec4b4354828265a1e32cdff23451d3ec0704fb509",
+      "published_sha256": "24cb8aaa7292e5855ed8f4aec4b4354828265a1e32cdff23451d3ec0704fb509",
+      "bytes": 4987,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/work_game/services/work_service.py",
+      "runtime_sha256": "8d237bc98e6cb4dc6b7d1f005a6b6ba7a27fd7ed97435eb9cf43887d21b7bc09",
+      "published_sha256": "8d237bc98e6cb4dc6b7d1f005a6b6ba7a27fd7ed97435eb9cf43887d21b7bc09",
+      "bytes": 5039,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/work_game/services/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/work_game/services/work_db_service.py",
+      "runtime_sha256": "d305f85fc4790270209ede6c54271b7f9ca374d867ddd631da04432d68e8c861",
+      "published_sha256": "d305f85fc4790270209ede6c54271b7f9ca374d867ddd631da04432d68e8c861",
+      "bytes": 12271,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/work_game/ui/sell_body_submission_modal.py",
+      "runtime_sha256": "5058741ba4888c62b794a09744dafe6df3940bb66b304ad201a77eed730bbd39",
+      "published_sha256": "5058741ba4888c62b794a09744dafe6df3940bb66b304ad201a77eed730bbd39",
+      "bytes": 6235,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/work_game/config/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/work_game/config/work_config.py",
+      "runtime_sha256": "257c17cd441ea62775eba2634fa8bd82c8b03536ff1bee96f58793b0c5fcd726",
+      "published_sha256": "257c17cd441ea62775eba2634fa8bd82c8b03536ff1bee96f58793b0c5fcd726",
+      "bytes": 6834,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/work_game/config/work_events.json",
+      "runtime_sha256": "2675b9e026c4a5973f9e3c81172d700a161ca68a3ad99f85e71ec6fcbbc13965",
+      "published_sha256": "09753834f27f2999914c047c837c1624443ff5a8559d69eafdcbd95067278a68",
+      "bytes": 16386,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/work_game/cogs/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/web_search/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/web_search/services/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/web_search/services/scrape_service.py",
+      "runtime_sha256": "ccc886c1721b8fd00e7a132b9a65ad62e49070d0f5603a636c21d9fddc0d5046",
+      "published_sha256": "ccc886c1721b8fd00e7a132b9a65ad62e49070d0f5603a636c21d9fddc0d5046",
+      "bytes": 5702,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/web_search/services/search_service.py",
+      "runtime_sha256": "8f6796f8c3caeaf9ab6c3399fa0226a1499af74b7bfc04a7946f0b530b7a5d33",
+      "published_sha256": "8f6796f8c3caeaf9ab6c3399fa0226a1499af74b7bfc04a7946f0b530b7a5d33",
+      "bytes": 4447,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/web_search/services/url_filter.py",
+      "runtime_sha256": "5ce2c933810e3b50990964ebd79fdaa5f343aa0d5011d6be21fc5225bb105c2a",
+      "published_sha256": "5ce2c933810e3b50990964ebd79fdaa5f343aa0d5011d6be21fc5225bb105c2a",
+      "bytes": 3882,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/channel_mute/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/channel_mute/services/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/channel_mute/cogs/channel_mute_cog.py",
+      "runtime_sha256": "98eead13322fb0490b012501ef5384d2a94fba0373c7c1e1cd6167e9281f874e",
+      "published_sha256": "98eead13322fb0490b012501ef5384d2a94fba0373c7c1e1cd6167e9281f874e",
+      "bytes": 6620,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/channel_mute/cogs/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/affection/__init__.py",
+      "runtime_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "published_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "bytes": 47,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/affection/services/user_command_settings_service.py",
+      "runtime_sha256": "e3655e70eb4bfd3e4f741e97990ff20b162094565b23aba74153fb4e0faec4ce",
+      "published_sha256": "e3655e70eb4bfd3e4f741e97990ff20b162094565b23aba74153fb4e0faec4ce",
+      "bytes": 5462,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/affection/services/__init__.py",
+      "runtime_sha256": "07b85d6f7f356b9395427bec6708f71c3ac65ae5514621a38c57aad133cbaea4",
+      "published_sha256": "07b85d6f7f356b9395427bec6708f71c3ac65ae5514621a38c57aad133cbaea4",
+      "bytes": 354,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/affection/data/__init__.py",
+      "runtime_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "published_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "bytes": 47,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/affection/data/affection_levels.yml",
+      "runtime_sha256": "814b6e5e144913171d26f2d5d0dd41a5c39dd9f5d799ec31d0ebb945d74b1976",
+      "published_sha256": "814b6e5e144913171d26f2d5d0dd41a5c39dd9f5d799ec31d0ebb945d74b1976",
+      "bytes": 1131,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/affection/service/affection_service.py",
+      "runtime_sha256": "3e42d99c4ed47cc81271ee42c9f315f3e4d44f8ddf0397a5a41df3c2aa826000",
+      "published_sha256": "3e42d99c4ed47cc81271ee42c9f315f3e4d44f8ddf0397a5a41df3c2aa826000",
+      "bytes": 10155,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/affection/service/__init__.py",
+      "runtime_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "published_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "bytes": 47,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/affection/service/feeding_service.py",
+      "runtime_sha256": "30b8eca0a44c96c649e678e3df37754d7a535acf1166f0a54f84a6c7ecdd087d",
+      "published_sha256": "30b8eca0a44c96c649e678e3df37754d7a535acf1166f0a54f84a6c7ecdd087d",
+      "bytes": 3040,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/affection/service/confession_service.py",
+      "runtime_sha256": "32c7c98c1afd2fdacaa82b8e36ca435dcdbf067564d6513e67162c95b57d0c01",
+      "published_sha256": "32c7c98c1afd2fdacaa82b8e36ca435dcdbf067564d6513e67162c95b57d0c01",
+      "bytes": 3163,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/affection/service/gift_service.py",
+      "runtime_sha256": "0b15db5b9d2983cc98e07da2b92575086f50f1e47a50a98d4a932abe851a20f4",
+      "published_sha256": "0b15db5b9d2983cc98e07da2b92575086f50f1e47a50a98d4a932abe851a20f4",
+      "bytes": 2884,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/affection/cogs/__init__.py",
+      "runtime_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "published_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "bytes": 47,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/affection/cogs/confession_cog.py",
+      "runtime_sha256": "88d1ca261dcd7a30fc5c39280a05e65c667f465a33df13c8d32bc86c0fc32adc",
+      "published_sha256": "88d1ca261dcd7a30fc5c39280a05e65c667f465a33df13c8d32bc86c0fc32adc",
+      "bytes": 8604,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/affection/cogs/feeding_cog.py",
+      "runtime_sha256": "c152dde27366e9e7033e51f1e1fbce9fbbc53ee32f4e71e6c65097c0f741fd96",
+      "published_sha256": "c152dde27366e9e7033e51f1e1fbce9fbbc53ee32f4e71e6c65097c0f741fd96",
+      "bytes": 14753,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/affection/cogs/affection_cog.py",
+      "runtime_sha256": "27ca74c825d1fe17cc415d22e6931b156e1fd7c989fbff4776681167abde97a3",
+      "published_sha256": "27ca74c825d1fe17cc415d22e6931b156e1fd7c989fbff4776681167abde97a3",
+      "bytes": 3240,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/affection/utils/interaction_checks.py",
+      "runtime_sha256": "c64722b147cc55edff8084d3a8adc58c8e90747bbbbbbb8c104ae028a1e9a720",
+      "published_sha256": "c64722b147cc55edff8084d3a8adc58c8e90747bbbbbbb8c104ae028a1e9a720",
+      "bytes": 4218,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/events/ui/event_panel_view.py",
+      "runtime_sha256": "7145aacdc3ef79dfae9e8ec3ed32d37c50c57c657e4669fbb90b2ee725b760e9",
+      "published_sha256": "7145aacdc3ef79dfae9e8ec3ed32d37c50c57c657e4669fbb90b2ee725b760e9",
+      "bytes": 12071,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/thread_commentor/__init__.py",
+      "runtime_sha256": "e45434b3fdab3dad95a63fdd3a1a7abac5d70073d3f57f8c0555592cfd94a2aa",
+      "published_sha256": "e45434b3fdab3dad95a63fdd3a1a7abac5d70073d3f57f8c0555592cfd94a2aa",
+      "bytes": 23,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/thread_commentor/services/__init__.py",
+      "runtime_sha256": "e45434b3fdab3dad95a63fdd3a1a7abac5d70073d3f57f8c0555592cfd94a2aa",
+      "published_sha256": "e45434b3fdab3dad95a63fdd3a1a7abac5d70073d3f57f8c0555592cfd94a2aa",
+      "bytes": 23,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/thread_commentor/services/thread_commentor_service.py",
+      "runtime_sha256": "6efb6871c707dac199011619907e1620059ac30af4d8491aae39ca80d63f8532",
+      "published_sha256": "6efb6871c707dac199011619907e1620059ac30af4d8491aae39ca80d63f8532",
+      "bytes": 14048,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/thread_commentor/ui/warmup_consent_view.py",
+      "runtime_sha256": "a2dbc1220e80303bf1aa7c46023e5084ddedfa3f6b1affd29ed2554b0306725c",
+      "published_sha256": "a2dbc1220e80303bf1aa7c46023e5084ddedfa3f6b1affd29ed2554b0306725c",
+      "bytes": 2767,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/thread_commentor/cogs/thread_commentor_cog.py",
+      "runtime_sha256": "1d62c8588981d6aad9570e9aa6f2188f99edb59cdff12d9b9fd4208330d60b29",
+      "published_sha256": "1d62c8588981d6aad9570e9aa6f2188f99edb59cdff12d9b9fd4208330d60b29",
+      "bytes": 5141,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/thread_commentor/cogs/__init__.py",
+      "runtime_sha256": "e45434b3fdab3dad95a63fdd3a1a7abac5d70073d3f57f8c0555592cfd94a2aa",
+      "published_sha256": "e45434b3fdab3dad95a63fdd3a1a7abac5d70073d3f57f8c0555592cfd94a2aa",
+      "bytes": 23,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/forum_search/services/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/forum_search/services/forum_search_service.py",
+      "runtime_sha256": "0b0edf6223ce15c76f8d6a34f00518eae15f1722f546c0ff4c62525aa5a92397",
+      "published_sha256": "0b0edf6223ce15c76f8d6a34f00518eae15f1722f546c0ff4c62525aa5a92397",
+      "bytes": 22434,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/forum_search/services/forum_vector_db_service.py",
+      "runtime_sha256": "1cc33905f31a15eebbb55d6f0660615f89bf64ea9db31c06d7c231d9b03ac587",
+      "published_sha256": "1cc33905f31a15eebbb55d6f0660615f89bf64ea9db31c06d7c231d9b03ac587",
+      "bytes": 34366,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/forum_search/cogs/forum_sync_cog.py",
+      "runtime_sha256": "9fb1c19ea91a5c1094c731568fbed3868e868933e561311790b2ea36b42ddf26",
+      "published_sha256": "9fb1c19ea91a5c1094c731568fbed3868e868933e561311790b2ea36b42ddf26",
+      "bytes": 11615,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/forum_search/cogs/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/forum_search/cogs/forum_cleanup_cog.py",
+      "runtime_sha256": "e411431b257404b2b762206e92fbdb040661f3647f8c612d9e50ec100818f595",
+      "published_sha256": "e411431b257404b2b762206e92fbdb040661f3647f8c612d9e50ec100818f595",
+      "bytes": 9067,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/diary/__init__.py",
+      "runtime_sha256": "8b084a9f378124b2b1a51563bf3c22444eb7ff33692017da28b2136ae56987ed",
+      "published_sha256": "8b084a9f378124b2b1a51563bf3c22444eb7ff33692017da28b2136ae56987ed",
+      "bytes": 24,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/diary/cogs/__init__.py",
+      "runtime_sha256": "8b084a9f378124b2b1a51563bf3c22444eb7ff33692017da28b2136ae56987ed",
+      "published_sha256": "8b084a9f378124b2b1a51563bf3c22444eb7ff33692017da28b2136ae56987ed",
+      "bytes": 24,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/diary/cogs/diary_cog.py",
+      "runtime_sha256": "ce8f714e7b4b9a8105568849df2dc3a505ac912a11b2bf61fad7644d24d64ba7",
+      "published_sha256": "ce8f714e7b4b9a8105568849df2dc3a505ac912a11b2bf61fad7644d24d64ba7",
+      "bytes": 5152,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/games/__init__.py",
+      "runtime_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "published_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "bytes": 47,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/games/services/__init__.py",
+      "runtime_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "published_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "bytes": 47,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/games/services/blackjack_service.py",
+      "runtime_sha256": "766a0eb8f4f9251fc3bb5428302c6abcb7b7253e23dc393af325dfc28829b92b",
+      "published_sha256": "766a0eb8f4f9251fc3bb5428302c6abcb7b7253e23dc393af325dfc28829b92b",
+      "bytes": 12775,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/games/ui/__init__.py",
+      "runtime_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "published_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "bytes": 47,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/games/config/__init__.py",
+      "runtime_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "published_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "bytes": 47,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/games/config/blackjack_config.py",
+      "runtime_sha256": "3f91a96483bf2c864bf4c2b791c5232fc2c8ea637009b24f78d6ed9cac578612",
+      "published_sha256": "3f91a96483bf2c864bf4c2b791c5232fc2c8ea637009b24f78d6ed9cac578612",
+      "bytes": 876,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/games/blackjack-web/index.html",
+      "runtime_sha256": "61ec871292d7e6a0654fb425c6e83bcd991aa5848e22b64b41a1b7e90716c882",
+      "published_sha256": "61ec871292d7e6a0654fb425c6e83bcd991aa5848e22b64b41a1b7e90716c882",
+      "bytes": 332,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/games/blackjack-web/app.py",
+      "runtime_sha256": "6022ac00841907a68ebf5f1c2ed158ce72599a620552e9b471aefcb109fcc85f",
+      "published_sha256": "6022ac00841907a68ebf5f1c2ed158ce72599a620552e9b471aefcb109fcc85f",
+      "bytes": 21032,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/games/blackjack-web/package-lock.json",
+      "runtime_sha256": "4020d0b26fd6f126dc81c7d28d093ddae669f76b294698ee6e8d6e84387e99bc",
+      "published_sha256": "4020d0b26fd6f126dc81c7d28d093ddae669f76b294698ee6e8d6e84387e99bc",
+      "bytes": 46038,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/games/blackjack-web/package.json",
+      "runtime_sha256": "8bb9f214584dae75459c0b701513f531353c3dd9f494ee69a5a27d69950620c0",
+      "published_sha256": "ac901286528e90c591b844968e080f0cfceee910da7c9ef41d3bc9ba62db08e8",
+      "bytes": 395,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/games/blackjack-web/vite.config.ts",
+      "runtime_sha256": "3e829cada71cc8c307ba37d2e9d4efac9a968dbfe85012a94b36990b64afd120",
+      "published_sha256": "3e829cada71cc8c307ba37d2e9d4efac9a968dbfe85012a94b36990b64afd120",
+      "bytes": 602,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/games/blackjack-web/tsconfig.json",
+      "runtime_sha256": "f1918195c1483e8872ea1087b4d6f195b967dffe295719623531995639564d42",
+      "published_sha256": "f1918195c1483e8872ea1087b4d6f195b967dffe295719623531995639564d42",
+      "bytes": 637,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/games/cogs/__init__.py",
+      "runtime_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "published_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "bytes": 47,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/games/cogs/blackjack_cog.py",
+      "runtime_sha256": "eea9be3500a7092cb6b91b79b33aa17ed4a46388d6dfefc2365237cdf246ab91",
+      "published_sha256": "eea9be3500a7092cb6b91b79b33aa17ed4a46388d6dfefc2365237cdf246ab91",
+      "bytes": 4556,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/odysseia_coin/shop_announcement.md",
+      "runtime_sha256": "a4ddb26c5325c15894256dc417cb5df47d04674350bdc3e89628696ed3a6d4ca",
+      "published_sha256": "a4ddb26c5325c15894256dc417cb5df47d04674350bdc3e89628696ed3a6d4ca",
+      "bytes": 373,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/odysseia_coin/__init__.py",
+      "runtime_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "published_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "bytes": 47,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/odysseia_coin/ui/transaction_history_ui.py",
+      "runtime_sha256": "2fc0bc779b0d4f1b2e94c9ade5b2fee19e4de18fdd7c7b606439c4102c790bbb",
+      "published_sha256": "2fc0bc779b0d4f1b2e94c9ade5b2fee19e4de18fdd7c7b606439c4102c790bbb",
+      "bytes": 6621,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/odysseia_coin/ui/leaderboard_ui.py",
+      "runtime_sha256": "f041752f3c5123020c8819bd775038bde0ac977aa2095abf2aef803f119b6744",
+      "published_sha256": "f041752f3c5123020c8819bd775038bde0ac977aa2095abf2aef803f119b6744",
+      "bytes": 9941,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/odysseia_coin/ui/shop_ui.py",
+      "runtime_sha256": "38bfc6d7ec5ca6be9de447978bfe54c9269b040e70a787c6df328afe6ff5f5cb",
+      "published_sha256": "38bfc6d7ec5ca6be9de447978bfe54c9269b040e70a787c6df328afe6ff5f5cb",
+      "bytes": 8667,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/odysseia_coin/ui/__init__.py",
+      "runtime_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "published_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "bytes": 47,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/odysseia_coin/ui/components/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/odysseia_coin/ui/components/shop_components.py",
+      "runtime_sha256": "c4a20e3224bf18835e612a23cd9c59781e916c2296db2885b237829175375a01",
+      "published_sha256": "c4a20e3224bf18835e612a23cd9c59781e916c2296db2885b237829175375a01",
+      "bytes": 67117,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/odysseia_coin/ui/panels/main_panel.py",
+      "runtime_sha256": "415864e006789d880d76bda58b8c0edd95fa7d3bbdf1460738f2300390f3636a",
+      "published_sha256": "415864e006789d880d76bda58b8c0edd95fa7d3bbdf1460738f2300390f3636a",
+      "bytes": 696,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/odysseia_coin/ui/panels/base_panel.py",
+      "runtime_sha256": "19cbee402f2578f2c9c854b53b74b0e2865ccbb837a1cdfbed9e02bec325a950",
+      "published_sha256": "19cbee402f2578f2c9c854b53b74b0e2865ccbb837a1cdfbed9e02bec325a950",
+      "bytes": 567,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/odysseia_coin/ui/panels/shop_panel.py",
+      "runtime_sha256": "682cf835c33e1c1347c8e14732d8511ced42b314aa1cfe3bd4ffaaf885c8290a",
+      "published_sha256": "682cf835c33e1c1347c8e14732d8511ced42b314aa1cfe3bd4ffaaf885c8290a",
+      "bytes": 1630,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/odysseia_coin/ui/panels/daily_panel.py",
+      "runtime_sha256": "45739f16e861b7543b2145cbd1a92c1e7f8a54cd7e9c3075d75c46ab2a0d3cdb",
+      "published_sha256": "45739f16e861b7543b2145cbd1a92c1e7f8a54cd7e9c3075d75c46ab2a0d3cdb",
+      "bytes": 10927,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/odysseia_coin/ui/panels/tutorial_panel.py",
+      "runtime_sha256": "49e9e08657c26875898d7656f616c1a8b4263734b072e16cb7e94fa9867e5c44",
+      "published_sha256": "49e9e08657c26875898d7656f616c1a8b4263734b072e16cb7e94fa9867e5c44",
+      "bytes": 4558,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/odysseia_coin/service/shop_service.py",
+      "runtime_sha256": "8745f8c68e1c67e7b64bd087663cc3078c2d0f12518ba67960623f8bea026c1c",
+      "published_sha256": "8745f8c68e1c67e7b64bd087663cc3078c2d0f12518ba67960623f8bea026c1c",
+      "bytes": 14293,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/odysseia_coin/service/__init__.py",
+      "runtime_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "published_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "bytes": 47,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/odysseia_coin/service/coin_service.py",
+      "runtime_sha256": "3a154ce16ca866ce76e3c4b9f8cf8bf02b92d2a133b551e0c247318f6c7944cb",
+      "published_sha256": "3a154ce16ca866ce76e3c4b9f8cf8bf02b92d2a133b551e0c247318f6c7944cb",
+      "bytes": 30484,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/odysseia_coin/cogs/__init__.py",
+      "runtime_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "published_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "bytes": 47,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/odysseia_coin/cogs/coin_cog.py",
+      "runtime_sha256": "af94a7b6a6ea134bd07f32b33d0b2f9e8341400d8f3a8d8be14686660e3fc9ad",
+      "published_sha256": "af94a7b6a6ea134bd07f32b33d0b2f9e8341400d8f3a8d8be14686660e3fc9ad",
+      "bytes": 4716,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/content_filter/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/content_filter/services/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/content_filter/services/content_filter_service.py",
+      "runtime_sha256": "6862531b41a128c9a0a1aff84f2454a223799725934044027cebf0ab06fc92fa",
+      "published_sha256": "6862531b41a128c9a0a1aff84f2454a223799725934044027cebf0ab06fc92fa",
+      "bytes": 7985,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/content_filter/ui/keyword_management_view.py",
+      "runtime_sha256": "d3e087a0b1840d06e3d75907227d5ad4a680ef08d6f2a2fc44a5fae43d56552f",
+      "published_sha256": "d3e087a0b1840d06e3d75907227d5ad4a680ef08d6f2a2fc44a5fae43d56552f",
+      "bytes": 10525,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/content_filter/ui/filter_alert_view.py",
+      "runtime_sha256": "bfa39100e245faf58ae01834dec39dddc633c9c57344076ab3c9eb4a1746ce7a",
+      "published_sha256": "bfa39100e245faf58ae01834dec39dddc633c9c57344076ab3c9eb4a1746ce7a",
+      "bytes": 8511,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/content_filter/ui/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/ab_test/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/ab_test/services/ab_test_service.py",
+      "runtime_sha256": "5c4461f278b7db06d0d68385da5981cb44fffd5cffba067bee9cec620be1ed87",
+      "published_sha256": "5c4461f278b7db06d0d68385da5981cb44fffd5cffba067bee9cec620be1ed87",
+      "bytes": 22310,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/ab_test/services/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/ab_test/cogs/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/ab_test/cogs/ab_rating_cog.py",
+      "runtime_sha256": "4f3af1960c6b4afc2e2bcfb8261c69c2c2fdcf3d22326a3a10447a4735a6e5db",
+      "published_sha256": "4f3af1960c6b4afc2e2bcfb8261c69c2c2fdcf3d22326a3a10447a4735a6e5db",
+      "bytes": 6714,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/community_member/__init__.py",
+      "runtime_sha256": "47301c4dac7f33d7240f141acb2be7a625b9cbfbee3953db3fd499ce655b1352",
+      "published_sha256": "47301c4dac7f33d7240f141acb2be7a625b9cbfbee3953db3fd499ce655b1352",
+      "bytes": 212,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/community_member/services/community_member_service.py",
+      "runtime_sha256": "a09a799126bf950482c787e370a4cb2555c89d37dd416a5d2740d05b8588da29",
+      "published_sha256": "a09a799126bf950482c787e370a4cb2555c89d37dd416a5d2740d05b8588da29",
+      "bytes": 4403,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/community_member/ui/community_member_modal.py",
+      "runtime_sha256": "241c6938526775155e5f62aeaec8b9ef2540435a01c2e9232d909732d82e75fb",
+      "published_sha256": "241c6938526775155e5f62aeaec8b9ef2540435a01c2e9232d909732d82e75fb",
+      "bytes": 8407,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tools/schema_utils.py",
+      "runtime_sha256": "e8e696832bd148a69d20b04695e7c4f6232a079d2cb4729ede7f13bdc6cfd89d",
+      "published_sha256": "e8e696832bd148a69d20b04695e7c4f6232a079d2cb4729ede7f13bdc6cfd89d",
+      "bytes": 10996,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tools/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tools/tool_metadata.py",
+      "runtime_sha256": "d874ce35235cf9205ea3a404baa0e6537b54c87d56f4d580aa102e121a70c759",
+      "published_sha256": "d874ce35235cf9205ea3a404baa0e6537b54c87d56f4d580aa102e121a70c759",
+      "bytes": 1965,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tools/tool_declaration.py",
+      "runtime_sha256": "276de210a863eac2c5c96bf2cbacdab32d987e4ffa55ca6648e4675f23dbcc5c",
+      "published_sha256": "276de210a863eac2c5c96bf2cbacdab32d987e4ffa55ca6648e4675f23dbcc5c",
+      "bytes": 7349,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tools/tool_loader.py",
+      "runtime_sha256": "c3af759b143aba47ecaaa16fafc039cc48970ca5c1a6509f6822d18b29b71bff",
+      "published_sha256": "c3af759b143aba47ecaaa16fafc039cc48970ca5c1a6509f6822d18b29b71bff",
+      "bytes": 6439,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tools/llm_adapters.py",
+      "runtime_sha256": "deddfc4d4bc7822cfd76469608b2e3e0cb46fac7fcf7371a8fac01debc25c4b8",
+      "published_sha256": "deddfc4d4bc7822cfd76469608b2e3e0cb46fac7fcf7371a8fac01debc25c4b8",
+      "bytes": 7730,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tools/services/user_tool_settings_service.py",
+      "runtime_sha256": "cca689d18cd61fad883af9bcc4520a2cf8e6eeb3830f08749155a4d9b0b8f31c",
+      "published_sha256": "cca689d18cd61fad883af9bcc4520a2cf8e6eeb3830f08749155a4d9b0b8f31c",
+      "bytes": 3415,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tools/services/tool_service.py",
+      "runtime_sha256": "230039d222c149dd15b45b87813b519348b4db2d9606bb4bc602e7a4d40a9e57",
+      "published_sha256": "230039d222c149dd15b45b87813b519348b4db2d9606bb4bc602e7a4d40a9e57",
+      "bytes": 23309,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tools/services/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tools/services/global_tool_settings_service.py",
+      "runtime_sha256": "d898919c351b47bb7529a01acadc41f03184db6cdc5245efaded033d851022e8",
+      "published_sha256": "d898919c351b47bb7529a01acadc41f03184db6cdc5245efaded033d851022e8",
+      "bytes": 7791,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tools/functions/spring_festival_red_envelope.py",
+      "runtime_sha256": "5158e5fc3a6dbf79cabb94f445c1cbb34fb7586ce318d1bfafb73855b4513698",
+      "published_sha256": "5158e5fc3a6dbf79cabb94f445c1cbb34fb7586ce318d1bfafb73855b4513698",
+      "bytes": 7082,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tools/functions/get_yearly_summary.py",
+      "runtime_sha256": "a5546b4d17d896d03994141ea4b2f97236779566ff1736646606b00351aff0d5",
+      "published_sha256": "a5546b4d17d896d03994141ea4b2f97236779566ff1736646606b00351aff0d5",
+      "bytes": 15719,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tools/functions/summarize_channel.py",
+      "runtime_sha256": "95b44e3d27eb398dc63bff59914fdcbeaf149ca44ba9c4bd60dd869924ad5af9",
+      "published_sha256": "95b44e3d27eb398dc63bff59914fdcbeaf149ca44ba9c4bd60dd869924ad5af9",
+      "bytes": 8743,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tools/functions/gather_context.py",
+      "runtime_sha256": "f61e4912516b0a5ebb30a6e3ec08f178bd9956e8e8dbf49a102f28c6f52c324b",
+      "published_sha256": "f61e4912516b0a5ebb30a6e3ec08f178bd9956e8e8dbf49a102f28c6f52c324b",
+      "bytes": 3379,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tools/functions/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tools/functions/search.py",
+      "runtime_sha256": "a4749fbcf6bd2a5cc24a3a99f1a37dd7a402dfa319689d5b2f4eab305e076942",
+      "published_sha256": "a4749fbcf6bd2a5cc24a3a99f1a37dd7a402dfa319689d5b2f4eab305e076942",
+      "bytes": 16508,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tools/functions/anger_timeout_current_user.py",
+      "runtime_sha256": "d562da169776575b607a9b1a00f39d4a6d973f384a6d6fcab5d056661610abde",
+      "published_sha256": "d562da169776575b607a9b1a00f39d4a6d973f384a6d6fcab5d056661610abde",
+      "bytes": 1426,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tools/functions/get_user_profile.py",
+      "runtime_sha256": "1b3ae6eb4599fc7888966565fd7e20fddd91788ed2f6bee1fd46584fd1a41dfe",
+      "published_sha256": "1b3ae6eb4599fc7888966565fd7e20fddd91788ed2f6bee1fd46584fd1a41dfe",
+      "bytes": 5507,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tools/functions/memory.py",
+      "runtime_sha256": "a4b55f0c8402ae0e38b89fd19ae30f93e45dcc94261e79ffdace2a3e5cefbcc5",
+      "published_sha256": "a4b55f0c8402ae0e38b89fd19ae30f93e45dcc94261e79ffdace2a3e5cefbcc5",
+      "bytes": 5658,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tools/functions/web_search.py",
+      "runtime_sha256": "2da35ce6d2a9e1144f94d47d7250c23f3e86d3abf52a0b48548bd29a21175903",
+      "published_sha256": "2da35ce6d2a9e1144f94d47d7250c23f3e86d3abf52a0b48548bd29a21175903",
+      "bytes": 5536,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tools/functions/issue_user_warning.py",
+      "runtime_sha256": "e16cbab9dc6dc4f64bad842316e7b603d177738c325b3d5dc7e55aa6378a53ea",
+      "published_sha256": "e16cbab9dc6dc4f64bad842316e7b603d177738c325b3d5dc7e55aa6378a53ea",
+      "bytes": 7749,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tools/functions/tarot_reading.py",
+      "runtime_sha256": "21cf0debac69da3468eb55bdcc339d7e8712d31a38a59ebe3d6a93a23504303c",
+      "published_sha256": "21cf0debac69da3468eb55bdcc339d7e8712d31a38a59ebe3d6a93a23504303c",
+      "bytes": 4159,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tools/functions/_archived/_archived_search_channel_history.py",
+      "runtime_sha256": "f25eeec8ad01bf7ffc75f8130a4cc90ebb6b7aa45905392973c2da711adece5d",
+      "published_sha256": "f25eeec8ad01bf7ffc75f8130a4cc90ebb6b7aa45905392973c2da711adece5d",
+      "bytes": 3986,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tools/functions/_archived/_archived_web_scrape.py",
+      "runtime_sha256": "b42400a35c92049a443b45f70c7c994e3572db5620eacb34ac75c45fefe0fe1e",
+      "published_sha256": "b42400a35c92049a443b45f70c7c994e3572db5620eacb34ac75c45fefe0fe1e",
+      "bytes": 2649,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tools/functions/_archived/_archived_query_tutorial.py",
+      "runtime_sha256": "7c5c5171714f2d2341270c72423ed16cf78d3be747453e93c32d65346387ac87",
+      "published_sha256": "7c5c5171714f2d2341270c72423ed16cf78d3be747453e93c32d65346387ac87",
+      "bytes": 1585,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tools/functions/_archived/_archived_search_forum.py",
+      "runtime_sha256": "a64522eb22754af094ae8d655391648ce1add6b003e25da30d157074bfcdc455",
+      "published_sha256": "a64522eb22754af094ae8d655391648ce1add6b003e25da30d157074bfcdc455",
+      "bytes": 7240,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/admin_sync/__init__.py",
+      "runtime_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "published_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "bytes": 47,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/admin_sync/cogs/admin_sync_cog.py",
+      "runtime_sha256": "d73df3d0fb9149a61366b23f8240f13725fba27602d336a3832a68db497554ae",
+      "published_sha256": "d73df3d0fb9149a61366b23f8240f13725fba27602d336a3832a68db497554ae",
+      "bytes": 2353,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/admin_sync/cogs/__init__.py",
+      "runtime_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "published_sha256": "ee1de04b46c8adc74544083f764d1abca1501349eb2f379de85cd881e50ce1ad",
+      "bytes": 47,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tabletop/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tabletop/cogs/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tabletop/cogs/tabletop_cog.py",
+      "runtime_sha256": "57e5a5f1d6de4c520b265b90a41f195548070f4fc73e3dbde540e42a244b37ec",
+      "published_sha256": "57e5a5f1d6de4c520b265b90a41f195548070f4fc73e3dbde540e42a244b37ec",
+      "bytes": 9937,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tutorial_search/services/thread_settings_service.py",
+      "runtime_sha256": "24d605578ef586405c5a1c34e5b0edb7baf3ccbb163814befe5292f406ed83f1",
+      "published_sha256": "24d605578ef586405c5a1c34e5b0edb7baf3ccbb163814befe5292f406ed83f1",
+      "bytes": 3057,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tutorial_search/services/tutorial_search_service.py",
+      "runtime_sha256": "5fc8c10757949a6bb1214e206b9ea82b672b2405327beca188abe63281dd21d8",
+      "published_sha256": "5fc8c10757949a6bb1214e206b9ea82b672b2405327beca188abe63281dd21d8",
+      "bytes": 11856,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tutorial_search/services/tutorial_rag_service.py",
+      "runtime_sha256": "c33b3336f2938cc8c984942b15666b6d9b3ede77c4139c2052296baea211ba6c",
+      "published_sha256": "c33b3336f2938cc8c984942b15666b6d9b3ede77c4139c2052296baea211ba6c",
+      "bytes": 4528,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/personal_memory/__init__.py",
+      "runtime_sha256": "a92cce10b3678c89ae739c607c5469784b42fa1a405b8124aa0aee1ceeaba950",
+      "published_sha256": "a92cce10b3678c89ae739c607c5469784b42fa1a405b8124aa0aee1ceeaba950",
+      "bytes": 67,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/personal_memory/services/conversation_block_service.py",
+      "runtime_sha256": "0488b46ab616325b21c0ebf43ea0c3468ab45c6c1f11dfeb2a59163c1763f890",
+      "published_sha256": "0488b46ab616325b21c0ebf43ea0c3468ab45c6c1f11dfeb2a59163c1763f890",
+      "bytes": 20606,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/personal_memory/services/__init__.py",
+      "runtime_sha256": "aaa63fe430e581d175f63fe130a585a30e932149e5c789d6fd96eb11776bd659",
+      "published_sha256": "aaa63fe430e581d175f63fe130a585a30e932149e5c789d6fd96eb11776bd659",
+      "bytes": 782,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/personal_memory/services/conversation_memory_search_service.py",
+      "runtime_sha256": "5f2b59fe18c5f3dd7946bb6dbc9604867973162fb95711bdb6cc2cf48df52f31",
+      "published_sha256": "5f2b59fe18c5f3dd7946bb6dbc9604867973162fb95711bdb6cc2cf48df52f31",
+      "bytes": 11438,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/personal_memory/services/personal_memory_service.py",
+      "runtime_sha256": "c26757115c6366b56d59779dcdc81ed5a3e8cda7a97c2c294bd278c049ce702f",
+      "published_sha256": "c26757115c6366b56d59779dcdc81ed5a3e8cda7a97c2c294bd278c049ce702f",
+      "bytes": 17558,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/personal_memory/services/user_memory_note_service.py",
+      "runtime_sha256": "8b3020860d042cdab2c7998e72cb301ebc21aea2d499f76182491dbb15fbeef5",
+      "published_sha256": "8b3020860d042cdab2c7998e72cb301ebc21aea2d499f76182491dbb15fbeef5",
+      "bytes": 8621,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/personal_memory/ui/__init__.py",
+      "runtime_sha256": "966a4c6686fbe4dd4bd5f0820cff8bd3161470e13ffb60ebfe73ce87e1554e50",
+      "published_sha256": "966a4c6686fbe4dd4bd5f0820cff8bd3161470e13ffb60ebfe73ce87e1554e50",
+      "bytes": 54,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/personal_memory/ui/user_conversation_blocks_view.py",
+      "runtime_sha256": "543a336deaba474dbb5c8bd66c749c45c1f3175bbb4da992966e85aef14a2559",
+      "published_sha256": "543a336deaba474dbb5c8bd66c749c45c1f3175bbb4da992966e85aef14a2559",
+      "bytes": 38423,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/personal_memory/ui/profile_purchase_modal.py",
+      "runtime_sha256": "f80c32acb19d241ee522aefd356fe6c9f52e08a32a9b85490ed156ea4821e190",
+      "published_sha256": "f80c32acb19d241ee522aefd356fe6c9f52e08a32a9b85490ed156ea4821e190",
+      "bytes": 3489,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/personal_memory/cogs/__init__.py",
+      "runtime_sha256": "de013160b1b632622dfb10b07d538827ee7e402352d86d0428cc8144413b3db3",
+      "published_sha256": "de013160b1b632622dfb10b07d538827ee7e402352d86d0428cc8144413b3db3",
+      "bytes": 56,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/chat_settings/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/chat_settings/services/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/chat_settings/services/chat_settings_service.py",
+      "runtime_sha256": "2fca918540e64c72b1ce9e948e5247f9d017e82295c3a83617ad41d2da142188",
+      "published_sha256": "2fca918540e64c72b1ce9e948e5247f9d017e82295c3a83617ad41d2da142188",
+      "bytes": 35192,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/chat_settings/ui/cooldown_settings_view.py",
+      "runtime_sha256": "e0bfd98fb688330acd32b641fd69f75c8f28c61fc4d31a9a7bad500924fab88f",
+      "published_sha256": "e0bfd98fb688330acd32b641fd69f75c8f28c61fc4d31a9a7bad500924fab88f",
+      "bytes": 12109,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/chat_settings/ui/chat_settings_view.py",
+      "runtime_sha256": "832cf9c6448aa930c563be450854c46265ea5748dcae94caf290da2d908e1e1d",
+      "published_sha256": "832cf9c6448aa930c563be450854c46265ea5748dcae94caf290da2d908e1e1d",
+      "bytes": 30598,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/chat_settings/ui/model_params_view.py",
+      "runtime_sha256": "2680d9865d081b4ccc7d0d33acee907d916cab018b299466ea7387de0ebfbac3",
+      "published_sha256": "2680d9865d081b4ccc7d0d33acee907d916cab018b299466ea7387de0ebfbac3",
+      "bytes": 28216,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/chat_settings/ui/ai_model_settings_view.py",
+      "runtime_sha256": "57dd49bf17ad15751730291b13d9299ca034513ec741700507a7fd593479ed11",
+      "published_sha256": "57dd49bf17ad15751730291b13d9299ca034513ec741700507a7fd593479ed11",
+      "bytes": 12382,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/chat_settings/ui/embedding_settings_view.py",
+      "runtime_sha256": "4b60464cca263ae20e640587bd81f6212902fb163f912dd74ef7c7b47f25c982",
+      "published_sha256": "4b60464cca263ae20e640587bd81f6212902fb163f912dd74ef7c7b47f25c982",
+      "bytes": 7988,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/chat_settings/ui/provider_management_view.py",
+      "runtime_sha256": "7cbb91ed2b614bc47f94d439f72511fdc092802f4e55165c561e35ed12eb7bb8",
+      "published_sha256": "7cbb91ed2b614bc47f94d439f72511fdc092802f4e55165c561e35ed12eb7bb8",
+      "bytes": 14272,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/chat_settings/ui/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/chat_settings/ui/channel_settings_modal.py",
+      "runtime_sha256": "858d07de1fb1e11efdaafe102d28be261f423eb81dc37cd1fdca7395503f91ee",
+      "published_sha256": "858d07de1fb1e11efdaafe102d28be261f423eb81dc37cd1fdca7395503f91ee",
+      "bytes": 3699,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/chat_settings/ui/reply_delay_modal.py",
+      "runtime_sha256": "1cb47ac6e72c72dcb4aba82520e3399b3847649eaf1a5fd3c5fc1184e1fc5a3c",
+      "published_sha256": "1cb47ac6e72c72dcb4aba82520e3399b3847649eaf1a5fd3c5fc1184e1fc5a3c",
+      "bytes": 1541,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/chat_settings/ui/model_management_view.py",
+      "runtime_sha256": "a7481ae120b8adca399403c7f583d65424da30face3d00af42e2d1fcce0f3c75",
+      "published_sha256": "a7481ae120b8adca399403c7f583d65424da30face3d00af42e2d1fcce0f3c75",
+      "bytes": 20530,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/chat_settings/ui/global_tools_settings_view.py",
+      "runtime_sha256": "00d3cfb9c7670f220b064fcde3692879d1c5debc6db1d4f506e505ad0684be52",
+      "published_sha256": "00d3cfb9c7670f220b064fcde3692879d1c5debc6db1d4f506e505ad0684be52",
+      "bytes": 11210,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/chat_settings/ui/components.py",
+      "runtime_sha256": "480bbba4898419ff5b4f6a3f6da8324e2880312f05472d4341953ca93d59dc0f",
+      "published_sha256": "480bbba4898419ff5b4f6a3f6da8324e2880312f05472d4341953ca93d59dc0f",
+      "bytes": 3409,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/chat_settings/ui/warm_up_settings_view.py",
+      "runtime_sha256": "65f5153cec9a75cff8713d0f6cedf443a5876ccc1a01b6a993ed8551aa11a782",
+      "published_sha256": "65f5153cec9a75cff8713d0f6cedf443a5876ccc1a01b6a993ed8551aa11a782",
+      "bytes": 9577,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/chat_settings/ui/ai_model_settings_modal.py",
+      "runtime_sha256": "330b16139d62c910bcb33d4fbe14a13118904d44601589ec6176c8cacbfadb38",
+      "published_sha256": "330b16139d62c910bcb33d4fbe14a13118904d44601589ec6176c8cacbfadb38",
+      "bytes": 1200,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/chat_settings/cogs/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/chat_settings/cogs/chat_settings_cog.py",
+      "runtime_sha256": "bb6da2444f8181ba29ead8904890841b06768140f41e53a60f8b3219ff1728ea",
+      "published_sha256": "bb6da2444f8181ba29ead8904890841b06768140f41e53a60f8b3219ff1728ea",
+      "bytes": 3709,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/services/tarot_service.py",
+      "runtime_sha256": "0aa9c9d27676a68f89dde7155baf0461cc79666036203c19eee9a0873b04e094",
+      "published_sha256": "0aa9c9d27676a68f89dde7155baf0461cc79666036203c19eee9a0873b04e094",
+      "bytes": 4418,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/services/__init__.py",
+      "runtime_sha256": "4f953c3bcabf4b709a252af76756ae5d53bd9d1c268a71d8b5bf439c0839f918",
+      "published_sha256": "4f953c3bcabf4b709a252af76756ae5d53bd9d1c268a71d8b5bf439c0839f918",
+      "bytes": 122,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/config/tarot_config.py",
+      "runtime_sha256": "e243d349931e7e73b927c46701ed1de0f3c5fa71b461aaa70b6348aa6cfa96b2",
+      "published_sha256": "63acc6ad4de20fe598fc4d6e9b7a31acd09fcc9f06095e66bb05f360736155b0",
+      "bytes": 310,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "src/chat/features/tarot/data/tarot_cards.json",
+      "runtime_sha256": "2d6385f35768ee017dda618c1506142152f665d4642b055ca3ccd1d88fab7b4f",
+      "published_sha256": "107225f3fdd4b8b61e1f8c1630217f858734583333fd8c1a1208da8c7c233002",
+      "bytes": 25574,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Pents02.jpg",
+      "runtime_sha256": "e21f4ab9a7ab8876787e9e19c324ce4cb0b3d0d04516991c50d258d268e0af99",
+      "published_sha256": "e21f4ab9a7ab8876787e9e19c324ce4cb0b3d0d04516991c50d258d268e0af99",
+      "bytes": 3453966,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Swords10.jpg",
+      "runtime_sha256": "1df7fb5430e049d4d21cb369407d2fc9c1992b1c1b6bcc4fed5f60a9532b0416",
+      "published_sha256": "1df7fb5430e049d4d21cb369407d2fc9c1992b1c1b6bcc4fed5f60a9532b0416",
+      "bytes": 2426030,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Cups05.jpg",
+      "runtime_sha256": "3beba094aa1f8e92cc2abe193cbd90f5cc7e7825f28a51b1296f8f8f490726b7",
+      "published_sha256": "3beba094aa1f8e92cc2abe193cbd90f5cc7e7825f28a51b1296f8f8f490726b7",
+      "bytes": 2450112,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Swords12.jpg",
+      "runtime_sha256": "39f25f5cdca3cbecceeba8245f469033a4bd713ba35104e5c07c06790cfa9e75",
+      "published_sha256": "39f25f5cdca3cbecceeba8245f469033a4bd713ba35104e5c07c06790cfa9e75",
+      "bytes": 3106832,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Cover.jpg",
+      "runtime_sha256": "f3bdffbcdbb60cbbb613321fe8fd8eee99f621c5007d692ddb0ce09d779d8e49",
+      "published_sha256": "f3bdffbcdbb60cbbb613321fe8fd8eee99f621c5007d692ddb0ce09d779d8e49",
+      "bytes": 3674370,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Swords06.jpg",
+      "runtime_sha256": "6b92ca25fabbaea0a35fa634bd43ef290ac8c238e5c05ef40d19fa5639dc102f",
+      "published_sha256": "6b92ca25fabbaea0a35fa634bd43ef290ac8c238e5c05ef40d19fa5639dc102f",
+      "bytes": 3422073,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/20_Judgement.jpg",
+      "runtime_sha256": "83507cb49ec38ce46e88f0ebbb6a438e2f9ba6ab4dcf0c5836b74291d7cf5417",
+      "published_sha256": "83507cb49ec38ce46e88f0ebbb6a438e2f9ba6ab4dcf0c5836b74291d7cf5417",
+      "bytes": 3384230,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Swords05.jpg",
+      "runtime_sha256": "cf13b9fe5fa774ccfa9ea6282e7307dfe2f05cbd96f77c3f42437ae3a1eabea8",
+      "published_sha256": "cf13b9fe5fa774ccfa9ea6282e7307dfe2f05cbd96f77c3f42437ae3a1eabea8",
+      "bytes": 3247762,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Cups07.jpg",
+      "runtime_sha256": "3644e36ccf07ba67e9db16769c072cf56937c3bcc132e175a0d23740d160c8fc",
+      "published_sha256": "3644e36ccf07ba67e9db16769c072cf56937c3bcc132e175a0d23740d160c8fc",
+      "bytes": 2522396,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/19_Sun.jpg",
+      "runtime_sha256": "02d4ba312f59235503f7b673214706d7d97b937569d420101f4f99ad160cdfc0",
+      "published_sha256": "02d4ba312f59235503f7b673214706d7d97b937569d420101f4f99ad160cdfc0",
+      "bytes": 3182619,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Cups04.jpg",
+      "runtime_sha256": "189ef7c0db33c403bfde29630006d0ca78842240ef40cf961594d916dc02123e",
+      "published_sha256": "189ef7c0db33c403bfde29630006d0ca78842240ef40cf961594d916dc02123e",
+      "bytes": 2884439,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Swords01.jpg",
+      "runtime_sha256": "8c5cc75991eabc136261d963d25e668fa2e290a7f5835493aef30b9b9f157944",
+      "published_sha256": "8c5cc75991eabc136261d963d25e668fa2e290a7f5835493aef30b9b9f157944",
+      "bytes": 3292324,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Wands07.jpg",
+      "runtime_sha256": "d8d5e335c66990e8e8298eb89509cd20655932973d6f840619f73a4bdf64538f",
+      "published_sha256": "d8d5e335c66990e8e8298eb89509cd20655932973d6f840619f73a4bdf64538f",
+      "bytes": 2841736,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Pents04.jpg",
+      "runtime_sha256": "8e3052cd87ed5acb07c4b8e26fb0bab35d27126602b7aa99a399a84ddbedcee5",
+      "published_sha256": "8e3052cd87ed5acb07c4b8e26fb0bab35d27126602b7aa99a399a84ddbedcee5",
+      "bytes": 3240826,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Pents07.jpg",
+      "runtime_sha256": "b4366f0875300804f9d4bad52bd0c0adc4383483bd206ee8733b59c6869f145a",
+      "published_sha256": "b4366f0875300804f9d4bad52bd0c0adc4383483bd206ee8733b59c6869f145a",
+      "bytes": 3452614,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Wands13.jpg",
+      "runtime_sha256": "c92bf142a4cf054d95afe4630e3c7b12f2e3f4ddc8ca476da5195a43e19723fa",
+      "published_sha256": "c92bf142a4cf054d95afe4630e3c7b12f2e3f4ddc8ca476da5195a43e19723fa",
+      "bytes": 3432342,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Cups13.jpg",
+      "runtime_sha256": "ee6368037e29f1aa20eb46e932c7124b5c809c8bee6a14374b6e8948bf422255",
+      "published_sha256": "ee6368037e29f1aa20eb46e932c7124b5c809c8bee6a14374b6e8948bf422255",
+      "bytes": 3013527,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Wands04.jpg",
+      "runtime_sha256": "55fe6e81713d0a017fb41ac18e57d568f5eae1131e8941c9c08f7b6798da53a9",
+      "published_sha256": "55fe6e81713d0a017fb41ac18e57d568f5eae1131e8941c9c08f7b6798da53a9",
+      "bytes": 3101406,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Swords07.jpg",
+      "runtime_sha256": "db3a245f81185c6b497301d928f66616248bfcf70000f46a401b5df4607cfe88",
+      "published_sha256": "db3a245f81185c6b497301d928f66616248bfcf70000f46a401b5df4607cfe88",
+      "bytes": 3103201,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Pents14.jpg",
+      "runtime_sha256": "f340a6bb7cb5f142525fbd5c7ce4327b0262538bfa063eefa36459a7829c79b0",
+      "published_sha256": "f340a6bb7cb5f142525fbd5c7ce4327b0262538bfa063eefa36459a7829c79b0",
+      "bytes": 2656963,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Wands14.jpg",
+      "runtime_sha256": "8112a3874cff006a420582b292586beb72742a75662b154da169418bb0276055",
+      "published_sha256": "8112a3874cff006a420582b292586beb72742a75662b154da169418bb0276055",
+      "bytes": 3541049,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Cups10.jpg",
+      "runtime_sha256": "70284798e0e27415115f55453dfd33a85d8bc517aab6fdf7957475ad6e1ab068",
+      "published_sha256": "70284798e0e27415115f55453dfd33a85d8bc517aab6fdf7957475ad6e1ab068",
+      "bytes": 3524238,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/11_Justice.jpg",
+      "runtime_sha256": "f9dfc2234e9bf124a40315d169d44b31417d51d4b325cbc1a00753686c604c9d",
+      "published_sha256": "f9dfc2234e9bf124a40315d169d44b31417d51d4b325cbc1a00753686c604c9d",
+      "bytes": 3003881,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/03_Empress.jpg",
+      "runtime_sha256": "79462efaebfa666a77847db2f1213aa40c8a77f1aaa737c1e19ba329f6e1aab9",
+      "published_sha256": "79462efaebfa666a77847db2f1213aa40c8a77f1aaa737c1e19ba329f6e1aab9",
+      "bytes": 2962532,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/18_Moon.jpg",
+      "runtime_sha256": "2c14800dc6a5e6883c8c7fbc40a9b644a79f7e8bccf6b0343ff174a9c923b6ee",
+      "published_sha256": "2c14800dc6a5e6883c8c7fbc40a9b644a79f7e8bccf6b0343ff174a9c923b6ee",
+      "bytes": 3134259,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Wands12.jpg",
+      "runtime_sha256": "0b89168e1b7299132df77af0505c586ece2b572f5f6ad8c2d5a221e91d214a08",
+      "published_sha256": "0b89168e1b7299132df77af0505c586ece2b572f5f6ad8c2d5a221e91d214a08",
+      "bytes": 3509216,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Pents01.jpg",
+      "runtime_sha256": "17029f1d47f13f652517cf8cb69ae7ab6bf0afeb1218dba6b911786aaefb7696",
+      "published_sha256": "17029f1d47f13f652517cf8cb69ae7ab6bf0afeb1218dba6b911786aaefb7696",
+      "bytes": 3197398,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/02_High_Priestess.jpg",
+      "runtime_sha256": "9d38e6847631f8fe54d8fe599c3b83cb7ccc6a3559d4380fcd519cde922cf8fa",
+      "published_sha256": "9d38e6847631f8fe54d8fe599c3b83cb7ccc6a3559d4380fcd519cde922cf8fa",
+      "bytes": 3223610,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/13_Death.jpg",
+      "runtime_sha256": "dc2bf74a0d97c0b4e3235710c0f8c114695f1279e727e8417a9f192eb2228325",
+      "published_sha256": "dc2bf74a0d97c0b4e3235710c0f8c114695f1279e727e8417a9f192eb2228325",
+      "bytes": 3212457,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/04_Emperor.jpg",
+      "runtime_sha256": "90e3f1c3d621c09fd240380a8f6ffd1b9c88fea6f6d411919eb63a4948286b39",
+      "published_sha256": "90e3f1c3d621c09fd240380a8f6ffd1b9c88fea6f6d411919eb63a4948286b39",
+      "bytes": 3326712,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/09_Hermit.jpg",
+      "runtime_sha256": "196020eab0ab7b0961033227d4801c050607e1dcb5e47001b5a2414b73bf91e6",
+      "published_sha256": "196020eab0ab7b0961033227d4801c050607e1dcb5e47001b5a2414b73bf91e6",
+      "bytes": 2381814,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Cups02.jpg",
+      "runtime_sha256": "d985614c1083443043c11bd4af83f6194ca64e8e590737f990f4f457ce968d16",
+      "published_sha256": "d985614c1083443043c11bd4af83f6194ca64e8e590737f990f4f457ce968d16",
+      "bytes": 3212188,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Wands05.jpg",
+      "runtime_sha256": "17bb2f3a745760b58dfc289f89af2d5b288747a83bb962b5a68cdbbbb164295c",
+      "published_sha256": "17bb2f3a745760b58dfc289f89af2d5b288747a83bb962b5a68cdbbbb164295c",
+      "bytes": 2946495,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Cups06.jpg",
+      "runtime_sha256": "56f4b1a92875ec3af50b38a5fc97786468c78bd08b76a026b6b6299551fe832a",
+      "published_sha256": "56f4b1a92875ec3af50b38a5fc97786468c78bd08b76a026b6b6299551fe832a",
+      "bytes": 3510344,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Swords11.jpg",
+      "runtime_sha256": "e6e7d51123382e7dd901bb3084ac9c2de9a96c3a125fa0a464b128863c878993",
+      "published_sha256": "e6e7d51123382e7dd901bb3084ac9c2de9a96c3a125fa0a464b128863c878993",
+      "bytes": 3298870,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Pents10.jpg",
+      "runtime_sha256": "bfa6f54ceed5116c02e2a00441f9d045ab40517d9cd31d8a808ce3c7812cb4a1",
+      "published_sha256": "bfa6f54ceed5116c02e2a00441f9d045ab40517d9cd31d8a808ce3c7812cb4a1",
+      "bytes": 3306005,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/08_Strength.jpg",
+      "runtime_sha256": "9a8ef53a04c74897e4e1174af3f34c25c315bba6eaa6b5a232af7936a9603034",
+      "published_sha256": "9a8ef53a04c74897e4e1174af3f34c25c315bba6eaa6b5a232af7936a9603034",
+      "bytes": 3020922,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Swords13.jpg",
+      "runtime_sha256": "f4b8c2c31cf5b91b78905a49f7f834bf6cd176ddfa13c469ca3fc639c75cc86c",
+      "published_sha256": "f4b8c2c31cf5b91b78905a49f7f834bf6cd176ddfa13c469ca3fc639c75cc86c",
+      "bytes": 2966023,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/16_Tower.jpg",
+      "runtime_sha256": "8e6a47fff3109b0e895a9d8aad2bcbd99a3a551f2e06d247a6c5acada4a50d83",
+      "published_sha256": "8e6a47fff3109b0e895a9d8aad2bcbd99a3a551f2e06d247a6c5acada4a50d83",
+      "bytes": 2484341,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/12_Hanged_Man.jpg",
+      "runtime_sha256": "5ffac041d7500423daae087611b2e58831471af2defd601ce1c88106bd399e3d",
+      "published_sha256": "5ffac041d7500423daae087611b2e58831471af2defd601ce1c88106bd399e3d",
+      "bytes": 3433273,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Pents03.jpg",
+      "runtime_sha256": "16c968114cf3625bc6ecdde4e0fbbf359ec6f10b8106cb7c8c4178f59056a539",
+      "published_sha256": "16c968114cf3625bc6ecdde4e0fbbf359ec6f10b8106cb7c8c4178f59056a539",
+      "bytes": 2862756,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Wands06.jpg",
+      "runtime_sha256": "585654d17b3d73b4f38faab178ad9adcb9e8c122fdaca2a7949c407f9d59ca42",
+      "published_sha256": "585654d17b3d73b4f38faab178ad9adcb9e8c122fdaca2a7949c407f9d59ca42",
+      "bytes": 3174662,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Swords03.jpg",
+      "runtime_sha256": "2e6f9b93c1a1f0b2bb91b7f2fe71e6412432378960605846adf8d335d441650c",
+      "published_sha256": "2e6f9b93c1a1f0b2bb91b7f2fe71e6412432378960605846adf8d335d441650c",
+      "bytes": 2680062,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Pents11.jpg",
+      "runtime_sha256": "b80fdc0e593aa497a952f5b523c4c44b440559df90020b213d97aaf78ae2a459",
+      "published_sha256": "b80fdc0e593aa497a952f5b523c4c44b440559df90020b213d97aaf78ae2a459",
+      "bytes": 2912839,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Wands03.jpg",
+      "runtime_sha256": "39834ac0acc0451c192a6f97b69924c7cb0a6141fae7963730f511f4613d9163",
+      "published_sha256": "39834ac0acc0451c192a6f97b69924c7cb0a6141fae7963730f511f4613d9163",
+      "bytes": 3186430,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Swords04.jpg",
+      "runtime_sha256": "197787ea1415f8cee51ecf27108accb97885e42b4e5f154c3c6ef0992f919d0c",
+      "published_sha256": "197787ea1415f8cee51ecf27108accb97885e42b4e5f154c3c6ef0992f919d0c",
+      "bytes": 3016961,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Wands09.jpg",
+      "runtime_sha256": "1b30bee849ed61c662b735e6e1222be74f477cc61354670c9d8b66ac19a20d07",
+      "published_sha256": "1b30bee849ed61c662b735e6e1222be74f477cc61354670c9d8b66ac19a20d07",
+      "bytes": 3323392,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Pents06.jpg",
+      "runtime_sha256": "1da31037347063cff58225f02148913b93af5a8bfc426167645401aa9d64ef27",
+      "published_sha256": "1da31037347063cff58225f02148913b93af5a8bfc426167645401aa9d64ef27",
+      "bytes": 3443466,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Cups14.jpg",
+      "runtime_sha256": "389bb374a5e8f0f5a655bb1069954e5f0113667756eda39b7115b05cda6c2df9",
+      "published_sha256": "389bb374a5e8f0f5a655bb1069954e5f0113667756eda39b7115b05cda6c2df9",
+      "bytes": 3327890,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Pents13.jpg",
+      "runtime_sha256": "81f069f4a06d5f1ca6e0d041be89f08f48f9aaba7707c44878e365b6177ba76e",
+      "published_sha256": "81f069f4a06d5f1ca6e0d041be89f08f48f9aaba7707c44878e365b6177ba76e",
+      "bytes": 3186980,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Swords08.jpg",
+      "runtime_sha256": "4539d4d25b6a32bb9d1c96ae5523856b48a466e83a529c6cce771b69bbae62ac",
+      "published_sha256": "4539d4d25b6a32bb9d1c96ae5523856b48a466e83a529c6cce771b69bbae62ac",
+      "bytes": 3270377,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Pents08.jpg",
+      "runtime_sha256": "e65e03b9dbeaaecc54543b64fb913f2ffa4d9d3e7c4dfaa01dd45b4eaaabc911",
+      "published_sha256": "e65e03b9dbeaaecc54543b64fb913f2ffa4d9d3e7c4dfaa01dd45b4eaaabc911",
+      "bytes": 3045961,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Cups12.jpg",
+      "runtime_sha256": "d1b352ab25eb3877369d23d86ceb529cae6e8a8a51c60224d38d3eedbb76e88e",
+      "published_sha256": "d1b352ab25eb3877369d23d86ceb529cae6e8a8a51c60224d38d3eedbb76e88e",
+      "bytes": 3508786,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/06_Lovers.jpg",
+      "runtime_sha256": "79d01b48ac19bbd6409936983e71521e266d832d4e71c964ac30131b4ac0dc3e",
+      "published_sha256": "79d01b48ac19bbd6409936983e71521e266d832d4e71c964ac30131b4ac0dc3e",
+      "bytes": 3323649,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/21_World.jpg",
+      "runtime_sha256": "37a16311056f32e85b6fd04763d4c6896eda8f7192ef9823ecf5230f9306b413",
+      "published_sha256": "37a16311056f32e85b6fd04763d4c6896eda8f7192ef9823ecf5230f9306b413",
+      "bytes": 3300611,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/05_Hierophant.jpg",
+      "runtime_sha256": "a840311409085bec3a360f4d2d211b277f24928bd52cea686df22f334c0feaec",
+      "published_sha256": "a840311409085bec3a360f4d2d211b277f24928bd52cea686df22f334c0feaec",
+      "bytes": 2956638,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/14_Temperance.jpg",
+      "runtime_sha256": "64d83623898d114bb69ddc25d3f56c43eb8e0ea216de98ba3f4bb748aadbdd0e",
+      "published_sha256": "64d83623898d114bb69ddc25d3f56c43eb8e0ea216de98ba3f4bb748aadbdd0e",
+      "bytes": 3530047,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Cups09.jpg",
+      "runtime_sha256": "106eef01dac84c9caeabe154049bb1bf6d073469a2155637f8c3c6be2afadbcd",
+      "published_sha256": "106eef01dac84c9caeabe154049bb1bf6d073469a2155637f8c3c6be2afadbcd",
+      "bytes": 2983143,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/15_Devil.jpg",
+      "runtime_sha256": "9f53ce1c4f33b0e78d1e0c3a40d57a11674d1cb81c09670c3eac9867e272ce35",
+      "published_sha256": "9f53ce1c4f33b0e78d1e0c3a40d57a11674d1cb81c09670c3eac9867e272ce35",
+      "bytes": 2453078,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Cover_Rare.jpg",
+      "runtime_sha256": "e33e6e10a7e2aad63923c7a74abf1327443fd051da8ab40c2eb588a8ebb466ff",
+      "published_sha256": "e33e6e10a7e2aad63923c7a74abf1327443fd051da8ab40c2eb588a8ebb466ff",
+      "bytes": 2943628,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/17_Star.jpg",
+      "runtime_sha256": "670a34ba8875cc00492248a0f4a966822e9fcb5c506d7732706e459a811f6728",
+      "published_sha256": "670a34ba8875cc00492248a0f4a966822e9fcb5c506d7732706e459a811f6728",
+      "bytes": 3155756,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Wands08.jpg",
+      "runtime_sha256": "83ac2b550e677139a8e62c040e1d8f6288bcd56dd170ea4c844481ed99ec4205",
+      "published_sha256": "83ac2b550e677139a8e62c040e1d8f6288bcd56dd170ea4c844481ed99ec4205",
+      "bytes": 2815354,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Wands10.jpg",
+      "runtime_sha256": "e878773e6675f07a1c14d8a08d5080e7f9347d0dcc024ea0e0b3eec0badb04dd",
+      "published_sha256": "e878773e6675f07a1c14d8a08d5080e7f9347d0dcc024ea0e0b3eec0badb04dd",
+      "bytes": 3147321,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Wands02.jpg",
+      "runtime_sha256": "848fc5e2bd66079ca374ce7203215ccca486027947de16f398485567a124c71b",
+      "published_sha256": "848fc5e2bd66079ca374ce7203215ccca486027947de16f398485567a124c71b",
+      "bytes": 3125353,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Cups01.jpg",
+      "runtime_sha256": "7302df3ad21eb33957b2c811d40b5304a5e75638f8d3eda64e280e1d7d8f0eef",
+      "published_sha256": "7302df3ad21eb33957b2c811d40b5304a5e75638f8d3eda64e280e1d7d8f0eef",
+      "bytes": 3368148,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/10_Wheel_of_Fortune.jpg",
+      "runtime_sha256": "9c6f2f5f092ac525c813340b45b2ea0ee02fd01dfe2b3ce9dfb9fa7fbc9b77dc",
+      "published_sha256": "9c6f2f5f092ac525c813340b45b2ea0ee02fd01dfe2b3ce9dfb9fa7fbc9b77dc",
+      "bytes": 3321625,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Swords09.jpg",
+      "runtime_sha256": "79f38b7263d5ca8229bbe9da9d9b5a215082397e762c7a9a5ffb9609e63e4920",
+      "published_sha256": "79f38b7263d5ca8229bbe9da9d9b5a215082397e762c7a9a5ffb9609e63e4920",
+      "bytes": 2490545,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Cups03.jpg",
+      "runtime_sha256": "1fad56a18ca1e0e772e3f73515ebf431e42f608f6acc36a57bbe0377e71f170e",
+      "published_sha256": "1fad56a18ca1e0e772e3f73515ebf431e42f608f6acc36a57bbe0377e71f170e",
+      "bytes": 3086640,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Wands11.jpg",
+      "runtime_sha256": "f08516eae4d492d647ebe876dd3cecf26a2b0e6d5fd9a194df672d3bd835db0d",
+      "published_sha256": "f08516eae4d492d647ebe876dd3cecf26a2b0e6d5fd9a194df672d3bd835db0d",
+      "bytes": 3399069,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Pents09.jpg",
+      "runtime_sha256": "1fd141b448d2ec9fe553e4a7529d03aac35d49fe5ff079d568c4af3a391a868b",
+      "published_sha256": "1fd141b448d2ec9fe553e4a7529d03aac35d49fe5ff079d568c4af3a391a868b",
+      "bytes": 3131670,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Swords14.jpg",
+      "runtime_sha256": "d940beaa2acd73ef808be68cb8314270e96f15432725c87a8e7dca82b6829571",
+      "published_sha256": "d940beaa2acd73ef808be68cb8314270e96f15432725c87a8e7dca82b6829571",
+      "bytes": 3461885,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Pents12.jpg",
+      "runtime_sha256": "5f19b0a7d91d0fe5fd3aea56533e2249b2d74494475555def720fec429248dd8",
+      "published_sha256": "5f19b0a7d91d0fe5fd3aea56533e2249b2d74494475555def720fec429248dd8",
+      "bytes": 2715835,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Cups11.jpg",
+      "runtime_sha256": "1000d8fe7eb86a5e0c820274a86f5b0b5b0cedb04dadaa672e8797481947bd3c",
+      "published_sha256": "1000d8fe7eb86a5e0c820274a86f5b0b5b0cedb04dadaa672e8797481947bd3c",
+      "bytes": 3636105,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Wands01.jpg",
+      "runtime_sha256": "d15a55f055b722dbdd73c46df581243a75f41f59bb768c991e8c1292eb49e3ab",
+      "published_sha256": "d15a55f055b722dbdd73c46df581243a75f41f59bb768c991e8c1292eb49e3ab",
+      "bytes": 3409741,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Cups08.jpg",
+      "runtime_sha256": "f259231bc27c6d901a96c21ed52c2df8835a6c160d19a47c61af19a310f1115a",
+      "published_sha256": "f259231bc27c6d901a96c21ed52c2df8835a6c160d19a47c61af19a310f1115a",
+      "bytes": 3042549,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/07_Chariot.jpg",
+      "runtime_sha256": "61ed158907043d7182614bdf60701980397d206b367487bee096966892714ba7",
+      "published_sha256": "61ed158907043d7182614bdf60701980397d206b367487bee096966892714ba7",
+      "bytes": 3155363,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/00_Fool.jpg",
+      "runtime_sha256": "5d2f2246ba78bb0797ae9f8a4d98f44b4e45942eac4d7bf9de7c0ba5f8e867db",
+      "published_sha256": "5d2f2246ba78bb0797ae9f8a4d98f44b4e45942eac4d7bf9de7c0ba5f8e867db",
+      "bytes": 2957347,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/01_Magician.jpg",
+      "runtime_sha256": "dc84cbfa41ede147501cd7ea43eb91bff7080a9c3ca07834d3807c443fb71c8a",
+      "published_sha256": "dc84cbfa41ede147501cd7ea43eb91bff7080a9c3ca07834d3807c443fb71c8a",
+      "bytes": 2995547,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Swords02.jpg",
+      "runtime_sha256": "589b4fd60987d992f6028fc264ca6670d0cf3582dc6b94d96e989cb1d9285046",
+      "published_sha256": "589b4fd60987d992f6028fc264ca6670d0cf3582dc6b94d96e989cb1d9285046",
+      "bytes": 3015867,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/tarot/cards/Pents05.jpg",
+      "runtime_sha256": "e7c43334b09227f34955ac4be9f2f0c5cea0ac73953538333808e9931d5a92f2",
+      "published_sha256": "e7c43334b09227f34955ac4be9f2f0c5cea0ac73953538333808e9931d5a92f2",
+      "bytes": 2624344,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/admin_panel/__init__.py",
+      "runtime_sha256": "e45434b3fdab3dad95a63fdd3a1a7abac5d70073d3f57f8c0555592cfd94a2aa",
+      "published_sha256": "e45434b3fdab3dad95a63fdd3a1a7abac5d70073d3f57f8c0555592cfd94a2aa",
+      "bytes": 23,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/admin_panel/services/profile_formatter.py",
+      "runtime_sha256": "9d75cf856034a720935aa3d1ec8a5e44e637cbdacb313b1789e4bf591601f91a",
+      "published_sha256": "9d75cf856034a720935aa3d1ec8a5e44e637cbdacb313b1789e4bf591601f91a",
+      "bytes": 4224,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/admin_panel/services/__init__.py",
+      "runtime_sha256": "e45434b3fdab3dad95a63fdd3a1a7abac5d70073d3f57f8c0555592cfd94a2aa",
+      "published_sha256": "e45434b3fdab3dad95a63fdd3a1a7abac5d70073d3f57f8c0555592cfd94a2aa",
+      "bytes": 23,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/admin_panel/services/db_services.py",
+      "runtime_sha256": "8b511b783c1a47c58cb2270dd531f242cb7881b3d38ea0c13c8c41fe15124c9c",
+      "published_sha256": "8b511b783c1a47c58cb2270dd531f242cb7881b3d38ea0c13c8c41fe15124c9c",
+      "bytes": 2296,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/admin_panel/ui/coin_management_view.py",
+      "runtime_sha256": "03c72d94d3c0df1a2db49b8172d77924fc0fff29e13071212bf838f48cbae4fc",
+      "published_sha256": "03c72d94d3c0df1a2db49b8172d77924fc0fff29e13071212bf838f48cbae4fc",
+      "bytes": 7711,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/admin_panel/ui/__init__.py",
+      "runtime_sha256": "e45434b3fdab3dad95a63fdd3a1a7abac5d70073d3f57f8c0555592cfd94a2aa",
+      "published_sha256": "e45434b3fdab3dad95a63fdd3a1a7abac5d70073d3f57f8c0555592cfd94a2aa",
+      "bytes": 23,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/admin_panel/ui/typing.py",
+      "runtime_sha256": "813ee8ff0fa8ba908ec0cbc3cdabbdee511ae84af128b9904150635dcd6726a9",
+      "published_sha256": "813ee8ff0fa8ba908ec0cbc3cdabbdee511ae84af128b9904150635dcd6726a9",
+      "bytes": 571,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/admin_panel/ui/coin_management_modal.py",
+      "runtime_sha256": "dcbd81aa7a731286dd141ca86820f71bcbfb1be01cb37956c2368e74d5c8493f",
+      "published_sha256": "dcbd81aa7a731286dd141ca86820f71bcbfb1be01cb37956c2368e74d5c8493f",
+      "bytes": 2477,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/admin_panel/ui/modals/edit_modals.py",
+      "runtime_sha256": "53ac7ba8cc68b9d123db684e6cbd99a7aa9c8ac91d7a07bb1ae89b7b988731ee",
+      "published_sha256": "53ac7ba8cc68b9d123db684e6cbd99a7aa9c8ac91d7a07bb1ae89b7b988731ee",
+      "bytes": 24415,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/admin_panel/ui/modals/search_modals.py",
+      "runtime_sha256": "bc3890fc091465edaaab3336bedd451005de66f9f42a62fb692e54c33c45f41c",
+      "published_sha256": "2c731c7cb94fa54a55a01f97c2cdd9ef488ad735cc7a9a519e7a07db2c906dff",
+      "bytes": 19363,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "src/chat/features/admin_panel/ui/modals/utility_modals.py",
+      "runtime_sha256": "bde1ac509fd8669e3802b0e8c9488a5cb91badcf96ccfd4cdefc6aad4d4d86ec",
+      "published_sha256": "bde1ac509fd8669e3802b0e8c9488a5cb91badcf96ccfd4cdefc6aad4d4d86ec",
+      "bytes": 1234,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/admin_panel/ui/views/work_events_view.py",
+      "runtime_sha256": "9fa03c71e3c14c78e80cbb083e554236cffb49e5222a7e989de3dfd394e7d14e",
+      "published_sha256": "9fa03c71e3c14c78e80cbb083e554236cffb49e5222a7e989de3dfd394e7d14e",
+      "bytes": 5887,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/admin_panel/ui/views/community_members_view.py",
+      "runtime_sha256": "283632e9e2bfbab090caf737cca73f8d484c95139095463de1c4e6263502cad3",
+      "published_sha256": "283632e9e2bfbab090caf737cca73f8d484c95139095463de1c4e6263502cad3",
+      "bytes": 28513,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/admin_panel/ui/views/db_management_view.py",
+      "runtime_sha256": "973f164ccfca36a0b0853a635b17d6edabb00826b9d8b027f285b0e45db791a0",
+      "published_sha256": "973f164ccfca36a0b0853a635b17d6edabb00826b9d8b027f285b0e45db791a0",
+      "bytes": 4304,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/admin_panel/ui/views/conversation_blocks_view.py",
+      "runtime_sha256": "84d981c965e76852ca8c95eb7177cae6762982d2e6f876deb127a5993984b7b3",
+      "published_sha256": "84d981c965e76852ca8c95eb7177cae6762982d2e6f876deb127a5993984b7b3",
+      "bytes": 41005,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/admin_panel/ui/views/base_view.py",
+      "runtime_sha256": "fc86ba4a5b7448da40b4e95d59390ea7616c36fc5a67ef26d70db86b933f2431",
+      "published_sha256": "fc86ba4a5b7448da40b4e95d59390ea7616c36fc5a67ef26d70db86b933f2431",
+      "bytes": 14591,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/admin_panel/ui/views/general_knowledge_view.py",
+      "runtime_sha256": "38b7dfcb6e35bab86183dd1615ae222c2f8442e6a68151799d44fcd60989719b",
+      "published_sha256": "38b7dfcb6e35bab86183dd1615ae222c2f8442e6a68151799d44fcd60989719b",
+      "bytes": 11535,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/admin_panel/ui/views/vector_db_view.py",
+      "runtime_sha256": "e3253378f63047fc864f96584c2e9e9e8285c532a697f54ab0581fa11a379740",
+      "published_sha256": "e3253378f63047fc864f96584c2e9e9e8285c532a697f54ab0581fa11a379740",
+      "bytes": 30281,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/admin_panel/cogs/__init__.py",
+      "runtime_sha256": "e45434b3fdab3dad95a63fdd3a1a7abac5d70073d3f57f8c0555592cfd94a2aa",
+      "published_sha256": "e45434b3fdab3dad95a63fdd3a1a7abac5d70073d3f57f8c0555592cfd94a2aa",
+      "bytes": 23,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/admin_panel/cogs/admin_panel_cog.py",
+      "runtime_sha256": "f16cf8aa9d25a8224d7ebe8d731b00692c0fe052c898b6e6ec5c90f98cc5fc20",
+      "published_sha256": "f16cf8aa9d25a8224d7ebe8d731b00692c0fe052c898b6e6ec5c90f98cc5fc20",
+      "bytes": 3643,
+      "template_changes": []
+    },
+    {
+      "path": "src/lobby/index.html",
+      "runtime_sha256": "cbb005490ec1b6f0e70869d3f2e52183bf0b6737c7b186b4b5367c1a0e5996d6",
+      "published_sha256": "cbb005490ec1b6f0e70869d3f2e52183bf0b6737c7b186b4b5367c1a0e5996d6",
+      "bytes": 1342,
+      "template_changes": []
+    },
+    {
+      "path": "src/lobby/app.py",
+      "runtime_sha256": "6c39856ca09e696ab1be7469988a03875b1f0c56c3798045e0a92890a6818396",
+      "published_sha256": "6c39856ca09e696ab1be7469988a03875b1f0c56c3798045e0a92890a6818396",
+      "bytes": 4269,
+      "template_changes": []
+    },
+    {
+      "path": "src/lobby/package-lock.json",
+      "runtime_sha256": "f463a835ca1b373f2890615a47e3fdbe3883e1864c4cf75ccee5ec7fddb60c64",
+      "published_sha256": "f463a835ca1b373f2890615a47e3fdbe3883e1864c4cf75ccee5ec7fddb60c64",
+      "bytes": 38503,
+      "template_changes": []
+    },
+    {
+      "path": "src/lobby/package.json",
+      "runtime_sha256": "e8f8ff7ce4565b5270e4f2d48ce219d1bb7f695b4c0b6aaebce195f988092fad",
+      "published_sha256": "e8f8ff7ce4565b5270e4f2d48ce219d1bb7f695b4c0b6aaebce195f988092fad",
+      "bytes": 332,
+      "template_changes": []
+    },
+    {
+      "path": "src/lobby/vite.config.ts",
+      "runtime_sha256": "cd7d39b605b2ae173365e1303aed843758b2b48424f08b7d7bb23b222961f2c9",
+      "published_sha256": "cd7d39b605b2ae173365e1303aed843758b2b48424f08b7d7bb23b222961f2c9",
+      "bytes": 324,
+      "template_changes": []
+    },
+    {
+      "path": "src/lobby/tsconfig.json",
+      "runtime_sha256": "543d3f49231feb7fbe3bcc44afbff76b6180fb8bc1b12772f46721392a43b887",
+      "published_sha256": "a2d7c2795607a89c95e3a2f6b846edfd640b0e28f9add5f3d1a4c1b1cb146eb8",
+      "bytes": 288,
+      "template_changes": []
+    },
+    {
+      "path": "src/database/database.py",
+      "runtime_sha256": "0573acd88c5cb4616b1133a993029d56a5477575d53aac74ae05e18bd6dcab54",
+      "published_sha256": "c204c533945040891d1a5d8ed435af90b986e16f377dc2fa3c4b11190694ec54",
+      "bytes": 1496,
+      "template_changes": [
+        "connection_password_template"
+      ]
+    },
+    {
+      "path": "src/database/models.py",
+      "runtime_sha256": "5ceb6ef10f3962cdb57a7a3209207dff95dadd5eb68e0b61e584aaafee16edc1",
+      "published_sha256": "5ceb6ef10f3962cdb57a7a3209207dff95dadd5eb68e0b61e584aaafee16edc1",
+      "bytes": 45512,
+      "template_changes": []
+    },
+    {
+      "path": "src/database/services/token_usage_service.py",
+      "runtime_sha256": "8206356d5ab80ae47b5ca9ae0c4573feb7a0f2bd108f249a403e259c0685daae",
+      "published_sha256": "8206356d5ab80ae47b5ca9ae0c4573feb7a0f2bd108f249a403e259c0685daae",
+      "bytes": 1494,
+      "template_changes": []
+    },
+    {
+      "path": "src/database/services/ai_config_service.py",
+      "runtime_sha256": "6180f3870fe470b3906087f4fe9b2704c18fa6da6a637bfa25e71963b106d3c0",
+      "published_sha256": "6180f3870fe470b3906087f4fe9b2704c18fa6da6a637bfa25e71963b106d3c0",
+      "bytes": 6655,
+      "template_changes": []
+    },
+    {
+      "path": "src/diary/index.html",
+      "runtime_sha256": "f44262660775be6d087f8f8c38ec9d6b8be104b74156a0987b591af89d90c317",
+      "published_sha256": "f44262660775be6d087f8f8c38ec9d6b8be104b74156a0987b591af89d90c317",
+      "bytes": 646,
+      "template_changes": []
+    },
+    {
+      "path": "src/diary/app.py",
+      "runtime_sha256": "f8ebd88f3b10d3e9ce8625babdf6ef47bd8f28bfaa9ea3012a24205e9edcb472",
+      "published_sha256": "f8ebd88f3b10d3e9ce8625babdf6ef47bd8f28bfaa9ea3012a24205e9edcb472",
+      "bytes": 6348,
+      "template_changes": []
+    },
+    {
+      "path": "src/diary/__init__.py",
+      "runtime_sha256": "8b084a9f378124b2b1a51563bf3c22444eb7ff33692017da28b2136ae56987ed",
+      "published_sha256": "8b084a9f378124b2b1a51563bf3c22444eb7ff33692017da28b2136ae56987ed",
+      "bytes": 24,
+      "template_changes": []
+    },
+    {
+      "path": "src/diary/package-lock.json",
+      "runtime_sha256": "5a2eafb1c068f64db175ea2915371b858582b605a61ab072cbe6e83b637fdf46",
+      "published_sha256": "5a2eafb1c068f64db175ea2915371b858582b605a61ab072cbe6e83b637fdf46",
+      "bytes": 53995,
+      "template_changes": []
+    },
+    {
+      "path": "src/diary/package.json",
+      "runtime_sha256": "ebc998133ea3ef03688cc5255bc51e80ff3eda65e48ea6f35cba21bd390b59ee",
+      "published_sha256": "ebc998133ea3ef03688cc5255bc51e80ff3eda65e48ea6f35cba21bd390b59ee",
+      "bytes": 451,
+      "template_changes": []
+    },
+    {
+      "path": "src/diary/vite.config.ts",
+      "runtime_sha256": "8609e5896e31d288d2f7ebb8417978452fe44062b08ed06e6251601dee38446f",
+      "published_sha256": "8609e5896e31d288d2f7ebb8417978452fe44062b08ed06e6251601dee38446f",
+      "bytes": 465,
+      "template_changes": []
+    },
+    {
+      "path": "src/diary/tsconfig.json",
+      "runtime_sha256": "63c71446337ed3e0992129469829cf2c54114219abdfdd41dd4924b3d2968902",
+      "published_sha256": "68b1c0b1080ff20027b0d6164f57c191f20a6eecc6504564d13ac5c868f13e7a",
+      "bytes": 701,
+      "template_changes": []
+    },
+    {
+      "path": "src/diary/services/__init__.py",
+      "runtime_sha256": "8b084a9f378124b2b1a51563bf3c22444eb7ff33692017da28b2136ae56987ed",
+      "published_sha256": "8b084a9f378124b2b1a51563bf3c22444eb7ff33692017da28b2136ae56987ed",
+      "bytes": 24,
+      "template_changes": []
+    },
+    {
+      "path": "src/diary/services/diary_service.py",
+      "runtime_sha256": "07de0beb9574c2488aa5a6996eb0a958f5dfcae357cce0eb95e1f827130353e4",
+      "published_sha256": "07de0beb9574c2488aa5a6996eb0a958f5dfcae357cce0eb95e1f827130353e4",
+      "bytes": 13780,
+      "template_changes": []
+    },
+    {
+      "path": "src/diary/data/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/diary/data/diary_script.py",
+      "runtime_sha256": "1fad93e82a7b945080a5c443989d462c2f022674052f14b4254779e5101f49fe",
+      "published_sha256": "1fad93e82a7b945080a5c443989d462c2f022674052f14b4254779e5101f49fe",
+      "bytes": 11813,
+      "template_changes": []
+    },
+    {
+      "path": "config/persona_media_peers.json",
+      "runtime_sha256": "a28c1eafdbcd4f9b97e661cf5522793b97588ceae6f9af09b06f744196b7d734",
+      "published_sha256": "96c1b94fca82d83e0d7feea79ed05935713f4b498a1302989391baf109873fcc",
+      "bytes": 95,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/bot.yaml",
+      "runtime_sha256": "e282f16d2293f70b1475ae41b092602d0165c39f2e0b4be9e4b434db92ab015c",
+      "published_sha256": "e282f16d2293f70b1475ae41b092602d0165c39f2e0b4be9e4b434db92ab015c",
+      "bytes": 287,
+      "template_changes": []
+    },
+    {
+      "path": "config/persona_media_images.json",
+      "runtime_sha256": "d21214d9ec7d19fe46136c82d555d92f659df5bc064fa7dd91d2420715e2ae33",
+      "published_sha256": "c7691263081ed4f63c4e90f0e62ce2fc01e4d580ccad492e22c87db974bf28e0",
+      "bytes": 1856,
+      "template_changes": [
+        "private_endpoint_template"
+      ]
+    },
+    {
+      "path": "config/persona_media.json",
+      "runtime_sha256": "3dc0c538f51070b5f66f7b2394fb77bc2c3b0943c9140b252a7af1c11a5d8220",
+      "published_sha256": "6ba849aea2fbc0733be8e5db66325fda6cfde3415bdcb9659695c06d6b6b959a",
+      "bytes": 567,
+      "template_changes": []
+    },
+    {
+      "path": "config/bot_dialogue_peers.json",
+      "runtime_sha256": "1eebb796966d9591342e539bb85fe8ccc50a562286b305398d2d54938264d5cd",
+      "published_sha256": "c2c005cffd1132171f779f8c13c3dd768523341ddc1aaf623a41d0431b4cb3ca",
+      "bytes": 137,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "tests/test_anger.py",
+      "runtime_sha256": "293b4a32e4f58cbf6eaf78e78209c565ffbb3f0fff31899d9dc967f2cea4e7ec",
+      "published_sha256": "293b4a32e4f58cbf6eaf78e78209c565ffbb3f0fff31899d9dc967f2cea4e7ec",
+      "bytes": 5461,
+      "template_changes": []
+    },
+    {
+      "path": "tests/test_bot_dialogue.py",
+      "runtime_sha256": "887fae9606dab3cbef498a8cc16752daa0b71b2be8e350d6576f14709ce99e10",
+      "published_sha256": "b8767b7e7f77f49c2cd647cf6621c8f0fcea0bf001ba44db289a39d11edb988d",
+      "bytes": 16337,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "tests/test_takeover.py",
+      "runtime_sha256": "7b874c33b3382e4294c9bfe2ff495ba94d46d0e6c965af02da1bb309cb64e57a",
+      "published_sha256": "c94c3e63de47e43356f1c52b999887894d90ffb23bf43db03de08d06fe0d3692",
+      "bytes": 14151,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "assets/ref_5.png",
+      "runtime_sha256": "3510a16f7a081710ece03dcc52bf40c147f1793ee606b17a7cf0df18c8ffe2d7",
+      "published_sha256": "3510a16f7a081710ece03dcc52bf40c147f1793ee606b17a7cf0df18c8ffe2d7",
+      "bytes": 3898355,
+      "template_changes": []
+    },
+    {
+      "path": "assets/ref_1.png",
+      "runtime_sha256": "27a4c3e289f0524267008f968d8efdf27c526d38cc72f1135e4a9d11448d7d52",
+      "published_sha256": "27a4c3e289f0524267008f968d8efdf27c526d38cc72f1135e4a9d11448d7d52",
+      "bytes": 3988799,
+      "template_changes": []
+    },
+    {
+      "path": "assets/ref_3.png",
+      "runtime_sha256": "79260f2946994f718860a602d6d6214786396afe8e4f70282a1e125cce4cd952",
+      "published_sha256": "79260f2946994f718860a602d6d6214786396afe8e4f70282a1e125cce4cd952",
+      "bytes": 3867997,
+      "template_changes": []
+    },
+    {
+      "path": "assets/ref_4.png",
+      "runtime_sha256": "822e59745f47b78eff6910b634355558786b34753cbcb0b4283ca07050694ea3",
+      "published_sha256": "822e59745f47b78eff6910b634355558786b34753cbcb0b4283ca07050694ea3",
+      "bytes": 3877079,
+      "template_changes": []
+    },
+    {
+      "path": "assets/ref_2.png",
+      "runtime_sha256": "e2639a6272de245a3ac38814d4a2f1e9310f38873c05634a46224bc21991c519",
+      "published_sha256": "e2639a6272de245a3ac38814d4a2f1e9310f38873c05634a46224bc21991c519",
+      "bytes": 3960265,
+      "template_changes": []
+    },
+    {
+      "path": "alembic/env.py",
+      "runtime_sha256": "8d6f296ed3359a7feece236af44ef5e9b7f57fd55f7320264b9be9de3f30fbc5",
+      "published_sha256": "13565fc88ccabfda15980898a6b05b1c9fea99f918101440da1b4760dc8ecd86",
+      "bytes": 2823,
+      "template_changes": [
+        "connection_password_template"
+      ]
+    },
+    {
+      "path": "alembic/versions/merge_conversation_and_bm25_heads.py",
+      "runtime_sha256": "d5f2bd7e0c4c217ed43f0c30cfbe944033f0b5876bb99771385354e465c6ee5e",
+      "published_sha256": "d5f2bd7e0c4c217ed43f0c30cfbe944033f0b5876bb99771385354e465c6ee5e",
+      "bytes": 819,
+      "template_changes": []
+    },
+    {
+      "path": "alembic/versions/add_dual_embedding_columns.py",
+      "runtime_sha256": "2310b4f25c9f6e3c659b2cbe8678c953ab2095508df6b55aa4c922331f63a48e",
+      "published_sha256": "2310b4f25c9f6e3c659b2cbe8678c953ab2095508df6b55aa4c922331f63a48e",
+      "bytes": 9746,
+      "template_changes": []
+    },
+    {
+      "path": "alembic/versions/8aaf3d1582e2_refactor_general_knowledge_and_.py",
+      "runtime_sha256": "298ab9d45955411e75b88ca03cea4dcb59276a10f40e892158d5c41a8abbd2b9",
+      "published_sha256": "298ab9d45955411e75b88ca03cea4dcb59276a10f40e892158d5c41a8abbd2b9",
+      "bytes": 8570,
+      "template_changes": []
+    },
+    {
+      "path": "alembic/versions/fe7cfa779ace_add_token_usage_table.py",
+      "runtime_sha256": "23d5a332849b309494d2da6e964ee2ef99ef2f5116af9605c1f8041e9f192d91",
+      "published_sha256": "23d5a332849b309494d2da6e964ee2ef99ef2f5116af9605c1f8041e9f192d91",
+      "bytes": 1482,
+      "template_changes": []
+    },
+    {
+      "path": "alembic/versions/add_user_command_settings_table.py",
+      "runtime_sha256": "a6c8431b9f41ca6eac3a0ef2747e89c51526d335fa80688cfc189d11c77743e2",
+      "published_sha256": "a6c8431b9f41ca6eac3a0ef2747e89c51526d335fa80688cfc189d11c77743e2",
+      "bytes": 1635,
+      "template_changes": []
+    },
+    {
+      "path": "alembic/versions/merge_embedding_and_other_heads.py",
+      "runtime_sha256": "ff7833aa78d095009ce24cc5f645d808dacec9e9c95886de8686bfb8807913bd",
+      "published_sha256": "ff7833aa78d095009ce24cc5f645d808dacec9e9c95886de8686bfb8807913bd",
+      "bytes": 666,
+      "template_changes": []
+    },
+    {
+      "path": "alembic/versions/8d4695b17591_add_bm25_index_for_knowledge_and_member_.py",
+      "runtime_sha256": "de8bb0c4f4d947096f7e68201e767ce16d2eb4817b3e1685a3bb32d84178fa26",
+      "published_sha256": "de8bb0c4f4d947096f7e68201e767ce16d2eb4817b3e1685a3bb32d84178fa26",
+      "bytes": 1205,
+      "template_changes": []
+    },
+    {
+      "path": "alembic/versions/0d3c2d406343_add_personal_summary_to_community_.py",
+      "runtime_sha256": "a2c1de08442d66eb0439d306dd61b8b4ba1b1adaa1b72f7de1e6f96ca5ce0425",
+      "published_sha256": "a2c1de08442d66eb0439d306dd61b8b4ba1b1adaa1b72f7de1e6f96ca5ce0425",
+      "bytes": 864,
+      "template_changes": []
+    },
+    {
+      "path": "alembic/versions/30a5bc392c20_add_history_to_community_member_profile.py",
+      "runtime_sha256": "89269f0aaed8910270d469b8004a0fbf499328b4d6f364732ee861a655076173",
+      "published_sha256": "89269f0aaed8910270d469b8004a0fbf499328b4d6f364732ee861a655076173",
+      "bytes": 1047,
+      "template_changes": []
+    },
+    {
+      "path": "alembic/versions/add_user_tool_settings_table.py",
+      "runtime_sha256": "ff2237c738668364ecb18a70229cfbb85ac4636ca837b94d0d07b923522698f3",
+      "published_sha256": "ff2237c738668364ecb18a70229cfbb85ac4636ca837b94d0d07b923522698f3",
+      "bytes": 1581,
+      "template_changes": []
+    },
+    {
+      "path": "alembic/versions/add_admin_schema.py",
+      "runtime_sha256": "740307145967b5390903d828d125d4400543090b4c51820702a9cfb1fc1c75bd",
+      "published_sha256": "740307145967b5390903d828d125d4400543090b4c51820702a9cfb1fc1c75bd",
+      "bytes": 1691,
+      "template_changes": []
+    },
+    {
+      "path": "alembic/versions/add_shop_items_table.py",
+      "runtime_sha256": "6af6c261d0de0028cb5c46b4cb83dacf0d88792067f0faaf4e8ab1b3061c79fa",
+      "published_sha256": "6af6c261d0de0028cb5c46b4cb83dacf0d88792067f0faaf4e8ab1b3061c79fa",
+      "bytes": 1975,
+      "template_changes": []
+    },
+    {
+      "path": "alembic/versions/88ba317c09e7_add_author_id_and_thread_id_to_.py",
+      "runtime_sha256": "8e77ec7a9dc3499422349ed5eba9316c31fa507967cbcfab9f198ee7b603eb7c",
+      "published_sha256": "8e77ec7a9dc3499422349ed5eba9316c31fa507967cbcfab9f198ee7b603eb7c",
+      "bytes": 1739,
+      "template_changes": []
+    },
+    {
+      "path": "alembic/versions/40a238a8bfb3_add_personal_message_count_to_community_.py",
+      "runtime_sha256": "4a85fe74b135a48772841f3cc053d54959f18462eb77c8b7d26ad19e23cf7ae7",
+      "published_sha256": "4a85fe74b135a48772841f3cc053d54959f18462eb77c8b7d26ad19e23cf7ae7",
+      "bytes": 1148,
+      "template_changes": []
+    },
+    {
+      "path": "alembic/versions/ec507c9addb9_set_server_default_for_timestamps_on_.py",
+      "runtime_sha256": "865699ddf880ca08e6f90856403d701063d33de8ba6c7610a1df7c662328823b",
+      "published_sha256": "865699ddf880ca08e6f90856403d701063d33de8ba6c7610a1df7c662328823b",
+      "bytes": 3304,
+      "template_changes": []
+    },
+    {
+      "path": "alembic/versions/d1b5ce4c26a4_merge_heads.py",
+      "runtime_sha256": "8ccdd60ceb8b358439852de58da63511deca12b3f6af394ec361b2e8bc23f1cf",
+      "published_sha256": "8ccdd60ceb8b358439852de58da63511deca12b3f6af394ec361b2e8bc23f1cf",
+      "bytes": 595,
+      "template_changes": []
+    },
+    {
+      "path": "alembic/versions/43ecab4319d0_phase_2_create_tables_and_indexes.py",
+      "runtime_sha256": "ca38ad146a5092addac40a9f14589b77d7418e2baec0dec1a9a9259432c7269c",
+      "published_sha256": "ca38ad146a5092addac40a9f14589b77d7418e2baec0dec1a9a9259432c7269c",
+      "bytes": 4416,
+      "template_changes": []
+    },
+    {
+      "path": "alembic/versions/add_summarized_to_conversation_blocks.py",
+      "runtime_sha256": "957cc9b5066fcfd28624e8fbb2dc42aa2762363d5dbc2963dd3997cb22ef58be",
+      "published_sha256": "957cc9b5066fcfd28624e8fbb2dc42aa2762363d5dbc2963dd3997cb22ef58be",
+      "bytes": 1145,
+      "template_changes": []
+    },
+    {
+      "path": "alembic/versions/7a7a042122f9_add_thread_settings_table.py",
+      "runtime_sha256": "933279cbe9fb4e76f0df83a6f2244d044f833c86b61c45c14a2e346647978c55",
+      "published_sha256": "933279cbe9fb4e76f0df83a6f2244d044f833c86b61c45c14a2e346647978c55",
+      "bytes": 1789,
+      "template_changes": []
+    },
+    {
+      "path": "alembic/versions/add_ab_test_tables.py",
+      "runtime_sha256": "85057955c51b832112a01cd9c4d29ce923d698de386f579463770f16cde60a2e",
+      "published_sha256": "85057955c51b832112a01cd9c4d29ce923d698de386f579463770f16cde60a2e",
+      "bytes": 4703,
+      "template_changes": []
+    },
+    {
+      "path": "alembic/versions/d4d2d70d3faa_change_cg_url_to_json_array.py",
+      "runtime_sha256": "7c0aa73d9a97ecbd4b78eef9a61011c438186636b0cdde045dac929cbc516b31",
+      "published_sha256": "7c0aa73d9a97ecbd4b78eef9a61011c438186636b0cdde045dac929cbc516b31",
+      "bytes": 1140,
+      "template_changes": []
+    },
+    {
+      "path": "alembic/versions/add_ai_config_tables.py",
+      "runtime_sha256": "dc2d98d6a9a5a23803031ba1451980cbf27b8068802230ec9ee8076a17edb94c",
+      "published_sha256": "dc2d98d6a9a5a23803031ba1451980cbf27b8068802230ec9ee8076a17edb94c",
+      "bytes": 2737,
+      "template_changes": []
+    },
+    {
+      "path": "alembic/versions/048223358105_add_general_knowledge_and_community_.py",
+      "runtime_sha256": "8e56ba789a5586f6d4dae03a748b11eaf88312a06dabeae94364345150098e3f",
+      "published_sha256": "8e56ba789a5586f6d4dae03a748b11eaf88312a06dabeae94364345150098e3f",
+      "bytes": 3703,
+      "template_changes": []
+    },
+    {
+      "path": "alembic/versions/add_content_filter_keywords.py",
+      "runtime_sha256": "4abd25fe7be0ced9f16245a91fff455d7b1d97f3f5c3991d4df3a937acb83863",
+      "published_sha256": "4abd25fe7be0ced9f16245a91fff455d7b1d97f3f5c3991d4df3a937acb83863",
+      "bytes": 1376,
+      "template_changes": []
+    },
+    {
+      "path": "alembic/versions/add_forum_threads_table.py",
+      "runtime_sha256": "70524110473cd5907cd99a1557798e207fccefb5a70cee6b808bf5fe6e60219a",
+      "published_sha256": "70524110473cd5907cd99a1557798e207fccefb5a70cee6b808bf5fe6e60219a",
+      "bytes": 5040,
+      "template_changes": []
+    },
+    {
+      "path": "alembic/versions/add_economy_and_user_tables.py",
+      "runtime_sha256": "6295970a90a1de3377ed917c11f0e9873f90d611d350cebd7cc542fcc0111164",
+      "published_sha256": "6295970a90a1de3377ed917c11f0e9873f90d611d350cebd7cc542fcc0111164",
+      "bytes": 4857,
+      "template_changes": []
+    },
+    {
+      "path": "alembic/versions/578adbc7c4bd_create_initial_tables_with_pg_search_.py",
+      "runtime_sha256": "94e5b23596b6a9f917bcfb98c7a709f07bcdb9bafb5c5597ddd3048c467bef49",
+      "published_sha256": "94e5b23596b6a9f917bcfb98c7a709f07bcdb9bafb5c5597ddd3048c467bef49",
+      "bytes": 1033,
+      "template_changes": []
+    },
+    {
+      "path": "alembic/versions/add_thread_name_bm25_index.py",
+      "runtime_sha256": "46b38ffd9f4fb27f21d9a340970218dd61cb835b4dd861d7fa77171d6df1c7c2",
+      "published_sha256": "46b38ffd9f4fb27f21d9a340970218dd61cb835b4dd861d7fa77171d6df1c7c2",
+      "bytes": 1530,
+      "template_changes": []
+    },
+    {
+      "path": "alembic/versions/merge_all_heads_20260513.py",
+      "runtime_sha256": "0b90f662d3e60f48a5177c736ae0e620dccfcd6cbd78a89567aadaf1cbe09149",
+      "published_sha256": "0b90f662d3e60f48a5177c736ae0e620dccfcd6cbd78a89567aadaf1cbe09149",
+      "bytes": 744,
+      "template_changes": []
+    },
+    {
+      "path": "alembic/versions/add_conversation_blocks_table.py",
+      "runtime_sha256": "14127b1677c4b0629901166413cf5b477d21aa3dbcd9a7e507ae73a2482f7faa",
+      "published_sha256": "14127b1677c4b0629901166413cf5b477d21aa3dbcd9a7e507ae73a2482f7faa",
+      "bytes": 5132,
+      "template_changes": []
+    },
+    {
+      "path": "alembic/versions/fix_forum_threads_bigint.py",
+      "runtime_sha256": "df633604d651388e0b5682e02238ec20a73a1ff546e8e690a4ddc193d6d21cf2",
+      "published_sha256": "df633604d651388e0b5682e02238ec20a73a1ff546e8e690a4ddc193d6d21cf2",
+      "bytes": 1741,
+      "template_changes": []
+    },
+    {
+      "path": "alembic/versions/add_user_memory_notes.py",
+      "runtime_sha256": "a5842c3fdc85a6af412466d54b204136d25876949975f96bd18e6e9e21decf63",
+      "published_sha256": "a5842c3fdc85a6af412466d54b204136d25876949975f96bd18e6e9e21decf63",
+      "bytes": 1442,
+      "template_changes": []
+    },
+    {
+      "path": "alembic/versions/add_user_persona_preference_table.py",
+      "runtime_sha256": "713a196d605f19156154bd2c89ecc51631261bae46bf344f776e70e9d1475d0a",
+      "published_sha256": "713a196d605f19156154bd2c89ecc51631261bae46bf344f776e70e9d1475d0a",
+      "bytes": 1414,
+      "template_changes": []
+    },
+    {
+      "path": "alembic/versions/update_embedding_dimension_to_1024.py",
+      "runtime_sha256": "b84e0a33b892daa73d01712624c60faffcf126f985426e86c96c51f384b0485c",
+      "published_sha256": "b84e0a33b892daa73d01712624c60faffcf126f985426e86c96c51f384b0485c",
+      "bytes": 4349,
+      "template_changes": []
+    },
+    {
+      "path": "alembic.ini",
+      "runtime_sha256": "2e756ccd8abeb43a1bbd08f5caee031f0669f4e7221f7780cfa25a0b342618a1",
+      "published_sha256": "69699614fc951844d4983897ea571783f44e229daf536f039120305d0a559db9",
+      "bytes": 4818,
+      "template_changes": [
+        "connection_password_template"
+      ]
+    },
+    {
+      "path": "requirements.txt",
+      "runtime_sha256": "1471e84ca5129b8301502c89c82e26a087a9294ea804e4ed9b9da7a4cf4809fe",
+      "published_sha256": "1471e84ca5129b8301502c89c82e26a087a9294ea804e4ed9b9da7a4cf4809fe",
+      "bytes": 540,
+      "template_changes": []
+    }
+  ],
+  "runtime_configuration": "private identity and credential values replaced with templates; running databases are not included"
+}

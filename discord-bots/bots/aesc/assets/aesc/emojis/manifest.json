@@ -1,0 +1,225 @@
+{
+  "character": "雨之魔女梣",
+  "emojis": [
+    {
+      "key": "smile",
+      "placeholder": "<微笑>",
+      "label": "温柔微笑",
+      "discord_name": "aesc_smile",
+      "discord_id": "0",
+      "sheet": 1,
+      "quadrant": "top_left",
+      "master": "master/aesc_smile.png",
+      "discord": "discord/aesc_smile.png"
+    },
+    {
+      "key": "laugh",
+      "placeholder": "<大笑>",
+      "label": "开心大笑",
+      "discord_name": "aesc_laugh",
+      "discord_id": "0",
+      "sheet": 1,
+      "quadrant": "top_right",
+      "master": "master/aesc_laugh.png",
+      "discord": "discord/aesc_laugh.png"
+    },
+    {
+      "key": "surprised",
+      "placeholder": "<惊讶>",
+      "label": "惊讶",
+      "discord_name": "aesc_surprised",
+      "discord_id": "0",
+      "sheet": 1,
+      "quadrant": "bottom_left",
+      "master": "master/aesc_surprised.png",
+      "discord": "discord/aesc_surprised.png"
+    },
+    {
+      "key": "shy",
+      "placeholder": "<害羞>",
+      "label": "害羞脸红",
+      "discord_name": "aesc_shy",
+      "discord_id": "0",
+      "sheet": 1,
+      "quadrant": "bottom_right",
+      "master": "master/aesc_shy.png",
+      "discord": "discord/aesc_shy.png"
+    },
+    {
+      "key": "angry",
+      "placeholder": "<生气>",
+      "label": "生气",
+      "discord_name": "aesc_angry",
+      "discord_id": "0",
+      "sheet": 2,
+      "quadrant": "top_left",
+      "master": "master/aesc_angry.png",
+      "discord": "discord/aesc_angry.png"
+    },
+    {
+      "key": "annoyed",
+      "placeholder": "<不满>",
+      "label": "不满无语",
+      "discord_name": "aesc_annoyed",
+      "discord_id": "0",
+      "sheet": 2,
+      "quadrant": "top_right",
+      "master": "master/aesc_annoyed.png",
+      "discord": "discord/aesc_annoyed.png"
+    },
+    {
+      "key": "sad",
+      "placeholder": "<伤心>",
+      "label": "伤心",
+      "discord_name": "aesc_sad",
+      "discord_id": "0",
+      "sheet": 2,
+      "quadrant": "bottom_left",
+      "master": "master/aesc_sad.png",
+      "discord": "discord/aesc_sad.png"
+    },
+    {
+      "key": "crying",
+      "placeholder": "<大哭>",
+      "label": "哭泣",
+      "discord_name": "aesc_crying",
+      "discord_id": "0",
+      "sheet": 2,
+      "quadrant": "bottom_right",
+      "master": "master/aesc_crying.png",
+      "discord": "discord/aesc_crying.png"
+    },
+    {
+      "key": "thinking",
+      "placeholder": "<思考>",
+      "label": "思考",
+      "discord_name": "aesc_thinking",
+      "discord_id": "0",
+      "sheet": 3,
+      "quadrant": "top_left",
+      "master": "master/aesc_thinking.png",
+      "discord": "discord/aesc_thinking.png"
+    },
+    {
+      "key": "smug",
+      "placeholder": "<得意>",
+      "label": "自信得意",
+      "discord_name": "aesc_smug",
+      "discord_id": "0",
+      "sheet": 3,
+      "quadrant": "top_right",
+      "master": "master/aesc_smug.png",
+      "discord": "discord/aesc_smug.png"
+    },
+    {
+      "key": "confused",
+      "placeholder": "<疑惑>",
+      "label": "疑惑",
+      "discord_name": "aesc_confused",
+      "discord_id": "0",
+      "sheet": 3,
+      "quadrant": "bottom_left",
+      "master": "master/aesc_confused.png",
+      "discord": "discord/aesc_confused.png"
+    },
+    {
+      "key": "sleepy",
+      "placeholder": "<困倦>",
+      "label": "困倦",
+      "discord_name": "aesc_sleepy",
+      "discord_id": "0",
+      "sheet": 3,
+      "quadrant": "bottom_right",
+      "master": "master/aesc_sleepy.png",
+      "discord": "discord/aesc_sleepy.png"
+    },
+    {
+      "key": "casting",
+      "placeholder": "<施法>",
+      "label": "雨之魔术",
+      "discord_name": "aesc_casting",
+      "discord_id": "0",
+      "sheet": 4,
+      "quadrant": "top_left",
+      "master": "master/aesc_casting.png",
+      "discord": "discord/aesc_casting.png"
+    },
+    {
+      "key": "proud",
+      "placeholder": "<骄傲>",
+      "label": "骄傲",
+      "discord_name": "aesc_proud",
+      "discord_id": "0",
+      "sheet": 4,
+      "quadrant": "top_right",
+      "master": "master/aesc_proud.png",
+      "discord": "discord/aesc_proud.png"
+    },
+    {
+      "key": "panic",
+      "placeholder": "<惊慌>",
+      "label": "惊慌",
+      "discord_name": "aesc_panic",
+      "discord_id": "0",
+      "sheet": 4,
+      "quadrant": "bottom_left",
+      "master": "master/aesc_panic.png",
+      "discord": "discord/aesc_panic.png"
+    },
+    {
+      "key": "embarrassed",
+      "placeholder": "<尴尬>",
+      "label": "尴尬",
+      "discord_name": "aesc_embarrassed",
+      "discord_id": "0",
+      "sheet": 4,
+      "quadrant": "bottom_right",
+      "master": "master/aesc_embarrassed.png",
+      "discord": "discord/aesc_embarrassed.png"
+    },
+    {
+      "key": "comfort",
+      "placeholder": "<安慰>",
+      "label": "撑伞安慰",
+      "discord_name": "aesc_comfort",
+      "discord_id": "0",
+      "sheet": 5,
+      "quadrant": "top_left",
+      "master": "master/aesc_comfort.png",
+      "discord": "discord/aesc_comfort.png"
+    },
+    {
+      "key": "excited",
+      "placeholder": "<激动>",
+      "label": "激动",
+      "discord_name": "aesc_excited",
+      "discord_id": "0",
+      "sheet": 5,
+      "quadrant": "top_right",
+      "master": "master/aesc_excited.png",
+      "discord": "discord/aesc_excited.png"
+    },
+    {
+      "key": "reading",
+      "placeholder": "<阅读>",
+      "label": "阅读故事",
+      "discord_name": "aesc_reading",
+      "discord_id": "0",
+      "sheet": 5,
+      "quadrant": "bottom_left",
+      "master": "master/aesc_reading.png",
+      "discord": "discord/aesc_reading.png"
+    },
+    {
+      "key": "wink",
+      "placeholder": "<眨眼>",
+      "label": "眨眼挥手",
+      "discord_name": "aesc_wink",
+      "discord_id": "0",
+      "sheet": 5,
+      "quadrant": "bottom_right",
+      "master": "master/aesc_wink.png",
+      "discord": "discord/aesc_wink.png"
+    }
+  ]
+}

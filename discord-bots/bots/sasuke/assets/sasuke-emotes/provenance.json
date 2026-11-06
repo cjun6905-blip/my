@@ -1,0 +1,22 @@
+{
+  "reference": "./local-assets/file_0000000032b081f8ade57f0c30e3038f.png",
+  "character_source": "https://naruto-official.com/news/01_1856",
+  "tool": "built-in image_gen",
+  "generated": "./local-assets/exec-4dd9c4b7-7f74-4c23-aa12-38804ef7f9b2.png",
+  "operations": "Only slicing/padding/resizing, original alpha retained. Avatar is user supplied.",
+  "cuts": [
+    [
+      0,
+      365,
+      729,
+      1086
+    ],
+    [
+      0,
+      363,
+      710,
+      1064,
+      1448
+    ]
+  ]
+}

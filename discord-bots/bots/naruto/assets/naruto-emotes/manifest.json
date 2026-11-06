@@ -1,0 +1,74 @@
+[
+  {
+    "name": "nt_hello",
+    "label": "挥手、开心招呼",
+    "image": "nt_hello.webp",
+    "emoji": "nt_hello.png"
+  },
+  {
+    "name": "nt_smile",
+    "label": "开朗微笑、认可",
+    "image": "nt_smile.webp",
+    "emoji": "nt_smile.png"
+  },
+  {
+    "name": "nt_think",
+    "label": "思考、认真分析",
+    "image": "nt_think.webp",
+    "emoji": "nt_think.png"
+  },
+  {
+    "name": "nt_blush",
+    "label": "害羞、脸红、别扭",
+    "image": "nt_blush.webp",
+    "emoji": "nt_blush.png"
+  },
+  {
+    "name": "nt_pout",
+    "label": "鼓脸、抱臂、小生气",
+    "image": "nt_pout.webp",
+    "emoji": "nt_pout.png"
+  },
+  {
+    "name": "nt_care",
+    "label": "递茶、关心、安慰",
+    "image": "nt_care.webp",
+    "emoji": "nt_care.png"
+  },
+  {
+    "name": "nt_cheer",
+    "label": "拇指、加油、鼓励",
+    "image": "nt_cheer.webp",
+    "emoji": "nt_cheer.png"
+  },
+  {
+    "name": "nt_resolve",
+    "label": "坚定、重视同伴",
+    "image": "nt_resolve.webp",
+    "emoji": "nt_resolve.png"
+  },
+  {
+    "name": "nt_ramen",
+    "label": "拉面、好吃、开心分享",
+    "image": "nt_ramen.webp",
+    "emoji": "nt_ramen.png"
+  },
+  {
+    "name": "nt_sleep",
+    "label": "困倦、晚安、休息",
+    "image": "nt_sleep.webp",
+    "emoji": "nt_sleep.png"
+  },
+  {
+    "name": "nt_surprise",
+    "label": "惊讶、意外",
+    "image": "nt_surprise.webp",
+    "emoji": "nt_surprise.png"
+  },
+  {
+    "name": "nt_calm",
+    "label": "放松、秋叶、陪伴",
+    "image": "nt_calm.webp",
+    "emoji": "nt_calm.png"
+  }
+]

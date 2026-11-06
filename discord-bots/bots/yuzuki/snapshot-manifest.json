@@ -1,0 +1,1167 @@
+{
+  "profile": "yuzuki",
+  "python": "3.12.15",
+  "files": [
+    {
+      "path": "src/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/config.py",
+      "runtime_sha256": "3727ce713335361aee7bc5afc3e8fe937e4306351376f6fa7852c76231c2d76b",
+      "published_sha256": "7cc9899cfe931e77ccb8fa0fc20e5c0e2671f17b213d1cc97d05703bfb44b9d8",
+      "bytes": 4415,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "src/main.py",
+      "runtime_sha256": "05a504df830506ceef8f296ca693f3c1dbbd492a731844a2522c7152420d8653",
+      "published_sha256": "05a504df830506ceef8f296ca693f3c1dbbd492a731844a2522c7152420d8653",
+      "bytes": 5210,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/cogs/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/cogs/bot_dialogue_cog.py",
+      "runtime_sha256": "3a154f03850ec62904343eca355a8ff96aebfcdd507a70b718b247f1eb1d952d",
+      "published_sha256": "3a154f03850ec62904343eca355a8ff96aebfcdd507a70b718b247f1eb1d952d",
+      "bytes": 22617,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/cogs/settings_cog.py",
+      "runtime_sha256": "fa0f8c6566fb23254138739780172057f71e545636e67129d9ed737f63a34016",
+      "published_sha256": "fa0f8c6566fb23254138739780172057f71e545636e67129d9ed737f63a34016",
+      "bytes": 11309,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/cogs/social_cog.py",
+      "runtime_sha256": "afe977ced19fe4270ccdb4b8144ff04406ec67ce8aa4c9c5a1fcc2253f178dd5",
+      "published_sha256": "afe977ced19fe4270ccdb4b8144ff04406ec67ce8aa4c9c5a1fcc2253f178dd5",
+      "bytes": 17325,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/cogs/takeover_cog.py",
+      "runtime_sha256": "75be32ab2aa503b88d27d14fb9e4c28031592005a559ba3a4e4a57b6bd633cb8",
+      "published_sha256": "75be32ab2aa503b88d27d14fb9e4c28031592005a559ba3a4e4a57b6bd633cb8",
+      "bytes": 12681,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/config/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/config/chat_config.py",
+      "runtime_sha256": "ba71d71b211e2c4260ce74e8a4fb6eae716dd505cdd9ff83caa996c99a9cf929",
+      "published_sha256": "ba71d71b211e2c4260ce74e8a4fb6eae716dd505cdd9ff83caa996c99a9cf929",
+      "bytes": 20,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/chat_settings/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/chat_settings/services/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/features/chat_settings/services/chat_settings_service.py",
+      "runtime_sha256": "b7d93bc795fb85456a7bd21aafdc9ee93b15fab208acbdbf4535020a3cfda99f",
+      "published_sha256": "b7d93bc795fb85456a7bd21aafdc9ee93b15fab208acbdbf4535020a3cfda99f",
+      "bytes": 339,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/bot_dialogue_service.py",
+      "runtime_sha256": "2b762f95df81f6c97e2161f71031a259d6e79b3f3424506890d656c2aaf4be8d",
+      "published_sha256": "2b762f95df81f6c97e2161f71031a259d6e79b3f3424506890d656c2aaf4be8d",
+      "bytes": 6869,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/conversation.py",
+      "runtime_sha256": "1a5c75ca4a34e90bf152a95a2c7c192dbc07e15039135bf3efcdbbc41d85125d",
+      "published_sha256": "1a5c75ca4a34e90bf152a95a2c7c192dbc07e15039135bf3efcdbbc41d85125d",
+      "bytes": 12475,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/fleet_budget.py",
+      "runtime_sha256": "cb5e707cebda212a8e7ca753972b548488a3b5301bf534c10b8e8a8a275c1e6f",
+      "published_sha256": "cb5e707cebda212a8e7ca753972b548488a3b5301bf534c10b8e8a8a275c1e6f",
+      "bytes": 6597,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/store.py",
+      "runtime_sha256": "14b3b0701681cd8806327ba19699efad4e260a26dcbc8b113b258249889fc355",
+      "published_sha256": "14b3b0701681cd8806327ba19699efad4e260a26dcbc8b113b258249889fc355",
+      "bytes": 3523,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/takeover_service.py",
+      "runtime_sha256": "58a802e8327542737a882622b7bc381d103f34c9da86d50627f410a670cc4a03",
+      "published_sha256": "58a802e8327542737a882622b7bc381d103f34c9da86d50627f410a670cc4a03",
+      "bytes": 5555,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/vision.py",
+      "runtime_sha256": "d30fecc6ad0df2286f228c2325441e0b7058779ecd8a1f2b2e067d465cc00c6a",
+      "published_sha256": "d30fecc6ad0df2286f228c2325441e0b7058779ecd8a1f2b2e067d465cc00c6a",
+      "bytes": 10453,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/speech_decision.py",
+      "runtime_sha256": "695d2b6584a8e286d9f9a913941bc43e787c6cbb7d2beffeefb2176500e1b374",
+      "published_sha256": "695d2b6584a8e286d9f9a913941bc43e787c6cbb7d2beffeefb2176500e1b374",
+      "bytes": 8843,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/speech_generation.py",
+      "runtime_sha256": "68e0b9ceb506470a8ce1f9ed08f710b9e687f62521eb665995430cfb5d0a655a",
+      "published_sha256": "68e0b9ceb506470a8ce1f9ed08f710b9e687f62521eb665995430cfb5d0a655a",
+      "bytes": 18259,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/speech_replies.py",
+      "runtime_sha256": "d231bcae4a12a30550763b8e80ab871cf8a822875da05262b28bb134b14194d2",
+      "published_sha256": "d231bcae4a12a30550763b8e80ab871cf8a822875da05262b28bb134b14194d2",
+      "bytes": 6703,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/access_policy.py",
+      "runtime_sha256": "90fbe61ee1e3e4da8fd842835802de06622ec737bf57f369c0125b1af26c2119",
+      "published_sha256": "90fbe61ee1e3e4da8fd842835802de06622ec737bf57f369c0125b1af26c2119",
+      "bytes": 852,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/channel_policy.py",
+      "runtime_sha256": "8b54bcb54be0ce913e066d19ec063937cfa7ea80f617c66742015b9d1eb59153",
+      "published_sha256": "81eac87f853fa207f6f59ccd85cf1198ecdba26d40eb3714c613405f5b249c72",
+      "bytes": 1268,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "src/chat/services/dm_inbox.py",
+      "runtime_sha256": "3aa2059bf06130c161fa590a25ed62a6a0ce3395aa32c63b50a1f80a64051eab",
+      "published_sha256": "3aa2059bf06130c161fa590a25ed62a6a0ce3395aa32c63b50a1f80a64051eab",
+      "bytes": 1641,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/image_decision.py",
+      "runtime_sha256": "015b8d44ad5801ca7b6183712e30b369cd9d91102d569eea485b107d71bbb881",
+      "published_sha256": "015b8d44ad5801ca7b6183712e30b369cd9d91102d569eea485b107d71bbb881",
+      "bytes": 3583,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/image_generation.py",
+      "runtime_sha256": "fd611dc30b272291b10427480a8a6e7abe334e3a0d29a5a1745b3ae1e657e1fc",
+      "published_sha256": "fd611dc30b272291b10427480a8a6e7abe334e3a0d29a5a1745b3ae1e657e1fc",
+      "bytes": 27718,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/image_status.py",
+      "runtime_sha256": "4a9b28d335eb8c178a29efc406d802ecf1615e6dd8a1aa261b3ea722f1196a8d",
+      "published_sha256": "4a9b28d335eb8c178a29efc406d802ecf1615e6dd8a1aa261b3ea722f1196a8d",
+      "bytes": 5053,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/media_replies.py",
+      "runtime_sha256": "74f70419c754eb6ce52ad071e4136eb7d73b5d1f5579f382a2695520760058ae",
+      "published_sha256": "74f70419c754eb6ce52ad071e4136eb7d73b5d1f5579f382a2695520760058ae",
+      "bytes": 15264,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/media_safety.py",
+      "runtime_sha256": "33ad79e89fbe4a3c307a1e75f786ff40b7bc49c9cf27c5b279dfa6ec0e214d60",
+      "published_sha256": "33ad79e89fbe4a3c307a1e75f786ff40b7bc49c9cf27c5b279dfa6ec0e214d60",
+      "bytes": 359,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/sticker_policy.py",
+      "runtime_sha256": "fb6c243fb3620501ad4a3065b971caddb3c08cf2cb51614f89cb3fe00bf03e1f",
+      "published_sha256": "fb6c243fb3620501ad4a3065b971caddb3c08cf2cb51614f89cb3fe00bf03e1f",
+      "bytes": 5409,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/ai/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/ai/service.py",
+      "runtime_sha256": "f5839c80d8a4f860504738d773919a1cfaf096987635038e88ad2bda38479663",
+      "published_sha256": "f5839c80d8a4f860504738d773919a1cfaf096987635038e88ad2bda38479663",
+      "bytes": 7445,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/ai/providers/__init__.py",
+      "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "template_changes": []
+    },
+    {
+      "path": "src/chat/services/ai/providers/base.py",
+      "runtime_sha256": "1080544333bdbd6a73ea72ee83c58f43f703910e712d5884be382663806f3fbb",
+      "published_sha256": "1080544333bdbd6a73ea72ee83c58f43f703910e712d5884be382663806f3fbb",
+      "bytes": 208,
+      "template_changes": []
+    },
+    {
+      "path": "config/bot_dialogue_peers.json",
+      "runtime_sha256": "1eebb796966d9591342e539bb85fe8ccc50a562286b305398d2d54938264d5cd",
+      "published_sha256": "c2c005cffd1132171f779f8c13c3dd768523341ddc1aaf623a41d0431b4cb3ca",
+      "bytes": 137,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/whale_emotes.json",
+      "runtime_sha256": "568bcff3ff109889ae8644459df5db2dd4ba3f89cff664fb5c7dacbb6b4927ae",
+      "published_sha256": "99596b8791110f5a40c244e19b4f841a895c2cfc6c4bda41e5a7562ee714a94b",
+      "bytes": 5158,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/hajimi_emotes.json",
+      "runtime_sha256": "645f9bfb73e0789a3cccd10d878b86918ecba644d87f1749536d8880a5dd7b9e",
+      "published_sha256": "8b5427f65607d902616b81b3748f9d84d68ae775619a43250936d0c78cd1dc63",
+      "bytes": 1195,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/gpt_emotes.json",
+      "runtime_sha256": "aa35a322afc83a13ea4d7d4d7356640ca80abd8acc2532db49520aa4010df869",
+      "published_sha256": "df2f6eff2957afaadd8172ce1cbabb68619e42f11cab46ce608dae42d3e1003e",
+      "bytes": 1203,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/xiaoke_emotes.json",
+      "runtime_sha256": "95060fe9e9ea223ba2ef042d0f6550b49f5e09ebc8dbec31811a5308aeb27594",
+      "published_sha256": "ef3d03c7ea3239032a762af8836fa9fb449fe551351a673cee51e8fe791987e6",
+      "bytes": 1163,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/classbrain_emotes.json",
+      "runtime_sha256": "e7c96a7fca3adf14bfad444131785457be90790d1e208e46d39e6217b42f7938",
+      "published_sha256": "2fa9e63e25891c03581b747432f3afb9baa684d7fa9002467d979f57b5bc6841",
+      "bytes": 2148,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/sakura_emotes.json",
+      "runtime_sha256": "950aba72ccc248c6de78656b9e02930b075e69fdf875055c85b3347ef88803db",
+      "published_sha256": "ccc3ee8f2859dad020bf973c084f6b71e02a9f133a0ee9d69a08362dbb53837c",
+      "bytes": 1161,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/jalter_emotes.json",
+      "runtime_sha256": "38990ed9f10926ad695e8bb43347a5812dc074099c1f5db93efcb26c8abcdcf2",
+      "published_sha256": "82138050ac2aac5bae77c9ecff594ae36a806d95a637c5b65a0453b2f8f9fe12",
+      "bytes": 1161,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/jeanne_emotes.json",
+      "runtime_sha256": "8ae03c62105fde59d8fd7188cfe0e8fa659eb4a18bc84d565538885c55d9a2bc",
+      "published_sha256": "f7c06742febaa20e2e75ead8659d508c7592050049a8f512bf9bab37b01c7c63",
+      "bytes": 1163,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/channel_policy.json",
+      "runtime_sha256": "109f1d3a77a05500efd9c2ce2e1bc7ed0015bad281822fc8d12d117d50640ee9",
+      "published_sha256": "d20cf6ee9a49f6a960b17c5f53eaf70d3ef34c84fa2bb3bcfbe48b79a8baf6eb",
+      "bytes": 53,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/image_generation.json",
+      "runtime_sha256": "836768eafc73e329260739f0d6848df5c59f1f999cefcfe3f00f80a8529f3f1d",
+      "published_sha256": "a968f6dda1296975d3590761c6aafc215449f92b402fe03bd36eec1d009f061c",
+      "bytes": 4153,
+      "template_changes": [
+        "private_endpoint_template"
+      ]
+    },
+    {
+      "path": "config/speech_generation.json",
+      "runtime_sha256": "0e8661043ca5a8fa9b2c29cecb85d6a648df8a796c7b7d33492209c565486c73",
+      "published_sha256": "0e8661043ca5a8fa9b2c29cecb85d6a648df8a796c7b7d33492209c565486c73",
+      "bytes": 880,
+      "template_changes": []
+    },
+    {
+      "path": "config/access_policy.json",
+      "runtime_sha256": "4ae4cf2615269f2e292f18271e78069fab96a230bf4ed4e9f749923931608cdc",
+      "published_sha256": "d61e899654d20018f64150c43eaae0261d652e8f4894019b50c2e2ca45841720",
+      "bytes": 220,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/yuzuki_emotes.json",
+      "runtime_sha256": "e3ec99292f76ff05f6fd4bef8ce2b309d1f061531499cb8d3eb33ce7fe7cdf4d",
+      "published_sha256": "c5ea25a1521a4825147e2787605124d52bee09e230429ada6001438df571f07e",
+      "bytes": 3799,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "config/personas/yuzuki.json",
+      "runtime_sha256": "820d839bfcaa22d93fee259dfec9f0cb398637be35683ce2ee0dc3e5d7b34886",
+      "published_sha256": "e6b5c6f2c5c446c882689e0817c182ca13ae468239c935a9a9a65a129f35ba8c",
+      "bytes": 7585,
+      "template_changes": [
+        "credential_or_personal_config_template"
+      ]
+    },
+    {
+      "path": "config/private_chat/classbrain.json",
+      "runtime_sha256": "8c5fc9e600c37bcaaa6ac44add6ae0b8e5f93caac2e169152e16b980d3573327",
+      "published_sha256": "c1194138f0d31cd11fc4bc5e5ac2eb7579e328a220ff19fedfacbc83847160c5",
+      "bytes": 162,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "tests/test_persona_speech.py",
+      "runtime_sha256": "3a9c9c3547f826e404d9661b4d0b20a54446b114090fc8377092458eacaa1266",
+      "published_sha256": "c7e9953563165724fb810b08b74a2caabe63114409dffdf7944d1236d14818f7",
+      "bytes": 11289,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "tests/test_speech_unify.py",
+      "runtime_sha256": "f82a673d8df5eaf038a3ac7d5401b13f34249a70dce25c21f9669ccec7ccf305",
+      "published_sha256": "b4c9ad69de8dc13e2cbd24e53382331048d11f07ce42c8c4bfa61dcf5702e5cd",
+      "bytes": 8200,
+      "template_changes": [
+        "discord_identity_template"
+      ]
+    },
+    {
+      "path": "tests/test_speech_gloss.py",
+      "runtime_sha256": "1bf4bed74de7ae476b6a67f25549614b1f728b1407de8f6c0882474b2b6bd447",
+      "published_sha256": "1bf4bed74de7ae476b6a67f25549614b1f728b1407de8f6c0882474b2b6bd447",
+      "bytes": 4485,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/PROMPTS.json",
+      "runtime_sha256": "f5491b11d634ce9453eeb64515e635996b7136f3ffa55cfcb30831f8219cc480",
+      "published_sha256": "3f6c3d6352d4c3c3aa06b2fc65585f3c41a7fb2a03dc6c59f25cc41bd36d6633",
+      "bytes": 2477,
+      "template_changes": [
+        "credential_or_personal_config_template"
+      ]
+    },
+    {
+      "path": "assets/yuzuki-emotes/avatar-original.png",
+      "runtime_sha256": "9ddea8991b3144b5ebc708e226ec0027a7ccfe1b86777a5ac920488d8eb70359",
+      "published_sha256": "9ddea8991b3144b5ebc708e226ec0027a7ccfe1b86777a5ac920488d8eb70359",
+      "bytes": 2125591,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/manifest.json",
+      "runtime_sha256": "90185fab075c59a6e0ff533a7fac631b6a466dc3306d7d714f965e184adca661",
+      "published_sha256": "17261b0168cbb2f7d88c85cc259ca00cf473203b3cf140797a345ae855ea0c38",
+      "bytes": 7452,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_blush.webp",
+      "runtime_sha256": "ca80c60bdc235de1b2dc4e8e40276e9b98f2fc1c06367ed79005ce2d250d3d87",
+      "published_sha256": "ca80c60bdc235de1b2dc4e8e40276e9b98f2fc1c06367ed79005ce2d250d3d87",
+      "bytes": 104034,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_care.webp",
+      "runtime_sha256": "bd0b7cc026439ceef9f76b4c1b937a7f4477282f993e4ffa8b0929cc90a0872d",
+      "published_sha256": "bd0b7cc026439ceef9f76b4c1b937a7f4477282f993e4ffa8b0929cc90a0872d",
+      "bytes": 99136,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_dessert.webp",
+      "runtime_sha256": "44234c3f9bab72d3d2eeb1b8cd1e5a4328f5f8a0204b0563e5ceead1646b2040",
+      "published_sha256": "44234c3f9bab72d3d2eeb1b8cd1e5a4328f5f8a0204b0563e5ceead1646b2040",
+      "bytes": 106704,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_focus.webp",
+      "runtime_sha256": "09f8376db436c163e0b274fc1e096d23d811a8c30652741145135f8cbbf0703f",
+      "published_sha256": "09f8376db436c163e0b274fc1e096d23d811a8c30652741145135f8cbbf0703f",
+      "bytes": 102968,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_goodnight.webp",
+      "runtime_sha256": "c6ec045c4308a74e3bbdac871b39676082a0d1a5950feb195749e10f3b795930",
+      "published_sha256": "c6ec045c4308a74e3bbdac871b39676082a0d1a5950feb195749e10f3b795930",
+      "bytes": 91592,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_hello.webp",
+      "runtime_sha256": "12c2bcd867ca51cedf7abc73eb2cd98373823a628cd7ca1123efc420f2be2d8d",
+      "published_sha256": "12c2bcd867ca51cedf7abc73eb2cd98373823a628cd7ca1123efc420f2be2d8d",
+      "bytes": 120722,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_pout.webp",
+      "runtime_sha256": "4b310c0876b6a9a6b658804e25aa91bff3ebd6c8509c6fdba023cb0835962936",
+      "published_sha256": "4b310c0876b6a9a6b658804e25aa91bff3ebd6c8509c6fdba023cb0835962936",
+      "bytes": 101640,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_smile.webp",
+      "runtime_sha256": "a7d0fe4baa3ffebaeab39361c4851aa2662557f0d67fc3d9862c801e589463c8",
+      "published_sha256": "a7d0fe4baa3ffebaeab39361c4851aa2662557f0d67fc3d9862c801e589463c8",
+      "bytes": 99618,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_smug.webp",
+      "runtime_sha256": "3e92b36e43c693d1933285978a9d44f6f4c19f5a309e6a84b527de05c43f34a1",
+      "published_sha256": "3e92b36e43c693d1933285978a9d44f6f4c19f5a309e6a84b527de05c43f34a1",
+      "bytes": 100000,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_surprise.webp",
+      "runtime_sha256": "d94ac375c5f22402c0e068abcf7f14c010a34a4c3935b7a9d423be176e7f1b41",
+      "published_sha256": "d94ac375c5f22402c0e068abcf7f14c010a34a4c3935b7a9d423be176e7f1b41",
+      "bytes": 109022,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_think.webp",
+      "runtime_sha256": "5753897a08ef227a3d4dc68c5a0beec5231137d253eadac7b3aefcba051b4663",
+      "published_sha256": "5753897a08ef227a3d4dc68c5a0beec5231137d253eadac7b3aefcba051b4663",
+      "bytes": 100182,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_umbrella.webp",
+      "runtime_sha256": "8c147590e9ff5fdf2bd30cf8dde802c87b6155592f945fa3f81e3523fbe26f16",
+      "published_sha256": "8c147590e9ff5fdf2bd30cf8dde802c87b6155592f945fa3f81e3523fbe26f16",
+      "bytes": 122924,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/PROMPTS-36.json",
+      "runtime_sha256": "f8755039dfe8e3aabd9757f95d7a519aa55d26279f3e60cdda2256addb624472",
+      "published_sha256": "f8755039dfe8e3aabd9757f95d7a519aa55d26279f3e60cdda2256addb624472",
+      "bytes": 9317,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_agree.webp",
+      "runtime_sha256": "7b9241641ed15799dff9b43804cdf722b121db19cc688ff7b9a18abf9759a257",
+      "published_sha256": "7b9241641ed15799dff9b43804cdf722b121db19cc688ff7b9a18abf9759a257",
+      "bytes": 97710,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_angry.webp",
+      "runtime_sha256": "515d6980ac9950abf82a27d65fd4a53ecb148c4946652ff8f02699a0ac583c6f",
+      "published_sha256": "515d6980ac9950abf82a27d65fd4a53ecb148c4946652ff8f02699a0ac583c6f",
+      "bytes": 110870,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_book.webp",
+      "runtime_sha256": "c336c2d137245a4296faa81280ddd111360a8dac81569580095149e6f3d291dd",
+      "published_sha256": "c336c2d137245a4296faa81280ddd111360a8dac81569580095149e6f3d291dd",
+      "bytes": 95060,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_bye.webp",
+      "runtime_sha256": "3be302256459e5794805f4dd0ce8bd8e177a90941e7c364c41fb30afb6a756ed",
+      "published_sha256": "3be302256459e5794805f4dd0ce8bd8e177a90941e7c364c41fb30afb6a756ed",
+      "bytes": 96392,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_cheer.webp",
+      "runtime_sha256": "f96ef7c075607885e7fd61618237a438470cea9dd489ac96ee81f5ec79218862",
+      "published_sha256": "f96ef7c075607885e7fd61618237a438470cea9dd489ac96ee81f5ec79218862",
+      "bytes": 102432,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_comfort.webp",
+      "runtime_sha256": "d5913c6611512183ba6f336c1876d20c46a05b5958c4e05267a5f0a94d7723c2",
+      "published_sha256": "d5913c6611512183ba6f336c1876d20c46a05b5958c4e05267a5f0a94d7723c2",
+      "bytes": 97390,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_confused.webp",
+      "runtime_sha256": "83daa071345382d65cbb93a4a1b0c676b2de7ba915b3ec3fb63821fa002008ab",
+      "published_sha256": "83daa071345382d65cbb93a4a1b0c676b2de7ba915b3ec3fb63821fa002008ab",
+      "bytes": 97936,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_deadpan.webp",
+      "runtime_sha256": "6028dbaaf16f6f68d81a635ad8c319865af871fa6e19bf61eb8958d2494f94de",
+      "published_sha256": "6028dbaaf16f6f68d81a635ad8c319865af871fa6e19bf61eb8958d2494f94de",
+      "bytes": 96694,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_dizzy.webp",
+      "runtime_sha256": "a081399c2433ffc6633960e056db1a9f23136c31daa96d71fc769ee8980994f4",
+      "published_sha256": "a081399c2433ffc6633960e056db1a9f23136c31daa96d71fc769ee8980994f4",
+      "bytes": 117068,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_fluster.webp",
+      "runtime_sha256": "5c6c79e0a31ba9a2c8ab469adc2495494f0f55713cf0d5963a85598394eeeadc",
+      "published_sha256": "5c6c79e0a31ba9a2c8ab469adc2495494f0f55713cf0d5963a85598394eeeadc",
+      "bytes": 97850,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_game.webp",
+      "runtime_sha256": "dd8de1318e7dae59cb0707463b2dc8f79d063f620b5f3f49b1cf31b3dad5d592",
+      "published_sha256": "dd8de1318e7dae59cb0707463b2dc8f79d063f620b5f3f49b1cf31b3dad5d592",
+      "bytes": 98484,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_goodmorning.webp",
+      "runtime_sha256": "82b480669903d6b4af463582f0f670f834cc34b671d35159b82048fb53eea9f6",
+      "published_sha256": "82b480669903d6b4af463582f0f670f834cc34b671d35159b82048fb53eea9f6",
+      "bytes": 101904,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_grateful.webp",
+      "runtime_sha256": "bd49c47d1db6f8c201300e3721d386a1334cde18cc3116f0d956c004c4d8ee56",
+      "published_sha256": "bd49c47d1db6f8c201300e3721d386a1334cde18cc3116f0d956c004c4d8ee56",
+      "bytes": 100786,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_idea.webp",
+      "runtime_sha256": "156d9053c7218dc6a615b9cb5de0e6458b4ef8c63206f61b185e7e7810c41a68",
+      "published_sha256": "156d9053c7218dc6a615b9cb5de0e6458b4ef8c63206f61b185e7e7810c41a68",
+      "bytes": 107224,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_laugh.webp",
+      "runtime_sha256": "e122681364b2a850264f9db2e35016448f80a39724c8adc8f8df98c4e0d344a6",
+      "published_sha256": "e122681364b2a850264f9db2e35016448f80a39724c8adc8f8df98c4e0d344a6",
+      "bytes": 95280,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_mixing.webp",
+      "runtime_sha256": "4e26f2fa7f5ed176f5df2f88b0fbdca9020102de10a94a2bf1e3e9309651ab71",
+      "published_sha256": "4e26f2fa7f5ed176f5df2f88b0fbdca9020102de10a94a2bf1e3e9309651ab71",
+      "bytes": 101796,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_music.webp",
+      "runtime_sha256": "759097ad538659ad9fa7712affe5a2500dcf4bbc2ecdb503116f002da8b2cfea",
+      "published_sha256": "759097ad538659ad9fa7712affe5a2500dcf4bbc2ecdb503116f002da8b2cfea",
+      "bytes": 107796,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_nope.webp",
+      "runtime_sha256": "3f0f0d9422a5938c24c19c854d2f85eec9ed15748679fef871a544c1f7a14b49",
+      "published_sha256": "3f0f0d9422a5938c24c19c854d2f85eec9ed15748679fef871a544c1f7a14b49",
+      "bytes": 100994,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_oops.webp",
+      "runtime_sha256": "e43fbcea83f201957dba7a415c5ad35f7d893038059a11ba3acf5117c7000fa0",
+      "published_sha256": "e43fbcea83f201957dba7a415c5ad35f7d893038059a11ba3acf5117c7000fa0",
+      "bytes": 104272,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_peek.webp",
+      "runtime_sha256": "455e03f1e4264246a1e88b924db6c5bd01479605dc4c562b9550836e3614f7ca",
+      "published_sha256": "455e03f1e4264246a1e88b924db6c5bd01479605dc4c562b9550836e3614f7ca",
+      "bytes": 93694,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_proudwork.webp",
+      "runtime_sha256": "3e4b2a7113a4caa6da450a06868422db787c6f56cce2f399b83aa49069be8a9e",
+      "published_sha256": "3e4b2a7113a4caa6da450a06868422db787c6f56cce2f399b83aa49069be8a9e",
+      "bytes": 101750,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_rain.webp",
+      "runtime_sha256": "199fe29367631e633df383ea33edaac18e46f1b4cd9579b56846f435627b461c",
+      "published_sha256": "199fe29367631e633df383ea33edaac18e46f1b4cd9579b56846f435627b461c",
+      "bytes": 99914,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_relief.webp",
+      "runtime_sha256": "7a54ebe33d9cc36d1d256b45898e540f9e63d28f76026ab9f9282cf0e34d2e0d",
+      "published_sha256": "7a54ebe33d9cc36d1d256b45898e540f9e63d28f76026ab9f9282cf0e34d2e0d",
+      "bytes": 99612,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_sad.webp",
+      "runtime_sha256": "b9b2999671e91b97a2c57cd0e3aef7edcc229baa0a138827c4a0e6b5760031b3",
+      "published_sha256": "b9b2999671e91b97a2c57cd0e3aef7edcc229baa0a138827c4a0e6b5760031b3",
+      "bytes": 104960,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_seabreeze.webp",
+      "runtime_sha256": "183d009eba48776494f7a367865422f13798b22608082261ea75ada8c6f80bb7",
+      "published_sha256": "183d009eba48776494f7a367865422f13798b22608082261ea75ada8c6f80bb7",
+      "bytes": 110760,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_shell.webp",
+      "runtime_sha256": "de3d197f756f1173e0146dfff9a3ccadcb2b23cf3cd831e5e1095e9f643fc4c5",
+      "published_sha256": "de3d197f756f1173e0146dfff9a3ccadcb2b23cf3cd831e5e1095e9f643fc4c5",
+      "bytes": 101170,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_skeptic.webp",
+      "runtime_sha256": "30c92c7d67bb59a6d1e7950a0f1b84268687c9a2ba8a25d6df747a86b09c51d7",
+      "published_sha256": "30c92c7d67bb59a6d1e7950a0f1b84268687c9a2ba8a25d6df747a86b09c51d7",
+      "bytes": 93992,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_sleepy.webp",
+      "runtime_sha256": "b861b37a61a3117ffffc16ed96348b8b6a8fa7968cb5354ac37c4da25e82a023",
+      "published_sha256": "b861b37a61a3117ffffc16ed96348b8b6a8fa7968cb5354ac37c4da25e82a023",
+      "bytes": 97222,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_sorry.webp",
+      "runtime_sha256": "b441de44f305bc144423c9b9f6869c704d7ad312ac8dd8ec1885ddff513c22d3",
+      "published_sha256": "b441de44f305bc144423c9b9f6869c704d7ad312ac8dd8ec1885ddff513c22d3",
+      "bytes": 105470,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_sulk.webp",
+      "runtime_sha256": "36c3148bf9c1ae8c53d94fcb0566bbad63c93df9be7a40d6df2748eaffa8ed77",
+      "published_sha256": "36c3148bf9c1ae8c53d94fcb0566bbad63c93df9be7a40d6df2748eaffa8ed77",
+      "bytes": 99382,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_taste.webp",
+      "runtime_sha256": "d235e97b0f01544a7ba95d03373c4be6376bce6d7eaef22c9a145d7e7d575cf1",
+      "published_sha256": "d235e97b0f01544a7ba95d03373c4be6376bce6d7eaef22c9a145d7e7d575cf1",
+      "bytes": 99222,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_tea.webp",
+      "runtime_sha256": "1958e2a6a9523a885d24175132cae7ffb3ee3a61f4924f27ba3bd0f0b1fdb256",
+      "published_sha256": "1958e2a6a9523a885d24175132cae7ffb3ee3a61f4924f27ba3bd0f0b1fdb256",
+      "bytes": 98460,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_tease.webp",
+      "runtime_sha256": "ac68432791629dc556155809dbdb6a55119f78704c799808c9f170f9950af8ff",
+      "published_sha256": "ac68432791629dc556155809dbdb6a55119f78704c799808c9f170f9950af8ff",
+      "bytes": 94568,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_wait.webp",
+      "runtime_sha256": "a2a89a8c267ad72e90975e257e9c52c6aed39e151cddc5165b0c2b2c0a0a6d8a",
+      "published_sha256": "a2a89a8c267ad72e90975e257e9c52c6aed39e151cddc5165b0c2b2c0a0a6d8a",
+      "bytes": 94656,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_welcome.webp",
+      "runtime_sha256": "3faa4c6c2a7fea981455ba485d5c2a5eecb45d3bf8440bb951f166d39e8667e3",
+      "published_sha256": "3faa4c6c2a7fea981455ba485d5c2a5eecb45d3bf8440bb951f166d39e8667e3",
+      "bytes": 97916,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/yzk_wink.webp",
+      "runtime_sha256": "68d1f2f481d48e86e685e8b6d66d15bbeb1d3387a646f0fab756335e5f4321a2",
+      "published_sha256": "68d1f2f481d48e86e685e8b6d66d15bbeb1d3387a646f0fab756335e5f4321a2",
+      "bytes": 96468,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_blush.png",
+      "runtime_sha256": "c8231facc346317d99b1d4a9165a57e9f53a8c7565299c2fe043b0002edd5655",
+      "published_sha256": "c8231facc346317d99b1d4a9165a57e9f53a8c7565299c2fe043b0002edd5655",
+      "bytes": 38024,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_care.png",
+      "runtime_sha256": "0e9963e6366765da87cf2f9b229c86305a1bbbbbb86b99b0789c802952a3907b",
+      "published_sha256": "0e9963e6366765da87cf2f9b229c86305a1bbbbbb86b99b0789c802952a3907b",
+      "bytes": 33775,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_dessert.png",
+      "runtime_sha256": "5a1161105ed61f8a03b2c4a5e4f3436a351b62284a792fcdee99e2cf183b64a8",
+      "published_sha256": "5a1161105ed61f8a03b2c4a5e4f3436a351b62284a792fcdee99e2cf183b64a8",
+      "bytes": 34523,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_focus.png",
+      "runtime_sha256": "088d47c75a13b525c5861f7edc8a9f93307f230677933163436a7a3eb61260bc",
+      "published_sha256": "088d47c75a13b525c5861f7edc8a9f93307f230677933163436a7a3eb61260bc",
+      "bytes": 34668,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_goodnight.png",
+      "runtime_sha256": "861b670ae1b1c631985600bbfbb4f5704249751f65a9569feaaccfbdb44a9a24",
+      "published_sha256": "861b670ae1b1c631985600bbfbb4f5704249751f65a9569feaaccfbdb44a9a24",
+      "bytes": 31360,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_hello.png",
+      "runtime_sha256": "8be6404afcdf82a258be3c5fb69dfea27cbb7763c20cf4064bdd0836e64030a1",
+      "published_sha256": "8be6404afcdf82a258be3c5fb69dfea27cbb7763c20cf4064bdd0836e64030a1",
+      "bytes": 38367,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_pout.png",
+      "runtime_sha256": "7db17d3cc3c62b82ebebd111654b490a3d013a41ddbf160924130943df50f7de",
+      "published_sha256": "7db17d3cc3c62b82ebebd111654b490a3d013a41ddbf160924130943df50f7de",
+      "bytes": 33790,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_smile.png",
+      "runtime_sha256": "57c808c3e19cd45529455100b241a023ff9d61accbc2508e66c082dd3fe8cbdd",
+      "published_sha256": "57c808c3e19cd45529455100b241a023ff9d61accbc2508e66c082dd3fe8cbdd",
+      "bytes": 36085,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_smug.png",
+      "runtime_sha256": "289c86a8acfdad75df79e8ae55af429c86b1d46947b901b9655a577583daa879",
+      "published_sha256": "289c86a8acfdad75df79e8ae55af429c86b1d46947b901b9655a577583daa879",
+      "bytes": 35039,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_surprise.png",
+      "runtime_sha256": "17ed2d5bbc456ed3c891203cccc83fab18771bcb55ece51aecc75d87e14ea534",
+      "published_sha256": "17ed2d5bbc456ed3c891203cccc83fab18771bcb55ece51aecc75d87e14ea534",
+      "bytes": 36090,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_think.png",
+      "runtime_sha256": "a20fea2efee7a5bae2d512d9ba8834ba84928a40aa53ba979dfdde086c35ce40",
+      "published_sha256": "a20fea2efee7a5bae2d512d9ba8834ba84928a40aa53ba979dfdde086c35ce40",
+      "bytes": 34305,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_umbrella.png",
+      "runtime_sha256": "9d3ffd46b78caaad28e23632cbece13ce02d0e26305007804a2dd64b93c1bec2",
+      "published_sha256": "9d3ffd46b78caaad28e23632cbece13ce02d0e26305007804a2dd64b93c1bec2",
+      "bytes": 39169,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_agree.png",
+      "runtime_sha256": "453f181e214a4bd916ffd00c7b8cf73d84b2a4924d89cc6dc41fff0a9ffeb85a",
+      "published_sha256": "453f181e214a4bd916ffd00c7b8cf73d84b2a4924d89cc6dc41fff0a9ffeb85a",
+      "bytes": 34203,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_angry.png",
+      "runtime_sha256": "01f604712e203524769001e7b8540dd09cdb38e7db07bb5b9e616323226a32bc",
+      "published_sha256": "01f604712e203524769001e7b8540dd09cdb38e7db07bb5b9e616323226a32bc",
+      "bytes": 38467,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_book.png",
+      "runtime_sha256": "3200f61066a696e2508a01425292285368ea221eeee398ab12563bc3320e5a75",
+      "published_sha256": "3200f61066a696e2508a01425292285368ea221eeee398ab12563bc3320e5a75",
+      "bytes": 34278,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_bye.png",
+      "runtime_sha256": "8eb3d26223cd858a7a14f383d0131ecab1aa40aa4c9a24091a8f4b7505f75e53",
+      "published_sha256": "8eb3d26223cd858a7a14f383d0131ecab1aa40aa4c9a24091a8f4b7505f75e53",
+      "bytes": 35021,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_cheer.png",
+      "runtime_sha256": "418ea35f97410e7fe09b01f82e8211490ec767dfef949e15bf060ac370966f7b",
+      "published_sha256": "418ea35f97410e7fe09b01f82e8211490ec767dfef949e15bf060ac370966f7b",
+      "bytes": 35106,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_comfort.png",
+      "runtime_sha256": "6f9102dceb83342369f727a607a94547ba59e50cb9fd0e0f2868ac7aab801e36",
+      "published_sha256": "6f9102dceb83342369f727a607a94547ba59e50cb9fd0e0f2868ac7aab801e36",
+      "bytes": 34693,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_confused.png",
+      "runtime_sha256": "af0621e71545c909a8140422f720ee42dbe634777127066f1a0185b436701f57",
+      "published_sha256": "af0621e71545c909a8140422f720ee42dbe634777127066f1a0185b436701f57",
+      "bytes": 34019,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_deadpan.png",
+      "runtime_sha256": "fab5774dc4ea24403614e0f733c5bbc82e4c349b0c829ad94eb08f893b69bb04",
+      "published_sha256": "fab5774dc4ea24403614e0f733c5bbc82e4c349b0c829ad94eb08f893b69bb04",
+      "bytes": 36103,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_dizzy.png",
+      "runtime_sha256": "1e4cd2a61951cc2c6c8b50365d30258f856356c026397d1365c1102fda98bf30",
+      "published_sha256": "1e4cd2a61951cc2c6c8b50365d30258f856356c026397d1365c1102fda98bf30",
+      "bytes": 40049,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_fluster.png",
+      "runtime_sha256": "db9d9e745a96faf12872697030d52d6b2f8a7c335c04c44d40e4656f2b0f5ca8",
+      "published_sha256": "db9d9e745a96faf12872697030d52d6b2f8a7c335c04c44d40e4656f2b0f5ca8",
+      "bytes": 34956,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_game.png",
+      "runtime_sha256": "69213302a279d375a4b4c5e29a38dce215038945b3e6e1a4491ad49a1548a082",
+      "published_sha256": "69213302a279d375a4b4c5e29a38dce215038945b3e6e1a4491ad49a1548a082",
+      "bytes": 34272,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_goodmorning.png",
+      "runtime_sha256": "fe2df5b052090f75a19b97e3ea1c64aa24b17569e1afbfaaaf35e1f47ea59c0e",
+      "published_sha256": "fe2df5b052090f75a19b97e3ea1c64aa24b17569e1afbfaaaf35e1f47ea59c0e",
+      "bytes": 34971,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_grateful.png",
+      "runtime_sha256": "74570143ed231885169f5072a5e90502a89365ba5ff8396421277e9025239026",
+      "published_sha256": "74570143ed231885169f5072a5e90502a89365ba5ff8396421277e9025239026",
+      "bytes": 36922,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_idea.png",
+      "runtime_sha256": "fdff3f7b9083fc0dc2173fe9921df16f850af98d595e487f389a7364285eb058",
+      "published_sha256": "fdff3f7b9083fc0dc2173fe9921df16f850af98d595e487f389a7364285eb058",
+      "bytes": 35770,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_laugh.png",
+      "runtime_sha256": "bdf4a6ef67097bf33c4ffe1d7b2f87f865dfb37a4a6f48bca81ac3f8c8f9789a",
+      "published_sha256": "bdf4a6ef67097bf33c4ffe1d7b2f87f865dfb37a4a6f48bca81ac3f8c8f9789a",
+      "bytes": 35493,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_mixing.png",
+      "runtime_sha256": "97460baf1bc87284d5a3867dae52e1f7a3140564d82f5b4e44da14152248a269",
+      "published_sha256": "97460baf1bc87284d5a3867dae52e1f7a3140564d82f5b4e44da14152248a269",
+      "bytes": 35087,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_music.png",
+      "runtime_sha256": "1dd69f3b34d5c03ba15dd4b547587e20c5a75aabd157587e62bb39d5798a0a35",
+      "published_sha256": "1dd69f3b34d5c03ba15dd4b547587e20c5a75aabd157587e62bb39d5798a0a35",
+      "bytes": 36012,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_nope.png",
+      "runtime_sha256": "03c7334eaee3e18f80dde3bc73da6964f2aae680a5c6a045916b47301a7457b8",
+      "published_sha256": "03c7334eaee3e18f80dde3bc73da6964f2aae680a5c6a045916b47301a7457b8",
+      "bytes": 34549,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_oops.png",
+      "runtime_sha256": "3fb6a9a9d6e2599d56e2e492bd06241b1f551d1b81be0aa5792ab27bac0da746",
+      "published_sha256": "3fb6a9a9d6e2599d56e2e492bd06241b1f551d1b81be0aa5792ab27bac0da746",
+      "bytes": 37916,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_peek.png",
+      "runtime_sha256": "234939108741a65e1fa6f5093493135547d0327115a6c4cbd3ced1fb4bc99d7a",
+      "published_sha256": "234939108741a65e1fa6f5093493135547d0327115a6c4cbd3ced1fb4bc99d7a",
+      "bytes": 33943,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_proudwork.png",
+      "runtime_sha256": "268e08c61413193e252b4eef4874fe584e43f02d92e583ce6c09f8fbc4aecd9d",
+      "published_sha256": "268e08c61413193e252b4eef4874fe584e43f02d92e583ce6c09f8fbc4aecd9d",
+      "bytes": 34810,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_rain.png",
+      "runtime_sha256": "118591211c536dbfc2ab91042df9ef4637efd203c80563a098d2d6eafb3ebb27",
+      "published_sha256": "118591211c536dbfc2ab91042df9ef4637efd203c80563a098d2d6eafb3ebb27",
+      "bytes": 34269,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_relief.png",
+      "runtime_sha256": "e9276e38a3e27233f37d7c3d0dd9fdb20eb8fa25e69ef38f90102f90400489e7",
+      "published_sha256": "e9276e38a3e27233f37d7c3d0dd9fdb20eb8fa25e69ef38f90102f90400489e7",
+      "bytes": 35306,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_sad.png",
+      "runtime_sha256": "32df9477deb3e6802396a46397d582740c6bfc69c566fd2519c40db7ee69c0aa",
+      "published_sha256": "32df9477deb3e6802396a46397d582740c6bfc69c566fd2519c40db7ee69c0aa",
+      "bytes": 36108,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_seabreeze.png",
+      "runtime_sha256": "99818f20fcfe52d7adc22355d56a7e812879e034639486e04ed37288b8448f0d",
+      "published_sha256": "99818f20fcfe52d7adc22355d56a7e812879e034639486e04ed37288b8448f0d",
+      "bytes": 37550,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_shell.png",
+      "runtime_sha256": "c05884859613043c11000e33ae48e196bad7b0428eb26766c734985d5dc4197c",
+      "published_sha256": "c05884859613043c11000e33ae48e196bad7b0428eb26766c734985d5dc4197c",
+      "bytes": 35713,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_skeptic.png",
+      "runtime_sha256": "17a6a82da375af19081c4552074200f469c474b50e9869ec22bcb4d6a7875725",
+      "published_sha256": "17a6a82da375af19081c4552074200f469c474b50e9869ec22bcb4d6a7875725",
+      "bytes": 33913,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_sleepy.png",
+      "runtime_sha256": "abdb75573d69405f9e55d9db30927c6e6cee196d4ce0f265d9509b4c35bf0c03",
+      "published_sha256": "abdb75573d69405f9e55d9db30927c6e6cee196d4ce0f265d9509b4c35bf0c03",
+      "bytes": 34138,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_sorry.png",
+      "runtime_sha256": "67a13d3631f4be73828e96c2a558790f96ede986c860873997e4d7c9372cb0a9",
+      "published_sha256": "67a13d3631f4be73828e96c2a558790f96ede986c860873997e4d7c9372cb0a9",
+      "bytes": 35938,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_sulk.png",
+      "runtime_sha256": "223bd3a8e60d189c383d1ca71853e8a50f077bf71929f00c146d01b2ad7fc093",
+      "published_sha256": "223bd3a8e60d189c383d1ca71853e8a50f077bf71929f00c146d01b2ad7fc093",
+      "bytes": 34390,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_taste.png",
+      "runtime_sha256": "75f5caca9ca3178eaed68fb707abd53add467ee22d0b1df6fee2634c88962a77",
+      "published_sha256": "75f5caca9ca3178eaed68fb707abd53add467ee22d0b1df6fee2634c88962a77",
+      "bytes": 35142,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_tea.png",
+      "runtime_sha256": "3dcc7df6cb535f85fdff7b783567e9d2f19a48fee092f0d654f0bbb69f491229",
+      "published_sha256": "3dcc7df6cb535f85fdff7b783567e9d2f19a48fee092f0d654f0bbb69f491229",
+      "bytes": 34673,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_tease.png",
+      "runtime_sha256": "1c2fc96a10e12600ec168f2331812259f589b757ba8baa6bc80ce3ee26f49c1e",
+      "published_sha256": "1c2fc96a10e12600ec168f2331812259f589b757ba8baa6bc80ce3ee26f49c1e",
+      "bytes": 33651,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_wait.png",
+      "runtime_sha256": "cf7924251be9e9be2adfcdeb13ac33675dae133da15b63af734268f50fd8818a",
+      "published_sha256": "cf7924251be9e9be2adfcdeb13ac33675dae133da15b63af734268f50fd8818a",
+      "bytes": 34432,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_welcome.png",
+      "runtime_sha256": "ac327fbf907d719477a5377f2aef3a61c2adc934868d18ca0805675be1fba7f5",
+      "published_sha256": "ac327fbf907d719477a5377f2aef3a61c2adc934868d18ca0805675be1fba7f5",
+      "bytes": 34167,
+      "template_changes": []
+    },
+    {
+      "path": "assets/yuzuki-emotes/emoji128/yzk_wink.png",
+      "runtime_sha256": "d642352f0247527c7a55631022dea0b36f92ac5a4b9655a86444772b5bd87afe",
+      "published_sha256": "d642352f0247527c7a55631022dea0b36f92ac5a4b9655a86444772b5bd87afe",
+      "bytes": 35367,
+      "template_changes": []
+    },
+    {
+      "path": "requirements.txt",
+      "runtime_sha256": "73a446bd7a1bc1366a9ffe35577a8cfc6b3b8c9a8470ac250d2b6b25cd0f3e28",
+      "published_sha256": "73a446bd7a1bc1366a9ffe35577a8cfc6b3b8c9a8470ac250d2b6b25cd0f3e28",
+      "bytes": 88,
+      "template_changes": []
+    },
+    {
+      "path": "NOTICE",
+      "runtime_sha256": "e18350f4e447bd6b0380710fe15a97e2611076db82f58d307885ec50162047cd",
+      "published_sha256": "e18350f4e447bd6b0380710fe15a97e2611076db82f58d307885ec50162047cd",
+      "bytes": 1648,
+      "template_changes": []
+    },
+    {
+      "path": "LICENSE",
+      "runtime_sha256": "ba6d12838cd61c2403880b4dfe655808ca8c53d235e023e7ad36bc2939383a89",
+      "published_sha256": "ba6d12838cd61c2403880b4dfe655808ca8c53d235e023e7ad36bc2939383a89",
+      "bytes": 33480,
+      "template_changes": []
+    }
+  ],
+  "runtime_configuration": "private identity and credential values replaced with templates; running databases are not included"
+}

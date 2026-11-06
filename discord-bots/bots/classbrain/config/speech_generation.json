@@ -1,0 +1,19 @@
+{
+  "enabled_profiles": [
+    "jalter",
+    "yuzuki"
+  ],
+  "base_url": "https://api.stepfun.com/step_plan/v1",
+  "model": "stepaudio-2.5-tts",
+  "voices": {
+    "jalter": "elegantgentle-female",
+    "yuzuki": "qingchunshaonv"
+  },
+  "instructions": {
+    "jalter": "用自然的中文女声，中等偏低音区，声线清晰有实感，略带清冷和傲气。吐字干脆，句尾收住，不持续上扬。关心时音量放柔但保持利落，避免甜腻、娃娃音、播音腔、夸张气声和喊叫。",
+    "yuzuki": "自然的中文女声，清亮柔和的中音区，语速稍缓，像面对熟悉朋友的日常聊天。轻微内向，开心时有一点笑意，害羞时轻轻收住句尾；不刻意幼态，不用夸张气声、撒娇腔、播音腔或戏剧化颤抖。"
+  },
+  "max_characters": 500,
+  "shared_concurrency": 1,
+  "user_interval_seconds": 10
+}

@@ -1,0 +1,128 @@
+[
+  {
+    "name": "ln_xianhua",
+    "id": "0",
+    "code": "<:ln_xianhua:0>",
+    "created": true
+  },
+  {
+    "name": "ln_shang_xin",
+    "id": "0",
+    "code": "<:ln_shang_xin:0>",
+    "created": true
+  },
+  {
+    "name": "ln_angry",
+    "id": "0",
+    "code": "<:ln_angry:0>",
+    "created": true
+  },
+  {
+    "name": "ln_guai_qiao",
+    "id": "0",
+    "code": "<:ln_guai_qiao:0>",
+    "created": true
+  },
+  {
+    "name": "ln_ao_jiao",
+    "id": "0",
+    "code": "<:ln_ao_jiao:0>",
+    "created": true
+  },
+  {
+    "name": "ln_ganga_zan",
+    "id": "0",
+    "code": "<:ln_ganga_zan:0>",
+    "created": true
+  },
+  {
+    "name": "ln_good",
+    "id": "0",
+    "code": "<:ln_good:0>",
+    "created": true
+  },
+  {
+    "name": "ln_chi_gua",
+    "id": "0",
+    "code": "<:ln_chi_gua:0>",
+    "created": true
+  },
+  {
+    "name": "ln_tou_xiao",
+    "id": "0",
+    "code": "<:ln_tou_xiao:0>",
+    "created": true
+  },
+  {
+    "name": "ln_wu_yu",
+    "id": "0",
+    "code": "<:ln_wu_yu:0>",
+    "created": true
+  },
+  {
+    "name": "ln_ghost_face",
+    "id": "0",
+    "code": "<:ln_ghost_face:0>",
+    "created": true
+  },
+  {
+    "name": "ln_bi_shi",
+    "id": "0",
+    "code": "<:ln_bi_shi:0>",
+    "created": true
+  },
+  {
+    "name": "ln_ping_jing",
+    "id": "0",
+    "code": "<:ln_ping_jing:0>",
+    "created": true
+  },
+  {
+    "name": "ln_shy",
+    "id": "0",
+    "code": "<:ln_shy:0>",
+    "created": true
+  },
+  {
+    "name": "ln_yi_huo",
+    "id": "0",
+    "code": "<:ln_yi_huo:0>",
+    "created": true
+  },
+  {
+    "name": "ln_jing_ya",
+    "id": "0",
+    "code": "<:ln_jing_ya:0>",
+    "created": true
+  },
+  {
+    "name": "ln_bi_xin",
+    "id": "0",
+    "code": "<:ln_bi_xin:0>",
+    "created": true
+  },
+  {
+    "name": "ln_hao_qi",
+    "id": "0",
+    "code": "<:ln_hao_qi:0>",
+    "created": true
+  },
+  {
+    "name": "ln_kai_xin_default",
+    "id": "0",
+    "code": "<:ln_kai_xin_default:0>",
+    "created": true
+  },
+  {
+    "name": "ln_bao_bao",
+    "id": "0",
+    "code": "<:ln_bao_bao:0>",
+    "created": true
+  },
+  {
+    "name": "ln_wei_qu_default",
+    "id": "0",
+    "code": "<:ln_wei_qu_default:0>",
+    "created": true
+  }
+]

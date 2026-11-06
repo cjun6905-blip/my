@@ -1,0 +1,74 @@
+[
+  {
+    "name": "jd_hello",
+    "id": "0",
+    "code": "<:jd_hello:0>",
+    "created": true
+  },
+  {
+    "name": "jd_proud",
+    "id": "0",
+    "code": "<:jd_proud:0>",
+    "created": true
+  },
+  {
+    "name": "jd_blush",
+    "id": "0",
+    "code": "<:jd_blush:0>",
+    "created": true
+  },
+  {
+    "name": "jd_pout",
+    "id": "0",
+    "code": "<:jd_pout:0>",
+    "created": true
+  },
+  {
+    "name": "jd_think",
+    "id": "0",
+    "code": "<:jd_think:0>",
+    "created": true
+  },
+  {
+    "name": "jd_teach",
+    "id": "0",
+    "code": "<:jd_teach:0>",
+    "created": true
+  },
+  {
+    "name": "jd_comfort",
+    "id": "0",
+    "code": "<:jd_comfort:0>",
+    "created": true
+  },
+  {
+    "name": "jd_cheer",
+    "id": "0",
+    "code": "<:jd_cheer:0>",
+    "created": true
+  },
+  {
+    "name": "jd_sigh",
+    "id": "0",
+    "code": "<:jd_sigh:0>",
+    "created": true
+  },
+  {
+    "name": "jd_worry",
+    "id": "0",
+    "code": "<:jd_worry:0>",
+    "created": true
+  },
+  {
+    "name": "jd_hug",
+    "id": "0",
+    "code": "<:jd_hug:0>",
+    "created": true
+  },
+  {
+    "name": "jd_sleep",
+    "id": "0",
+    "code": "<:jd_sleep:0>",
+    "created": true
+  }
+]

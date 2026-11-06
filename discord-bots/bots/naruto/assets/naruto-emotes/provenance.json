@@ -1,0 +1,5 @@
+{
+  "avatar": "User provided Naruto reference",
+  "emotes": "Built-in image_gen atlas; deterministic slicing, padding and resizing only",
+  "reference": "./local-assets/file_00000000b68481f89591601d2d3978e2.png"
+}

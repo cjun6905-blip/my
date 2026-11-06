@@ -1,0 +1,57 @@
+{
+  "profile": "sakura",
+  "base_image": "sakura-openai-image:20261105t172635z",
+  "working_dir": "/app",
+  "entrypoint": null,
+  "command": [
+    "python",
+    "-m",
+    "src.main"
+  ],
+  "user": "10001:10001",
+  "environment": {
+    "FLEET_BUDGET_DB": "/app/fleet/budget.db",
+    "FLEET_MODEL_CONCURRENCY": "4",
+    "GUILD_IDS": "0",
+    "BOT_PROFILE": "sakura",
+    "TZ": "Asia/Shanghai",
+    "IMAGEGEN_ENV_FILE": "/run/secrets/imagegen.env",
+    "BOT_ENV_FILE": "/run/secrets/runtime.env",
+    "SPEECH_ENV_FILE": "/run/secrets/speech.env",
+    "FLEET_VISION_CONCURRENCY": "8"
+  },
+  "env_keys": [
+    "FLEET_BUDGET_DB",
+    "FLEET_MODEL_CONCURRENCY",
+    "GUILD_IDS",
+    "BOT_PROFILE",
+    "TZ",
+    "IMAGEGEN_ENV_FILE",
+    "BOT_ENV_FILE",
+    "SPEECH_ENV_FILE",
+    "PATH",
+    "LANG",
+    "GPG_KEY",
+    "PYTHON_VERSION",
+    "PYTHON_SHA256",
+    "PYTHONDONTWRITEBYTECODE",
+    "PYTHONUNBUFFERED",
+    "PIP_DISABLE_PIP_VERSION_CHECK",
+    "FLEET_VISION_CONCURRENCY"
+  ],
+  "memory_bytes": 268435456,
+  "pids_limit": 64,
+  "readonly_root": true,
+  "healthcheck": {
+    "Test": [
+      "CMD",
+      "python",
+      "-c",
+      "import json,time; d=json.load(open('/app/data/health.json')); assert d['ready'] and time.time()-d['at']<45"
+    ],
+    "Interval": 30000000000,
+    "Timeout": 5000000000,
+    "StartPeriod": 60000000000,
+    "Retries": 3
+  }
+}

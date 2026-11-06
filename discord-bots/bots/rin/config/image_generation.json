@@ -1,0 +1,62 @@
+{
+  "enabled_profiles": [
+    "mukuro",
+    "rin",
+    "luvia"
+  ],
+  "base_url": "https://images.example.invalid/v1",
+  "model": "gpt-6-luna",
+  "cooldown_seconds": 20,
+  "appearance": {
+    "mukuro": "星宫六喰，二次元动漫少女，金色超长发、高处松散盘起的发髻与偏分刘海，琥珀金色眼睛，深蓝蝴蝶结与细小金色星形发饰，深蓝与奶油白配色、端庄完整遮盖的星空主题服装；保持参考图的发色、眼色与发饰，日常插画风格，不强调身材，不性化。",
+    "rin": "Fate远坂凛，深棕色长双马尾，黑色小发带，蓝绿色眼睛，红色高领长袖上衣、胸前白色小十字，端庄黑裙与深色长袜，动漫插画风格；脸、发型和配色保持角色一致，完整遮盖，非性化日常场景。",
+    "luvia": "Fate露维亚瑟琳塔·艾德费尔特（Luvia），金色长发与醒目大卷双螺旋卷发，蓝色大蝴蝶结，清澈蓝眼睛，端庄深蓝长袖洋装、白色蕾丝高领与袖口，优雅自信，宝石小饰品，二次元插画；固定发型发色眼色，完整遮盖，非性化日常场景。"
+  },
+  "default_provider": "duck",
+  "providers": {
+    "duck": {
+      "name": "duck",
+      "base_url": "https://images.example.invalid/v1",
+      "model": "gpt-6-luna",
+      "credential_key": "IMAGEGEN_DUCK_API_KEY"
+    },
+    "cpa": {
+      "name": "CPA",
+      "base_url": "https://images.example.invalid/v1",
+      "model": "gpt-image-2.5",
+      "credential_key": "IMAGEGEN_CPA_API_KEY"
+    },
+    "cpa_sunburst": {
+      "name": "CPA Sunburst",
+      "base_url": "https://images.example.invalid/v1",
+      "model": "gpt-image-2.5-sunburst",
+      "credential_key": "IMAGEGEN_CPA_API_KEY"
+    },
+    "openai_2_6_sunburst": {
+      "name": "OpenAI",
+      "base_url": "https://api.openai.com/v1",
+      "model": "gpt-image-2.6-sunburst",
+      "credential_key": "IMAGEGEN_OPENAI_API_KEY"
+    },
+    "openai_2_6_flare": {
+      "name": "OpenAI",
+      "base_url": "https://api.openai.com/v1",
+      "model": "gpt-image-2.6-flare",
+      "credential_key": "IMAGEGEN_OPENAI_API_KEY"
+    },
+    "openai_2_5_sunburst": {
+      "name": "OpenAI",
+      "base_url": "https://api.openai.com/v1",
+      "model": "gpt-image-2.5-sunburst",
+      "credential_key": "IMAGEGEN_OPENAI_API_KEY"
+    },
+    "openai_2_5_flare": {
+      "name": "OpenAI",
+      "base_url": "https://api.openai.com/v1",
+      "model": "gpt-image-2.5-flare",
+      "credential_key": "IMAGEGEN_OPENAI_API_KEY"
+    }
+  },
+  "max_concurrency": 2,
+  "burst_limit": 8
+}

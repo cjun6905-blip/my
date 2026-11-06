@@ -1,0 +1,261 @@
+{
+  "application_id": "0",
+  "count": 36,
+  "created_count": 24,
+  "existing_preserved": true,
+  "backup": "/opt/bot-maintenance/whale-emotes-20261019T044504Z",
+  "emojis": [
+    {
+      "name": "dfy_rice",
+      "id": "0",
+      "code": "<:dfy_rice:0>",
+      "animated": false,
+      "created": false
+    },
+    {
+      "name": "dfy_smug",
+      "id": "0",
+      "code": "<:dfy_smug:0>",
+      "animated": false,
+      "created": false
+    },
+    {
+      "name": "dfy_float",
+      "id": "0",
+      "code": "<:dfy_float:0>",
+      "animated": false,
+      "created": false
+    },
+    {
+      "name": "dfy_oops",
+      "id": "0",
+      "code": "<:dfy_oops:0>",
+      "animated": false,
+      "created": false
+    },
+    {
+      "name": "dfy_laugh",
+      "id": "0",
+      "code": "<:dfy_laugh:0>",
+      "animated": false,
+      "created": false
+    },
+    {
+      "name": "dfy_confused",
+      "id": "0",
+      "code": "<:dfy_confused:0>",
+      "animated": false,
+      "created": false
+    },
+    {
+      "name": "dfy_angry",
+      "id": "0",
+      "code": "<:dfy_angry:0>",
+      "animated": false,
+      "created": false
+    },
+    {
+      "name": "dfy_sad",
+      "id": "0",
+      "code": "<:dfy_sad:0>",
+      "animated": false,
+      "created": false
+    },
+    {
+      "name": "dfy_confident",
+      "id": "0",
+      "code": "<:dfy_confident:0>",
+      "animated": false,
+      "created": false
+    },
+    {
+      "name": "dfy_love",
+      "id": "0",
+      "code": "<:dfy_love:0>",
+      "animated": false,
+      "created": false
+    },
+    {
+      "name": "dfy_sleep",
+      "id": "0",
+      "code": "<:dfy_sleep:0>",
+      "animated": false,
+      "created": false
+    },
+    {
+      "name": "dfy_hello",
+      "id": "0",
+      "code": "<:dfy_hello:0>",
+      "animated": false,
+      "created": false
+    },
+    {
+      "name": "dfy_hassle",
+      "id": "0",
+      "code": "<:dfy_hassle:0>",
+      "animated": false,
+      "created": true
+    },
+    {
+      "name": "dfy_lounge",
+      "id": "0",
+      "code": "<:dfy_lounge:0>",
+      "animated": false,
+      "created": true
+    },
+    {
+      "name": "dfy_shortcut",
+      "id": "0",
+      "code": "<:dfy_shortcut:0>",
+      "animated": false,
+      "created": true
+    },
+    {
+      "name": "dfy_aftermeal",
+      "id": "0",
+      "code": "<:dfy_aftermeal:0>",
+      "animated": false,
+      "created": true
+    },
+    {
+      "name": "dfy_bubbles",
+      "id": "0",
+      "code": "<:dfy_bubbles:0>",
+      "animated": false,
+      "created": true
+    },
+    {
+      "name": "dfy_stunned",
+      "id": "0",
+      "code": "<:dfy_stunned:0>",
+      "animated": false,
+      "created": true
+    },
+    {
+      "name": "dfy_forgot",
+      "id": "0",
+      "code": "<:dfy_forgot:0>",
+      "animated": false,
+      "created": true
+    },
+    {
+      "name": "dfy_maybe",
+      "id": "0",
+      "code": "<:dfy_maybe:0>",
+      "animated": false,
+      "created": true
+    },
+    {
+      "name": "dfy_think",
+      "id": "0",
+      "code": "<:dfy_think:0>",
+      "animated": false,
+      "created": true
+    },
+    {
+      "name": "dfy_firststep",
+      "id": "0",
+      "code": "<:dfy_firststep:0>",
+      "animated": false,
+      "created": true
+    },
+    {
+      "name": "dfy_morerice",
+      "id": "0",
+      "code": "<:dfy_morerice:0>",
+      "animated": false,
+      "created": true
+    },
+    {
+      "name": "dfy_idea",
+      "id": "0",
+      "code": "<:dfy_idea:0>",
+      "animated": false,
+      "created": true
+    },
+    {
+      "name": "dfy_sneakbite",
+      "id": "0",
+      "code": "<:dfy_sneakbite:0>",
+      "animated": false,
+      "created": true
+    },
+    {
+      "name": "dfy_caught",
+      "id": "0",
+      "code": "<:dfy_caught:0>",
+      "animated": false,
+      "created": true
+    },
+    {
+      "name": "dfy_heh",
+      "id": "0",
+      "code": "<:dfy_heh:0>",
+      "animated": false,
+      "created": true
+    },
+    {
+      "name": "dfy_passing",
+      "id": "0",
+      "code": "<:dfy_passing:0>",
+      "animated": false,
+      "created": true
+    },
+    {
+      "name": "dfy_pat",
+      "id": "0",
+      "code": "<:dfy_pat:0>",
+      "animated": false,
+      "created": true
+    },
+    {
+      "name": "dfy_cuddle",
+      "id": "0",
+      "code": "<:dfy_cuddle:0>",
+      "animated": false,
+      "created": true
+    },
+    {
+      "name": "dfy_roger",
+      "id": "0",
+      "code": "<:dfy_roger:0>",
+      "animated": false,
+      "created": true
+    },
+    {
+      "name": "dfy_feedthanks",
+      "id": "0",
+      "code": "<:dfy_feedthanks:0>",
+      "animated": false,
+      "created": true
+    },
+    {
+      "name": "dfy_guilty",
+      "id": "0",
+      "code": "<:dfy_guilty:0>",
+      "animated": false,
+      "created": true
+    },
+    {
+      "name": "dfy_seriously",
+      "id": "0",
+      "code": "<:dfy_seriously:0>",
+      "animated": false,
+      "created": true
+    },
+    {
+      "name": "dfy_wakeup",
+      "id": "0",
+      "code": "<:dfy_wakeup:0>",
+      "animated": false,
+      "created": true
+    },
+    {
+      "name": "dfy_easy",
+      "id": "0",
+      "code": "<:dfy_easy:0>",
+      "animated": false,
+      "created": true
+    }
+  ]
+}

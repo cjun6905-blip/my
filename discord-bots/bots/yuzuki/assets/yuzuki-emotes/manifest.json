@@ -1,0 +1,338 @@
+[
+  {
+    "name": "yzk_smile",
+    "label": "浅笑",
+    "full": "yzk_smile.webp",
+    "emoji": "emoji128/yzk_smile.png",
+    "emoji_bytes": 36085
+  },
+  {
+    "name": "yzk_blush",
+    "label": "害羞",
+    "full": "yzk_blush.webp",
+    "emoji": "emoji128/yzk_blush.png",
+    "emoji_bytes": 38024
+  },
+  {
+    "name": "yzk_pout",
+    "label": "鼓脸",
+    "full": "yzk_pout.webp",
+    "emoji": "emoji128/yzk_pout.png",
+    "emoji_bytes": 33790
+  },
+  {
+    "name": "yzk_smug",
+    "label": "小得意",
+    "full": "yzk_smug.webp",
+    "emoji": "emoji128/yzk_smug.png",
+    "emoji_bytes": 35039
+  },
+  {
+    "name": "yzk_think",
+    "label": "思考",
+    "full": "yzk_think.webp",
+    "emoji": "emoji128/yzk_think.png",
+    "emoji_bytes": 34305
+  },
+  {
+    "name": "yzk_surprise",
+    "label": "惊讶",
+    "full": "yzk_surprise.webp",
+    "emoji": "emoji128/yzk_surprise.png",
+    "emoji_bytes": 36090
+  },
+  {
+    "name": "yzk_focus",
+    "label": "认真",
+    "full": "yzk_focus.webp",
+    "emoji": "emoji128/yzk_focus.png",
+    "emoji_bytes": 34668
+  },
+  {
+    "name": "yzk_care",
+    "label": "关心",
+    "full": "yzk_care.webp",
+    "emoji": "emoji128/yzk_care.png",
+    "emoji_bytes": 33775
+  },
+  {
+    "name": "yzk_dessert",
+    "label": "捧甜点",
+    "full": "yzk_dessert.webp",
+    "emoji": "emoji128/yzk_dessert.png",
+    "emoji_bytes": 34523
+  },
+  {
+    "name": "yzk_umbrella",
+    "label": "撑伞",
+    "full": "yzk_umbrella.webp",
+    "emoji": "emoji128/yzk_umbrella.png",
+    "emoji_bytes": 39169
+  },
+  {
+    "name": "yzk_hello",
+    "label": "挥手",
+    "full": "yzk_hello.webp",
+    "emoji": "emoji128/yzk_hello.png",
+    "emoji_bytes": 38367
+  },
+  {
+    "name": "yzk_goodnight",
+    "label": "晚安",
+    "full": "yzk_goodnight.webp",
+    "emoji": "emoji128/yzk_goodnight.png",
+    "emoji_bytes": 31360
+  },
+  {
+    "name": "yzk_laugh",
+    "label": "开怀笑",
+    "full": "yzk_laugh.webp",
+    "emoji": "emoji128/yzk_laugh.png",
+    "emoji_bytes": 35493
+  },
+  {
+    "name": "yzk_tease",
+    "label": "捂嘴偷笑",
+    "full": "yzk_tease.webp",
+    "emoji": "emoji128/yzk_tease.png",
+    "emoji_bytes": 33651
+  },
+  {
+    "name": "yzk_wink",
+    "label": "俏皮眨眼",
+    "full": "yzk_wink.webp",
+    "emoji": "emoji128/yzk_wink.png",
+    "emoji_bytes": 35367
+  },
+  {
+    "name": "yzk_skeptic",
+    "label": "半信半疑",
+    "full": "yzk_skeptic.webp",
+    "emoji": "emoji128/yzk_skeptic.png",
+    "emoji_bytes": 33913
+  },
+  {
+    "name": "yzk_deadpan",
+    "label": "无奈吐槽",
+    "full": "yzk_deadpan.webp",
+    "emoji": "emoji128/yzk_deadpan.png",
+    "emoji_bytes": 36103
+  },
+  {
+    "name": "yzk_sulk",
+    "label": "小别扭",
+    "full": "yzk_sulk.webp",
+    "emoji": "emoji128/yzk_sulk.png",
+    "emoji_bytes": 34390
+  },
+  {
+    "name": "yzk_fluster",
+    "label": "慌乱害羞",
+    "full": "yzk_fluster.webp",
+    "emoji": "emoji128/yzk_fluster.png",
+    "emoji_bytes": 34956
+  },
+  {
+    "name": "yzk_peek",
+    "label": "探头",
+    "full": "yzk_peek.webp",
+    "emoji": "emoji128/yzk_peek.png",
+    "emoji_bytes": 33943
+  },
+  {
+    "name": "yzk_oops",
+    "label": "小失误",
+    "full": "yzk_oops.webp",
+    "emoji": "emoji128/yzk_oops.png",
+    "emoji_bytes": 37916
+  },
+  {
+    "name": "yzk_sorry",
+    "label": "认真道歉",
+    "full": "yzk_sorry.webp",
+    "emoji": "emoji128/yzk_sorry.png",
+    "emoji_bytes": 35938
+  },
+  {
+    "name": "yzk_relief",
+    "label": "松口气",
+    "full": "yzk_relief.webp",
+    "emoji": "emoji128/yzk_relief.png",
+    "emoji_bytes": 35306
+  },
+  {
+    "name": "yzk_grateful",
+    "label": "感谢",
+    "full": "yzk_grateful.webp",
+    "emoji": "emoji128/yzk_grateful.png",
+    "emoji_bytes": 36922
+  },
+  {
+    "name": "yzk_cheer",
+    "label": "握拳打气",
+    "full": "yzk_cheer.webp",
+    "emoji": "emoji128/yzk_cheer.png",
+    "emoji_bytes": 35106
+  },
+  {
+    "name": "yzk_proudwork",
+    "label": "烘焙成功",
+    "full": "yzk_proudwork.webp",
+    "emoji": "emoji128/yzk_proudwork.png",
+    "emoji_bytes": 34810
+  },
+  {
+    "name": "yzk_mixing",
+    "label": "搅拌面糊",
+    "full": "yzk_mixing.webp",
+    "emoji": "emoji128/yzk_mixing.png",
+    "emoji_bytes": 35087
+  },
+  {
+    "name": "yzk_taste",
+    "label": "试吃",
+    "full": "yzk_taste.webp",
+    "emoji": "emoji128/yzk_taste.png",
+    "emoji_bytes": 35142
+  },
+  {
+    "name": "yzk_tea",
+    "label": "递茶",
+    "full": "yzk_tea.webp",
+    "emoji": "emoji128/yzk_tea.png",
+    "emoji_bytes": 34673
+  },
+  {
+    "name": "yzk_book",
+    "label": "看书",
+    "full": "yzk_book.webp",
+    "emoji": "emoji128/yzk_book.png",
+    "emoji_bytes": 34278
+  },
+  {
+    "name": "yzk_shell",
+    "label": "分享贝壳",
+    "full": "yzk_shell.webp",
+    "emoji": "emoji128/yzk_shell.png",
+    "emoji_bytes": 35713
+  },
+  {
+    "name": "yzk_rain",
+    "label": "听雨",
+    "full": "yzk_rain.webp",
+    "emoji": "emoji128/yzk_rain.png",
+    "emoji_bytes": 34269
+  },
+  {
+    "name": "yzk_seabreeze",
+    "label": "海风",
+    "full": "yzk_seabreeze.webp",
+    "emoji": "emoji128/yzk_seabreeze.png",
+    "emoji_bytes": 37550
+  },
+  {
+    "name": "yzk_music",
+    "label": "听音乐",
+    "full": "yzk_music.webp",
+    "emoji": "emoji128/yzk_music.png",
+    "emoji_bytes": 36012
+  },
+  {
+    "name": "yzk_game",
+    "label": "玩掌机",
+    "full": "yzk_game.webp",
+    "emoji": "emoji128/yzk_game.png",
+    "emoji_bytes": 34272
+  },
+  {
+    "name": "yzk_idea",
+    "label": "想到啦",
+    "full": "yzk_idea.webp",
+    "emoji": "emoji128/yzk_idea.png",
+    "emoji_bytes": 35770
+  },
+  {
+    "name": "yzk_goodmorning",
+    "label": "早安",
+    "full": "yzk_goodmorning.webp",
+    "emoji": "emoji128/yzk_goodmorning.png",
+    "emoji_bytes": 34971
+  },
+  {
+    "name": "yzk_welcome",
+    "label": "欢迎回来",
+    "full": "yzk_welcome.webp",
+    "emoji": "emoji128/yzk_welcome.png",
+    "emoji_bytes": 34167
+  },
+  {
+    "name": "yzk_bye",
+    "label": "挥手告别",
+    "full": "yzk_bye.webp",
+    "emoji": "emoji128/yzk_bye.png",
+    "emoji_bytes": 35021
+  },
+  {
+    "name": "yzk_wait",
+    "label": "等一下",
+    "full": "yzk_wait.webp",
+    "emoji": "emoji128/yzk_wait.png",
+    "emoji_bytes": 34432
+  },
+  {
+    "name": "yzk_agree",
+    "label": "认真点头",
+    "full": "yzk_agree.webp",
+    "emoji": "emoji128/yzk_agree.png",
+    "emoji_bytes": 34203
+  },
+  {
+    "name": "yzk_nope",
+    "label": "轻轻摇头",
+    "full": "yzk_nope.webp",
+    "emoji": "emoji128/yzk_nope.png",
+    "emoji_bytes": 34549
+  },
+  {
+    "name": "yzk_confused",
+    "label": "疑惑",
+    "full": "yzk_confused.webp",
+    "emoji": "emoji128/yzk_confused.png",
+    "emoji_bytes": 34019
+  },
+  {
+    "name": "yzk_sleepy",
+    "label": "困倦",
+    "full": "yzk_sleepy.webp",
+    "emoji": "emoji128/yzk_sleepy.png",
+    "emoji_bytes": 34138
+  },
+  {
+    "name": "yzk_dizzy",
+    "label": "迷糊",
+    "full": "yzk_dizzy.webp",
+    "emoji": "emoji128/yzk_dizzy.png",
+    "emoji_bytes": 40049
+  },
+  {
+    "name": "yzk_sad",
+    "label": "小委屈",
+    "full": "yzk_sad.webp",
+    "emoji": "emoji128/yzk_sad.png",
+    "emoji_bytes": 36108
+  },
+  {
+    "name": "yzk_angry",
+    "label": "小生气",
+    "full": "yzk_angry.webp",
+    "emoji": "emoji128/yzk_angry.png",
+    "emoji_bytes": 38467
+  },
+  {
+    "name": "yzk_comfort",
+    "label": "递手帕",
+    "full": "yzk_comfort.webp",
+    "emoji": "emoji128/yzk_comfort.png",
+    "emoji_bytes": 34693
+  }
+]
